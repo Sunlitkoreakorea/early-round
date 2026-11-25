@@ -1,0 +1,248 @@
+[
+  {
+    "id": "columbia",
+    "name": "Columbia",
+    "full": "Columbia University (Columbia College / Columbia Engineering)",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-01", "notify": "mid-December", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-01", "notify": "late March", "notifyDate": null}
+    ],
+    "earlyRule": "ED is binding and one-school-only, but Columbia does not prohibit also filing a non-binding EA application elsewhere (the ED commitment still controls).",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile", "Parent tax/income documents via IDOC"],
+    "aidDeadlines": {"early": "2026-11-15", "ed2": null, "rd": "2027-02-15"},
+    "testing": "optional",
+    "testingNote": "Test-optional for 2026-27 only; SAT/ACT will be REQUIRED starting with the 2027-28 cycle (waiver possible for hardship).",
+    "english": "Required unless English is home or school language of instruction, or SAT R&W 700+ / ACT English or Reading 29+. Otherwise TOEFL iBT min 5.5 on new 1-6 scale (105 on old scale), IELTS 7.5, DET 135, Cambridge 191.",
+    "supplements": "Columbia-specific questions: one list question (100 words) plus six short answers (150 words each).",
+    "cogsci": "Cognitive Science (major, joint Columbia College/Barnard)",
+    "interview": "No interviews in the application process (optional InitialView/Vericant language video allowed).",
+    "url": "https://undergrad.admissions.columbia.edu/apply/firstyear",
+    "sources": [
+      "https://undergrad.admissions.columbia.edu/apply/firstyear",
+      "https://undergrad.admissions.columbia.edu/early-decision",
+      "https://undergrad.admissions.columbia.edu/apply/process/testing",
+      "https://undergrad.admissions.columbia.edu/english-proficiency",
+      "https://undergrad.admissions.columbia.edu/apply/process/columbia-questions",
+      "https://undergrad.admissions.columbia.edu/apply/international/aid",
+      "https://undergrad.admissions.columbia.edu/affordability/apply",
+      "https://psychology.columbia.edu/content/cognitive-science-major"
+    ],
+    "uncertain": [
+      "plans.notifyDate: Columbia only says 'mid-December' / 'late March' (dates 'may vary'); exact release dates are emailed to applicants",
+      "cogsci: confirmed via search snippet of Columbia psychology page, not read in full"
+    ],
+    "nextCycle": "Standardized testing (SAT or ACT) becomes REQUIRED effective the 2027-28 admission cycle (August 2027), i.e. likely applies to this student; hardship waiver available."
+  },
+  {
+    "id": "upenn",
+    "name": "UPenn",
+    "full": "University of Pennsylvania",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-01", "notify": "December", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-05", "notify": "April", "notifyDate": null}
+    ],
+    "earlyRule": "ED is binding; Penn's page states only that it is binding (no EA/SCEA restrictions listed), standard rule is ED to one school only and withdraw all others if admitted.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (code 2933)", "Parent tax return or earnings statement uploaded to Penn Document Submission Portal (not IDOC)", "Non-Tax Filer Form if applicable"],
+    "aidDeadlines": {"early": "2026-11-06", "ed2": null, "rd": "2027-02-05"},
+    "testing": "required",
+    "testingNote": "SAT or ACT required (hardship waiver via application). Last dates: ED Oct 2026 ACT / Nov 2026 SAT; RD Dec 2026.",
+    "english": "TOEFL/IELTS Academic/DET required unless English is native language or primary instruction language for 3+ years. Competitive: TOEFL 5+ (new scale) or 100+ (old), IELTS 7+, DET 130+. Only tests taken on/after Apr 1 2025; no MyBest.",
+    "supplements": "Three Penn short answers: thank-you note (50-200 words), community prompt (50-200 words), school-specific prompt (limit not stated on page).",
+    "cogsci": "Cognitive Science (BA, College of Arts & Sciences; tracks incl. Cognitive Neuroscience, Computation and Cognition, Language & Mind)",
+    "interview": "No interview requirement found; international applicants may optionally submit an InitialView video (per Penn FAQ).",
+    "url": "https://admissions.upenn.edu/apply/first-year-applicants",
+    "sources": [
+      "https://admissions.upenn.edu/apply/first-year-applicants",
+      "https://admissions.upenn.edu/how-to-apply/first-year-applicants/application-requirements",
+      "https://admissions.upenn.edu/how-to-apply/international-applicants",
+      "https://admissions.upenn.edu/affording-penn/international-aid",
+      "https://srfs.upenn.edu/financial-aid/apply/prospective-UG-checklists/international",
+      "https://srfs.upenn.edu/financial-aid/international",
+      "https://catalog.upenn.edu/undergraduate/programs/cognitive-science-computation-cognition-ba/"
+    ],
+    "uncertain": [
+      "plans.notifyDate: Penn only says 'December' / 'April'; exact time announced one week ahead",
+      "aidDeadlines.early/rd: Penn's SRFS table gives Nov 6 2026 / Feb 5 2027 as target dates to have an award letter at admission; late filing still gets full consideration (not a hard cutoff)",
+      "interview: Penn pages read do not state an alumni-interview policy; only the optional InitialView FAQ (seen in search snippet)",
+      "earlyRule: Penn page read states only that ED is binding; restrictions on other early apps not stated"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "uchicago",
+    "name": "UChicago",
+    "full": "University of Chicago",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "EA", "deadline": "2026-11-02", "notify": "mid-December", "notifyDate": null},
+      {"type": "ED", "deadline": "2026-11-02", "notify": "mid-December (ED I)", "notifyDate": null},
+      {"type": "ED2", "deadline": "2027-01-04", "notify": "mid-February", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-04", "notify": "late March", "notifyDate": null}
+    ],
+    "earlyRule": "EA is non-binding and non-restrictive (reply by May 1, can apply EA/ED elsewhere); ED I and ED II are binding (ED I reply mid-January, ED II reply mid-March).",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["UChicago Student Financial Aid Worksheet (via UChicago Account)", "Family income and asset documentation (home-country tax forms, translated, in USD)"],
+    "aidDeadlines": {"early": "2026-11-15", "ed2": "2027-01-15", "rd": "2027-02-15"},
+    "testing": "optional",
+    "testingNote": "Test-optional with 'No Harm' policy: submitted SAT/ACT used only if it helps; superscored.",
+    "english": "Not required: students 'invited' to submit TOEFL/IELTS/DET/etc. if they wish; no formal minimum.",
+    "supplements": "Q1 'Why UChicago' (required) plus Q2 extended essay (choose one of several prompts); no strict word limits (official FAQ suggests roughly 300-600 words for Q1 and 500-700 for the extended essay).",
+    "cogsci": "Cognitive Science (major)",
+    "interview": "No on-campus or alumni interviews; optional (highly recommended) 2-minute video profile, Glimpse/InitialView accepted instead.",
+    "url": "https://collegeadmissions.uchicago.edu/apply/application/",
+    "sources": [
+      "https://collegeadmissions.uchicago.edu/apply/application/",
+      "https://collegeadmissions.uchicago.edu/apply/uchicago-admissions-faq/",
+      "https://collegeadmissions.uchicago.edu/apply/international-applicants/",
+      "https://collegeadmissions.uchicago.edu/financial-support/international-financial-aid/",
+      "https://collegeadmissions.uchicago.edu/financial-support/applying-for-aid/",
+      "https://collegeadmissions.uchicago.edu/apply/essay/",
+      "http://collegecatalog.uchicago.edu/thecollege/cognitivescience/"
+    ],
+    "uncertain": [
+      "plans.notifyDate: only 'mid-December' / 'mid-February' / 'late March' published",
+      "aidDeadlines: Nov 15 / Jan 15 / Feb 15 are listed on the page for US citizens/PRs; the international aid page read gives no separate dates (international application deadlines are stated as same as all first-years). Nov 15 2026 is a Sunday, so rule says next business day (Nov 16)",
+      "intlAid need-aware: from a search snippet of UChicago's QuestBridge page ('must be need-aware for international candidates'), not read in full",
+      "earlyRule: EA non-restrictive per task statement and page (reply May 1); official 'what decisions mean/early rules' page text did not render, so restriction wording not directly read",
+      "plans: EA and ED I share the Nov 2 deadline; page lists them as separate plans"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "jhu",
+    "name": "Johns Hopkins",
+    "full": "Johns Hopkins University",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-01", "notify": "Dec 11, 2026 (ED I)", "notifyDate": "2026-12-11"},
+      {"type": "ED2", "deadline": "2027-01-02", "notify": "Feb 12, 2027", "notifyDate": "2027-02-12"},
+      {"type": "RD", "deadline": "2027-01-02", "notify": "Mar 24, 2027", "notifyDate": "2027-03-24"}
+    ],
+    "earlyRule": "ED I and ED II are both binding (signed agreement by student, parent and counselor); you may apply ED to only one school at a time and must withdraw other applications if admitted.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (code 5332)", "Certification of Finances (COF)"],
+    "aidDeadlines": {"early": "2026-11-15", "ed2": "2027-01-15", "rd": "2027-01-15"},
+    "testing": "required",
+    "testingNote": "SAT or ACT required; scores read holistically, superscored; aim to finish testing by Oct for ED.",
+    "english": "Not mandatory: TOEFL/IELTS/DET/Cambridge recommended if non-native/not 3 yrs English schooling, esp. if SAT ERW below 690 or ACT Reading and English below 30. Competitive: TOEFL 5+ (new scale), IELTS 7.0 each band, DET 120+.",
+    "supplements": "One Hopkins supplemental essay, 350 words max (2026-27: learning from engaging across differences / building community); optional DMP essay only for those programs.",
+    "cogsci": "Cognitive Science (major, Krieger School)",
+    "interview": "Not confirmed (no interview policy found on pages read).",
+    "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements",
+    "sources": [
+      "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements",
+      "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
+      "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/early-decision/",
+      "https://apply.jhu.edu/international-applicants/",
+      "https://apply.jhu.edu/tuition-aid/how-to-apply-for-financial-aid/",
+      "https://cogsci.jhu.edu/undergraduate/"
+    ],
+    "uncertain": [
+      "interview: no statement found on apply.jhu.edu pages read",
+      "aidDeadlines.rd: JHU deadlines table lists Jan 15, 2027 for RD aid; international-specific filter on the aid page was not separately verified"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "berkeley",
+    "name": "UC Berkeley",
+    "full": "University of California, Berkeley",
+    "public": true,
+    "commonApp": false,
+    "plans": [
+      {"type": "RD", "deadline": "2026-11-30", "notify": "end of March (UC window Mar 1-31)", "notifyDate": null}
+    ],
+    "earlyRule": "No early programs: Berkeley offers no early admission or early decision, so applying early elsewhere has no interaction; single UC application (filing Oct 1-Nov 30) is the only route.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "none",
+    "meetsNeed": false,
+    "aidForms": [],
+    "aidDeadlines": {"early": null, "ed2": null, "rd": null},
+    "testing": "blind",
+    "testingNote": "Test-free/test-blind: SAT/ACT not used in admissions or scholarships even if submitted (used only for placement/credit).",
+    "english": "Required if less than 3 years of English instruction: TOEFL iBT 4.5 (new scale; 80 old) / IELTS 6.5 / DET 115, or AP/IB English, ACT English 24+, SAT Writing and Language 31+. Berkeley wants it satisfied by Jan 31.",
+    "supplements": "UC Personal Insight Questions: answer 4 of 8, each max 350 words.",
+    "cogsci": "Cognitive Science (major)",
+    "interview": "No interview in the UC process (UC says a campus may occasionally request one to assess English).",
+    "url": "https://admissions.berkeley.edu/apply-to-berkeley/freshman-applicants/",
+    "sources": [
+      "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/",
+      "https://admissions.berkeley.edu/international-students/",
+      "https://financialaid.berkeley.edu/international-students/",
+      "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/dates-and-deadlines.html",
+      "https://admission.universityofcalifornia.edu/admission-requirements/first-year-requirements/english-language-proficiency.html",
+      "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+      "https://cogsci.berkeley.edu/undergraduate-program/major-program"
+    ],
+    "uncertain": [
+      "plans.notifyDate: UC says decisions posted Mar 1-31, Berkeley says 'end of March'; exact date emailed",
+      "testing: test-free wording taken from search snippet of Berkeley FAQ, not read in full",
+      "meetsNeed/aidForms: Berkeley states international students are ineligible for federal, state and need-based university aid; only private/outside scholarships (Berkeley international merit scholarships page not checked)",
+      "interview: no UC interview policy statement read except English-skills note in search snippet"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "rochester",
+    "name": "Rochester",
+    "full": "University of Rochester",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-01", "notify": "mid-December (ED I)", "notifyDate": null},
+      {"type": "ED2", "deadline": "2027-01-05", "notify": "early February", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-05", "notify": "April 1", "notifyDate": "2027-04-01"}
+    ],
+    "earlyRule": "ED I and ED II are binding (one ED school only); a non-binding Dec 1 priority-scholarship deadline gives earlier notice (late February) and top merit consideration without commitment.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "limited",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (code 2928)", "International Financial Support Form (only if NOT requesting need-based aid)", "CSS Profile fee waivers limited, request by Jan 15"],
+    "aidDeadlines": {"early": "2026-12-01", "ed2": "2027-01-05", "rd": "2027-02-15"},
+    "testing": "optional",
+    "testingNote": "Truly test-optional (applicant chooses test-optional or test-flexible); no disadvantage in review or scholarships.",
+    "english": "Required for all internationals via TOEFL/IELTS/DET or a waiver request. Recommended: DET 130, IELTS 7.5, TOEFL 5 (new scale) / 100 (old). Sub-scores not superscored; no TOEFL MyBest.",
+    "supplements": "One supplemental essay, 250 words (2026-27 prompt: combining academic flexibility and co-curricular opportunities).",
+    "cogsci": "Brain and Cognitive Sciences (major, BA/BS); no separate 'cognitive science' major found",
+    "interview": "Strongly recommended (admissions counselor, alumni or student); alumni interview requests open through Jan 7.",
+    "url": "https://admissions.rochester.edu/applying/first-year-students/",
+    "sources": [
+      "https://admissions.rochester.edu/applying/dates-and-deadlines/",
+      "https://admissions.rochester.edu/applying/testing-policies/",
+      "https://admissions.rochester.edu/applying/international-students/",
+      "https://admissions.rochester.edu/applying/interviewing/",
+      "https://admissions.rochester.edu/applying/how-to-apply/",
+      "https://www.rochester.edu/financial-aid/prospective-undergraduates/",
+      "https://www.sas.rochester.edu/bcs/undergraduate/index.html"
+    ],
+    "uncertain": [
+      "plans: dates page lists no year; consistent with 2026-27 (supplement page and aid page are labelled 2026-27 / fall 2027)",
+      "plans.notifyDate: only RD has a fixed date (April 1); ED I/II are 'mid-December' / 'early February'",
+      "aidDeadlines: Dec 1 / Jan 5 / Feb 15 come from the page for US citizens and eligible non-citizens; the international page says the CSS Profile is due 'by the application deadline for your admission plan' (so intl early aid may be Nov 1 / Jan 5 / Jan 5); verify",
+      "intlAid: Rochester says it meets full demonstrated need of all admitted students, but international admission is 'highly selective for students with financial need' and 'only a small number' receive need-based aid, so labelled limited"
+    ],
+    "nextCycle": null
+  }
+]

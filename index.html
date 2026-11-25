@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>얼리 플랜</title>
+  <meta name="description" content="커먼앱 얼리 지원 대학 정리: 얼리 방식, 마감, 같이 쓸 수 있는 조합, 국제학생 재정지원">
+  <meta name="theme-color" content="#F5F4EF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161617" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M8 4v24' stroke='%231C1E21' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M9.5 5.5h16l-4.5 6 4.5 6h-16z' fill='%23B3261E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <h1>얼리 플랜</h1>
+      <span class="season">2027 가을 지원</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <a href="#" data-tab="schools" role="tab">학교</a>
+      <a href="#board" data-tab="board" role="tab">전략</a>
+      <a href="#cal" data-tab="cal" role="tab">달력</a>
+    </nav>
+    <div class="more">
+      <button type="button" id="moreBtn" aria-label="메뉴" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
+      </button>
+      <div class="menu" id="menu" hidden>
+        <button type="button" data-act="add">학교 추가</button>
+        <button type="button" data-act="export">백업 저장</button>
+        <button type="button" data-act="import">백업 불러오기</button>
+      </div>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <main>
+    <section class="view schools" id="view-schools">
+      <aside class="side"><div id="list"></div></aside>
+      <article class="detail" id="detail" aria-live="polite"></article>
+    </section>
+    <section class="view board" id="view-board" hidden></section>
+    <section class="view cal" id="view-cal" hidden></section>
+  </main>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden></div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="data.js?v=1"></script>
+  <script src="core.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>

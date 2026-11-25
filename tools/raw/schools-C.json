@@ -1,0 +1,234 @@
+[
+  {
+    "id": "amherst",
+    "name": "Amherst",
+    "full": "Amherst College",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-09", "notify": "early-to-mid December", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-05", "notify": "late March (on or around March 20)", "notifyDate": "2027-03-20"}
+    ],
+    "earlyRule": "ED is binding and you may not be an ED candidate elsewhere; if admitted you must withdraw all other applications (no ED II round exists).",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-blind",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile"],
+    "aidDeadlines": {"early": "2026-11-13", "ed2": null, "rd": "2027-01-15"},
+    "testing": "optional",
+    "testingNote": "SAT/ACT optional for all applicants incl. international; superscored if submitted; self-reported scores accepted at application stage.",
+    "english": "Required (TOEFL iBT, IELTS Academic, or Duolingo) for non-native speakers unless last two years of secondary school were in English-medium; self-reported scores OK, official only if enrolling. Waiver rules are strict.",
+    "supplements": "One required writing supplement: Option A = 350-word essay on a choice of 3 quotation prompts (Options B/C = submit a graded paper).",
+    "cogsci": "Neuroscience (major, with cognitive neuroscience courses); no cog sci major or concentration found",
+    "interview": "No interviews offered (InitialView interview may be sent if already done)",
+    "url": "https://www.amherst.edu/admission/apply/firstyear",
+    "sources": [
+      "https://www.amherst.edu/admission/apply/firstyear",
+      "https://www.amherst.edu/admission/apply/firstyear/calendar_deadlines",
+      "https://www.amherst.edu/admission/apply/firstyear/writingsupplement",
+      "https://www.amherst.edu/admission/apply/firstyear/testing",
+      "https://www.amherst.edu/admission/apply/international",
+      "https://www.amherst.edu/admission/financial_aid"
+    ],
+    "uncertain": [
+      "aidForms: Amherst page only says CSS Profile generally; did not read a separate international aid-form page (ISFAA alternative not confirmed)",
+      "plans.ED.notifyDate: school gives only 'early-to-mid December'",
+      "cogsci: absence of a cog sci program inferred from search, not from a full majors list"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "williams",
+    "name": "Williams",
+    "full": "Williams College",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-15", "notify": "by December 14", "notifyDate": "2026-12-14"},
+      {"type": "RD", "deadline": "2027-01-04", "notify": "by April 1", "notifyDate": "2027-04-01"}
+    ],
+    "earlyRule": "ED is binding, only one ED application allowed, and you must withdraw other applications if admitted; Williams has no ED II and no EA.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["Indicate aid intent (Yes) on admission application; do NOT submit aid materials until admitted, then follow instructions sent with the admission offer (aid award issued within 7 days of completed aid application)"],
+    "aidDeadlines": {"early": null, "ed2": null, "rd": null},
+    "testing": "optional",
+    "testingNote": "Truly test-optional; SAT/ACT superscored if submitted; can change mind before deadline.",
+    "english": "Not required; TOEFL/IELTS/Duolingo encouraged if English is not first language or school language (competitive: TOEFL 5-6, IELTS 7.5-9, DET 135-160).",
+    "supplements": "No required writing supplement (Williams section of Common App only); optional academic paper, arts portfolio, research abstract.",
+    "cogsci": "Cognitive Science (concentration, not a major); Neuroscience (concentration on top of a major, often Psych or Bio)",
+    "interview": "No interviews offered (InitialView interview may be shared)",
+    "url": "https://www.williams.edu/admission-aid/how-to-apply/",
+    "sources": [
+      "https://www.williams.edu/admission-aid/how-to-apply/",
+      "https://www.williams.edu/admission-aid/how-to-apply/first-year/",
+      "https://www.williams.edu/admission-aid/tuition-aid/requirements-and-deadlines/",
+      "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/"
+    ],
+    "uncertain": [
+      "aidForms: exact form for internationals (CSS Profile presumed) is only given to admitted students; not stated on public page",
+      "plans: deadline pages carry no explicit year label; aid page references 2027-28 academic year so treated as current",
+      "cogsci: concentration status from search snippets (hub.williams.edu/cogsci, neuroscience.williams.edu), not read in full"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "swarthmore",
+    "name": "Swarthmore",
+    "full": "Swarthmore College",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-15", "notify": "mid-December", "notifyDate": null},
+      {"type": "ED2", "deadline": "2027-01-04", "notify": "mid-February (Winter Early Decision)", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-04", "notify": "by April 1 (late March)", "notifyDate": "2027-04-01"}
+    ],
+    "earlyRule": "Fall and Winter ED are both binding; apply ED to only one school and withdraw other applications if admitted.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (fee waived for admitted internationals)", "Certificate of Finances/documents via applicant portal; submit only AFTER admission, within 7 days of decision"],
+    "aidDeadlines": {"early": null, "ed2": null, "rd": null},
+    "testing": "optional",
+    "testingNote": "Standardized test scores optional; no penalty for not submitting.",
+    "english": "Applicants schooled outside the US must submit ONE of: free Swarthmore Video Response, English test (TOEFL/IELTS/DET), or InitialView/Vericant interview.",
+    "supplements": "Two required short answers, 250 words each (identity/background and a recently fascinating topic); optional video response and arts supplement.",
+    "cogsci": "Cognitive Science (minor and special major); Neuroscience (major, joint Psych/Bio)",
+    "interview": "Optional",
+    "url": "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+    "sources": [
+      "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+      "https://www.swarthmore.edu/financial-aid/financial-aid-deadlines",
+      "https://www.swarthmore.edu/admissions-aid/international-students"
+    ],
+    "uncertain": [
+      "plans.notifyDate: only 'mid-December' / 'mid-February' given",
+      "aidDeadlines: internationals apply for aid after admission (no round deadline); domestic aid deadlines equal admission deadlines (Nov 15, Jan 4, Jan 4)",
+      "cogsci: program structure from search snippets, not read in full"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "pomona",
+    "name": "Pomona",
+    "full": "Pomona College",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-08", "notify": "by December 15", "notifyDate": "2026-12-15"},
+      {"type": "ED2", "deadline": "2027-01-08", "notify": "by February 15", "notifyDate": "2027-02-15"},
+      {"type": "RD", "deadline": "2027-01-08", "notify": "by April 1", "notifyDate": "2027-04-01"}
+    ],
+    "earlyRule": "ED I and ED II are binding; you may also apply through non-binding plans (e.g., EA) elsewhere but not ED, and must withdraw others if admitted.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (code 4607) or Pomona International Financial Aid Application if fee is a burden", "translated prior-prior-year tax/earnings documents via IDOC or admissions portal"],
+    "aidDeadlines": {"early": "2026-11-15", "ed2": "2027-01-15", "rd": "2027-01-15"},
+    "testing": "optional",
+    "testingNote": "All applicants may self-report SAT/ACT; test-optional.",
+    "english": "Required (TOEFL, IELTS, or Duolingo) if school's primary language of instruction is not English; listed minimums TOEFL 5 (new scale), IELTS 7, Duolingo 130.",
+    "supplements": "Two Pomona essays on prior page (150-word academic interest + 250-word short response) plus Common App essay; prompts seen were for Fall 2026 entry.",
+    "cogsci": "Cognitive Science (major, interdisciplinary, in Linguistics and Cognitive Science dept); Neuroscience (major)",
+    "interview": null,
+    "url": "https://www.pomona.edu/admissions/apply",
+    "sources": [
+      "https://www.pomona.edu/admissions/paths-apply",
+      "https://www.pomona.edu/admissions/apply",
+      "https://www.pomona.edu/admissions/apply/international-applicants",
+      "https://www.pomona.edu/financial-aid/applying-aid/application-materials-and-deadlines",
+      "https://www.pomona.edu/financial-aid/applying-for-aid/international-aid"
+    ],
+    "uncertain": [
+      "plans: Paths to Apply page lists Nov 8 / Jan 8 with no year label; other text on pomona.edu refers to 2026 admitted-student events, so page may be stale for 2026-27 (note Nov 8, 2026 is a Sunday). Confirm on pomona.edu",
+      "aidDeadlines: aid page (Nov 15 / Jan 15 / Jan 15) has no year label and differs from admission dates",
+      "supplements: prompts on apply page were labeled Fall 2026 cycle, not confirmed for 2026-27",
+      "interview: no page found stating interview policy",
+      "testingNote: no 2026-27-specific testing page read; relied on international applicants page"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "wesleyan",
+    "name": "Wesleyan",
+    "full": "Wesleyan University",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-15", "notify": "mid-December", "notifyDate": null},
+      {"type": "ED2", "deadline": "2027-01-01", "notify": "mid-February", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-01", "notify": "late March", "notifyDate": null}
+    ],
+    "earlyRule": "ED I and II are binding with a signed agreement; must withdraw other applications and not start new ones.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-aware",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (code 3959)", "ISFAA if Profile unavailable/unaffordable", "tax documents via IDOC if requested"],
+    "aidDeadlines": {"early": "2026-11-15", "ed2": "2027-01-01", "rd": "2027-01-15"},
+    "testing": "optional",
+    "testingNote": "SAT/ACT optional for most students; exam-based curricula (A level, IB, etc.) must provide exam scores.",
+    "english": "Advanced English expected; TOEFL/IELTS/DET/Cambridge optional but strongly recommended for non-native speakers (TOEFL 100/5-6, IELTS 7.5, DET 130).",
+    "supplements": "Wesleyan member questions on Common App; no confirmed required essay.",
+    "cogsci": "Neuroscience and Behavior (major); Cognitive Science concentration within Psychology; no cog sci major",
+    "interview": null,
+    "url": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+    "sources": [
+      "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html",
+      "https://www.wesleyan.edu/admission/application-process.html",
+      "https://www.wesleyan.edu/admission/affordability-and-aid/applying-for-aid.html",
+      "http://www.wesleyan.edu/admission/undergraduate-admission/international/",
+      "https://www.wesleyan.edu/admission/undergraduate-admission/early-decision.html"
+    ],
+    "uncertain": [
+      "plans: admission deadline table has no year label (aid page for 2027-28 confirms ED I Nov 15, ED II Jan 1, RD Jan 15 aid)",
+      "intlAid: Wesleyan does not use the term; page says international aid is limited and admission for aid-seekers is 'extremely competitive', treated as need-aware (US applicants need-blind not re-verified)",
+      "supplements: could not confirm whether member questions include an essay",
+      "interview: not mentioned on pages read",
+      "international page seen shows 2025-26 round dates labeled '2026-27 entry'; used the 2027-28 aid page instead"
+    ],
+    "nextCycle": null
+  },
+  {
+    "id": "bowdoin",
+    "name": "Bowdoin",
+    "full": "Bowdoin College",
+    "public": false,
+    "commonApp": true,
+    "plans": [
+      {"type": "ED", "deadline": "2026-11-15", "notify": "mid-December", "notifyDate": null},
+      {"type": "ED2", "deadline": "2027-01-05", "notify": "by early February", "notifyDate": null},
+      {"type": "RD", "deadline": "2027-01-05", "notify": "mid-March", "notifyDate": null}
+    ],
+    "earlyRule": "ED I and II are binding with an agreement signed by student, parent and counselor; apply ED to only one school.",
+    "ed2Elsewhere": null,
+    "publicEA": null,
+    "intlAid": "need-blind",
+    "meetsNeed": true,
+    "aidForms": ["CSS Profile (submit only after admission, within 7 days of offer; ISFAA no longer accepted)"],
+    "aidDeadlines": {"early": null, "ed2": null, "rd": null},
+    "testing": "optional",
+    "testingNote": "SAT/ACT optional; yes/no choice per test can be changed until the deadline.",
+    "english": "TOEFL/IELTS/Duolingo/Cambridge optional, no minimum score; admitted students must already be highly proficient (no ESL).",
+    "supplements": "Bowdoin Supplement with two optional essays, up to 250 words each; optional video response and arts supplement.",
+    "cogsci": "Neuroscience (major, 13 courses, no minor); no cog sci program found",
+    "interview": "Strongly encouraged but not required",
+    "url": "https://www.bowdoin.edu/admissions/apply/index.html",
+    "sources": [
+      "https://www.bowdoin.edu/admissions/apply/index.html",
+      "https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html",
+      "https://www.bowdoin.edu/admissions/apply/international-students/index.html"
+    ],
+    "uncertain": [
+      "plans: deadlines page has no year label (Nov 15 / Jan 5 / Jan 5; domestic RD aid Feb 1); one search snippet showed ED2 aid Jan 1 on the student-aid calendar vs Jan 5 on admissions page",
+      "notifyDate: school gives month-level wording only",
+      "interview/supplement: taken from apply-page summary, not independently cross-checked"
+    ],
+    "nextCycle": null
+  }
+]
