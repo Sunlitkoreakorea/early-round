@@ -1,0 +1,275 @@
+[
+ {
+  "id": "yale",
+  "cdsYear": "2025-2026",
+  "source": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf",
+  "applied": 50264,
+  "admitted": 2387,
+  "admitRate": 4.7,
+  "ed": null,
+  "ea": null,
+  "satSubmitPct": 67,
+  "satEBRW": [
+   730,
+   760,
+   780
+  ],
+  "satMath": [
+   740,
+   780,
+   790
+  ],
+  "actComposite": [
+   33,
+   34,
+   35
+  ],
+  "firstYearTotal": 1633,
+  "intlFirstYear": 155,
+  "intlAidCount": 459,
+  "intlAidAvg": 84185,
+  "notes": "No ED; C22 SCEA yes but counts blank. applied/admitted = men+women sums (no unknown-sex row).",
+  "uncertain": [
+   "firstYearTotal: C1 enrolled 799+834; B2 first-year column total row not seen on page"
+  ]
+ },
+ {
+  "id": "harvard",
+  "cdsYear": "no CDS; Class of 2029 (fall 2025) Gazette",
+  "source": "https://news.harvard.edu/gazette/story/2025/10/class-of-2029-yield-tops-83-with-international-students-at-90/",
+  "applied": 47893,
+  "admitted": 2003,
+  "admitRate": 4.2,
+  "ed": null,
+  "ea": null,
+  "satSubmitPct": null,
+  "satEBRW": null,
+  "satMath": null,
+  "actComposite": null,
+  "firstYearTotal": null,
+  "intlFirstYear": null,
+  "intlAidCount": null,
+  "intlAidAvg": null,
+  "notes": "No CDS. Class of 2029 (fall 2025) per Harvard Gazette; 1,675 accepted (83.6% yield). Harvard no longer releases EA data; no SAT/ACT stats found. Harvard admissions-statistics page (https://college.harvard.edu/admissions/admissions-statistics) now shows Class of 2030: 55,104 applied, 2,037 admitted, ~1,648 enrolling, 15% international.",
+  "uncertain": [
+   "firstYearTotal: Gazette gives 1,675 accepted, not an enrolled count -> null",
+   "intlFirstYear: only '15% of class' given -> null",
+   "applied/admitted are Gazette figures, not CDS; Class of 2030 figures exist and are newer"
+  ]
+ },
+ {
+  "id": "princeton",
+  "cdsYear": "2025-2026",
+  "source": "https://ir.princeton.edu/sites/g/files/toruqf2041/files/documents/CDS_2526_Princeton_v2.pdf",
+  "applied": 42303,
+  "admitted": 1868,
+  "admitRate": 4.4,
+  "ed": null,
+  "ea": null,
+  "satSubmitPct": 60,
+  "satEBRW": [
+   740,
+   760,
+   780
+  ],
+  "satMath": [
+   760,
+   790,
+   800
+  ],
+  "actComposite": [
+   34,
+   35,
+   35
+  ],
+  "firstYearTotal": 1404,
+  "intlFirstYear": 200,
+  "intlAidCount": 597,
+  "intlAidAvg": 86736,
+  "notes": "No ED; SCEA (restrictive) yes but C22 counts blank. applied uses C1 residency-table total 42,303 (incl. 18 unknown sex).",
+  "uncertain": [
+   "firstYearTotal: B2 total 1,404 vs C1 enrolled 1,408"
+  ]
+ },
+ {
+  "id": "stanford",
+  "cdsYear": "2025-2026",
+  "source": "https://irds.stanford.edu/data-findings/cds (2025-2026 file: https://drive.google.com/file/d/1GIPKgVj1d86dkmLkHI_mZVCk_iY6kiCp/view)",
+  "applied": 60646,
+  "admitted": 2302,
+  "admitRate": 3.8,
+  "ed": null,
+  "ea": null,
+  "satSubmitPct": 55.57,
+  "satEBRW": [
+   750,
+   760,
+   780
+  ],
+  "satMath": [
+   770,
+   790,
+   800
+  ],
+  "actComposite": [
+   34,
+   35,
+   36
+  ],
+  "firstYearTotal": 1866,
+  "intlFirstYear": 237,
+  "intlAidCount": 260,
+  "intlAidAvg": 85424,
+  "notes": "No ED; REA yes but counts not in extracted text (page 19 image not viewed). satSubmitPct 55.57 as printed (ACT 20.94).",
+  "uncertain": [
+   "ea: C22 counts appear blank in text layer; not visually confirmed",
+   "firstYearTotal: B2 1,866 vs C1 enrolled 1,839"
+  ]
+ },
+ {
+  "id": "mit",
+  "cdsYear": "2025-2026",
+  "source": "https://ir.mit.edu/projects/2025-26-common-data-set/",
+  "applied": 29281,
+  "admitted": 1334,
+  "admitRate": 4.6,
+  "ed": null,
+  "ea": null,
+  "satSubmitPct": 83,
+  "satEBRW": [
+   740,
+   760,
+   780
+  ],
+  "satMath": [
+   780,
+   790,
+   800
+  ],
+  "actComposite": [
+   34,
+   35,
+   35
+  ],
+  "firstYearTotal": 1152,
+  "intlFirstYear": 124,
+  "intlAidCount": 411,
+  "intlAidAvg": 81991,
+  "notes": "CDS is a web page (no PDF); values read via WebFetch extraction, gender sums reconcile to totals. EA counts blank (MIT EA not reported in C22); no ED. SAT composite 1520/1550/1570.",
+  "uncertain": [
+   "all values read via WebFetch summarizer, not eyeballed in the page; intlFirstYear 124 and H6 not independently verified"
+  ]
+ },
+ {
+  "id": "brown",
+  "cdsYear": "2025-2026",
+  "source": "https://tableau.brown.edu/t/PublicContent/views/CommonDataSet/C-Admissions.pdf (also B-Enrollment.pdf, H-FinancialAid.pdf; Brown OIR page https://oir.brown.edu/institutional-data/common-data-set)",
+  "applied": 42774,
+  "admitted": 2710,
+  "admitRate": 6.3,
+  "ed": {
+   "applied": 5062,
+   "admitted": 907,
+   "rate": 17.9
+  },
+  "ea": null,
+  "satSubmitPct": 77,
+  "satEBRW": [
+   730,
+   750,
+   770
+  ],
+  "satMath": [
+   730,
+   770,
+   790
+  ],
+  "actComposite": [
+   33,
+   35,
+   35
+  ],
+  "firstYearTotal": 1750,
+  "intlFirstYear": 227,
+  "intlAidCount": 254,
+  "intlAidAvg": 85194,
+  "notes": "Brown CDS only as Tableau dashboard (exported to PDF, selected year 2025-2026). No EA. applied = men 17,972 + women 24,771 + unknown 31. Brown press release said 42,765/2,418 but CDS includes 295 waitlist admits.",
+  "uncertain": []
+ },
+ {
+  "id": "columbia",
+  "cdsYear": "2025-2026",
+  "source": "https://opir.columbia.edu/sites/opir.columbia.edu/files/content/Common%20Data%20Set/2025-26_Columbia_College_and_Columbia_Enginnering_CDS.pdf",
+  "applied": 59611,
+  "admitted": 2946,
+  "admitRate": 4.9,
+  "ed": {
+   "applied": 5868,
+   "admitted": 819,
+   "rate": 14.0
+  },
+  "ea": null,
+  "satSubmitPct": 50,
+  "satEBRW": [
+   740,
+   760,
+   777
+  ],
+  "satMath": [
+   760,
+   780,
+   800
+  ],
+  "actComposite": [
+   34,
+   35,
+   35
+  ],
+  "firstYearTotal": 1797,
+  "intlFirstYear": 273,
+  "intlAidCount": 248,
+  "intlAidAvg": 92699,
+  "notes": "Columbia College + Columbia Engineering CDS only (General Studies is a separate CDS, excluded). No EA.",
+  "uncertain": [
+   "satEBRW p75 777 is as printed (unusual value)"
+  ]
+ },
+ {
+  "id": "penn",
+  "cdsYear": "2025-2026",
+  "source": "https://upenn.box.com/s/woo7d85yxpol6j9e2o121aucjc6dc1k5 (UPenn-Common-Data-Set-2025-26-June-2026.pdf)",
+  "applied": 72544,
+  "admitted": 3570,
+  "admitRate": 4.9,
+  "ed": {
+   "applied": 9503,
+   "admitted": 1266,
+   "rate": 13.3
+  },
+  "ea": null,
+  "satSubmitPct": 52,
+  "satEBRW": [
+   740,
+   760,
+   770
+  ],
+  "satMath": [
+   770,
+   790,
+   800
+  ],
+  "actComposite": [
+   34,
+   35,
+   35
+  ],
+  "firstYearTotal": 2414,
+  "intlFirstYear": 311,
+  "intlAidCount": 448,
+  "intlAidAvg": 80607,
+  "notes": "No EA. SAT Composite row blank in C9. firstYearTotal from B2 (C1 enrolled 2,420).",
+  "uncertain": [
+   "firstYearTotal: B2 2,414 vs C1 enrolled 2,420"
+  ]
+ }
+]

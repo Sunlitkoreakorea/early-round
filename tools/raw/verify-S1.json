@@ -1,0 +1,23 @@
+{
+ "checked": {
+  "yale": "ok",
+  "harvard": "ok: applied/admitted match Gazette and Harvard CDS 2025-26; CDS exists, so null fields can be filled (see corrections)",
+  "princeton": "ok",
+  "stanford": "ok",
+  "mit": "ok",
+  "brown": "ok",
+  "columbia": "ok",
+  "penn": "unreachable: Box link redirects to boxcloud and cannot be read; arithmetic check only (3570/72544 = 4.9%); third-party Esslo transcription shows SAT composite 1510-1570 and 4.9% rate, consistent but unverified"
+ },
+ "corrections": [
+  {"id": "harvard", "field": "cds", "old": "no CDS", "new": "Harvard published a 2025-26 CDS (OIRA, 2026-07-13)", "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "oira.harvard.edu/2026/07/13/2025-26-common-data-set-cds-published/ links the PDF; CDS C1 shows applied 47,893 and admitted 2,003, matching the existing values"},
+  {"id": "harvard", "field": "satSubmitPct", "old": null, "new": 79, "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "C9 (p.9) Submitting SAT Scores 79%, 1325 (enrolled fall 2025, Class of 2029)"},
+  {"id": "harvard", "field": "satEBRW", "old": null, "new": [720, 750, 770], "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "C9 (p.9) SAT EBRW 25th/50th/75th = 720/750/770; SAT Composite row left blank"},
+  {"id": "harvard", "field": "satMath", "old": null, "new": [730, 770, 790], "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "C9 (p.9) SAT Math = 730/770/790"},
+  {"id": "harvard", "field": "actComposite", "old": null, "new": [33, 35, 35], "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "C9 (p.9) ACT Composite = 33/35/35 (27%, 450 submitted)"},
+  {"id": "harvard", "field": "firstYearTotal", "old": null, "new": 1673, "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "B2 (p.4) degree-seeking first-time first-year TOTAL = 1,673 (C1 enrolled shows 1,675; use B2 per convention)"},
+  {"id": "harvard", "field": "intlFirstYear", "old": null, "new": 251, "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "B2 (p.4) Nonresidents, first-time first-year column = 251"},
+  {"id": "harvard", "field": "intlAidCount", "old": null, "new": 805, "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "H6 (p.24) nonresidents awarded aid = 805"},
+  {"id": "harvard", "field": "intlAidAvg", "old": null, "new": 83013, "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "evidence": "H6 (p.24) average institutional aid to nonresidents = $83,013 (total $66,826,244)"}
+ ]
+}

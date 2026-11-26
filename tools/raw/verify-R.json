@@ -1,0 +1,28 @@
+{"checked":{
+"yale":"partial: essays/platforms/2 teacher recs/counselor confirmed; fee $80, interview, CSS 3987 not on pages read",
+"harvard":"partial: official 2026-27 PDF confirms $95, 5 prompts x150 words max, 2 teacher evals, Common App; interview/CSS not rechecked",
+"princeton":"partial: prompts/limits confirmed (250/400-500/250/3x50, graded paper required); fee, recs, interview, CSS null not rechecked",
+"stanford":"partial: $100, 2 teacher recs, 5 short (3-50 words) + 3 essays (100-250) confirmed; pages list Common App only (QuestBridge not seen); interview page empty",
+"mit":"ok: 4 essays ~100-200, 4 short 40-50, 4 activities, 1 open box, $75, 2 teacher recs, interview waived if unavailable, own portal. CSS 3514 and optional counselor letter not rechecked",
+"brown":"partial: 4 essays (150-250/150-250/100-150/100-150), $80, Common App confirmed; interview/CSS not rechecked",
+"columbia":"unreachable",
+"penn":"partial: 1 teacher required + 1 optional, counselor required, $75, platforms incl. QuestBridge, essays 3x50-200 confirmed; interview not on page",
+"uchicago":"partial: pages gave no usable content (essay page empty, requirements page without details); essays page 403/empty",
+"jhu":"partial: 350-word essay, $70, 2 teachers, Common App+Coalition confirmed; interview not on page",
+"berkeley":"partial: 4 of 8 PIQs 350 words confirmed; activities/awards limit and fee not readable (PDF unreadable); no QuestBridge/Common App",
+"rochester":"partial: 250-word required supplement and Common App+Coalition confirmed; fee/recs/interview not on page",
+"amherst":"unreachable",
+"williams":"unreachable",
+"swarthmore":"ok: $60, 2 teachers, counselor, 2x250-word required, optional interview, 3 platforms confirmed; CSS 2821 not rechecked",
+"pomona":"partial: 150 + 1-of-3 250 confirmed, platforms ok, teacher recs 2 + 1 optional ok; fee/interview/counselor not on page",
+"wesleyan":"partial: $65 and Common App+Coalition confirmed; recs/supplements/interview not read; 'Member Questions' exist so supplements [] means unknown",
+"carleton":"ok: no fee, 2 teachers + counselor, optional interview to Jan 15, 3 platforms, no essay on this page; CSS 6081 not rechecked",
+"bowdoin":"partial: fee 70, platforms, optional interview ok; two 250-word essays optional ok; recs differ (see correction)",
+"middlebury":"partial: >=2 teachers, interview request dates, 3 platforms, no supplemental essay confirmed; fee not mentioned on page",
+"grinnell":"ok: no fee, 2 teachers, optional 200-450 word supplement, Common App+QuestBridge, interview optional",
+"colby":"unreachable",
+"conncoll":"partial: 1 academic teacher required (2 recommended), fee waived, optional interview, Common App confirmed; supplement content unknown"
+},
+"corrections":[
+{"id":"bowdoin","field":"teacherRecs","old":{"required":1,"optionalExtra":null},"new":{"required":1,"note":"Page says Bowdoin requires three recommendations: counselor, one core-academic teacher, and one 'other' (second teacher, or clergy/coach/employer/community member)"},"source":"https://www.bowdoin.edu/admissions/apply/index.html","evidence":"'requires three recommendations: counselor, teacher, and other'"}
+]}

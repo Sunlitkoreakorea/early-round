@@ -1,0 +1,480 @@
+[
+ {
+  "id": "amherst",
+  "application": "Common App, QuestBridge (other platforms not confirmed)",
+  "appFormat": null,
+  "fee": null,
+  "feeWaiver": "Fee waiver available (details not confirmed)",
+  "teacherRecs": {
+   "required": null,
+   "optionalExtra": null,
+   "note": "not confirmed; amherst.edu pages blocked"
+  },
+  "counselorRec": null,
+  "midYearReport": null,
+  "interview": null,
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "other",
+    "required": true,
+    "count": 1,
+    "words": 350,
+    "chars": null,
+    "choose": "Option A: 1 of 3 quotations; or Option B: graded paper",
+    "summary": "Personal response to a quotation prompt, or submit graded analytical paper"
+   }
+  ],
+  "supplementsUrl": "https://www.amherst.edu/admission/apply/firstyear/writingsupplement",
+  "portfolio": "Option C only for A2A applicants",
+  "cssCode": "3003",
+  "netPriceUrl": "https://www.amherst.edu/offices/financialaid/calculator",
+  "netPriceIntl": false,
+  "sources": [
+   "https://www.amherst.edu/admission/apply/firstyear/writingsupplement (search summary; direct fetch 405)",
+   "https://admission.amherst.edu/register/qbrdsupplement",
+   "https://www.amherst.edu/offices/financialaid/international_students/appleton (search summary)"
+  ],
+  "uncertain": [
+   "application: platforms not read (amherst.edu fetch blocked)",
+   "fee: sources conflict ($60 vs $65)",
+   "teacherRecs/counselorRec/midYearReport/interview: not read for 2026-27",
+   "supplements: only Option A limit (350 words) seen; full prompt list not read"
+  ],
+  "resolved": [
+   {
+    "field": "aidForms",
+    "value": "International applicants submit CSS Profile code 3003; ISFAA only on request for fee hardship or North Korea applicants",
+    "source": "https://www.amherst.edu/offices/financialaid/international_students/appleton"
+   }
+  ]
+ },
+ {
+  "id": "williams",
+  "application": "Common App, Coalition with Scoir, QuestBridge (per search summary)",
+  "appFormat": null,
+  "fee": 65,
+  "feeWaiver": "Waiver on request via Common App, Coalition or CSS Profile; no disadvantage",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 teachers sent by school"
+  },
+  "counselorRec": true,
+  "midYearReport": true,
+  "interview": "Williams does not conduct interviews",
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "other",
+    "required": false,
+    "count": 1,
+    "words": null,
+    "chars": null,
+    "choose": null,
+    "summary": "Optional 3-5 page graded academic paper from last year"
+   }
+  ],
+  "supplementsUrl": "https://admission.williams.edu/application-supplement",
+  "portfolio": "Optional arts portfolio via SlideRoom ($10, waivable); deadlines Nov 15 ED, Jan 4 RD",
+  "cssCode": "3965",
+  "netPriceUrl": "https://finaid.williams.edu/financial-aid-calculator/",
+  "netPriceIntl": false,
+  "sources": [
+   "https://www.williams.edu/admission-aid/how-to-apply/first-year/ (search summary; direct fetch 403)",
+   "https://www.williams.edu/admission-aid/financial-aid/international/ (search summary)"
+  ],
+  "uncertain": [
+   "accepted platforms and fee from search summaries only",
+   "midyear report due Feb 6 per summary",
+   "CSS 3965 seen on current-student international page; confirm for applicants"
+  ],
+  "resolved": []
+ },
+ {
+  "id": "swarthmore",
+  "application": "Common App, Coalition with Scoir, QuestBridge",
+  "appFormat": null,
+  "fee": 60,
+  "feeWaiver": "Waiver via Swarthmore SwatPass, Common App, NACAC, College Board or ACT",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 academic teachers"
+  },
+  "counselorRec": true,
+  "midYearReport": true,
+  "interview": "Optional; no disadvantage if skipped",
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "background",
+    "required": true,
+    "count": 1,
+    "words": 250,
+    "chars": null,
+    "choose": null,
+    "summary": "Identity/background that matters and engaging across differences"
+   },
+   {
+    "type": "intellectual",
+    "required": true,
+    "count": 1,
+    "words": 250,
+    "chars": null,
+    "choose": null,
+    "summary": "Recently fascinating topic, its spark, links to other interests"
+   }
+  ],
+  "supplementsUrl": "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+  "portfolio": "Optional video response after submitting, via portal",
+  "cssCode": "2821",
+  "netPriceUrl": null,
+  "netPriceIntl": null,
+  "sources": [
+   "https://www.swarthmore.edu/admissions-aid/application-materials-deadlines",
+   "https://www.swarthmore.edu/financial-aid/international-students"
+  ],
+  "uncertain": [
+   "netPriceUrl: no calculator mentioned on pages read",
+   "aid forms: CSS Profile plus ISAFA required of admitted internationals per aid page"
+  ],
+  "resolved": []
+ },
+ {
+  "id": "pomona",
+  "application": "Common App, Coalition on Scoir, QuestBridge",
+  "appFormat": null,
+  "fee": 80,
+  "feeWaiver": "Pomona Access Pass form waives fee for aid applicants; also via admissions office",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": 1,
+   "note": "2 core academic teachers; optional 3rd from elective teacher/coach/other"
+  },
+  "counselorRec": null,
+  "midYearReport": null,
+  "interview": "Optional; no staff/alumni interviews; third-party InitialView, Vericant, Duolingo accepted",
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "intellectual",
+    "required": true,
+    "count": 1,
+    "words": 150,
+    "chars": null,
+    "choose": null,
+    "summary": "What draws you to intended major or an academic passion"
+   },
+   {
+    "type": "community",
+    "required": true,
+    "count": 1,
+    "words": 250,
+    "chars": null,
+    "choose": "1 of 3",
+    "summary": "Community, out-of-class experience, or how others see you"
+   }
+  ],
+  "supplementsUrl": "https://www.pomona.edu/admissions/apply",
+  "portfolio": null,
+  "cssCode": "4607",
+  "netPriceUrl": "https://www.pomona.edu/financial-aid/cost-attendance/estimate-your-aid",
+  "netPriceIntl": false,
+  "sources": [
+   "https://www.pomona.edu/admissions/apply",
+   "https://www.pomona.edu/admissions/paths-apply (search summary)",
+   "https://www.pomona.edu/financial-aid/cost-attendance/estimate-your-aid (search summary)"
+  ],
+  "uncertain": [
+   "supplements: apply page labeled Fall 2026; required status not stated; 2026-27 set not confirmed",
+   "counselorRec/midYearReport not stated on pages read",
+   "fee $80 from search summary"
+  ],
+  "resolved": [
+   {
+    "field": "interview",
+    "value": "Interviews optional; Pomona offers no staff/alumni interviews (older pages differ); third-party InitialView/Vericant/Duolingo accepted",
+    "source": "https://www.pomona.edu/admissions/paths-apply"
+   }
+  ]
+ },
+ {
+  "id": "wesleyan",
+  "application": "Common App, Coalition on Scoir",
+  "appFormat": null,
+  "fee": 65,
+  "feeWaiver": "Waived for all applicants who apply for financial aid",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 academic teachers (one humanities/social/language, one math/science)"
+  },
+  "counselorRec": true,
+  "midYearReport": true,
+  "interview": "No evaluative interviews; international applicants may submit optional InitialView or Vericant",
+  "interviewDeadline": null,
+  "supplements": [],
+  "supplementsUrl": "https://www.wesleyan.edu/admission/application-process.html",
+  "portfolio": "Optional arts supplements (music, theatre, visual art, film, dance)",
+  "cssCode": "3959",
+  "netPriceUrl": null,
+  "netPriceIntl": null,
+  "sources": [
+   "https://www.wesleyan.edu/admission/application-process.html",
+   "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html (search summary)",
+   "https://www.wesleyan.edu/admission/undergraduate-admission/international/index.html (search summary)"
+  ],
+  "uncertain": [
+   "supplements: Wesleyan member questions exist but prompts not found; empty array means UNKNOWN, not none",
+   "netPriceUrl: calculator exists but direct URL not found",
+   "recs/midyear from search summary of first-year page"
+  ],
+  "resolved": [
+   {
+    "field": "interview",
+    "value": "No evaluative interviews; international applicants may submit optional InitialView/Vericant",
+    "source": "https://www.wesleyan.edu/admission/undergraduate-admission/first-year.html"
+   }
+  ]
+ },
+ {
+  "id": "carleton",
+  "application": "Common App, QuestBridge, Coalition",
+  "appFormat": null,
+  "fee": 0,
+  "feeWaiver": "No application fee",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 academic teachers"
+  },
+  "counselorRec": true,
+  "midYearReport": null,
+  "interview": "Optional; high school students may interview early June through Jan 15 of senior year",
+  "interviewDeadline": null,
+  "supplements": [],
+  "supplementsUrl": "https://www.carleton.edu/admissions/apply/steps/materials/",
+  "portfolio": "Optional arts supplements (visual art, music, theater, dance, film)",
+  "cssCode": "6081",
+  "netPriceUrl": "http://www.carleton.edu/admissions/apply/afford/aid-estimators/npc/",
+  "netPriceIntl": null,
+  "sources": [
+   "https://www.carleton.edu/admissions/apply/steps/materials/",
+   "https://www.carleton.edu/admissions/apply/afford/aid-estimators/",
+   "https://www.carleton.edu/financial-aid/apply-for-aid/international-students/ (search summary)"
+  ],
+  "uncertain": [
+   "page cycle not stated (Class of 2030 reference)",
+   "midyear: page only asks first-term senior grades",
+   "CSS 6081 from search summary; internationals may use CSS or ISAFA",
+   "interview end date year not stated"
+  ],
+  "resolved": [
+   {
+    "field": "supplements",
+    "value": "Materials page lists no essay supplement, only optional arts supplements",
+    "source": "https://www.carleton.edu/admissions/apply/steps/materials/"
+   }
+  ]
+ },
+ {
+  "id": "bowdoin",
+  "application": "Common App, Coalition on Scoir, QuestBridge",
+  "appFormat": null,
+  "fee": 70,
+  "feeWaiver": "Automatic for aid seekers, first-gen, veterans, hardship",
+  "teacherRecs": {
+   "required": 1,
+   "optionalExtra": null,
+   "note": "1 core academic teacher from junior/senior year"
+  },
+  "counselorRec": true,
+  "midYearReport": true,
+  "interview": "Strongly encouraged, not required; staff/student/alumni or approved vendors (InitialView, Vericant, Duolingo)",
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "other",
+    "required": false,
+    "count": 1,
+    "words": 250,
+    "chars": null,
+    "choose": null,
+    "summary": "Reflect on a line of The Offer of the College"
+   },
+   {
+    "type": "background",
+    "required": false,
+    "count": 1,
+    "words": 250,
+    "chars": null,
+    "choose": null,
+    "summary": "Unique perspectives you would bring or navigating difference"
+   }
+  ],
+  "supplementsUrl": "https://www.bowdoin.edu/admissions/apply/index.html",
+  "portfolio": null,
+  "cssCode": "3089",
+  "netPriceUrl": "https://www.bowdoin.edu/student-aid/estimate-aid/",
+  "netPriceIntl": false,
+  "sources": [
+   "https://www.bowdoin.edu/admissions/apply/index.html",
+   "https://www.bowdoin.edu/student-aid/estimate-aid/ (search summary)"
+  ],
+  "uncertain": [
+   "supplements: page labels both essays optional; confirm on 2026-27 Common App",
+   "midyear required for RD and ED2; ED1 sends first-quarter grades"
+  ],
+  "resolved": [
+   {
+    "field": "interview/supplement",
+    "value": "Interview strongly encouraged not required; two 250-word essays shown as optional on apply page",
+    "source": "https://www.bowdoin.edu/admissions/apply/index.html"
+   }
+  ]
+ },
+ {
+  "id": "middlebury",
+  "application": "Common App, Coalition, QuestBridge",
+  "appFormat": null,
+  "fee": 0,
+  "feeWaiver": "No application fee (free from 2026-27 per search summary)",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "request at least 2"
+  },
+  "counselorRec": true,
+  "midYearReport": true,
+  "interview": "Optional alumni interview requested after applying, not guaranteed; Glimpse video/audio if unmatched",
+  "interviewDeadline": null,
+  "supplements": [],
+  "supplementsUrl": "https://www.middlebury.edu/college/admissions/application-instructions-and-deadlines",
+  "portfolio": "Optional arts supplements via SlideRoom",
+  "cssCode": "3526",
+  "netPriceUrl": "https://www.middlebury.edu/student-financial-services/financial-tools-and-resources/cost-calculators",
+  "netPriceIntl": false,
+  "sources": [
+   "https://www.middlebury.edu/college/admissions/application-instructions-and-deadlines",
+   "https://www.middlebury.edu/student-financial-services/financial-tools-and-resources/cost-calculators (search summary)"
+  ],
+  "uncertain": [
+   "fee 0 from search summary, not on page fetched",
+   "interview request dates Nov 8 (ED I), Jan 9 (ED II), Jan 16 (RD); year not stated",
+   "midyear: ED II Jan 15, RD Feb 15"
+  ],
+  "resolved": []
+ },
+ {
+  "id": "grinnell",
+  "application": "Common App, QuestBridge",
+  "appFormat": null,
+  "fee": 0,
+  "feeWaiver": "No application fee",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 teacher evaluations"
+  },
+  "counselorRec": true,
+  "midYearReport": null,
+  "interview": "Encouraged, not required; can request one",
+  "interviewDeadline": null,
+  "supplements": [
+   {
+    "type": "background",
+    "required": false,
+    "count": 1,
+    "words": 450,
+    "chars": null,
+    "choose": null,
+    "summary": "Background and openness helping you thrive and serve common good"
+   }
+  ],
+  "supplementsUrl": "https://www.grinnell.edu/admission/apply/first-year/requirements",
+  "portfolio": null,
+  "cssCode": "6252",
+  "netPriceUrl": "https://www.grinnell.edu/admission/financial-aid/estimate-aid",
+  "netPriceIntl": null,
+  "sources": [
+   "https://www.grinnell.edu/admission/apply/first-year/requirements",
+   "https://www.grinnell.edu/admission/financial-aid/apply-aid/prospective-students (search summary)"
+  ],
+  "uncertain": [
+   "netPriceUrl taken from CDS 2023-24, not confirmed current",
+   "supplement length is 200-450 words",
+   "page lists only Common App and QuestBridge"
+  ],
+  "resolved": []
+ },
+ {
+  "id": "colby",
+  "application": "Common App, Coalition, QuestBridge, Colby Application",
+  "appFormat": null,
+  "fee": 0,
+  "feeWaiver": "No application fee",
+  "teacherRecs": {
+   "required": 2,
+   "optionalExtra": null,
+   "note": "2 teacher recs"
+  },
+  "counselorRec": true,
+  "midYearReport": null,
+  "interview": "No interviews; optional InitialView video",
+  "interviewDeadline": null,
+  "supplements": [],
+  "supplementsUrl": "https://afa.colby.edu/apply/requirements/",
+  "portfolio": "Optional arts materials uploaded after submitting",
+  "cssCode": "3280",
+  "netPriceUrl": "https://afa.colby.edu/cost-and-aid/calculate-your-costs/",
+  "netPriceIntl": null,
+  "sources": [
+   "https://afa.colby.edu/apply/requirements/ (search summary; direct fetch 403)",
+   "https://afa.colby.edu/cost-and-aid/calculate-your-costs/ (search summary)"
+  ],
+  "uncertain": [
+   "all Colby fields from search summaries only; afa.colby.edu blocked",
+   "midYearReport not found"
+  ],
+  "resolved": [
+   {
+    "field": "supplements",
+    "value": "Colby does not require writing supplements (search summary of official requirements page)",
+    "source": "https://afa.colby.edu/apply/requirements/"
+   }
+  ]
+ },
+ {
+  "id": "conncoll",
+  "application": "Common App with Conn supplemental application",
+  "appFormat": null,
+  "fee": 0,
+  "feeWaiver": "Application fee waived for all",
+  "teacherRecs": {
+   "required": 1,
+   "optionalExtra": 1,
+   "note": "1 academic teacher required, 2 recommended; optional non-academic"
+  },
+  "counselorRec": true,
+  "midYearReport": null,
+  "interview": "Optional",
+  "interviewDeadline": null,
+  "supplements": [],
+  "supplementsUrl": "https://www.conncoll.edu/admission/apply/first-year-requirements-deadlines/",
+  "portfolio": null,
+  "cssCode": "3284",
+  "netPriceUrl": null,
+  "netPriceIntl": null,
+  "sources": [
+   "https://www.conncoll.edu/admission/apply/first-year-requirements-deadlines/",
+   "https://www.conncoll.edu/financial-aid/applying-for-financial-aid/international-students/ (search summary)"
+  ],
+  "uncertain": [
+   "supplements: Conn supplemental application required but prompts not listed; one summary said no supplemental essay; empty array means unknown",
+   "netPriceUrl: calculator exists but URL not found",
+   "CSS Profile: no fee waivers"
+  ],
+  "resolved": []
+ }
+]

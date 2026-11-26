@@ -82,4 +82,75 @@ assert.strictEqual(C.notifyKo({ notify: 'late March (on or around March 20)' }),
 assert.strictEqual(C.notifyKo({ notify: 'end of March (UC window Mar 1-31)' }), '3월 말');
 assert.strictEqual(C.notifyKo({ notify: 'Dec 11, 2026 (ED I)', notifyDate: '2026-12-11' }), '12/11');
 
+/* ───── 가능성 판정 ───── */
+const yale = { id: 'yale', testing: 'required', intlAid: 'need-blind' };
+const yaleSt = { admitRate: 3.7, satEBRW: [740, 760, 780], satMath: [760, 790, 800], ed: null, ea: { rate: 9.4 } };
+const prof = (rw, math, extra = {}) => Object.assign({ sat: { rw, math }, needAid: true }, extra);
+
+// 합격률 8% 미만은 기본 '매우 어려움'
+let c = C.chance(yale, yaleSt, prof(620, 800), 'SCEA');
+assert.strictEqual(c.tier, 0);
+assert.ok(c.reasons.some(x => x.includes('RW 620 < 740')));
+// 점수가 두 영역 모두 75% 이상이어도 15% 미만 학교는 '도전' 위로 못 감
+c = C.chance(yale, yaleSt, prof(790, 800));
+assert.strictEqual(c.tier, 1);
+// 목표 점수로 보기
+c = C.chance(yale, yaleSt, prof(620, 800, { useTarget: true, target: { rw: 740, math: 800 } }));
+assert.ok(c.reasons.includes('SAT 중간 50% 안'));
+// 점수 없음
+c = C.chance(yale, yaleSt, { needAid: true });
+assert.ok(c.reasons.includes('SAT 필수인데 점수가 아직 없어요'));
+// 자료 없으면 null
+assert.strictEqual(C.chance(yale, null, prof(700, 700)).tier, null);
+
+// 시험 선택 + need-blind + ED 이점, 15% 미만 상한
+const amh = { id: 'amherst', testing: 'optional', intlAid: 'need-blind' };
+const amhSt = { admitRate: 9.0, satEBRW: [720, 750, 770], satMath: [730, 770, 790], ed: { rate: 30.1 } };
+c = C.chance(amh, amhSt, prof(620, 800), 'ED');
+assert.strictEqual(c.tier, 2); // 기본 1 + ED 1, 상한 2
+assert.ok(c.reasons.includes('점수를 안 내면 SAT는 판단에서 빠져요'));
+c = C.chance(amh, amhSt, prof(620, 800));
+assert.strictEqual(c.tier, 1);
+
+// need-aware + 재정지원 → 한 단계 내림, 재정지원 안 받으면 그대로
+const roch = { id: 'rochester', testing: 'optional', intlAid: 'limited' };
+const rochSt = { admitRate: 38.9, satEBRW: [650, 700, 740], satMath: [680, 740, 790] };
+assert.strictEqual(C.chance(roch, rochSt, prof(700, 760)).tier, 2);
+assert.strictEqual(C.chance(roch, rochSt, prof(700, 760, { needAid: false })).tier, 3);
+
+// 시험 안 보는 학교
+const ucb = { id: 'berkeley', testing: 'blind', intlAid: 'none' };
+c = C.chance(ucb, { admitRate: 11.0 }, prof(700, 700));
+assert.strictEqual(c.tier, 1);
+assert.ok(c.reasons.includes('합격해도 국제학생 재정지원 없음'));
+
+// 점수 낼까
+assert.strictEqual(C.submitAdvice(yale, yaleSt, C.satOf(prof(600, 600))).key, 'required');
+assert.strictEqual(C.submitAdvice(amh, amhSt, C.satOf(prof(750, 790))).key, 'submit'); // 1540 >= 1520
+assert.strictEqual(C.submitAdvice(amh, amhSt, C.satOf(prof(720, 760))).key, 'maybe'); // 1480: 1450~1520
+assert.strictEqual(C.submitAdvice(amh, amhSt, C.satOf(prof(620, 800))).key, 'skip'); // 1420 < 1450
+assert.strictEqual(C.submitAdvice(ucb, {}, C.satOf(prof(700, 700))).key, 'blind');
+assert.strictEqual(C.submitAdvice(amh, { satEBRW: null }, C.satOf(prof(700, 700))).key, 'nodata');
+// 50% 값이 없으면 25/75 가운데
+assert.strictEqual(C.submitAdvice(amh, { satEBRW: [700, null, 760], satMath: [700, null, 780] }, C.satOf(prof(730, 740))).p50, 1470);
+
+// 균형
+const b = C.balance([{ tier: 0 }, { tier: 0 }, { tier: 2 }, { tier: 3 }, { tier: null }]);
+assert.deepStrictEqual(b.n, [2, 0, 1, 1, 0]);
+assert.strictEqual(b.safe, 1);
+assert.strictEqual(b.unknown, 1);
+
+// 12월 시나리오
+const sc = C.scenarios(schools, { amherst: 'ED', mit: 'EA', swat: 'X' });
+assert.strictEqual(sc.length, 2);
+assert.ok(sc[0].ed2.every(x => x.id !== 'swat' && x.id !== 'amherst'));
+assert.deepStrictEqual(sc[0].ed2.map(x => x.id).sort(), ['pomona', 'uchicago']);
+assert.strictEqual(C.scenarios(schools, { strict: 'REA' })[0].ed2.length, 0);
+
+// 글자 수: 커먼앱처럼 공백 포함, 한글 1자
+assert.strictEqual(C.chars('ab c'), 4);
+assert.strictEqual(C.chars('민사고'), 3);
+assert.strictEqual(C.words('  one two\nthree  '), 3);
+assert.strictEqual(C.words(''), 0);
+
 console.log('core tests passed');

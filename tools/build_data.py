@@ -1,12 +1,16 @@
 # 학교별 확인 자료(raw/*.json)를 합쳐 data.js 를 만든다.
 # 사용: python tools/build_data.py
+#   raw/schools-*.json  얼리 방식, 마감, 규칙, 재정지원 (2026-11-25 확인)
+#   raw/stats-*.json    합격 통계, 주로 Common Data Set (2026-11-26 확인)
+#   raw/req-*.json      지원 서류, 보충 에세이 (2026-11-26 확인)
+#   raw/verify-*.json   두 번째 대조에서 나온 정정과 채운 값
 import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "tools" / "raw"
-CHECKED = "2026-11-25"
+CHECKED = "2026-11-26"
 
 DREAM = {"yale", "stanford", "amherst"}
 ORDER = [
@@ -15,7 +19,6 @@ ORDER = [
 ]
 EXPLORE = ["wesleyan", "carleton", "bowdoin", "middlebury", "grinnell", "colby", "conncoll", "rochester"]
 
-# 확인 자료 id 와 사이트 id 가 다를 때
 ALIAS = {
     "upenn": "penn", "pennsylvania": "penn", "chicago": "uchicago", "johns-hopkins": "jhu", "johnshopkins": "jhu",
     "ucberkeley": "berkeley", "uc-berkeley": "berkeley", "connecticut-college": "conncoll",
@@ -23,13 +26,45 @@ ALIAS = {
     "camel": "conncoll", "urochester": "rochester", "university-of-rochester": "rochester",
 }
 
-# 사람이 다시 본 뒤 고친 값
+# 위치 (캠퍼스 대략 좌표). region: ne 동북부, mw 중서부, w 서부. lx/ly/la: 동북부 확대 지도의 이름표 위치
+LOC = {
+    "yale": ("New Haven", "CT", 41.3163, -72.9223, "ne", -10, 18, "end"),
+    "harvard": ("Cambridge", "MA", 42.3770, -71.1167, "ne", 9, -9, "start"),
+    "princeton": ("Princeton", "NJ", 40.3431, -74.6551, "ne", 11, 4, "start"),
+    "stanford": ("Stanford", "CA", 37.4275, -122.1697, "w", 11, 16, "start"),
+    "mit": ("Cambridge", "MA", 42.3601, -71.0942, "ne", 11, 12, "start"),
+    "brown": ("Providence", "RI", 41.8268, -71.4025, "ne", 11, 6, "start"),
+    "columbia": ("New York", "NY", 40.8075, -73.9626, "ne", 11, 4, "start"),
+    "penn": ("Philadelphia", "PA", 39.9522, -75.1932, "ne", 11, 2, "start"),
+    "uchicago": ("Chicago", "IL", 41.7886, -87.5987, "mw", 11, 5, "start"),
+    "jhu": ("Baltimore", "MD", 39.3299, -76.6205, "ne", -10, 5, "end"),
+    "berkeley": ("Berkeley", "CA", 37.8719, -122.2585, "w", 11, -6, "start"),
+    "amherst": ("Amherst", "MA", 42.3709, -72.5170, "ne", -10, 15, "end"),
+    "williams": ("Williamstown", "MA", 42.7128, -73.2032, "ne", -10, 5, "end"),
+    "swarthmore": ("Swarthmore", "PA", 39.9054, -75.3541, "ne", -10, 16, "end"),
+    "pomona": ("Claremont", "CA", 34.0977, -117.7131, "w", 11, 5, "start"),
+    "wesleyan": ("Middletown", "CT", 41.5566, -72.6569, "ne", -10, -4, "end"),
+    "carleton": ("Northfield", "MN", 44.4605, -93.1544, "mw", 11, 5, "start"),
+    "bowdoin": ("Brunswick", "ME", 43.9077, -69.9640, "ne", -10, 16, "end"),
+    "middlebury": ("Middlebury", "VT", 44.0081, -73.1774, "ne", 11, 5, "start"),
+    "grinnell": ("Grinnell", "IA", 41.7490, -92.7199, "mw", 11, 5, "start"),
+    "colby": ("Waterville", "ME", 44.5639, -69.6626, "ne", 11, 5, "start"),
+    "conncoll": ("New London", "CT", 41.3790, -72.1043, "ne", 11, 14, "start"),
+    "rochester": ("Rochester", "NY", 43.1306, -77.6260, "ne", 11, 5, "start"),
+}
+
+# 사람이 다시 본 뒤 고친 값 (얼리/재정 자료)
 FIX = {
-    "yale": {"meetsNeed": True, "_drop_uncertain": ["meetsNeed"]},
-    "brown": {"plans_patch": {"RD": {"notify": "March 31"}}},
-    "carleton": {"plans_patch": {"RD": {"notify": "April 1"}}},
+    "yale": {
+        "meetsNeed": True, "_drop_uncertain": ["meetsNeed", "aidForms", "interview"],
+        "aidForms": ["CSS Profile (code 3987)", "IDOC documents"],
+        "interview": "Optional alumni interview; Yale requests one when helpful, not guaranteed, no penalty if none",
+    },
+    "brown": {"plans_patch": {"RD": {"notify": "March 31"}}, "_drop_uncertain": ["intlAid"]},
+    "carleton": {"plans_patch": {"RD": {"notify": "April 1"}}, "supplements": "No writing supplement (optional arts supplements only)"},
     "conncoll": {"name": "Conn College"},
     "grinnell": {"cogsci": "Neuroscience, Psychology; no cog sci program confirmed"},
+    "amherst": {"aidForms": ["CSS Profile (code 3003)", "ISFAA only on request for fee hardship"], "_drop_uncertain": ["aidForms"]},
     # 국제학생은 CSS Profile 을 지원 마감일까지 (국내 학생 표의 12/1, 2/15 가 아님)
     "rochester": {"aidDeadlines": {"early": "2026-11-01", "ed2": "2027-01-05", "rd": "2027-01-05"}},
     # 국제학생 재정 서류를 합격한 뒤에 내는 학교
@@ -37,6 +72,37 @@ FIX = {
     "swarthmore": {"aidAfter": True, "aidForms": ["CSS Profile (fee waived for admitted internationals)", "Certificate of Finances, within 7 days of admission"]},
     "bowdoin": {"aidAfter": True, "aidForms": ["CSS Profile, within 7 days of admission (ISFAA no longer accepted)"]},
 }
+
+# 통계 직접 확인/보충 (CDS 를 못 연 학교는 학교 공식 신입생 프로필 페이지)
+STATS_FIX = {
+    "amherst": {
+        "id": "amherst", "cdsYear": "Class of 2029 프로필",
+        "source": "https://www.amherst.edu/about/facts/secondary_school_reports/class-of-2029-admission-and-enrollment-profile",
+        "applied": 15819, "admitted": 1222, "admitRate": 7.7, "ed": None, "ea": None,
+        "satSubmitPct": 39.6, "satEBRW": [730, None, 770], "satMath": [730, None, 790], "actComposite": [33, None, 35],
+        "firstYearTotal": 485, "intlFirstYear": None, "intlAidCount": None, "intlAidAvg": None,
+        "notes": "enrolled mid-50%; means EBRW 750 / Math 756; SAT submitted by 192 of 485 enrolled; about 10% international",
+        "uncertain": ["ed: profile gives no ED applicant/admit counts"],
+    },
+}
+
+# 통계 일부만 고칠 때 (대조/보충 뒤에 적용)
+STATS_PATCH = {
+    # Colby 는 합격자 수를 안 밝히고 "7 percent offered admission" 만 발표
+    "colby": {"admitRate": 7.0, "rateNote": "학교 발표 (반올림 값)"},
+    # Wesleyan 프로필의 점수는 입학생이 아니라 합격자 기준
+    "wesleyan": {"scoreBasis": "합격자"},
+    # 두 번째 대조에서 Harvard CDS 2025-26 을 찾음 (숫자는 verify-S1.json 정정으로 채움)
+    "harvard": {"cdsYear": "2025-2026", "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "uncertain": []},
+}
+
+# 지원 서류 손으로 고친 값: (id, 경로, 값)
+REQ_FIX = [
+    ("yale", "supplements[1].words", None),  # Yale short takes 는 단어가 아니라 200자 제한
+    # 두 번째 대조: Bowdoin 은 카운슬러 + 선생님 1 + 기타 1 (두 번째 선생님, 코치, 고용주 등) 모두 필수
+    ("bowdoin", "teacherRecs", {"required": 1, "optionalExtra": 0, "otherRequired": 1,
+                                "note": "Counselor + 1 core-academic teacher + 1 other (second teacher, coach, employer, etc.), all required"}),
+]
 
 NOISE = re.compile(
     r"\s*(?:[-–—;,]\s*|\()\s*(?:from general knowledge|not verified|not re-verified|not re-checked|"
@@ -52,21 +118,106 @@ def clean(v):
     return v
 
 
-def main():
-    items = {}
-    for f in sorted(RAW.glob("schools-*.json")):
+def load_list(pattern):
+    out = {}
+    for f in sorted(RAW.glob(pattern)):
         for s in json.loads(f.read_text(encoding="utf-8")):
             sid = ALIAS.get(s["id"], s["id"])
             s["id"] = sid
-            items[sid] = s
+            out[sid] = s
+    return out
 
-    missing = [i for i in ORDER + EXPLORE if i not in items]
-    extra = [i for i in items if i not in ORDER + EXPLORE]
-    if missing or extra:
-        raise SystemExit(f"id 확인 필요 missing={missing} extra={extra}")
+
+PATH = re.compile(r"([A-Za-z_]+)(?:\[(\d+)\])?")
+
+
+def set_path(obj, path, value):
+    parts = path.split(".")
+    cur = obj
+    for i, part in enumerate(parts):
+        m = PATH.fullmatch(part)
+        if not m:
+            raise ValueError(path)
+        key, idx = m.group(1), m.group(2)
+        last = i == len(parts) - 1
+        if idx is None:
+            if last:
+                cur[key] = value
+            else:
+                if cur.get(key) is None:
+                    cur[key] = {}
+                cur = cur[key]
+        else:
+            seq = cur[key]
+            if last:
+                seq[int(idx)] = value
+            else:
+                cur = seq[int(idx)]
+
+
+def rate(a, b):
+    return round(b / a * 100, 1) if a else None
+
+
+def main():
+    items = load_list("schools-*.json")
+    stats = load_list("stats-*.json")
+    reqs = load_list("req-*.json")
+    ids = ORDER + EXPLORE
+    for name, d in (("schools", items), ("stats", stats), ("req", reqs)):
+        missing = [i for i in ids if i not in d]
+        extra = [i for i in d if i not in ids]
+        if missing or extra:
+            raise SystemExit(f"{name}: id 확인 필요 missing={missing} extra={extra}")
+
+    # 두 번째 대조 결과 반영
+    applied = []
+    verified = {}
+    for f in sorted(RAW.glob("verify-*.json")):
+        v = json.loads(f.read_text(encoding="utf-8"))
+        kind = "req" if f.stem.split("-")[1].startswith("R") else "stats"
+        for sid, status in (v.get("checked") or {}).items():
+            verified.setdefault(ALIAS.get(sid, sid), {})[kind] = status
+        for fill in v.get("filled", []):
+            sid = ALIAS.get(fill["id"], fill["id"])
+            fill["id"] = sid
+            stats[sid] = fill
+            verified.setdefault(sid, {})["stats"] = "filled"
+            applied.append(f"{f.name}: {sid} 통계 채움")
+        target = reqs if "R" in f.stem.split("-")[1][:1] else stats
+        for c in v.get("corrections", []):
+            sid = ALIAS.get(c["id"], c["id"])
+            try:
+                set_path(target[sid], c["field"], c["new"])
+                applied.append(f"{f.name}: {sid}.{c['field']} {c.get('old')} -> {c['new']}")
+            except (KeyError, IndexError, ValueError, TypeError) as e:
+                applied.append(f"{f.name}: {sid}.{c['field']} 적용 못 함 ({e})")
+
+    for sid, s in STATS_FIX.items():
+        stats[sid] = s
+        verified.setdefault(sid, {})["stats"] = "ok: 직접 확인"
+    for sid, patch in STATS_PATCH.items():
+        stats[sid].update(patch)
+    for sid, path, val in REQ_FIX:
+        set_path(reqs[sid], path, val)
+
+    # 비율 다시 계산해서 어긋나면 알림
+    for sid, t in stats.items():
+        if t.get("applied") and t.get("admitted"):
+            r = rate(t["applied"], t["admitted"])
+            if t.get("admitRate") is None or abs(r - t["admitRate"]) > 0.051:
+                print(f"주의 {sid}: admitRate {t.get('admitRate')} -> {r}")
+                t["admitRate"] = r
+        for k in ("ed", "ea"):
+            x = t.get(k)
+            if x and x.get("applied") and x.get("admitted") is not None:
+                r = rate(x["applied"], x["admitted"])
+                if x.get("rate") is None or abs(r - x["rate"]) > 0.051:
+                    print(f"주의 {sid}.{k}: rate {x.get('rate')} -> {r}")
+                    x["rate"] = r
 
     out = []
-    for sid in ORDER + EXPLORE:
+    for sid in ids:
         s = items[sid]
         fix = FIX.get(sid, {})
         drop = fix.get("_drop_uncertain", [])
@@ -86,6 +237,16 @@ def main():
         s["dream"] = sid in DREAM
         s["group"] = "explore" if sid in EXPLORE else "target"
         s["checked"] = CHECKED
+        st = dict(stats[sid])
+        st.pop("id", None)
+        s["stats"] = st
+        rq = dict(reqs[sid])
+        rq.pop("id", None)
+        rq.pop("resolved", None)
+        s["req"] = rq
+        c, stt, lat, lon, region, lx, ly, la = LOC[sid]
+        s["loc"] = {"city": c, "state": stt, "lat": lat, "lon": lon, "region": region, "lx": lx, "ly": ly, "la": la}
+        s["verified"] = verified.get(sid, {})
         out.append(s)
 
     js = (
@@ -94,6 +255,8 @@ def main():
         "window.SCHOOLS = " + json.dumps(out, ensure_ascii=False, indent=1) + ";\n"
     )
     (ROOT / "data.js").write_text(js, encoding="utf-8")
+    for line in applied:
+        print(line)
     print(f"data.js: {len(out)}곳")
 
 
