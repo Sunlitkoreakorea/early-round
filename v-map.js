@@ -12,7 +12,7 @@
   const ATLAS = 'https://cdn.jsdelivr.net/npm/us-atlas@3.0.1/states-10m.json';
   // 동북부 확대 범위 (경도, 위도)
   const NE_BOX = [[-78.3, 38.85], [-69.2, 45.15]];
-  const REGION = { ne: '동북부', mw: '중서부', w: '서부' };
+  const REGION = { ne: '동북부', mw: '중서부', s: '남부', w: '서부' };
 
   let geo = null;
   let loading = null;
@@ -57,7 +57,7 @@
       if (!xy) continue;
       const [x, y] = xy;
       const star = E.isStar(s);
-      out += `<g class="pt ${cls(s)}${star ? ' dream' : ''}" data-pt="${esc(s.id)}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})">
+      out += `<g class="pt ${cls(s)}${star ? ' dream' : ''}${s.group === 'candidate' && !E.pickOf(s) ? ' cand' : ''}" data-pt="${esc(s.id)}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})">
         <circle class="hit" r="${r + 7}"></circle>
         <circle class="mk" r="${r}"></circle>
         ${withLabels ? `<text x="${s.loc.lx ?? r + 4}" y="${s.loc.ly ?? 4}" text-anchor="${s.loc.la || 'start'}">${esc(s.name)}${star ? ' ★' : ''}</text>` : ''}
@@ -115,7 +115,7 @@
       <span><i class="lg pt-ED2"></i>ED2</span><span><i class="lg pt-RD"></i>정시</span><span><i class="lg pt-none"></i>미정</span>
     </div>`;
 
-    const regions = ['ne', 'mw', 'w'].map(rg => {
+    const regions = ['ne', 'mw', 's', 'w'].map(rg => {
       const items = list.filter(s => s.loc.region === rg).sort((a, b) => a.name.localeCompare(b.name));
       if (!items.length) return '';
       return `<div class="rgn"><h3>${REGION[rg]} <span class="fine">${items.length}</span></h3><div class="rgnList">${items.map(s => {

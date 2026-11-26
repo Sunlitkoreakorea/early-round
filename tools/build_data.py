@@ -4,6 +4,10 @@
 #   raw/stats-*.json    합격 통계, 주로 Common Data Set (2026-11-26 확인)
 #   raw/req-*.json      지원 서류, 보충 에세이 (2026-11-26 확인)
 #   raw/verify-*.json   두 번째 대조에서 나온 정정과 채운 값
+#   raw/policy-*.json   SAT 점수 정책 (최고점 합산, 자기 보고, 얼리/정시 마지막 SAT 달)
+#   raw/cand-us.json    보강 후보 미국 학교 (얼리, 재정지원, 통계, 정책 한 묶음)
+#   raw/cand-intl.json  미국 밖 선택지
+#   raw/summer-*.json   2027 여름 프로그램
 import json
 import re
 from pathlib import Path
@@ -36,14 +40,14 @@ LOC = {
     "brown": ("Providence", "RI", 41.8268, -71.4025, "ne", 11, 6, "start"),
     "columbia": ("New York", "NY", 40.8075, -73.9626, "ne", 11, 4, "start"),
     "penn": ("Philadelphia", "PA", 39.9522, -75.1932, "ne", 11, 2, "start"),
-    "uchicago": ("Chicago", "IL", 41.7886, -87.5987, "mw", 11, 5, "start"),
+    "uchicago": ("Chicago", "IL", 41.7886, -87.5987, "mw", 0, -11, "middle"),
     "jhu": ("Baltimore", "MD", 39.3299, -76.6205, "ne", -10, 5, "end"),
     "berkeley": ("Berkeley", "CA", 37.8719, -122.2585, "w", 11, -6, "start"),
     "amherst": ("Amherst", "MA", 42.3709, -72.5170, "ne", -10, 15, "end"),
     "williams": ("Williamstown", "MA", 42.7128, -73.2032, "ne", -10, 5, "end"),
     "swarthmore": ("Swarthmore", "PA", 39.9054, -75.3541, "ne", -10, 16, "end"),
     "pomona": ("Claremont", "CA", 34.0977, -117.7131, "w", 11, 5, "start"),
-    "wesleyan": ("Middletown", "CT", 41.5566, -72.6569, "ne", -10, -4, "end"),
+    "wesleyan": ("Middletown", "CT", 41.5566, -72.6569, "ne", -10, 12, "end"),
     "carleton": ("Northfield", "MN", 44.4605, -93.1544, "mw", 11, 5, "start"),
     "bowdoin": ("Brunswick", "ME", 43.9077, -69.9640, "ne", -10, 16, "end"),
     "middlebury": ("Middlebury", "VT", 44.0081, -73.1774, "ne", 11, 5, "start"),
@@ -155,6 +159,31 @@ def set_path(obj, path, value):
                 cur = seq[int(idx)]
 
 
+NE_STATES = {"CT", "MA", "RI", "NH", "VT", "ME", "NY", "NJ", "PA", "MD", "DE", "DC"}
+MW_STATES = {"OH", "MI", "IN", "IL", "WI", "MN", "IA", "MO", "ND", "SD", "NE", "KS"}
+W_STATES = {"CA", "OR", "WA", "NV", "AZ", "UT", "CO", "NM", "ID", "MT", "WY", "AK", "HI"}
+NE_BOX = ((-78.3, 38.85), (-69.2, 45.15))
+
+# 보강 후보 지도 이름표 (겹칠 때만 손으로)
+CAND_LABEL = {"macalester": (-10, 2, "end"), "oberlin": (-10, 12, "end"), "case-western": (11, -3, "start"), "kenyon": (11, 9, "start"), "trinity-ct": (-10, -3, "end")}
+
+
+def region_of(state, lat, lon):
+    (x0, y0), (x1, y1) = NE_BOX
+    if state in NE_STATES and x0 <= lon <= x1 and y0 <= lat <= y1:
+        return "ne"
+    if state in MW_STATES or state in NE_STATES:
+        return "mw" if state in MW_STATES else "ne"
+    if state in W_STATES:
+        return "w"
+    return "s"
+
+
+def load_json(name):
+    f = RAW / name
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+
 def rate(a, b):
     return round(b / a * 100, 1) if a else None
 
@@ -163,6 +192,31 @@ def main():
     items = load_list("schools-*.json")
     stats = load_list("stats-*.json")
     reqs = load_list("req-*.json")
+    policies = load_list("policy-*.json")
+    summer = load_list("summer-*.json")
+    cands = load_list("cand-us.json")
+    # 후보 학교: 수집 에이전트가 메모에만 적은 CDS C1 국제학생 지원/합격 수를 칸으로 (대조 정정이 있으면 덮어씀)
+    CAND_BASE = {
+        "oberlin": {"intl": {"applied": 4015, "admitted": 446}},
+        "lafayette": {"intl": {"applied": 3705, "admitted": 258}},
+        "richmond": {"intl": {"applied": 4104, "admitted": 280}},
+        "trinity-ct": {"intl": {"applied": 3348, "admitted": 167}},
+        "whitman": {"intl": {"applied": 3265, "admitted": 253}},
+        "dickinson": {"intl": {"applied": 1549, "admitted": 208}},
+        "earlham": {"intl": {"applied": 647, "admitted": 258}},
+    }
+    for sid, add in CAND_BASE.items():
+        if sid in cands:
+            cands[sid].setdefault("stats", {}).update(add)
+    # Earlham 은 EA 가 두 번(11/1, 12/1): 사이트는 방식당 하나라 첫 EA 만 두고 규칙 문장에 적음
+    if "earlham" in cands:
+        c = cands["earlham"]
+        eas = [p for p in c["plans"] if p["type"] == "EA"]
+        if len(eas) > 1:
+            c["plans"] = [p for p in c["plans"] if p["type"] != "EA" or p is eas[0]]
+            c["earlyRule"] = (c.get("earlyRule") or "") + f" Second EA round deadline {eas[1]['deadline']}."
+    if "kenyon" in cands:
+        cands["kenyon"].setdefault("stats", {})["intlNote"] = "Kenyon 공식 페이지 요약: 재정지원이 필요한 국제학생 합격은 5% 미만 (직접 확인 못 함)"
     ids = ORDER + EXPLORE
     for name, d in (("schools", items), ("stats", stats), ("req", reqs)):
         missing = [i for i in ids if i not in d]
@@ -175,7 +229,17 @@ def main():
     verified = {}
     for f in sorted(RAW.glob("verify-*.json")):
         v = json.loads(f.read_text(encoding="utf-8"))
-        kind = "req" if f.stem.split("-")[1].startswith("R") else "stats"
+        tag = f.stem.split("-")[1]
+        if tag.startswith("SUM"):
+            kind = "summer"
+        elif tag.startswith("CAND"):
+            kind = "cand"
+        elif tag.startswith("R"):
+            kind = "req"
+        elif tag.startswith("P"):
+            kind = "policy"
+        else:
+            kind = "stats"
         for sid, status in (v.get("checked") or {}).items():
             verified.setdefault(ALIAS.get(sid, sid), {})[kind] = status
         for fill in v.get("filled", []):
@@ -184,7 +248,7 @@ def main():
             stats[sid] = fill
             verified.setdefault(sid, {})["stats"] = "filled"
             applied.append(f"{f.name}: {sid} 통계 채움")
-        target = reqs if "R" in f.stem.split("-")[1][:1] else stats
+        target = {"req": reqs, "policy": policies, "summer": summer, "cand": cands}.get(kind, stats)
         for c in v.get("corrections", []):
             sid = ALIAS.get(c["id"], c["id"])
             try:
@@ -249,10 +313,61 @@ def main():
         s["verified"] = verified.get(sid, {})
         out.append(s)
 
+    # SAT 점수 정책
+    for s in out:
+        pol = policies.get(s["id"])
+        if pol:
+            pol = dict(pol)
+            pol.pop("id", None)
+            s["policy"] = pol
+
+    # 보강 후보 미국 학교
+    for c in cands.values():
+        sid = c["id"]
+        if sid in ids:
+            continue
+        st = dict(c.pop("stats", None) or {})
+        if st.get("applied") and st.get("admitted"):
+            r = rate(st["applied"], st["admitted"])
+            if st.get("admitRate") is None or abs(r - st["admitRate"]) > 0.051:
+                print(f"주의 {sid}: admitRate {st.get('admitRate')} -> {r}")
+                st["admitRate"] = r
+        for k in ("ed", "ea", "intl"):
+            x = st.get(k)
+            if x and x.get("applied") and x.get("admitted") is not None:
+                x["rate"] = rate(x["applied"], x["admitted"])
+        pol = c.pop("policy", None)
+        city, state, lat, lon = c.pop("city", ""), c.pop("state", ""), c.pop("lat", None), c.pop("lon", None)
+        lab = CAND_LABEL.get(sid, (11, 5, "start"))
+        c.update({
+            "stats": st, "policy": pol, "group": "candidate", "dream": False, "checked": CHECKED,
+            "loc": {"city": city, "state": state, "lat": lat, "lon": lon, "region": region_of(state, lat or 0, lon or 0),
+                    "lx": lab[0], "ly": lab[1], "la": lab[2]} if lat is not None and lon is not None else None,
+            "verified": verified.get(sid, {}),
+        })
+        for k in ("earlyRule", "testingNote", "english", "cogsci", "interview"):
+            c[k] = clean(c.get(k))
+        out.append(c)
+
+    intl = load_json("cand-intl.json")
+    # 대조 정정이 원래 문장을 덮어쓴 것을 합쳐서 다시 씀
+    SUMMER_PATCH = {
+        "harvard-ssp": {"deadlineNote": "Early Jan 13, 2027 (opens Dec 1, 2026); regular and international Feb 10, 2027; "
+                                        "late Mar 31 (no aid; internationals may use it for the 7-week Online SSP); application fee $75."},
+    }
+    for sid, patch_ in SUMMER_PATCH.items():
+        summer[sid].update(patch_)
+    summer_out = []
+    for sid, pgm in summer.items():
+        pgm["verified"] = verified.get(sid, {}).get("summer")
+        summer_out.append(pgm)
+
     js = (
         "// tools/build_data.py 가 tools/raw/*.json 에서 만든 파일 (직접 고치지 말고 raw 나 FIX 를 고칠 것)\n"
         f"window.DATA_CHECKED = '{CHECKED}';\n"
         "window.SCHOOLS = " + json.dumps(out, ensure_ascii=False, indent=1) + ";\n"
+        "window.INTL_OPTS = " + json.dumps(intl, ensure_ascii=False, indent=1) + ";\n"
+        "window.SUMMER = " + json.dumps(summer_out, ensure_ascii=False, indent=1) + ";\n"
     )
     (ROOT / "data.js").write_text(js, encoding="utf-8")
     for line in applied:

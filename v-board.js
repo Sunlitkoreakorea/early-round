@@ -19,7 +19,7 @@
   }
 
   function balanceHtml() {
-    const base = E.chosen().length ? E.chosen() : E.live().filter(s => !s.own);
+    const base = E.chosen().length ? E.chosen() : E.live().filter(s => !s.own && s.group !== 'candidate');
     const items = base.map(s => Object.assign({ s }, E.chanceOf(s)));
     const b = C.balance(items);
     const total = items.length;
@@ -32,6 +32,64 @@
       <div class="bbar">${seg}</div>
       <div class="blegend">${b.n.map((n, i) => `<span>${tierChip(i)} ${n}</span>`).join('')}${b.unknown ? `<span>${tierChip(null)} ${b.unknown}</span>` : ''}</div>
       ${warn}
+    </section>`;
+  }
+
+  // 원서 비용: 원서비 + CSS Profile + SAT 점수 보내기
+  function costHtml() {
+    const c = C.appCost(E.all(), st.picks, st.profile);
+    if (!c.rows.length) return '';
+    const F = C.FEES;
+    const money = n => `$${E.num(n)}`;
+    const rows = c.rows.map(r => `<tr>
+      <td><a href="#s/${encodeURIComponent(r.s.id)}">${esc(r.s.name)}</a></td>
+      <td>${r.fee == null ? '<span class="fine">확인 필요</span>' : r.fee === 0 ? '무료' : money(r.fee)}</td>
+      <td>${r.css === 'now' ? '○' : r.css === 'after' ? '<span class="fine">합격 후</span>' : '—'}</td>
+      <td>${r.satSend === 'now' ? '○' : r.satSend === 'after' ? '<span class="fine">합격 후</span>' : '—'}</td>
+    </tr>`).join('');
+    return `<section class="slot">
+      <header><h3>원서 비용</h3><span>고른 학교 ${c.rows.length}곳</span></header>
+      <div class="tiles">
+        <div class="tile"><div class="tk">지원할 때 합계</div><div class="tv">${money(c.total)}</div><div class="ts">${c.feeUnknown ? `원서비 모르는 학교 ${c.feeUnknown}곳 빼고` : '원서비 + CSS + SAT'}</div></div>
+        <div class="tile"><div class="tk">원서비</div><div class="tv">${money(c.feeKnown)}</div></div>
+        <div class="tile"><div class="tk">CSS Profile</div><div class="tv">${money(c.cssCost)}</div><div class="ts">${c.cssNow}곳: 첫 곳 $${F.cssFirst}, 추가 $${F.cssMore}${c.cssAfter ? `, 합격 후 ${c.cssAfter}곳 더` : ''}</div></div>
+        <div class="tile"><div class="tk">SAT 점수 보내기</div><div class="tv">${money(c.satCost)}</div><div class="ts">${c.satNow}곳: 무료 ${F.satFree}곳 뒤 1곳 $${F.satReport}</div></div>
+      </div>
+      <table class="costT"><thead><tr><th>학교</th><th>원서비</th><th>CSS</th><th>SAT 보내기</th></tr></thead><tbody>${rows}</tbody></table>
+      <p class="fine costNote">요금은 College Board 2026-27 기준 (CSS Profile 첫 곳 $25, 추가 $16 / SAT 시험 뒤 9일 안에 고른 4곳 무료, 그 뒤 $15). 점수 자기 보고가 되는 학교는 합격 후에만 공식 점수를 보내요.</p>
+    </section>`;
+  }
+
+  // 미국 밖 선택지
+  function intlHtml() {
+    const list = window.INTL_OPTS || [];
+    if (!list.length) return '';
+    return `<section class="slot">
+      <header><h3>미국 밖 선택지</h3><span>재정지원이 필요하면 같이 보기</span></header>
+      <div class="intlList">${list.map(o => {
+        const on = !!st.intlOpt[o.id];
+        const d = o.deadline && /^\d{4}-\d{2}-\d{2}$/.test(o.deadline) ? C.parse(o.deadline) : null;
+        const newCycle = (/\b2028 (admission|entry)|entry 2028/i.test(o.cycle || '') && !/not yet published/i.test(o.cycle || ''));
+        return `<div class="intlCard${on ? ' on' : ''}">
+          <div class="sumTop"><b class="sumName">${esc(o.name)}</b><span class="fine">${esc(o.country || '')}</span>
+            <button type="button" class="starBtn${on ? ' on' : ''}" data-intl="${esc(o.id)}" aria-label="관심">${on ? '★' : '☆'}</button></div>
+          <div class="sumFacts">
+            <span><i>마감</i>${d ? `${newCycle ? '' : '<span class="fine">지난 시즌</span> '}<b>${d.getFullYear()}. ${C.md(d)}</b>` : '<span class="fine">확인 못 함</span>'}</span>
+            ${o.cost ? `<span><i>비용</i>${esc(o.cost)}</span>` : ''}
+          </div>
+          ${o.notes ? `<p class="orig">${esc(o.notes)}</p>` : ''}
+          <details class="more2"><summary>자세히</summary>
+            ${o.cycle ? `<p class="orig fine">${esc(o.cycle)}</p>` : ''}
+            ${o.deadlineNote ? `<p class="orig">${esc(o.deadlineNote)}</p>` : ''}
+            ${o.scholarship ? `<p class="orig"><b>장학금</b> ${esc(o.scholarship)}</p>` : ''}
+            ${o.programs ? `<p class="orig"><b>전공</b> ${esc(o.programs)}</p>` : ''}
+            ${o.apAccepted ? `<p class="orig"><b>AP/SAT</b> ${esc(o.apAccepted)}</p>` : ''}
+            ${o.english ? `<p class="orig"><b>영어</b> ${esc(o.english)}</p>` : ''}
+          </details>
+          <a class="lnk fine" href="${esc(o.url)}" target="_blank" rel="noopener">공식 ↗</a>
+        </div>`;
+      }).join('')}</div>
+      <p class="fine costNote">날짜는 대부분 지난 시즌(2027 입학) 것이라 로드맵엔 안 넣어요. 보통 1년 뒤 비슷한 때라, 2028 입학 일정이 나오면 다시 확인하세요. 별은 관심 표시예요.</p>
     </section>`;
   }
 
@@ -142,7 +200,7 @@
           <div class="cards">${items.map(({ s, t }) => card(s, t, badIds.has(s.id))).join('')}<button type="button" class="addCard" data-slot="${sl.key}">+ 추가</button></div>
         </section>`;
       }).join('');
-      $('#view-board').innerHTML = `${verdict}${res.issues.length ? `<ul class="issues">${res.issues.map(i => `<li class="${i.level}">${esc(i.msg)}</li>`).join('')}</ul>` : ''}${slots}${balanceHtml()}${scenHtml()}${compareHtml()}`;
+      $('#view-board').innerHTML = `${verdict}${res.issues.length ? `<ul class="issues">${res.issues.map(i => `<li class="${i.level}">${esc(i.msg)}</li>`).join('')}</ul>` : ''}${slots}${balanceHtml()}${intlHtml()}${scenHtml()}${compareHtml()}${costHtml()}`;
     },
     bind() {
       $('#view-board').addEventListener('click', e => {
@@ -154,6 +212,8 @@
         if (t.closest('[data-cmp-add]')) { openCmpPicker(); return; }
         const crm = t.closest('[data-cmp-rm]');
         if (crm) { st.compare.ids = st.compare.ids.filter(x => x !== crm.dataset.cmpRm); E.save(); E.render(); return; }
+        const io = t.closest('[data-intl]');
+        if (io) { const id = io.dataset.intl; if (st.intlOpt[id]) delete st.intlOpt[id]; else st.intlOpt[id] = true; E.save(); E.render(); return; }
         const cs = t.closest('[data-cs]');
         if (cs) {
           const id = cs.dataset.cs;

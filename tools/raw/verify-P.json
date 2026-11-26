@@ -1,0 +1,28 @@
+{"checked":{
+"yale":"ok (page: Oct or Nov exams 'generally available' for SCEA, Jan or Feb for RD; not a hard cutoff)",
+"stanford":"ok (page: scores 'by the end of October (REA)' / 'end of December (RD)')",
+"amherst":"partial: official page fetch 405; official-domain search summaries confirm self-report and most-favorable-combination superscore regardless of date; no test dates stated",
+"harvard":"ok (page asks for results by end of October for REA but says November tests acceptable if needed => Nov is allowed, Oct is the recommendation; RD 'as late as February'; superscore not addressed, null correct)",
+"princeton":"ok (page: take SAT 'by the October test date' for SCEA and 'December date' for RD; this is guidance, not a hard cutoff; no cross-format superscore; self-report of SAT not addressed)",
+"mit":"ok (page: tests 'before November 30 (EA)' and 'before December 31 (RA)'; November/December inference reasonable; highest section scores; self-report on application)",
+"brown":"ok (page: testing complete by 'last October test date' for ED, 'last December test date' for RD; superscore SAT/ACT; self-report via Common App)",
+"columbia":"partial: direct fetch 403; official-domain search summary confirms ED through Nov 2026, RD through Feb 2027, superscore, self-report",
+"penn":"ok (official table: Nov 7, 2026 SAT for ED, Dec 5, 2026 for RD; superscore; self-report)",
+"uchicago":"partial: FAQ fetch returned no body text; official-domain search summary confirms self-report and superscore; no test dates stated",
+"jhu":"ok (page: 'encourage' tests no later than October (ED) / December (RD): recommendation, not cutoff; superscore; self-report)",
+"williams":"partial: fetch 403; official-domain search summary confirms superscore and self-report; no test dates",
+"swarthmore":"ok (superscore SAT, self-report accepted in lieu of official; no cutoff dates on page)",
+"pomona":"ok (SAT superscore not addressed, null correct; self-report in portal; no dates)",
+"berkeley":"ok (nothing to verify; all null)",
+"wesleyan":"ok (SAT best sections across any dates; self-report null acceptable, Common App choice only)",
+"carleton":"ok (self-report in lieu of official; receipt deadlines Nov 15 / Jan 15 only; superscore not stated)",
+"bowdoin":"ok (superscore, self-report for all applicants)",
+"middlebury":"ok (self-report at application; superscore not stated)",
+"grinnell":"ok (superscore SAT math+ERW, self-reported accepted; Dec SAT strongly encouraged for RD)",
+"colby":"partial: fetch 403; official-domain search summary confirms superscore and self-report. FAQ says take tests by Nov 15 (ED I) and Jan 4 (ED II); lastSat fields left null",
+"conncoll":"ok except selfReport (see correction); Oct tests 'typically arrive' for ED I, Dec for ED II/RD, general tests not SAT-specific",
+"rochester":"ok (page: Nov SAT accepted for ED, Dec for RD; superscore SAT/ACT subscores; self-report on application)"
+},
+"corrections":[
+{"id":"conncoll","field":"selfReport","old":null,"new":true,"source":"https://www.conncoll.edu/admission/apply/standardized-test-policy/","evidence":"self-reported scores can be entered in the Common Application testing section or sent as scans; official scores required upon enrollment"}
+]}

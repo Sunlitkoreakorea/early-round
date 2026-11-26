@@ -28,6 +28,8 @@
       },
       plan: { done: {}, events: [], mode: null },
       compare: { ids: [], score: {} },
+      summer: {},
+      intlOpt: {},
     };
   }
 
@@ -49,7 +51,7 @@
     out.apply.supp = a.supp || {};
     out.plan = Object.assign(blank().plan, v.plan || {});
     out.compare = Object.assign(blank().compare, v.compare || {});
-    for (const k of ['picks', 'star', 'todo', 'memo', 'open']) if (!out[k] || typeof out[k] !== 'object') out[k] = {};
+    for (const k of ['picks', 'star', 'todo', 'memo', 'open', 'summer', 'intlOpt']) if (!out[k] || typeof out[k] !== 'object') out[k] = {};
     if (!Array.isArray(out.custom)) out.custom = [];
     return out;
   }

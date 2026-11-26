@@ -1,0 +1,288 @@
+[
+ {
+  "id": "hku",
+  "name": "University of Hong Kong",
+  "country": "Hong Kong",
+  "city": "Hong Kong",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-09-23",
+  "deadline": "2026-11-25",
+  "deadlineNote": "first-round deadline (noon HKT); later applications rolling until final close 2027-08-25",
+  "programs": "Psychology (BSocSc), Cognitive Science and Neuroscience majors (listed in a 2024 HKU brochure, not re-verified for 2027), BSc Applied Artificial Intelligence (2027 sheet); English-medium",
+  "apAccepted": "Yes. Lower boundary: 3 AP subjects at grade 3+ plus SAT superscore 1380+, or 3 AP plus 2 more AP at grade 3+ (AP English Lang, Seminar, Research do not count); competitive programmes expect higher",
+  "english": "IELTS 6.5 (W and S >= 6.0), TOEFL iBT 5.0 new scale (W and S >= 5.0) or 95 legacy (W and S >= 25), or SAT Reading and Writing >= 610",
+  "cost": "HK$224,000/yr (Arts, Social Sciences, Business etc.) or HK$249,000/yr (Science, Engineering, Computing) for the 2026-27 cohort",
+  "scholarship": "HKU Entrance Scholarships: all applicants considered automatically, no separate application; top award up to full tuition waiver plus accommodation and living allowance (per HKU search-result text)",
+  "notes": "The first-round deadline is 2026-11-25 and the 2028-entry cycle should be mirrored about a year later, so plan for Sept to Nov 2027.",
+  "url": "https://admissions.hku.hk/apply/international-qualifications",
+  "sources": [
+   "https://admissions.hku.hk/apply/international-qualifications",
+   "https://admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+   "https://admissions.hku.hk/node/2303",
+   "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships"
+  ],
+  "uncertain": [
+   "cost: 2027 non-local rate may be about HK$250,000 for non-STEM per a 2027 HKU sheet snippet; PDF unreadable, unconfirmed",
+   "programs: Cognitive Science and Neuroscience majors not confirmed on a 2027 page",
+   "scholarship: coverage wording came from a search summary of an HKU PDF, not read directly",
+   "apAccepted: node/2303 appeared to be the US-qualification page; programme-specific scores not read"
+  ]
+ },
+ {
+  "id": "hkust",
+  "name": "Hong Kong University of Science and Technology",
+  "country": "Hong Kong",
+  "city": "Hong Kong (Clear Water Bay)",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-10-02",
+  "deadline": "2026-11-25",
+  "deadlineNote": "priority round (early offers late Dec 2026); rolling from 2026-11-26; system closes 2027-06-30",
+  "programs": null,
+  "apAccepted": "Yes (SAT/ACT/AP accepted). Business School benchmark SAT 1350 to 1510 plus 5s in two AP, or five AP subjects; Engineering needs 2 AP with SAT/ACT or 5 AP without",
+  "english": "TOEFL, IELTS Academic, SAT, AP and other options accepted; minimums not stated on page read",
+  "cost": null,
+  "scholarship": "Merit (no separate application): University Admissions Scholarship for Other Qualifications Holders, Global Learners Scholarship. Application-based: Future Leaders Award, Beyond Academic Admissions Scholarship (BAAS), priority-round deadline 2026-11-25. Amounts not stated",
+  "notes": "Strong AI and engineering, but a cognitive science or psychology major was not verified, so check the programme list.",
+  "url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+  "sources": [
+   "https://join.hkust.edu.hk/admissions/international-qualifications",
+   "https://join.hkust.edu.hk/intlscholarships"
+  ],
+  "uncertain": [
+   "programs: not read from any official page",
+   "cost: tuition on a separate PDF not read",
+   "english: minimum scores not read",
+   "apAccepted: only school-level rules from search snippets (Business, Engineering)",
+   "scholarship: amounts not stated"
+  ]
+ },
+ {
+  "id": "cuhk",
+  "name": "Chinese University of Hong Kong",
+  "country": "Hong Kong",
+  "city": "Hong Kong (Shatin)",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-10-02",
+  "deadline": "2027-01-07",
+  "deadlineNote": "regular round; advance offer round deadline 2026-11-12 (Medicine excluded from advance round)",
+  "programs": null,
+  "apAccepted": "Yes. SAT, ACT, AP, IB, A-level and others considered; minimum scores on a separate CUHK page not read. CUHK code 5690 for SAT and AP",
+  "english": "General language requirement applies; scores not read",
+  "cost": null,
+  "scholarship": null,
+  "notes": "A Korean citizen at a Korean school is a non-local applicant, so the HK$500 application fee and the two-round structure apply.",
+  "url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+  "sources": [
+   "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+   "https://admission.cuhk.edu.hk/application/non-jupas/important-dates/"
+  ],
+  "uncertain": [
+   "appOpen: 2026-10-02 comes from the Non-JUPAS Local dates page; the non-local/international page did not list an opening date",
+   "programs: not read",
+   "cost: not read",
+   "scholarship: not read",
+   "english: not read"
+  ]
+ },
+ {
+  "id": "nus",
+  "name": "National University of Singapore",
+  "country": "Singapore",
+  "city": "Singapore",
+  "cycle": "AY2026/27 values (AY2027/28 not yet published; usually opens early December)",
+  "appOpen": "2025-12-03",
+  "deadline": "2026-02-23",
+  "deadlineNote": "AY2026/27 international qualifications window 3 Dec 2025 to 23 Feb 2026; most outcomes by July",
+  "programs": null,
+  "apAccepted": "Yes. Either at least 5 AP subjects, or SAT plus at least 3 AP (SAT minimums 600 Reading and Writing, 650 Math, scores sent via College Board code 3720); min AP score 3; AP Calculus BC required for all programmes except Law",
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "The deadline is around Feb 2028 for this student, which is later than Oct to Nov rounds elsewhere, and AP Calculus BC is required.",
+  "url": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners",
+  "sources": [
+   "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners",
+   "https://nus.edu.sg/oam/apply-to-nus/application",
+   "https://nus.edu.sg/oam/docs/default-source/default-document-library/standardised_test.pdf"
+  ],
+  "uncertain": [
+   "appOpen/deadline: dates come from official NUS page search summaries; the pages themselves would not load for reading",
+   "programs: not read from an official page",
+   "english: not read",
+   "cost: not read",
+   "scholarship: not read",
+   "apAccepted: from a Dec 2025 NUS standardised-test PDF search summary"
+  ]
+ },
+ {
+  "id": "ntu",
+  "name": "Nanyang Technological University",
+  "country": "Singapore",
+  "city": "Singapore",
+  "cycle": "AY2027 values (applications open 2026-10-15; AY2028 not yet published)",
+  "appOpen": "2026-10-15",
+  "deadline": "2027-03-19",
+  "deadlineNote": "reported closing date for American HS Diploma/AP applicants; AP scores must reach NTU by 2027-07-15",
+  "programs": null,
+  "apAccepted": "Yes. At least 5 AP tests scored 4 or 5 (3 for Singapore citizens/PR); AP Calculus BC required for Engineering, Computing and most Science; AP Physics C if Physics required; SAT not required",
+  "english": "Only if English not medium of instruction: IELTS 6.5, TOEFL 90, SAT 1250 with R and W 600, ACT 30/30/7, etc.",
+  "cost": null,
+  "scholarship": null,
+  "notes": "Five 4 or 5 AP scores are a heavy requirement for a Korean international-track student.",
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements/international-qualifications/american-high-school-diploma",
+  "sources": [
+   "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements/international-qualifications/american-high-school-diploma",
+   "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates"
+  ],
+  "uncertain": [
+   "deadline: 2027-03-19 came from a search summary; the AP page itself listed no open/close dates",
+   "programs: not verified on an official page",
+   "cost: not read",
+   "scholarship: not read"
+  ]
+ },
+ {
+  "id": "uoft",
+  "name": "University of Toronto (incl. Lester B. Pearson Scholarship)",
+  "country": "Canada",
+  "city": "Toronto",
+  "cycle": "fall 2027 entry values (fall 2028 not yet published)",
+  "appOpen": "late September 2026 (OUAC)",
+  "deadline": "2027-01-15",
+  "deadlineNote": "final OUAC deadline; early consideration 2026-11-07; supporting documents around 2027-02-01. Pearson: school nomination 2026-10-09, OUAC 2026-10-16, scholarship application 2026-11-06",
+  "programs": null,
+  "apAccepted": null,
+  "english": null,
+  "cost": null,
+  "scholarship": "Lester B. Pearson International Scholarship: about 37 per year, tuition, books, incidental fees and full residence for four years; school nominates one student per year, applicant must be in final year and apply to U of T",
+  "notes": "Pearson requires a school nomination in early October of senior year, so ask the school in Sept 2027 whether it participates.",
+  "url": "https://future.utoronto.ca/scholarships/lester-b-pearson-international-scholarship-program",
+  "sources": [
+   "https://future.utoronto.ca/scholarships/lester-b-pearson-international-scholarship-program"
+  ],
+  "uncertain": [
+   "deadline/appOpen: general dates came from a search summary of U of T pages; the bulletin PDF was unreadable",
+   "programs: not verified",
+   "apAccepted: not read",
+   "english: not read",
+   "cost: not read",
+   "scholarship: a Pearson applicant must be nominated by a school that is allowed to nominate; whether the student's school participates is unknown"
+  ]
+ },
+ {
+  "id": "ubc",
+  "name": "University of British Columbia (incl. International Scholars Program)",
+  "country": "Canada",
+  "city": "Vancouver",
+  "cycle": "September 2027 entry values (2028 not yet published)",
+  "appOpen": "late November 2026 (EducationPlannerBC)",
+  "deadline": "2026-12-02",
+  "deadlineNote": "International Scholars Program deadline (12:00 PCT); general UBC admission deadline not verified",
+  "programs": null,
+  "apAccepted": null,
+  "english": "TOEFL iBT 90 overall (Reading 22, Listening 22, Writing 21, Speaking 21) in one sitting; scores dated from 2025-01-01 for 2027/28 session",
+  "cost": null,
+  "scholarship": "International Scholars Program (includes Karen McKellin International Leader of Tomorrow Award, up to full cost of program and living for those with significant financial need, plus Wehrung and International Impact awards); needs nominator and teacher referee; school may nominate up to two students",
+  "notes": "Application is mandatory within a short window (documents due by 31 January), and the awardee needs significant financial need and all-A grades.",
+  "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+  "sources": [
+   "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+   "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"
+  ],
+  "uncertain": [
+   "deadline: UBC general application deadline was not found on an official page; Dec 2 is the ISP deadline only",
+   "appOpen: the 'late November' wording is from the ISP page timeline",
+   "apAccepted: not read",
+   "cost: not read",
+   "programs: not verified",
+   "english: from a search summary of the UBC English page",
+   "scholarship: eligibility lists study permit status; confirm how it applies from overseas"
+  ]
+ },
+ {
+  "id": "mcgill",
+  "name": "McGill University",
+  "country": "Canada",
+  "city": "Montreal",
+  "cycle": "fall 2027 entry values (fall 2028 not yet published)",
+  "appOpen": null,
+  "deadline": "2027-01-15",
+  "deadlineNote": "application deadline; transcripts and supporting documents 2027-03-01; Major Entrance Scholarship application 2027-01-21",
+  "programs": null,
+  "apAccepted": "AP results must be declared on the application; credit policies vary by faculty. SAT/ACT optional for US applicants fall 2027 per FAQ; policy for Korean applicants not confirmed",
+  "english": null,
+  "cost": null,
+  "scholarship": "Major Entrance Scholarship (separate application by 2027-01-21); amounts not verified",
+  "notes": "Official deadlines pages returned errors, so the dates come from McGill search summaries and need a recheck.",
+  "url": "https://www.mcgill.ca/undergraduate-admissions/apply/deadlines",
+  "sources": [
+   "https://www.mcgill.ca/undergraduate-admissions/apply/deadlines"
+  ],
+  "uncertain": [
+   "all dates: deadlines page returned 403; dates came from McGill search-result summaries (US applicant FAQ and a 2026-27 brochure)",
+   "appOpen: not found",
+   "apAccepted: Korean-school requirements not read",
+   "english: not read",
+   "cost: not read",
+   "programs: not verified"
+  ]
+ },
+ {
+  "id": "yonsei-uic",
+  "name": "Yonsei University, Underwood International College (UIC)",
+  "country": "South Korea",
+  "city": "Seoul",
+  "cycle": "2028 admission (Korean-citizen route; apply autumn 2027, matriculate March 2028)",
+  "appOpen": "2027-09-20 (reported start of 2028 early admission, per a news article)",
+  "deadline": null,
+  "deadlineNote": "exact application close date not published; 2028 early-admission period start only from a news report",
+  "programs": "UIC majors include Life Science and Biotechnology, Bio-Convergence; Cognitive Science and Psychology are not among the 16 listed majors; instruction language not stated on the page read",
+  "apAccepted": "UIC states that the international track is only for those whose parents and applicant are all non-Korean by passport, so a Korean citizen does not qualify. Korean citizens apply through the regular Yonsei Seoul early-admission tracks (UIC seats listed under 학생부종합 종합인재형/탐구인재형)",
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "For a Korean citizen the AP/SAT international route is closed, so UIC means the Korean 학생부종합 track and a Korean-style application.",
+  "url": "https://uic.yonsei.ac.kr/main/admission.php?mid=m04_05",
+  "sources": [
+   "https://uic.yonsei.ac.kr/main/admission.php?mid=m04_05",
+   "https://uic.yonsei.ac.kr/",
+   "https://www2.yonsei.ac.kr/entrance/plan/2028_plan.pdf"
+  ],
+  "uncertain": [
+   "appOpen: from a news article (hangyo.com) citing 대교협, not an official admission page",
+   "deadline: not found",
+   "apAccepted: whether international-track rules could ever apply is stated as 'not considered an International Student' only; no explicit bar found",
+   "programs: 2028 UIC seat counts (humanities/social 144, life sci/eng 15) came from a search summary of the 2028 plan; PDF unreadable",
+   "cost: not read",
+   "scholarship: not read"
+  ]
+ },
+ {
+  "id": "kaist",
+  "name": "KAIST",
+  "country": "South Korea",
+  "city": "Daejeon",
+  "cycle": "2027 admission values (2028 not yet published)",
+  "appOpen": null,
+  "deadline": null,
+  "deadlineNote": "2027 early-admission application dates not found",
+  "programs": null,
+  "apAccepted": null,
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "KAIST is science and engineering focused, so a cognitive science route would be Brain and Cognitive Sciences or AI.",
+  "url": "https://admission.kaist.ac.kr/undergraduate/admission/rsub/2027",
+  "sources": [
+   "https://admission.kaist.ac.kr/undergraduate/admission/rsub/2027"
+  ],
+  "uncertain": [
+   "appOpen/deadline: not found on the page",
+   "programs: no major list read",
+   "apAccepted: stated from seat table; qualification rules not read",
+   "cost: not read",
+   "scholarship: not read",
+   "english: not read"
+  ]
+ }
+]

@@ -273,3 +273,41 @@
   .road { grid-template-columns: 24px 22px 8px 1fr auto 22px; gap: 8px; }
   .apply .detail { padding-top: 16px; }
 }
+
+/* v3: 여름 프로그램, 미국 밖 선택지, 원서 비용, 보강 후보 */
+.k-sum { background: var(--t1); }
+.road .what .earlyFit { flex-basis: 100%; color: var(--t3); font-weight: 600; }
+.sumNote { margin: 0 0 12px; }
+.sumList, .intlList { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.sumCard, .intlCard { display: grid; gap: 6px; align-content: start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--raise); }
+.sumCard.past { opacity: 0.55; }
+.sumCard.dim { opacity: 0.45; }
+.intlCard.on { border-color: var(--text); }
+.sumTop { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.sumTop .lnk, .sumTop .starBtn { margin-left: auto; }
+.sumName { font-size: 15px; }
+.sumHost { font-size: 12.5px; color: var(--muted); }
+.sk { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 6px; }
+.sk.sel { background: var(--t3b); color: var(--t3); }
+.sk.paid { background: var(--hover); color: var(--muted); }
+.sumFacts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; }
+.sumFacts i { font-style: normal; color: var(--muted); font-size: 12px; margin-right: 6px; }
+.sumCard .orig, .intlCard .orig { margin: 0; }
+.sumCard .orig b, .intlCard .orig b { color: var(--text); font-weight: 600; margin-right: 4px; }
+.sumCard .mini { justify-self: start; margin-top: 4px; }
+.costT { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 4px; }
+.costT th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+.costT td { padding: 7px 4px; border-bottom: 1px solid var(--line); }
+.costT td:first-child a { font-weight: 600; }
+.costNote { margin: 10px 0 0; line-height: 1.5; }
+.pt.cand .mk { stroke-dasharray: 2 2; }
+@media (max-width: 760px) {
+  .sumList, .intlList { grid-template-columns: 1fr; }
+}
+
+.more2 { font-size: 13px; }
+.more2 summary { cursor: pointer; color: var(--muted); font-weight: 600; font-size: 12.5px; padding: 2px 0; list-style: none; }
+.more2 summary::-webkit-details-marker { display: none; }
+.more2 summary::after { content: " +"; }
+.more2[open] summary::after { content: " −"; }
+.more2 .orig { margin: 6px 0 0; }

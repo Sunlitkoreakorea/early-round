@@ -1,0 +1,19 @@
+{
+  "note": "2026-11-26 대조 에이전트가 멈춰서 직접 확인: 수집 에이전트가 받아 둔 각 학교 CDS 의 C1 거주지별 표(지원/합격/등록)를 원문 텍스트로 읽고 합계가 맞는지 계산해 봄. 마감과 재정지원 방식은 다시 확인하지 못함.",
+  "checked": {
+    "oberlin": "partial: C1 totals and international 446/4015 checked by hand (793+6924+4015=11732, 283+3144+446=3873); deadlines/aid not re-checked",
+    "lafayette": "partial: C1 (fall 2024) international 258/3705 checked by hand (1180+5310+3705=10195, 419+2529+258=3206); deadlines/aid not re-checked",
+    "richmond": "partial: C1 international 280/4104 checked by hand (2273+10183+4104=16560, 495+2908+280=3683); deadlines/aid not re-checked",
+    "trinity-ct": "partial: C1 international 167/3348 checked by hand (663+3262+3348=7273, 241+1740+167=2148); deadlines/aid not re-checked",
+    "whitman": "partial: C1 international 253/3265 checked by hand (1178+2507+3265=6950, 818+1720+253=2791); deadlines/aid not re-checked",
+    "dickinson": "partial: C1 international 208/1549 checked by hand (1068+3102+1549=5719, 539+1626+208=2373); deadlines/aid not re-checked",
+    "earlham": "partial: C1 international 258/647 checked by hand (556+925+647=2128, 536+888+258=1682); deadlines/aid not re-checked",
+    "case-western": "partial: C1 international 2360/11112 checked by hand (3596+24624+11112=39332, 972+10558+2360=13890); deadlines/aid not re-checked",
+    "kenyon": "partial: CDS C1 residency rows are blank, so no international admit rate; other fields not re-checked",
+    "macalester": "unreachable: CDS residency row not filled (collector) and 2025-26 file too large; not re-checked"
+  },
+  "corrections": [
+    {"id": "case-western", "field": "stats.intl", "old": null, "new": {"applied": 11112, "admitted": 2360},
+     "source": "Case Western CDS 2025-26 C1 residency table", "evidence": "applied 3596 / 24624 / 11112 = 39332; admitted 972 / 10558 / 2360 = 13890"}
+  ]
+}

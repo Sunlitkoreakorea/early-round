@@ -1,0 +1,1070 @@
+[
+ {
+  "id": "macalester",
+  "name": "Macalester",
+  "full": "Macalester College",
+  "public": false,
+  "commonApp": true,
+  "city": "Saint Paul",
+  "state": "MN",
+  "lat": 44.938,
+  "lon": -93.168,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 6",
+    "notifyDate": "2026-12-06"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 19",
+    "notifyDate": "2026-12-19"
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-01",
+    "notify": "January 31",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "March 14",
+    "notifyDate": "2027-03-14"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (if admitted you must enroll and withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": null,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile",
+   "ISAFA",
+   "Macalester Financial Declaration Form"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-09",
+   "ed2": "2027-01-08",
+   "rd": "2027-01-22"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional; no disadvantage for not submitting (SAT code 6390, ACT 2122).",
+  "english": "Optional but recommended for applicants with fewer than two years in English-medium schooling (TOEFL, IELTS, Duolingo); minimums and waivers not stated.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "No online interviews for international applicants; optional third-party InitialView or Vericant interview.",
+  "url": "https://www.macalester.edu/admissions/apply/first-year/",
+  "stats": {
+   "cdsYear": "2024-2025",
+   "source": "https://www.macalester.edu/institutional-research/wp-content/uploads/sites/515/Macalester-College_Legacy-CDS_2024-2025-1.xlsx",
+   "applied": 8968,
+   "admitted": 2558,
+   "admitRate": 28.5,
+   "ed": {
+    "applied": 447,
+    "admitted": 176,
+    "rate": 39.4
+   },
+   "ea": null,
+   "satSubmitPct": 29,
+   "satEBRW": [
+    680,
+    720,
+    750
+   ],
+   "satMath": [
+    670,
+    720,
+    760
+   ],
+   "firstYearTotal": 560,
+   "intlFirstYear": 117,
+   "intlAidCount": 255,
+   "intlAidAvg": 60806
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; scores considered if submitted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Testing page does not state test-date cutoffs."
+  },
+  "sources": [
+   "https://www.macalester.edu/admissions/deadlines/",
+   "https://www.macalester.edu/admissions/apply/international/",
+   "https://www.macalester.edu/financial-aid/apply/prospective/",
+   "https://www.macalester.edu/institutional-research/wp-content/uploads/sites/515/Macalester-College_Legacy-CDS_2024-2025-1.xlsx",
+   "https://www.macalester.edu/neuroscience/major/"
+  ],
+  "uncertain": [
+   "stats: used CDS 2024-25 because the 2025-26 CDS PDF exceeded the fetch size limit (10 MB)",
+   "intlAid/meetsNeed: official pages read do not state need-aware vs need-blind or whether full need is met for internationals; need-aware is from general knowledge, meetsNeed left null",
+   "ea: C22 gives no EA applicant/admit counts",
+   "intl admit rate: CDS C1 international row not filled, so intl admit rate unknown",
+   "aidDeadlines: dates are 'priority for financial aid' on deadlines page (not form-specific)",
+   "lastSat: not stated"
+  ],
+  "why": "A Midwest liberal arts college with about 29% overall admit rate and the largest international first-year group on this list (117), though aid-seeking internationals face competition."
+ },
+ {
+  "id": "oberlin",
+  "name": "Oberlin",
+  "full": "Oberlin College",
+  "public": false,
+  "commonApp": true,
+  "city": "Oberlin",
+  "state": "OH",
+  "lat": 41.2939,
+  "lon": -82.2174,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "mid-January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-05",
+    "notify": "February 1",
+    "notifyDate": "2027-02-01"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "April 1",
+    "notifyDate": "2027-04-01"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (if admitted you must enroll and withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": null,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile",
+   "ISAFA"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-01",
+   "ed2": "2027-01-05",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional; self-reported scores accepted, official report only if enrolling.",
+  "english": "Not stated on the page read (no fee waivers offered for English proficiency tests).",
+  "cogsci": "Neuroscience (major), Psychology (major); Cognitive Sciences is a minor only",
+  "interview": "Virtual interviews for U.S. citizens and permanent residents only; internationals may use independent InitialView or Vericant interviews.",
+  "url": "https://oberlin.edu/admissions-and-aid/arts-and-sciences/first-year-applicants",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.oberlin.edu/index%2Ephp/media/37695/download",
+   "applied": 11738,
+   "admitted": 3873,
+   "admitRate": 33.0,
+   "ed": {
+    "applied": 668,
+    "admitted": 263,
+    "rate": 39.4
+   },
+   "ea": null,
+   "satSubmitPct": 34,
+   "satEBRW": [
+    690,
+    730,
+    760
+   ],
+   "satMath": [
+    660,
+    700,
+    740
+   ],
+   "firstYearTotal": 768,
+   "intlFirstYear": 93,
+   "intlAidCount": 292,
+   "intlAidAvg": 51631
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; self-report on application",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8: SAT/ACT must be received by Jan 15; no per-round SAT month stated."
+  },
+  "sources": [
+   "https://oberlin.edu/admissions-and-aid/arts-and-sciences/first-year-applicants",
+   "https://www.oberlin.edu/index%2Ephp/media/37695/download",
+   "https://oberlin.edu/cognitive-sciences"
+  ],
+  "uncertain": [
+   "applied: C1 gender sum is 11738; C1 residency table total shows 11732; used 11738 (rate 33.0 either way)",
+   "international admit rate is only about 8% for fall 2026 per Oberlin page (CDS: 446/4015 = 11.1%), far below the overall rate",
+   "page says the international aid budget is limited and aid cannot be added later; meetsNeed unknown",
+   "ea: CDS C22 gives dates but no counts",
+   "deadline table on page has no year printed; matches CDS 2025-26 dates",
+   "lastSat: not stated"
+  ],
+  "why": "One-third overall admit rate and a large intl aid pool (292 recipients, about $51.6k average), but internationals admit at only about 8-11%."
+ },
+ {
+  "id": "lafayette",
+  "name": "Lafayette",
+  "full": "Lafayette College",
+  "public": false,
+  "commonApp": true,
+  "city": "Easton",
+  "state": "PA",
+  "lat": 40.6987,
+  "lon": -75.2086,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II (and RD converted to ED II by Feb 1) are binding; you must sign the Early Decision Agreement.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Optional for fall 2027 and fall 2028 entry; self-reported scores allowed, official required on enrollment; superscored.",
+  "english": "Required; typically TOEFL 100, IELTS 7, or Duolingo 130; waiver by request if English is first language or 3 years of English-medium instruction.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Not required, encouraged; virtual interviews available.",
+  "url": "https://admissions.lafayette.edu/apply/",
+  "stats": {
+   "cdsYear": "2024-2025",
+   "source": "https://oir.lafayette.edu/wp-content/uploads/sites/196/2025/10/CDS2024-2025.pdf",
+   "applied": 10193,
+   "admitted": 3206,
+   "admitRate": 31.5,
+   "ed": {
+    "applied": 870,
+    "admitted": 369,
+    "rate": 42.4
+   },
+   "ea": null,
+   "satSubmitPct": 23,
+   "satEBRW": [
+    670,
+    710,
+    740
+   ],
+   "satMath": [
+    680,
+    720,
+    760
+   ],
+   "firstYearTotal": 698,
+   "intlFirstYear": 46,
+   "intlAidCount": 105,
+   "intlAidAvg": 69176
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Optional; may change testing status by the round deadline via email",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "sources": [
+   "https://admissions.lafayette.edu/apply/",
+   "https://admissions.lafayette.edu/deadlines-and-forms/",
+   "https://admissions.lafayette.edu/apply/international-students/",
+   "https://oir.lafayette.edu/wp-content/uploads/sites/196/2025/10/CDS2024-2025.pdf"
+  ],
+  "uncertain": [
+   "stats: full 2025-26 CDS not found (only the supplemental SCDS 2025-26); used full CDS 2024-25",
+   "applied: C1 gender sum 10193 vs residency total 10195 in the CDS",
+   "international admit rate only 7.0% (258 of 3705) in CDS 2024-25",
+   "notification dates given only as months on the page",
+   "a search summary showed Nov 1/Jan 5 dates on another Lafayette page; deadlines page and apply page both say Nov 15 / Jan 15, which were used",
+   "meritIntl: not stated on page read",
+   "cogsci: majors from general knowledge, not read on a page"
+  ],
+  "why": "About 31% overall admit rate and an explicit guarantee to meet full need for admitted internationals (105 recipients, about $69k average), though internationals admit near 7%."
+ },
+ {
+  "id": "kenyon",
+  "name": "Kenyon",
+  "full": "Kenyon College",
+  "public": false,
+  "commonApp": true,
+  "city": "Gambier",
+  "state": "OH",
+  "lat": 40.3756,
+  "lon": -82.3974,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "mid-March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED options are binding; if admitted you must enroll and withdraw other applications.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": "Four merit scholarships of $20,000-$35,000/year (Excellence, Honors, President's, Distinguished Academic), automatic with application; intl eligibility not stated on the page.",
+  "aidForms": [
+   "CSS Profile",
+   "Kenyon International Financial Aid Application"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional for all applicants; only 7.5% of enrolled first-years submitted SAT.",
+  "english": null,
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://www.kenyon.edu/admissions-aid/how-to-apply/admissions-deadlines/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.kenyon.edu/files/resources/cds-2025-26-kenyon.xlsx",
+   "applied": 7091,
+   "admitted": 2138,
+   "admitRate": 30.2,
+   "ed": {
+    "applied": 663,
+    "admitted": 231,
+    "rate": 34.8
+   },
+   "ea": null,
+   "satSubmitPct": 7.5,
+   "satEBRW": [
+    700,
+    720,
+    740
+   ],
+   "satMath": [
+    680,
+    720,
+    765
+   ],
+   "firstYearTotal": 412,
+   "intlFirstYear": 39,
+   "intlAidCount": 149,
+   "intlAidAvg": 73082
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores received by Feb 1; no per-round SAT month stated."
+  },
+  "sources": [
+   "https://www.kenyon.edu/admissions-aid/how-to-apply/admissions-deadlines/",
+   "https://kenyon.edu/admissions-aid/financial-aid/apply-for-financial-aid",
+   "https://kenyon.edu/scholarships",
+   "https://www.kenyon.edu/files/resources/cds-2025-26-kenyon.xlsx"
+  ],
+  "uncertain": [
+   "meetsNeed and need-aware: from a search-result summary of Kenyon pages, not read directly",
+   "a search summary quoted an official Kenyon page saying fewer than 5% of international applicants requiring need-based aid were admitted last cycle; this may make Kenyon a poor balance school for an aid-seeking international",
+   "CDS C1 international row not filled, so intl admit rate unknown",
+   "SAT percentiles come from only 30 submitters",
+   "english/interview: not read",
+   "dates on page have no year printed",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "About 30% overall admit rate with strong aid per recipient (149 recipients, about $73k), but a published note suggests aid-seeking internationals are rarely admitted."
+ },
+ {
+  "id": "richmond",
+  "name": "Richmond",
+  "full": "University of Richmond",
+  "public": false,
+  "commonApp": true,
+  "city": "Richmond",
+  "state": "VA",
+  "lat": 37.5743,
+  "lon": -77.5388,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "late January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-01",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-01",
+    "notify": "April 1",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II are binding; EA is non-binding; apply by Dec 1 for automatic Richmond Scholars merit consideration.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": null,
+  "meetsNeed": null,
+  "meritIntl": "Richmond Scholars merit program: admission application is the scholarship application; automatic for EA and for RD applications by Dec 1 (intl eligibility not stated on page).",
+  "aidForms": [
+   "CSS Profile",
+   "University of Richmond Certification of Financial Responsibility"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-02-01",
+   "rd": "2027-02-01"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional for 2027 entrants; submitted scores are superscored.",
+  "english": "If English is not your native language: TOEFL, IELTS, Duolingo, or a University-approved waiver; minimums not stated.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://admission.richmond.edu/process/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionC.pdf (sections B, C, H; index https://ifx.richmond.edu/research/common-data.html)",
+   "applied": 16560,
+   "admitted": 3683,
+   "admitRate": 22.2,
+   "ed": {
+    "applied": 1154,
+    "admitted": 421,
+    "rate": 36.5
+   },
+   "ea": null,
+   "satSubmitPct": 18.6,
+   "satEBRW": [
+    700,
+    720,
+    750
+   ],
+   "satMath": [
+    700,
+    720,
+    770
+   ],
+   "firstYearTotal": 857,
+   "intlFirstYear": 72,
+   "intlAidCount": 187,
+   "intlAidAvg": 67911
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": null,
+   "scoreChoice": "Test optional; opt out of sending results when prompted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "sources": [
+   "https://admission.richmond.edu/process/",
+   "https://financialaid.richmond.edu/applying/apply.html",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionB.pdf",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionC.pdf",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionH.pdf"
+  ],
+  "uncertain": [
+   "ED counts: CDS section C labels them 'Fall 2024 entering class' (1154 applied, 421 admitted), so they may be one year older",
+   "notification dates came from a search summary and conflict across Richmond pages (Dec 12/15, Jan 23-26, Feb 13/15, Apr 1); only months kept",
+   "intlAid/meetsNeed: aid page does not say whether internationals are eligible or fully met; general policy is to meet demonstrated need",
+   "international admit rate only 6.8% (280 of 4104)",
+   "aid deadlines Nov 15 / Feb 1 are from the financial aid page (differ from admission deadlines)",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "A 22% admit-rate school that sits at the low end of this list but pays about $68k average to 187 international recipients."
+ },
+ {
+  "id": "case-western",
+  "name": "Case Western",
+  "full": "Case Western Reserve University",
+  "public": false,
+  "commonApp": true,
+  "city": "Cleveland",
+  "state": "OH",
+  "lat": 41.5043,
+  "lon": -81.6084,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 19",
+    "notifyDate": "2026-12-19"
+   },
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 5",
+    "notifyDate": "2026-12-05"
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "February 6",
+    "notifyDate": "2027-02-06"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "March 20",
+    "notifyDate": "2027-03-20"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (agreement signed by student, counselor, and parent; withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "Special scholarship competitions open to first-year internationals (names/amounts not on page read); students are also automatically considered for merit.",
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-22",
+   "rd": "2027-02-01"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional; no minimum GPA or score (SAT code 1105, ACT 3244).",
+  "english": null,
+  "cogsci": "Cognitive Science (major), Neuroscience (major), Psychology (major)",
+  "interview": "None for general applicants (required only for finalists of the Pre-Professional Scholars Program).",
+  "url": "https://case.edu/admission/apply/first-year-applicants",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://case.edu/ir/sites/default/files/2026-02/CDS%202025-26%20Adjusted%20Final.pdf",
+   "applied": 39332,
+   "admitted": 13890,
+   "admitRate": 35.3,
+   "ed": {
+    "applied": 1053,
+    "admitted": 263,
+    "rate": 25.0
+   },
+   "ea": null,
+   "satSubmitPct": 52,
+   "satEBRW": [
+    710,
+    730,
+    760
+   ],
+   "satMath": [
+    730,
+    760,
+    780
+   ],
+   "firstYearTotal": 1663,
+   "intlFirstYear": 92,
+   "intlAidCount": 275,
+   "intlAidAvg": 43200
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "sources": [
+   "https://case.edu/admission/apply/dates-deadlines",
+   "https://case.edu/admission/apply/first-year-applicants",
+   "https://case.edu/financialaid/undergraduate/int/",
+   "https://case.edu/ir/sites/default/files/2026-02/CDS%202025-26%20Adjusted%20Final.pdf"
+  ],
+  "uncertain": [
+   "intlFirstYear 92 comes from the CDS text layer only (B2 cells render blank in the PDF)",
+   "CDS international applied/admitted (about 11112 / 2360, roughly 21%) inferred from a garbled table, not stated cleanly",
+   "intl aid page says only a limited amount of need-based aid is offered (so meetsNeed false); a search snippet claimed full need is met for all admitted students",
+   "deadline table has no year printed; weekdays match the 2026-27 cycle",
+   "also lists a Pre-Professional Scholars Program round (Dec 1) and spring entry, not included",
+   "english: not on page read",
+   "cogsci: major titles from general knowledge, not read on a page",
+   "lastSat: not stated"
+  ],
+  "why": "A 35% admit-rate research university with a cognitive science major and merit scholarship competitions open to internationals (about 21% intl admit rate)."
+ },
+ {
+  "id": "trinity-ct",
+  "name": "Trinity (CT)",
+  "full": "Trinity College (Hartford)",
+  "public": false,
+  "commonApp": true,
+  "city": "Hartford",
+  "state": "CT",
+  "lat": 41.7479,
+  "lon": -72.6905,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "early April",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED is binding; RD (and any early action) is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": null,
+  "meetsNeed": true,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional per Trinity standardized testing page.",
+  "english": "Duolingo, IELTS, or TOEFL required; recommended Duolingo 130, IELTS 7.0, TOEFL 100; waiver after 3 years of English-medium high school.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Optional, strongly encouraged.",
+  "url": "https://www.trincoll.edu/admissions/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.trincoll.edu/asic/wp-content/uploads/sites/125/2026/06/CDS-2025-2026-Trinity-College.pdf",
+   "applied": 7272,
+   "admitted": 2148,
+   "admitRate": 29.5,
+   "ed": {
+    "applied": 643,
+    "admitted": 261,
+    "rate": 40.6
+   },
+   "ea": null,
+   "satSubmitPct": 9,
+   "satEBRW": [
+    670,
+    710,
+    740
+   ],
+   "satMath": [
+    660,
+    690,
+    730
+   ],
+   "firstYearTotal": 478,
+   "intlFirstYear": 47,
+   "intlAidCount": 295,
+   "intlAidAvg": 70437
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Not stated."
+  },
+  "sources": [
+   "https://www.trincoll.edu/admissions/finaid/international-students/",
+   "https://www.trincoll.edu/asic/wp-content/uploads/sites/125/2026/06/CDS-2025-2026-Trinity-College.pdf"
+  ],
+  "uncertain": [
+   "first-year admissions page returned 404; deadlines come from the international aid page (ED1 Nov 15, ED2 Jan 15, RD Jan 15) and cycle year is not printed",
+   "CDS text lists ED closing 12/15 and notification 1/12, which conflicts with Nov 15; not verified",
+   "intlFirstYear 47 from CDS international enrollment (B2 table layout unclear)",
+   "intlAidCount 295 looks high against about 252 total nonresidents in B2; may count differently",
+   "international admit rate only 5.0% (167 of 3348)",
+   "need-blind/aware not stated; policy says meets full need if admitted",
+   "notification months from a search summary",
+   "interview and English details from search summary of Trinity pages",
+   "cogsci: no standalone cognitive science major; neuroscience and psychology majors"
+  ],
+  "why": "29.5% overall admit rate with a full-need pledge and heavy intl aid (295 recipients, about $70k), but internationals admit near 5%."
+ },
+ {
+  "id": "whitman",
+  "name": "Whitman",
+  "full": "Whitman College",
+  "public": false,
+  "commonApp": true,
+  "city": "Walla Walla",
+  "state": "WA",
+  "lat": 46.0716,
+  "lon": -118.3283,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-12-01",
+    "notify": "early February",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-05",
+    "notify": "late January",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "early March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED1/ED2 are binding (applicants reviewed in a smaller pool); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": "International applicants considered automatically for merit (amounts not on page read); talent awards need a separate application.",
+  "aidForms": [
+   "Whitman International Student Financial Aid Application (WISFAA)"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-05",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "CDS lists SAT/ACT as not required but considered if submitted; scores due Jan 15.",
+  "english": null,
+  "cogsci": "Brain, Behavior and Cognition (major, neuroscience-focused), Psychology (major)",
+  "interview": null,
+  "url": "https://www.whitman.edu/admission-and-aid/applying-to-whitman/first-year-students",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.whitman.edu/documents/offices/institutional-research/2026/CDS-2025-26-Whitman-College-Final-V2.pdf",
+   "applied": 6950,
+   "admitted": 2791,
+   "admitRate": 40.2,
+   "ed": {
+    "applied": 542,
+    "admitted": 114,
+    "rate": 21.0
+   },
+   "ea": null,
+   "satSubmitPct": 25,
+   "satEBRW": [
+    650,
+    700,
+    740
+   ],
+   "satMath": [
+    660,
+    720,
+    770
+   ],
+   "firstYearTotal": 373,
+   "intlFirstYear": 41,
+   "intlAidCount": 201,
+   "intlAidAvg": 51730
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; considered if submitted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores by Jan 15; testing-policy page returned 404."
+  },
+  "sources": [
+   "https://www.whitman.edu/admission-and-aid/applying-to-whitman/first-year-students",
+   "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/international-and-daca-students",
+   "https://www.whitman.edu/documents/offices/institutional-research/2026/CDS-2025-26-Whitman-College-Final-V2.pdf"
+  ],
+  "uncertain": [
+   "EA (Dec 1) is labeled 'for reference' on the page while CDS C22 says no early action; unverified",
+   "CDS composite SAT row is internally inconsistent (1190/1420/1415); only EBRW and Math used",
+   "deadlines page has no year printed; cycle not confirmed",
+   "international admit rate only 7.7% (253 of 3265); page says to apply RD for aid and Whitman is 'highly need-aware'",
+   "english/interview not read",
+   "no major titled Neuroscience; the Brain, Behavior and Cognition major is the neuroscience route"
+  ],
+  "why": "40% overall admit rate with a stated full-need commitment for internationals (201 recipients, about $52k average)."
+ },
+ {
+  "id": "dickinson",
+  "name": "Dickinson",
+  "full": "Dickinson College",
+  "public": false,
+  "commonApp": true,
+  "city": "Carlisle",
+  "state": "PA",
+  "lat": 40.2033,
+  "lon": -77.199,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-15",
+    "notify": "mid-January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "late February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II are binding; EA is non-binding; RD applicants may switch to ED II by Jan 28.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": false,
+  "meritIntl": "Merit scholarships open to internationals, automatic with application (no separate application; amounts not on page read).",
+  "aidForms": [
+   "CSS Profile",
+   "ISFAA",
+   "International Certification of Finances"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional since 1994 (13% of enrolled first-years submitted SAT).",
+  "english": "Recommended TOEFL iBT 90, IELTS 7.0, or Duolingo 120 with interview (from search summary); not stated as hard minimums.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://www.dickinson.edu/info/20256/apply/1024/application_deadlines",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.dickinson.edu/download/downloads/id/17199/cds_2025-2026.pdf",
+   "applied": 5719,
+   "admitted": 2373,
+   "admitRate": 41.5,
+   "ed": {
+    "applied": 454,
+    "admitted": 258,
+    "rate": 56.8
+   },
+   "ea": null,
+   "satSubmitPct": 13,
+   "satEBRW": [
+    680,
+    710,
+    730
+   ],
+   "satMath": [
+    660,
+    680,
+    710
+   ],
+   "firstYearTotal": 485,
+   "intlFirstYear": 34,
+   "intlAidCount": 221,
+   "intlAidAvg": 58593
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Deadlines page does not list test-date cutoffs."
+  },
+  "sources": [
+   "https://www.dickinson.edu/info/20256/apply/1024/application_deadlines",
+   "https://www.dickinson.edu/info/20045/admissions/1179/international_student_financial_aid",
+   "https://www.dickinson.edu/download/downloads/id/17199/cds_2025-2026.pdf"
+  ],
+  "uncertain": [
+   "deadline table has no entry year printed (only a note about no spring 2027 cycle)",
+   "CDS text lists ED closing 12/15 and EA unclear, conflicting with the page's Nov 15; page used",
+   "aid page says need-based aid is limited and does not say full need is met (meetsNeed false); international admit rate 13.4% (208 of 1549)",
+   "international enrolled is 36 in C residency table vs 34 in B2; B2 used",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "About 41% overall admit rate and a 13% intl admit rate with sizeable aid (221 recipients, about $59k)."
+ },
+ {
+  "id": "earlham",
+  "name": "Earlham",
+  "full": "Earlham College",
+  "public": false,
+  "commonApp": true,
+  "city": "Richmond",
+  "state": "IN",
+  "lat": 39.8226,
+  "lon": -84.9109,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 1",
+    "notifyDate": "2026-12-01"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 1",
+    "notifyDate": "2026-12-01"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-12-01",
+    "notify": "December 15",
+    "notifyDate": "2026-12-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-02-01",
+    "notify": "March 1",
+    "notifyDate": "2027-03-01"
+   }
+  ],
+  "earlyRule": "ED is binding; EA I and II are non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "International merit scholarships up to $37,000/year for up to eight semesters; set by the International Financial Aid Committee.",
+  "aidForms": [
+   "International Student Financial Information Form"
+  ],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Test optional, but advisers use scores or other tests to document preparedness and English proficiency for the I-20.",
+  "english": "Accepted: TOEFL (79 required/92 recommended), IELTS (6.0/7.0), Duolingo (115/125), SAT EBRW (400/600), ACT Reading (20/26), others; no waivers listed.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Interview with the director of international admissions recommended, not required.",
+  "url": "https://earlham.edu/apply",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://earlham.edu/wp-content/uploads/2026/04/Earlham-College_CDS-2025-2026_PDF.pdf",
+   "applied": 2128,
+   "admitted": 1682,
+   "admitRate": 79.0,
+   "ed": null,
+   "ea": null,
+   "satSubmitPct": 30,
+   "satEBRW": [
+    550,
+    645,
+    695
+   ],
+   "satMath": [
+    532,
+    580,
+    638
+   ],
+   "firstYearTotal": 169,
+   "intlFirstYear": 16,
+   "intlAidCount": 120,
+   "intlAidAvg": 42042
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Not stated."
+  },
+  "sources": [
+   "https://earlham.edu/apply",
+   "https://earlham.edu/admissions/international-admissions/",
+   "https://earlham.edu/wp-content/uploads/2026/04/Earlham-College_CDS-2025-2026_PDF.pdf"
+  ],
+  "uncertain": [
+   "deadlines: apply page (labelled cycle 2027-28) says ED/EA I Nov 1, EA II Dec 1, RD Feb 1 while the international page says ED/EA1 Nov 15, EA2 Dec 15, RD Jan 15; apply page used",
+   "ed: CDS shows an ED plan but no ED applicant/admit counts were captured",
+   "meetsNeed false because families must contribute at least $25,000 in the first year; need-blind/aware not stated",
+   "international admit rate 39.9% (258 of 647); only 16 international first-years enrolled",
+   "SAT stats come from only 50 submitters",
+   "aidDeadlines not stated for internationals",
+   "cogsci: neuroscience and psychology majors confirmed via search summary of Earlham catalog"
+  ],
+  "why": "A true higher-admit option (79% overall, about 40% for internationals) with merit awards up to $37k, though need is not fully met."
+ }
+]

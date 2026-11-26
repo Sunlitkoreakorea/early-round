@@ -198,10 +198,12 @@
   function chance(s, st, profile, planType) {
     const reasons = [];
     if (!st || st.admitRate == null) return { tier: null, label: '자료 없음', reasons: ['합격률 자료 없음'] };
-    const r = st.admitRate;
+    // 국제학생 합격률(CDS C1 국제학생 줄)이 있으면 그걸 기준으로
+    const useIntl = !!(st.intl && st.intl.rate != null);
+    const r = useIntl ? st.intl.rate : st.admitRate;
     const base = r >= 50 ? 4 : r >= 30 ? 3 : r >= 15 ? 2 : r >= 8 ? 1 : 0;
     let adj = 0;
-    reasons.push(`전체 합격률 ${r}%`);
+    reasons.push(useIntl ? `국제학생 합격률 ${r}% (전체 ${st.admitRate}%)` : `전체 합격률 ${r}%`);
 
     const sat = satOf(profile);
     const adv = submitAdvice(s, st, sat);
@@ -238,14 +240,14 @@
 
     if (planType === 'ED' || planType === 'ED2') {
       if (st.ed && st.ed.rate != null) {
-        if (st.ed.rate >= r * 1.5) { adj += 1; reasons.push(`ED 합격률 ${st.ed.rate}% (실제 이점은 이보다 작음)`); }
+        if (st.ed.rate >= st.admitRate * 1.5) { adj += 1; reasons.push(`ED 합격률 ${st.ed.rate}% (실제 이점은 이보다 작음)`); }
         else reasons.push(`ED 합격률 ${st.ed.rate}%`);
       }
     } else if (['EA', 'REA', 'SCEA'].includes(planType) && st.ea && st.ea.rate != null) {
       reasons.push(`${planType} 합격률 ${st.ea.rate}%`);
     }
 
-    if (r < 30) reasons.push('국제학생은 보통 전체 합격률보다 낮아요');
+    if (!useIntl) reasons.push('국제학생 합격률 자료가 없어요. 보통 전체보다 낮아요');
 
     let tier = Math.max(0, Math.min(4, base + adj));
     if (r < 15) tier = Math.min(tier, 2);
@@ -273,6 +275,62 @@
     });
   }
 
+  /* ───── 시험 정책: 이 SAT 날짜가 얼리에 들어가는지 ───── */
+  const MONTH_NUM = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+  function monthOf(name) {
+    if (!name) return null;
+    return MONTH_NUM[String(name).toLowerCase().trim()] ?? null;
+  }
+  // 지원하는 해 가을 시험 기준. 정책이 없으면 null
+  function satCountsForEarly(policy, date) {
+    const m = monthOf(policy && policy.lastSatEarly);
+    if (!m || !date) return null;
+    return date.getMonth() + 1 <= m;
+  }
+
+  /* ───── 원서 비용 (College Board 2026-27 요금) ───── */
+  const FEES = { cssFirst: 25, cssMore: 16, satReport: 15, satFree: 4 };
+
+  function usesCSS(s) {
+    const r = s.req || {};
+    if (r.cssCode) return true;
+    const f = (s.aidForms || []).join(' ');
+    if (!/CSS Profile/i.test(f)) return false;
+    return !/neither required nor accepted|not (use|accept|require)|no CSS/i.test(f);
+  }
+
+  // 고른 학교들의 원서비, CSS Profile, SAT 점수 보내기 비용
+  function appCost(schools, picks, profile) {
+    const sat = satOf(profile);
+    const rows = [];
+    let cssNow = 0;
+    let cssAfter = 0;
+    let satNow = 0;
+    for (const s of schools) {
+      const p = picks[s.id];
+      if (!p || p === 'X' || s.own) continue;
+      const fee = s.req && typeof s.req.fee === 'number' ? s.req.fee : null;
+      let css = null;
+      if (profile && profile.needAid && usesCSS(s)) {
+        css = s.aidAfter ? 'after' : 'now';
+        if (css === 'now') cssNow++; else cssAfter++;
+      }
+      const adv = submitAdvice(s, s.stats, sat);
+      const sends = adv.key === 'required' || adv.key === 'submit';
+      let satSend = null;
+      if (sends) {
+        satSend = s.policy && s.policy.selfReport === true ? 'after' : 'now';
+        if (satSend === 'now') satNow++;
+      }
+      rows.push({ s, fee, css, satSend });
+    }
+    const cssCost = cssNow ? FEES.cssFirst + FEES.cssMore * (cssNow - 1) : 0;
+    const satCost = Math.max(0, satNow - FEES.satFree) * FEES.satReport;
+    const feeKnown = rows.reduce((a, r) => a + (r.fee || 0), 0);
+    const feeUnknown = rows.filter(r => r.fee == null).length;
+    return { rows, cssNow, cssAfter, cssCost, satNow, satCost, feeKnown, feeUnknown, total: feeKnown + cssCost + satCost };
+  }
+
   /* ───── 글자 수 ───── */
   function chars(str) { return [...String(str || '')].length; }
   function words(str) { const t = String(str || '').trim(); return t ? t.split(/\s+/).length : 0; }
@@ -280,6 +338,7 @@
   const api = {
     EARLY, RESTRICT, BINDING, ORDER, SLOTS, TIERS, parse, shifted, dday, md, notifyKo, plan, sortPlans, check, slotOf,
     wouldConflict, satOf, submitAdvice, sectionPos, chance, balance, scenarios, chars, words,
+    monthOf, satCountsForEarly, FEES, usesCSS, appCost,
   };
   root.Core = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

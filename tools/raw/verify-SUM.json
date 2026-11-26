@@ -1,0 +1,20 @@
+{"checked":{
+"rsi":"partial: deadline Dec 11 2026 and grade 11 confirmed; page does not say whether South Korea participates (intlOk unconfirmed, verify with CEE)",
+"ssp":"partial: eligibility, Jan 4 2027 opening, intl aid confirmed; 2027 deadline still unpublished (early Dec 2026)",
+"yygs":"partial: deadlines Oct 15 2026 / Jan 6 2027 confirmed; eligibility/tuition/aid not re-read on this pass",
+"rockefeller-ssrp":"partial: deadline Jan 4 2027 5pm ET, dates, age, junior/senior confirmed; main page silent on internationals and cost (FAQ not re-read)",
+"pioneer":"partial: Dec 13 2026 deadline (year labeling ambiguous on page), tuition 7,465 confirmed; no grade/age rules; summer-term deadline unpublished",
+"wolfram-wsrp":"ok",
+"ucla-neuro-hs":"ok: deadline and intl status still not stated on page",
+"ucsb-rmp":"ok: deadlines confirmed; NOTE additional rule min 3.80 weighted GPA; 2026 prices only",
+"stanford-spcs":"partial: 2027 application opens early Dec, no deadline; tuition/aid pages not read",
+"harvard-ssp":"ok",
+"jhu-precollege":"partial: dates confirmed; tuition and fellowship intl eligibility not read",
+"columbia-precollege":"partial: general deadlines now published; aid/eligibility pages not re-read"
+},
+"corrections":[
+{"id":"columbia-precollege","field":"deadline2027","old":null,"new":"2027-03-01","source":"https://precollege.sps.columbia.edu/admissions/dates-and-deadlines","evidence":"NYC Residential Summer A/B General Application Deadline March 1, 2027; NYC Commuter and Online April 1, 2027; Early Registration Feb 1, 2027"},
+{"id":"columbia-precollege","field":"dates2027","old":null,"new":"NYC Residential A Jun 28-Jul 16; B Jul 20-Aug 6, 2027; Online A Jul 12-23, B Jul 26-Aug 6","source":"https://precollege.sps.columbia.edu/admissions/dates-and-deadlines","evidence":"session dates table"},
+{"id":"ucsb-rmp","field":"eligibility","old":"High school student in 10th or 11th grade (9th case by case); age not stated.","new":"10th or 11th grade (9th case by case); minimum 3.80 weighted academic GPA; must attend full program","source":"https://summer.ucsb.edu/programs/research-mentorship-program/admissions","evidence":"minimum 3.80 weighted academic GPA"},
+{"id":"harvard-ssp","field":"deadlineNote","old":"Early Jan 13, 2027 ... Regular and international SSP Feb 10, 2027","new":"add: application fee $75; 7-week Online SSP intl may use late deadline Mar 31 (no aid)","source":"https://summer.harvard.edu/high-school-programs/secondary-school-program/admissions/","evidence":"7-week SSP Online applicants ... can use the late deadline"}
+]}

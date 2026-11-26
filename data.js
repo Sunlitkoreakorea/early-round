@@ -169,8 +169,23 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "ok (page: Oct or Nov exams 'generally available' for SCEA, Jan or Feb for RD; not a hard cutoff)",
    "req": "partial: essays/platforms/2 teacher recs/counselor confirmed; fee $80, interview, CSS 3987 not on pages read",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "May report a superscore; sending-all rule not stated",
+   "lastSatEarly": "November",
+   "lastSatRD": "February",
+   "note": "Early: Oct or Nov exams generally available; RD: Jan or Feb generally available",
+   "sources": [
+    "https://admissions.yale.edu/standardized-testing"
+   ],
+   "uncertain": [
+    "lastSatEarly/lastSatRD: page says generally and does not name the cycle"
+   ]
   }
  },
  {
@@ -362,8 +377,21 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page: scores 'by the end of October (REA)' / 'end of December (RD)')",
    "req": "partial: $100, 2 teacher recs, 5 short (3-50 words) + 3 essays (100-250) confirmed; pages list Common App only (QuestBridge not seen); interview page empty",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Self-report highest scores; official scores for ALL self-reported sittings required if enrolling",
+   "lastSatEarly": "October",
+   "lastSatRD": "December",
+   "note": "Scores by end of Oct (REA) / end of Dec (RD)",
+   "sources": [
+    "https://admission.stanford.edu/apply/freshman/testing.html"
+   ],
+   "uncertain": []
   }
  },
  {
@@ -509,8 +537,24 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "partial: official page fetch 405; official-domain search summaries confirm self-report and most-favorable-combination superscore regardless of date; no test dates stated",
    "req": "unreachable",
    "stats": "ok: 직접 확인"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Optional; superscore across dates; official only if enrolling",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Test-optional; self-report via Common App/Coalition/portal",
+   "sources": [
+    "https://www.amherst.edu/admission/apply/firstyear/testing"
+   ],
+   "uncertain": [
+    "superscore/selfReport: from search-result summary of amherst.edu; page fetch blocked (405)",
+    "lastSat*: not stated"
+   ]
   }
  },
  {
@@ -695,8 +739,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page asks for results by end of October for REA but says November tests acceptable if needed => Nov is allowed, Oct is the recommendation; RD 'as late as February'; superscore not addressed, null correct)",
    "req": "partial: official 2026-27 PDF confirms $95, 5 prompts x150 words max, 2 teacher evals, Common App; interview/CSS not rechecked",
    "stats": "ok: applied/admitted match Gazette and Harvard CDS 2025-26; CDS exists, so null fields can be filled (see corrections)"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Score Choice allowed, need not send all",
+   "lastSatEarly": "November",
+   "lastSatRD": "February",
+   "note": "Early: end of October, November series may be submitted if needed; RD: tests as late as February",
+   "sources": [
+    "https://college.harvard.edu/admissions/apply/application-requirements"
+   ],
+   "uncertain": [
+    "superscore: page does not address SAT superscoring",
+    "lastSatRD: February wording ambiguous"
+   ]
   }
  },
  {
@@ -880,8 +940,25 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page: take SAT 'by the October test date' for SCEA and 'December date' for RD; this is guidance, not a hard cutoff; no cross-format superscore; self-report of SAT not addressed)",
    "req": "partial: prompts/limits confirmed (250/400-500/250/3x50, graded paper required); fee, recs, interview, CSS null not rechecked",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Score choice allowed; submission of all scores encouraged",
+   "lastSatEarly": "October",
+   "lastSatRD": "December",
+   "note": "Take SAT by October date for SCEA; December date for RD. No superscoring between paper and digital",
+   "sources": [
+    "https://admission.princeton.edu/how-apply/standardized-testing"
+   ],
+   "uncertain": [
+    "superscore: page only says no cross-format superscore",
+    "selfReport: not stated on page",
+    "lastSat*: should-take-by guidance, not a hard cutoff"
+   ]
   }
  },
  {
@@ -1067,8 +1144,23 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page: tests 'before November 30 (EA)' and 'before December 31 (RA)'; November/December inference reasonable; highest section scores; self-report on application)",
    "req": "ok: 4 essays ~100-200, 4 short 40-50, 4 activities, 1 open box, $75, 2 teacher recs, interview waived if unavailable, own portal. CSS 3514 and optional counselor letter not rechecked",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Must self-report all exams taken; no picking",
+   "lastSatEarly": "November",
+   "lastSatRD": "December",
+   "note": "Tests must be taken before Nov 30 (EA) and Dec 31 (RD); page lists no specific SAT dates",
+   "sources": [
+    "https://mitadmissions.org/apply/firstyear/tests-scores/"
+   ],
+   "uncertain": [
+    "lastSat*: inferred from before Nov 30 / Dec 31 wording"
+   ]
   }
  },
  {
@@ -1246,8 +1338,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page: testing complete by 'last October test date' for ED, 'last December test date' for RD; superscore SAT/ACT; self-report via Common App)",
    "req": "partial: 4 essays (150-250/150-250/100-150/100-150), $80, Common App confirmed; interview/CSS not rechecked",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Self-report on Common App; Score Choice not mentioned",
+   "lastSatEarly": "October",
+   "lastSatRD": "December",
+   "note": "Testing complete by last October test date (ED) / last December date (RD); testing required",
+   "sources": [
+    "https://admission.brown.edu/first-year/standardized-tests"
+   ],
+   "uncertain": [
+    "scoreChoice: not stated",
+    "page does not say which exam the dates cover; assumed SAT/ACT"
+   ]
   }
  },
  {
@@ -1446,8 +1554,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "partial: direct fetch 403; official-domain search summary confirms ED through Nov 2026, RD through Feb 2027, superscore, self-report",
    "req": "unreachable",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; yes/no whether scores considered",
+   "lastSatEarly": "November",
+   "lastSatRD": "February",
+   "note": "Test-optional for 2026-27; required from 2027-28. Test dates through Nov 2026 (ED), Feb 2027 (RD)",
+   "sources": [
+    "https://undergrad.admissions.columbia.edu/apply/process/testing"
+   ],
+   "uncertain": [
+    "all fields from search-result summary; direct page fetch returned 403",
+    "scoreChoice: all-scores rule not stated"
+   ]
   }
  },
  {
@@ -1620,8 +1744,21 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (official table: Nov 7, 2026 SAT for ED, Dec 5, 2026 for RD; superscore; self-report)",
    "req": "partial: 1 teacher required + 1 optional, counselor required, $75, platforms incl. QuestBridge, essays 3x50-200 confirmed; interview not on page",
    "stats": "unreachable: Box link redirects to boxcloud and cannot be read; arithmetic check only (3570/72544 = 4.9%); third-party Esslo transcription shows SAT composite 1510-1570 and 4.9% rate, consistent but unverified"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Score Choice allowed but entire testing history encouraged",
+   "lastSatEarly": "November",
+   "lastSatRD": "December",
+   "note": "Nov 7, 2026 SAT for ED; Dec 5, 2026 SAT for RD. Testing required (waiver available)",
+   "sources": [
+    "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing"
+   ],
+   "uncertain": []
   }
  },
  {
@@ -1791,13 +1928,29 @@ window.SCHOOLS = [
    "lat": 41.7886,
    "lon": -87.5987,
    "region": "mw",
-   "lx": 11,
-   "ly": 5,
-   "la": "start"
+   "lx": 0,
+   "ly": -11,
+   "la": "middle"
   },
   "verified": {
+   "policy": "partial: FAQ fetch returned no body text; official-domain search summary confirms self-report and superscore; no test dates stated",
    "req": "partial: pages gave no usable content (essay page empty, requirements page without details); essays page 403/empty",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; submit only if it helps; self-reported as-is",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Test-optional no-harm policy",
+   "sources": [
+    "https://collegeadmissions.uchicago.edu/apply/uchicago-admissions-faq/"
+   ],
+   "uncertain": [
+    "superscore/selfReport: from search-result summary only",
+    "lastSat*: only a third-party claim (Nov SAT EA/ED I, Jan RD), not verified on official page"
+   ]
   }
  },
  {
@@ -1951,8 +2104,23 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "ok (page: 'encourage' tests no later than October (ED) / December (RD): recommendation, not cutoff; superscore; self-report)",
    "req": "partial: 350-word essay, $70, 2 teachers, Common App+Coalition confirmed; interview not on page",
    "stats": "ok (H6 box reads 183, avg $43,101, total $7,887,392 = 183 x avg; B2 nonresident first-year is 188, separate from 183)"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Report all available scores; most competitive profile considered",
+   "lastSatEarly": "October",
+   "lastSatRD": "December",
+   "note": "Testing required; encourage no later than October (ED) / December (RD) of senior year",
+   "sources": [
+    "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/"
+   ],
+   "uncertain": [
+    "page names no cycle; lastSat* are encouragement, not hard cutoffs"
+   ]
   }
  },
  {
@@ -2084,8 +2252,24 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "partial: fetch 403; official-domain search summary confirms superscore and self-report; no test dates",
    "req": "unreachable",
    "stats": "filled"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; full set of scores required (no sections only); Score Choice allowed",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS 2025-26 lists scores received by Jan 12; no SAT date list found",
+   "sources": [
+    "https://www.williams.edu/admission-aid/how-to-apply/first-year/"
+   ],
+   "uncertain": [
+    "all fields from search-result summary; direct fetch 403",
+    "lastSat*: not stated"
+   ]
   }
  },
  {
@@ -2246,8 +2430,23 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "ok (superscore SAT, self-report accepted in lieu of official; no cutoff dates on page)",
    "req": "ok: $60, 2 teachers, counselor, 2x250-word required, optional interview, 3 platforms confirmed; CSS 2821 not rechecked",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Not required to send all scores",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "SAT superscore only (ACT not); strongly encourages testing by mid-December",
+   "sources": [
+    "https://www.swarthmore.edu/admissions-aid/standardized-testing-policy"
+   ],
+   "uncertain": [
+    "lastSat*: only mid-December encouragement from search summary"
+   ]
   }
  },
  {
@@ -2399,8 +2598,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (SAT superscore not addressed, null correct; self-report in portal; no dates)",
    "req": "partial: 150 + 1-of-3 250 confirmed, platforms ok, teacher recs 2 + 1 optional ok; fee/interview/counselor not on page",
    "stats": "filled"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; yes/no on application, self-report in portal",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "ED I deadline Nov 8; ED II/RD Jan 8; page only states ACT superscore",
+   "sources": [
+    "https://www.pomona.edu/admissions/paths-apply"
+   ],
+   "uncertain": [
+    "superscore: SAT not addressed",
+    "lastSat*: not stated"
+   ]
   }
  },
  {
@@ -2528,8 +2743,21 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (nothing to verify; all null)",
    "req": "partial: 4 of 8 PIQs 350 words confirmed; activities/awards limit and fee not readable (PDF unreadable); no QuestBridge/Common App",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": null,
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Test-free: SAT/ACT not used in any part of admissions; scores only for placement/credit if admitted",
+   "sources": [
+    "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/"
+   ],
+   "uncertain": []
   }
  },
  {
@@ -2676,12 +2904,29 @@ window.SCHOOLS = [
    "lon": -72.6569,
    "region": "ne",
    "lx": -10,
-   "ly": -4,
+   "ly": 12,
    "la": "end"
   },
   "verified": {
+   "policy": "ok (SAT best sections across any dates; self-report null acceptable, Common App choice only)",
    "req": "partial: $65 and Common App+Coalition confirmed; recs/supplements/interview not read; 'Member Questions' exist so supplements [] means unknown",
    "stats": "filled"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; choose via Common App which scores considered",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Best SAT section scores across dates used",
+   "sources": [
+    "https://www.wesleyan.edu/admission/admission-faq.html"
+   ],
+   "uncertain": [
+    "all fields from search-result summary",
+    "selfReport: not clearly stated",
+    "lastSat*: not found"
+   ]
   }
  },
  {
@@ -2827,8 +3072,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (self-report in lieu of official; receipt deadlines Nov 15 / Jan 15 only; superscore not stated)",
    "req": "ok: no fee, 2 teachers + counselor, optional interview to Jan 15, 3 platforms, no essay on this page; CSS 6081 not rechecked",
    "stats": "partial: all values match; ED 760/263 sits under a 'Fall 2024 entering class' label in the 2025-26 CDS, so it may be the prior cycle"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Self-report in lieu of official; score receipt deadlines Nov 15 (Fall ED), Jan 15 (Winter ED/RD)",
+   "sources": [
+    "https://www.carleton.edu/admissions/apply/steps/materials/"
+   ],
+   "uncertain": [
+    "superscore: not stated",
+    "lastSat*: only receipt deadlines given"
+   ]
   }
  },
  {
@@ -2989,8 +3250,23 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "policy": "ok (superscore, self-report for all applicants)",
    "req": "partial: fee 70, platforms, optional interview ok; two 250-word essays optional ok; recs differ (see correction)",
    "stats": "partial: all values match; ED 1985/296 sits under a 'Fall 2024 entering class' label in the 2025-26 CDS, so it may be the prior cycle"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; applicants choose yes/no per test",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Highest CR and Math across dates considered",
+   "sources": [
+    "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html"
+   ],
+   "uncertain": [
+    "lastSat*: not on page"
+   ]
   }
  },
  {
@@ -3135,8 +3411,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (self-report at application; superscore not stated)",
    "req": "partial: >=2 teachers, interview request dates, 3 platforms, no supplemental essay confirmed; fee not mentioned on page",
    "stats": "ok (headers say 2024-2025 but items say Fall 2025; admitted is September-only)"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; box on Common App to have scores considered",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Self-report accepted at application",
+   "sources": [
+    "https://www.middlebury.edu/college/admissions/application-instructions-and-deadlines"
+   ],
+   "uncertain": [
+    "all fields from search-result summary",
+    "superscore/lastSat*: not found"
+   ]
   }
  },
  {
@@ -3287,8 +3579,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (superscore SAT math+ERW, self-reported accepted; Dec SAT strongly encouraged for RD)",
    "req": "ok: no fee, 2 teachers, optional 200-450 word supplement, Common App+QuestBridge, interview optional",
    "stats": "ok (CDS 2024-2025, fall 2024 cohort; values match)"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; either official or self-reported",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Highest subscores across reports; enrolling students send official scores",
+   "sources": [
+    "https://www.grinnell.edu/admission/apply/first-year/faqs-domestic"
+   ],
+   "uncertain": [
+    "from search-result summary",
+    "a Standardized Testing page says scores required, contradicting rest of site"
+   ]
   }
  },
  {
@@ -3414,8 +3722,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "partial: fetch 403; official-domain search summary confirms superscore and self-report. FAQ says take tests by Nov 15 (ED I) and Jan 4 (ED II); lastSat fields left null",
    "req": "unreachable",
    "stats": "filled"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Superscores all exams; official report before enrollment",
+   "sources": [
+    "https://afa.colby.edu/apply/requirements/"
+   ],
+   "uncertain": [
+    "from search-result summary",
+    "lastSat*: not found"
+   ]
   }
  },
  {
@@ -3565,8 +3889,24 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok except selfReport (see correction); Oct tests 'typically arrive' for ED I, Dec for ED II/RD, general tests not SAT-specific",
    "req": "partial: 1 academic teacher required (2 recommended), fee waived, optional interview, Common App confirmed; supplement content unknown",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Send scores from every date with a best section score; may switch to no-tests election",
+   "lastSatEarly": "October",
+   "lastSatRD": "December",
+   "note": "Oct tests typically arrive for ED I; Dec tests for ED II and RD",
+   "sources": [
+    "https://www.conncoll.edu/admission/apply/standardized-test-policy/"
+   ],
+   "uncertain": [
+    "selfReport: not stated",
+    "from search-result summary of official pages"
+   ]
   }
  },
  {
@@ -3726,8 +4066,1927 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "policy": "ok (page: Nov SAT accepted for ED, Dec for RD; superscore SAT/ACT subscores; self-report on application)",
    "req": "partial: 250-word required supplement and Common App+Coalition confirmed; fee/recs/interview not on page",
    "stats": "ok"
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; no hybrid SAT/ACT superscore",
+   "lastSatEarly": "November",
+   "lastSatRD": "December",
+   "note": "Latest SAT: Nov for ED I, Dec for RD (CDS says Jan 5 receipt)",
+   "sources": [
+    "https://admissions.rochester.edu/applying/testing-policies/"
+   ],
+   "uncertain": [
+    "from search-result summary; page may be ~8 months old"
+   ]
   }
+ },
+ {
+  "id": "macalester",
+  "name": "Macalester",
+  "full": "Macalester College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 6",
+    "notifyDate": "2026-12-06"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 19",
+    "notifyDate": "2026-12-19"
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-01",
+    "notify": "January 31",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "March 14",
+    "notifyDate": "2027-03-14"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (if admitted you must enroll and withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": null,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile",
+   "ISAFA",
+   "Macalester Financial Declaration Form"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-09",
+   "ed2": "2027-01-08",
+   "rd": "2027-01-22"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional; no disadvantage for not submitting (SAT code 6390, ACT 2122).",
+  "english": "Optional but recommended for applicants with fewer than two years in English-medium schooling (TOEFL, IELTS, Duolingo); minimums and waivers not stated.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "No online interviews for international applicants; optional third-party InitialView or Vericant interview.",
+  "url": "https://www.macalester.edu/admissions/apply/first-year/",
+  "sources": [
+   "https://www.macalester.edu/admissions/deadlines/",
+   "https://www.macalester.edu/admissions/apply/international/",
+   "https://www.macalester.edu/financial-aid/apply/prospective/",
+   "https://www.macalester.edu/institutional-research/wp-content/uploads/sites/515/Macalester-College_Legacy-CDS_2024-2025-1.xlsx",
+   "https://www.macalester.edu/neuroscience/major/"
+  ],
+  "uncertain": [
+   "stats: used CDS 2024-25 because the 2025-26 CDS PDF exceeded the fetch size limit (10 MB)",
+   "intlAid/meetsNeed: official pages read do not state need-aware vs need-blind or whether full need is met for internationals; need-aware is from general knowledge, meetsNeed left null",
+   "ea: C22 gives no EA applicant/admit counts",
+   "intl admit rate: CDS C1 international row not filled, so intl admit rate unknown",
+   "aidDeadlines: dates are 'priority for financial aid' on deadlines page (not form-specific)",
+   "lastSat: not stated"
+  ],
+  "why": "A Midwest liberal arts college with about 29% overall admit rate and the largest international first-year group on this list (117), though aid-seeking internationals face competition.",
+  "stats": {
+   "cdsYear": "2024-2025",
+   "source": "https://www.macalester.edu/institutional-research/wp-content/uploads/sites/515/Macalester-College_Legacy-CDS_2024-2025-1.xlsx",
+   "applied": 8968,
+   "admitted": 2558,
+   "admitRate": 28.5,
+   "ed": {
+    "applied": 447,
+    "admitted": 176,
+    "rate": 39.4
+   },
+   "ea": null,
+   "satSubmitPct": 29,
+   "satEBRW": [
+    680,
+    720,
+    750
+   ],
+   "satMath": [
+    670,
+    720,
+    760
+   ],
+   "firstYearTotal": 560,
+   "intlFirstYear": 117,
+   "intlAidCount": 255,
+   "intlAidAvg": 60806
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; scores considered if submitted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Testing page does not state test-date cutoffs."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Saint Paul",
+   "state": "MN",
+   "lat": 44.938,
+   "lon": -93.168,
+   "region": "mw",
+   "lx": -10,
+   "ly": 2,
+   "la": "end"
+  },
+  "verified": {
+   "cand": "unreachable: CDS residency row not filled (collector) and 2025-26 file too large; not re-checked"
+  }
+ },
+ {
+  "id": "oberlin",
+  "name": "Oberlin",
+  "full": "Oberlin College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "mid-January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-05",
+    "notify": "February 1",
+    "notifyDate": "2027-02-01"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "April 1",
+    "notifyDate": "2027-04-01"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (if admitted you must enroll and withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": null,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile",
+   "ISAFA"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-01",
+   "ed2": "2027-01-05",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional; self-reported scores accepted, official report only if enrolling.",
+  "english": "Not stated on the page read (no fee waivers offered for English proficiency tests).",
+  "cogsci": "Neuroscience (major), Psychology (major); Cognitive Sciences is a minor only",
+  "interview": "Virtual interviews for U.S. citizens and permanent residents only; internationals may use independent InitialView or Vericant interviews.",
+  "url": "https://oberlin.edu/admissions-and-aid/arts-and-sciences/first-year-applicants",
+  "sources": [
+   "https://oberlin.edu/admissions-and-aid/arts-and-sciences/first-year-applicants",
+   "https://www.oberlin.edu/index%2Ephp/media/37695/download",
+   "https://oberlin.edu/cognitive-sciences"
+  ],
+  "uncertain": [
+   "applied: C1 gender sum is 11738; C1 residency table total shows 11732; used 11738 (rate 33.0 either way)",
+   "international admit rate is only about 8% for fall 2026 per Oberlin page (CDS: 446/4015 = 11.1%), far below the overall rate",
+   "page says the international aid budget is limited and aid cannot be added later; meetsNeed unknown",
+   "ea: CDS C22 gives dates but no counts",
+   "deadline table on page has no year printed; matches CDS 2025-26 dates",
+   "lastSat: not stated"
+  ],
+  "why": "One-third overall admit rate and a large intl aid pool (292 recipients, about $51.6k average), but internationals admit at only about 8-11%.",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.oberlin.edu/index%2Ephp/media/37695/download",
+   "applied": 11738,
+   "admitted": 3873,
+   "admitRate": 33.0,
+   "ed": {
+    "applied": 668,
+    "admitted": 263,
+    "rate": 39.4
+   },
+   "ea": null,
+   "satSubmitPct": 34,
+   "satEBRW": [
+    690,
+    730,
+    760
+   ],
+   "satMath": [
+    660,
+    700,
+    740
+   ],
+   "firstYearTotal": 768,
+   "intlFirstYear": 93,
+   "intlAidCount": 292,
+   "intlAidAvg": 51631,
+   "intl": {
+    "applied": 4015,
+    "admitted": 446,
+    "rate": 11.1
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": true,
+   "scoreChoice": "Test-optional; self-report on application",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8: SAT/ACT must be received by Jan 15; no per-round SAT month stated."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Oberlin",
+   "state": "OH",
+   "lat": 41.2939,
+   "lon": -82.2174,
+   "region": "mw",
+   "lx": -10,
+   "ly": 12,
+   "la": "end"
+  },
+  "verified": {
+   "cand": "partial: C1 totals and international 446/4015 checked by hand (793+6924+4015=11732, 283+3144+446=3873); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "lafayette",
+  "name": "Lafayette",
+  "full": "Lafayette College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II (and RD converted to ED II by Feb 1) are binding; you must sign the Early Decision Agreement.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Optional for fall 2027 and fall 2028 entry; self-reported scores allowed, official required on enrollment; superscored.",
+  "english": "Required; typically TOEFL 100, IELTS 7, or Duolingo 130; waiver by request if English is first language or 3 years of English-medium instruction.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Not required, encouraged; virtual interviews available.",
+  "url": "https://admissions.lafayette.edu/apply/",
+  "sources": [
+   "https://admissions.lafayette.edu/apply/",
+   "https://admissions.lafayette.edu/deadlines-and-forms/",
+   "https://admissions.lafayette.edu/apply/international-students/",
+   "https://oir.lafayette.edu/wp-content/uploads/sites/196/2025/10/CDS2024-2025.pdf"
+  ],
+  "uncertain": [
+   "stats: full 2025-26 CDS not found (only the supplemental SCDS 2025-26); used full CDS 2024-25",
+   "applied: C1 gender sum 10193 vs residency total 10195 in the CDS",
+   "international admit rate only 7.0% (258 of 3705) in CDS 2024-25",
+   "notification dates given only as months on the page",
+   "a search summary showed Nov 1/Jan 5 dates on another Lafayette page; deadlines page and apply page both say Nov 15 / Jan 15, which were used",
+   "meritIntl: not stated on page read",
+   "cogsci: majors from general knowledge, not read on a page"
+  ],
+  "why": "About 31% overall admit rate and an explicit guarantee to meet full need for admitted internationals (105 recipients, about $69k average), though internationals admit near 7%.",
+  "stats": {
+   "cdsYear": "2024-2025",
+   "source": "https://oir.lafayette.edu/wp-content/uploads/sites/196/2025/10/CDS2024-2025.pdf",
+   "applied": 10193,
+   "admitted": 3206,
+   "admitRate": 31.5,
+   "ed": {
+    "applied": 870,
+    "admitted": 369,
+    "rate": 42.4
+   },
+   "ea": null,
+   "satSubmitPct": 23,
+   "satEBRW": [
+    670,
+    710,
+    740
+   ],
+   "satMath": [
+    680,
+    720,
+    760
+   ],
+   "firstYearTotal": 698,
+   "intlFirstYear": 46,
+   "intlAidCount": 105,
+   "intlAidAvg": 69176,
+   "intl": {
+    "applied": 3705,
+    "admitted": 258,
+    "rate": 7.0
+   }
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": true,
+   "scoreChoice": "Optional; may change testing status by the round deadline via email",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Easton",
+   "state": "PA",
+   "lat": 40.6987,
+   "lon": -75.2086,
+   "region": "ne",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 (fall 2024) international 258/3705 checked by hand (1180+5310+3705=10195, 419+2529+258=3206); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "kenyon",
+  "name": "Kenyon",
+  "full": "Kenyon College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "mid-March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED options are binding; if admitted you must enroll and withdraw other applications.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": "Four merit scholarships of $20,000-$35,000/year (Excellence, Honors, President's, Distinguished Academic), automatic with application; intl eligibility not stated on the page.",
+  "aidForms": [
+   "CSS Profile",
+   "Kenyon International Financial Aid Application"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional for all applicants; only 7.5% of enrolled first-years submitted SAT.",
+  "english": null,
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://www.kenyon.edu/admissions-aid/how-to-apply/admissions-deadlines/",
+  "sources": [
+   "https://www.kenyon.edu/admissions-aid/how-to-apply/admissions-deadlines/",
+   "https://kenyon.edu/admissions-aid/financial-aid/apply-for-financial-aid",
+   "https://kenyon.edu/scholarships",
+   "https://www.kenyon.edu/files/resources/cds-2025-26-kenyon.xlsx"
+  ],
+  "uncertain": [
+   "meetsNeed and need-aware: from a search-result summary of Kenyon pages, not read directly",
+   "a search summary quoted an official Kenyon page saying fewer than 5% of international applicants requiring need-based aid were admitted last cycle; this may make Kenyon a poor balance school for an aid-seeking international",
+   "CDS C1 international row not filled, so intl admit rate unknown",
+   "SAT percentiles come from only 30 submitters",
+   "english/interview: not read",
+   "dates on page have no year printed",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "About 30% overall admit rate with strong aid per recipient (149 recipients, about $73k), but a published note suggests aid-seeking internationals are rarely admitted.",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.kenyon.edu/files/resources/cds-2025-26-kenyon.xlsx",
+   "applied": 7091,
+   "admitted": 2138,
+   "admitRate": 30.2,
+   "ed": {
+    "applied": 663,
+    "admitted": 231,
+    "rate": 34.8
+   },
+   "ea": null,
+   "satSubmitPct": 7.5,
+   "satEBRW": [
+    700,
+    720,
+    740
+   ],
+   "satMath": [
+    680,
+    720,
+    765
+   ],
+   "firstYearTotal": 412,
+   "intlFirstYear": 39,
+   "intlAidCount": 149,
+   "intlAidAvg": 73082,
+   "intlNote": "Kenyon 공식 페이지 요약: 재정지원이 필요한 국제학생 합격은 5% 미만 (직접 확인 못 함)"
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores received by Feb 1; no per-round SAT month stated."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Gambier",
+   "state": "OH",
+   "lat": 40.3756,
+   "lon": -82.3974,
+   "region": "mw",
+   "lx": 11,
+   "ly": 9,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: CDS C1 residency rows are blank, so no international admit rate; other fields not re-checked"
+  }
+ },
+ {
+  "id": "richmond",
+  "name": "Richmond",
+  "full": "University of Richmond",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "late January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-01",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-01",
+    "notify": "April 1",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II are binding; EA is non-binding; apply by Dec 1 for automatic Richmond Scholars merit consideration.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": null,
+  "meetsNeed": null,
+  "meritIntl": "Richmond Scholars merit program: admission application is the scholarship application; automatic for EA and for RD applications by Dec 1 (intl eligibility not stated on page).",
+  "aidForms": [
+   "CSS Profile",
+   "University of Richmond Certification of Financial Responsibility"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-02-01",
+   "rd": "2027-02-01"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional for 2027 entrants; submitted scores are superscored.",
+  "english": "If English is not your native language: TOEFL, IELTS, Duolingo, or a University-approved waiver; minimums not stated.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://admission.richmond.edu/process/",
+  "sources": [
+   "https://admission.richmond.edu/process/",
+   "https://financialaid.richmond.edu/applying/apply.html",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionB.pdf",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionC.pdf",
+   "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionH.pdf"
+  ],
+  "uncertain": [
+   "ED counts: CDS section C labels them 'Fall 2024 entering class' (1154 applied, 421 admitted), so they may be one year older",
+   "notification dates came from a search summary and conflict across Richmond pages (Dec 12/15, Jan 23-26, Feb 13/15, Apr 1); only months kept",
+   "intlAid/meetsNeed: aid page does not say whether internationals are eligible or fully met; general policy is to meet demonstrated need",
+   "international admit rate only 6.8% (280 of 4104)",
+   "aid deadlines Nov 15 / Feb 1 are from the financial aid page (differ from admission deadlines)",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "A 22% admit-rate school that sits at the low end of this list but pays about $68k average to 187 international recipients.",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ifx.richmond.edu/pdfs/CDS2025-2026SectionC.pdf (sections B, C, H; index https://ifx.richmond.edu/research/common-data.html)",
+   "applied": 16560,
+   "admitted": 3683,
+   "admitRate": 22.2,
+   "ed": {
+    "applied": 1154,
+    "admitted": 421,
+    "rate": 36.5
+   },
+   "ea": null,
+   "satSubmitPct": 18.6,
+   "satEBRW": [
+    700,
+    720,
+    750
+   ],
+   "satMath": [
+    700,
+    720,
+    770
+   ],
+   "firstYearTotal": 857,
+   "intlFirstYear": 72,
+   "intlAidCount": 187,
+   "intlAidAvg": 67911,
+   "intl": {
+    "applied": 4104,
+    "admitted": 280,
+    "rate": 6.8
+   }
+  },
+  "policy": {
+   "superscore": true,
+   "selfReport": null,
+   "scoreChoice": "Test optional; opt out of sending results when prompted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Richmond",
+   "state": "VA",
+   "lat": 37.5743,
+   "lon": -77.5388,
+   "region": "s",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 international 280/4104 checked by hand (2273+10183+4104=16560, 495+2908+280=3683); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "case-western",
+  "name": "Case Western",
+  "full": "Case Western Reserve University",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 19",
+    "notifyDate": "2026-12-19"
+   },
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 5",
+    "notifyDate": "2026-12-05"
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "February 6",
+    "notifyDate": "2027-02-06"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "March 20",
+    "notifyDate": "2027-03-20"
+   }
+  ],
+  "earlyRule": "ED I/II are binding (agreement signed by student, counselor, and parent; withdraw other applications); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "Special scholarship competitions open to first-year internationals (names/amounts not on page read); students are also automatically considered for merit.",
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-22",
+   "rd": "2027-02-01"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional; no minimum GPA or score (SAT code 1105, ACT 3244).",
+  "english": null,
+  "cogsci": "Cognitive Science (major), Neuroscience (major), Psychology (major)",
+  "interview": "None for general applicants (required only for finalists of the Pre-Professional Scholars Program).",
+  "url": "https://case.edu/admission/apply/first-year-applicants",
+  "sources": [
+   "https://case.edu/admission/apply/dates-deadlines",
+   "https://case.edu/admission/apply/first-year-applicants",
+   "https://case.edu/financialaid/undergraduate/int/",
+   "https://case.edu/ir/sites/default/files/2026-02/CDS%202025-26%20Adjusted%20Final.pdf"
+  ],
+  "uncertain": [
+   "intlFirstYear 92 comes from the CDS text layer only (B2 cells render blank in the PDF)",
+   "CDS international applied/admitted (about 11112 / 2360, roughly 21%) inferred from a garbled table, not stated cleanly",
+   "intl aid page says only a limited amount of need-based aid is offered (so meetsNeed false); a search snippet claimed full need is met for all admitted students",
+   "deadline table has no year printed; weekdays match the 2026-27 cycle",
+   "also lists a Pre-Professional Scholars Program round (Dec 1) and spring entry, not included",
+   "english: not on page read",
+   "cogsci: major titles from general knowledge, not read on a page",
+   "lastSat: not stated"
+  ],
+  "why": "A 35% admit-rate research university with a cognitive science major and merit scholarship competitions open to internationals (about 21% intl admit rate).",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://case.edu/ir/sites/default/files/2026-02/CDS%202025-26%20Adjusted%20Final.pdf",
+   "applied": 39332,
+   "admitted": 13890,
+   "admitRate": 35.3,
+   "ed": {
+    "applied": 1053,
+    "admitted": 263,
+    "rate": 25.0
+   },
+   "ea": null,
+   "satSubmitPct": 52,
+   "satEBRW": [
+    710,
+    730,
+    760
+   ],
+   "satMath": [
+    730,
+    760,
+    780
+   ],
+   "firstYearTotal": 1663,
+   "intlFirstYear": 92,
+   "intlAidCount": 275,
+   "intlAidAvg": 43200,
+   "intl": {
+    "applied": 11112,
+    "admitted": 2360,
+    "rate": 21.2
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Page gives no test-date cutoff."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Cleveland",
+   "state": "OH",
+   "lat": 41.5043,
+   "lon": -81.6084,
+   "region": "mw",
+   "lx": 11,
+   "ly": -3,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 international 2360/11112 checked by hand (3596+24624+11112=39332, 972+10558+2360=13890); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "trinity-ct",
+  "name": "Trinity (CT)",
+  "full": "Trinity College (Hartford)",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "mid-February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "early April",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED is binding; RD (and any early action) is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": null,
+  "meetsNeed": true,
+  "meritIntl": null,
+  "aidForms": [
+   "CSS Profile"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional per Trinity standardized testing page.",
+  "english": "Duolingo, IELTS, or TOEFL required; recommended Duolingo 130, IELTS 7.0, TOEFL 100; waiver after 3 years of English-medium high school.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Optional, strongly encouraged.",
+  "url": "https://www.trincoll.edu/admissions/",
+  "sources": [
+   "https://www.trincoll.edu/admissions/finaid/international-students/",
+   "https://www.trincoll.edu/asic/wp-content/uploads/sites/125/2026/06/CDS-2025-2026-Trinity-College.pdf"
+  ],
+  "uncertain": [
+   "first-year admissions page returned 404; deadlines come from the international aid page (ED1 Nov 15, ED2 Jan 15, RD Jan 15) and cycle year is not printed",
+   "CDS text lists ED closing 12/15 and notification 1/12, which conflicts with Nov 15; not verified",
+   "intlFirstYear 47 from CDS international enrollment (B2 table layout unclear)",
+   "intlAidCount 295 looks high against about 252 total nonresidents in B2; may count differently",
+   "international admit rate only 5.0% (167 of 3348)",
+   "need-blind/aware not stated; policy says meets full need if admitted",
+   "notification months from a search summary",
+   "interview and English details from search summary of Trinity pages",
+   "cogsci: no standalone cognitive science major; neuroscience and psychology majors"
+  ],
+  "why": "29.5% overall admit rate with a full-need pledge and heavy intl aid (295 recipients, about $70k), but internationals admit near 5%.",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.trincoll.edu/asic/wp-content/uploads/sites/125/2026/06/CDS-2025-2026-Trinity-College.pdf",
+   "applied": 7272,
+   "admitted": 2148,
+   "admitRate": 29.5,
+   "ed": {
+    "applied": 643,
+    "admitted": 261,
+    "rate": 40.6
+   },
+   "ea": null,
+   "satSubmitPct": 9,
+   "satEBRW": [
+    670,
+    710,
+    740
+   ],
+   "satMath": [
+    660,
+    690,
+    730
+   ],
+   "firstYearTotal": 478,
+   "intlFirstYear": 47,
+   "intlAidCount": 295,
+   "intlAidAvg": 70437,
+   "intl": {
+    "applied": 3348,
+    "admitted": 167,
+    "rate": 5.0
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Not stated."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Hartford",
+   "state": "CT",
+   "lat": 41.7479,
+   "lon": -72.6905,
+   "region": "ne",
+   "lx": -10,
+   "ly": -3,
+   "la": "end"
+  },
+  "verified": {
+   "cand": "partial: C1 international 167/3348 checked by hand (663+3262+3348=7273, 241+1740+167=2148); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "whitman",
+  "name": "Whitman",
+  "full": "Whitman College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-12-01",
+    "notify": "early February",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-05",
+    "notify": "late January",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "early March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED1/ED2 are binding (applicants reviewed in a smaller pool); EA is non-binding.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": true,
+  "meritIntl": "International applicants considered automatically for merit (amounts not on page read); talent awards need a separate application.",
+  "aidForms": [
+   "Whitman International Student Financial Aid Application (WISFAA)"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-05",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "CDS lists SAT/ACT as not required but considered if submitted; scores due Jan 15.",
+  "english": null,
+  "cogsci": "Brain, Behavior and Cognition (major, neuroscience-focused), Psychology (major)",
+  "interview": null,
+  "url": "https://www.whitman.edu/admission-and-aid/applying-to-whitman/first-year-students",
+  "sources": [
+   "https://www.whitman.edu/admission-and-aid/applying-to-whitman/first-year-students",
+   "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/international-and-daca-students",
+   "https://www.whitman.edu/documents/offices/institutional-research/2026/CDS-2025-26-Whitman-College-Final-V2.pdf"
+  ],
+  "uncertain": [
+   "EA (Dec 1) is labeled 'for reference' on the page while CDS C22 says no early action; unverified",
+   "CDS composite SAT row is internally inconsistent (1190/1420/1415); only EBRW and Math used",
+   "deadlines page has no year printed; cycle not confirmed",
+   "international admit rate only 7.7% (253 of 3265); page says to apply RD for aid and Whitman is 'highly need-aware'",
+   "english/interview not read",
+   "no major titled Neuroscience; the Brain, Behavior and Cognition major is the neuroscience route"
+  ],
+  "why": "40% overall admit rate with a stated full-need commitment for internationals (201 recipients, about $52k average).",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.whitman.edu/documents/offices/institutional-research/2026/CDS-2025-26-Whitman-College-Final-V2.pdf",
+   "applied": 6950,
+   "admitted": 2791,
+   "admitRate": 40.2,
+   "ed": {
+    "applied": 542,
+    "admitted": 114,
+    "rate": 21.0
+   },
+   "ea": null,
+   "satSubmitPct": 25,
+   "satEBRW": [
+    650,
+    700,
+    740
+   ],
+   "satMath": [
+    660,
+    720,
+    770
+   ],
+   "firstYearTotal": 373,
+   "intlFirstYear": 41,
+   "intlAidCount": 201,
+   "intlAidAvg": 51730,
+   "intl": {
+    "applied": 3265,
+    "admitted": 253,
+    "rate": 7.7
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; considered if submitted",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores by Jan 15; testing-policy page returned 404."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Walla Walla",
+   "state": "WA",
+   "lat": 46.0716,
+   "lon": -118.3283,
+   "region": "w",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 international 253/3265 checked by hand (1178+2507+3265=6950, 818+1720+253=2791); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "dickinson",
+  "name": "Dickinson",
+  "full": "Dickinson College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-15",
+    "notify": "mid-December",
+    "notifyDate": null
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-15",
+    "notify": "mid-January",
+    "notifyDate": null
+   },
+   {
+    "type": "ED2",
+    "deadline": "2027-01-15",
+    "notify": "late February",
+    "notifyDate": null
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "ED I/II are binding; EA is non-binding; RD applicants may switch to ED II by Jan 28.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "need-aware",
+  "meetsNeed": false,
+  "meritIntl": "Merit scholarships open to internationals, automatic with application (no separate application; amounts not on page read).",
+  "aidForms": [
+   "CSS Profile",
+   "ISFAA",
+   "International Certification of Finances"
+  ],
+  "aidDeadlines": {
+   "early": "2026-11-15",
+   "ed2": "2027-01-15",
+   "rd": "2027-01-15"
+  },
+  "testing": "optional",
+  "testingNote": "Test optional since 1994 (13% of enrolled first-years submitted SAT).",
+  "english": "Recommended TOEFL iBT 90, IELTS 7.0, or Duolingo 120 with interview (from search summary); not stated as hard minimums.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": null,
+  "url": "https://www.dickinson.edu/info/20256/apply/1024/application_deadlines",
+  "sources": [
+   "https://www.dickinson.edu/info/20256/apply/1024/application_deadlines",
+   "https://www.dickinson.edu/info/20045/admissions/1179/international_student_financial_aid",
+   "https://www.dickinson.edu/download/downloads/id/17199/cds_2025-2026.pdf"
+  ],
+  "uncertain": [
+   "deadline table has no entry year printed (only a note about no spring 2027 cycle)",
+   "CDS text lists ED closing 12/15 and EA unclear, conflicting with the page's Nov 15; page used",
+   "aid page says need-based aid is limited and does not say full need is met (meetsNeed false); international admit rate 13.4% (208 of 1549)",
+   "international enrolled is 36 in C residency table vs 34 in B2; B2 used",
+   "cogsci: majors from general knowledge"
+  ],
+  "why": "About 41% overall admit rate and a 13% intl admit rate with sizeable aid (221 recipients, about $59k).",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.dickinson.edu/download/downloads/id/17199/cds_2025-2026.pdf",
+   "applied": 5719,
+   "admitted": 2373,
+   "admitRate": 41.5,
+   "ed": {
+    "applied": 454,
+    "admitted": 258,
+    "rate": 56.8
+   },
+   "ea": null,
+   "satSubmitPct": 13,
+   "satEBRW": [
+    680,
+    710,
+    730
+   ],
+   "satMath": [
+    660,
+    680,
+    710
+   ],
+   "firstYearTotal": 485,
+   "intlFirstYear": 34,
+   "intlAidCount": 221,
+   "intlAidAvg": 58593,
+   "intl": {
+    "applied": 1549,
+    "admitted": 208,
+    "rate": 13.4
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Deadlines page does not list test-date cutoffs."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Carlisle",
+   "state": "PA",
+   "lat": 40.2033,
+   "lon": -77.199,
+   "region": "ne",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 international 208/1549 checked by hand (1068+3102+1549=5719, 539+1626+208=2373); deadlines/aid not re-checked"
+  }
+ },
+ {
+  "id": "earlham",
+  "name": "Earlham",
+  "full": "Earlham College",
+  "public": false,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "December 1",
+    "notifyDate": "2026-12-01"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "December 1",
+    "notifyDate": "2026-12-01"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-02-01",
+    "notify": "March 1",
+    "notifyDate": "2027-03-01"
+   }
+  ],
+  "earlyRule": "ED is binding; EA I and II are non-binding. Second EA round deadline 2026-12-01.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "International merit scholarships up to $37,000/year for up to eight semesters; set by the International Financial Aid Committee.",
+  "aidForms": [
+   "International Student Financial Information Form"
+  ],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Test optional, but advisers use scores or other tests to document preparedness and English proficiency for the I-20.",
+  "english": "Accepted: TOEFL (79 required/92 recommended), IELTS (6.0/7.0), Duolingo (115/125), SAT EBRW (400/600), ACT Reading (20/26), others; no waivers listed.",
+  "cogsci": "Neuroscience (major), Psychology (major)",
+  "interview": "Interview with the director of international admissions recommended, not required.",
+  "url": "https://earlham.edu/apply",
+  "sources": [
+   "https://earlham.edu/apply",
+   "https://earlham.edu/admissions/international-admissions/",
+   "https://earlham.edu/wp-content/uploads/2026/04/Earlham-College_CDS-2025-2026_PDF.pdf"
+  ],
+  "uncertain": [
+   "deadlines: apply page (labelled cycle 2027-28) says ED/EA I Nov 1, EA II Dec 1, RD Feb 1 while the international page says ED/EA1 Nov 15, EA2 Dec 15, RD Jan 15; apply page used",
+   "ed: CDS shows an ED plan but no ED applicant/admit counts were captured",
+   "meetsNeed false because families must contribute at least $25,000 in the first year; need-blind/aware not stated",
+   "international admit rate 39.9% (258 of 647); only 16 international first-years enrolled",
+   "SAT stats come from only 50 submitters",
+   "aidDeadlines not stated for internationals",
+   "cogsci: neuroscience and psychology majors confirmed via search summary of Earlham catalog"
+  ],
+  "why": "A true higher-admit option (79% overall, about 40% for internationals) with merit awards up to $37k, though need is not fully met.",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://earlham.edu/wp-content/uploads/2026/04/Earlham-College_CDS-2025-2026_PDF.pdf",
+   "applied": 2128,
+   "admitted": 1682,
+   "admitRate": 79.0,
+   "ed": null,
+   "ea": null,
+   "satSubmitPct": 30,
+   "satEBRW": [
+    550,
+    645,
+    695
+   ],
+   "satMath": [
+    532,
+    580,
+    638
+   ],
+   "firstYearTotal": 169,
+   "intlFirstYear": 16,
+   "intlAidCount": 120,
+   "intlAidAvg": 42042,
+   "intl": {
+    "applied": 647,
+    "admitted": 258,
+    "rate": 39.9
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test optional",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Not stated."
+  },
+  "group": "candidate",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Richmond",
+   "state": "IN",
+   "lat": 39.8226,
+   "lon": -84.9109,
+   "region": "mw",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "cand": "partial: C1 international 258/647 checked by hand (556+925+647=2128, 536+888+258=1682); deadlines/aid not re-checked"
+  }
+ }
+];
+window.INTL_OPTS = [
+ {
+  "id": "hku",
+  "name": "University of Hong Kong",
+  "country": "Hong Kong",
+  "city": "Hong Kong",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-09-23",
+  "deadline": "2026-11-25",
+  "deadlineNote": "first-round deadline (noon HKT); later applications rolling until final close 2027-08-25",
+  "programs": "Psychology (BSocSc), Cognitive Science and Neuroscience majors (listed in a 2024 HKU brochure, not re-verified for 2027), BSc Applied Artificial Intelligence (2027 sheet); English-medium",
+  "apAccepted": "Yes. Lower boundary: 3 AP subjects at grade 3+ plus SAT superscore 1380+, or 3 AP plus 2 more AP at grade 3+ (AP English Lang, Seminar, Research do not count); competitive programmes expect higher",
+  "english": "IELTS 6.5 (W and S >= 6.0), TOEFL iBT 5.0 new scale (W and S >= 5.0) or 95 legacy (W and S >= 25), or SAT Reading and Writing >= 610",
+  "cost": "HK$224,000/yr (Arts, Social Sciences, Business etc.) or HK$249,000/yr (Science, Engineering, Computing) for the 2026-27 cohort",
+  "scholarship": "HKU Entrance Scholarships: all applicants considered automatically, no separate application; top award up to full tuition waiver plus accommodation and living allowance (per HKU search-result text)",
+  "notes": "The first-round deadline is 2026-11-25 and the 2028-entry cycle should be mirrored about a year later, so plan for Sept to Nov 2027.",
+  "url": "https://admissions.hku.hk/apply/international-qualifications",
+  "sources": [
+   "https://admissions.hku.hk/apply/international-qualifications",
+   "https://admissions.hku.hk/apply/international-qualifications/english-language-requirement",
+   "https://admissions.hku.hk/node/2303",
+   "https://www.hku.hk/en/admission-aid/tuition-fee-scholarships"
+  ],
+  "uncertain": [
+   "cost: 2027 non-local rate may be about HK$250,000 for non-STEM per a 2027 HKU sheet snippet; PDF unreadable, unconfirmed",
+   "programs: Cognitive Science and Neuroscience majors not confirmed on a 2027 page",
+   "scholarship: coverage wording came from a search summary of an HKU PDF, not read directly",
+   "apAccepted: node/2303 appeared to be the US-qualification page; programme-specific scores not read"
+  ]
+ },
+ {
+  "id": "hkust",
+  "name": "Hong Kong University of Science and Technology",
+  "country": "Hong Kong",
+  "city": "Hong Kong (Clear Water Bay)",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-10-02",
+  "deadline": "2026-11-25",
+  "deadlineNote": "priority round (early offers late Dec 2026); rolling from 2026-11-26; system closes 2027-06-30",
+  "programs": null,
+  "apAccepted": "Yes (SAT/ACT/AP accepted). Business School benchmark SAT 1350 to 1510 plus 5s in two AP, or five AP subjects; Engineering needs 2 AP with SAT/ACT or 5 AP without",
+  "english": "TOEFL, IELTS Academic, SAT, AP and other options accepted; minimums not stated on page read",
+  "cost": null,
+  "scholarship": "Merit (no separate application): University Admissions Scholarship for Other Qualifications Holders, Global Learners Scholarship. Application-based: Future Leaders Award, Beyond Academic Admissions Scholarship (BAAS), priority-round deadline 2026-11-25. Amounts not stated",
+  "notes": "Strong AI and engineering, but a cognitive science or psychology major was not verified, so check the programme list.",
+  "url": "https://join.hkust.edu.hk/admissions/international-qualifications",
+  "sources": [
+   "https://join.hkust.edu.hk/admissions/international-qualifications",
+   "https://join.hkust.edu.hk/intlscholarships"
+  ],
+  "uncertain": [
+   "programs: not read from any official page",
+   "cost: tuition on a separate PDF not read",
+   "english: minimum scores not read",
+   "apAccepted: only school-level rules from search snippets (Business, Engineering)",
+   "scholarship: amounts not stated"
+  ]
+ },
+ {
+  "id": "cuhk",
+  "name": "Chinese University of Hong Kong",
+  "country": "Hong Kong",
+  "city": "Hong Kong (Shatin)",
+  "cycle": "entry 2027 values (2028 not yet published)",
+  "appOpen": "2026-10-02",
+  "deadline": "2027-01-07",
+  "deadlineNote": "regular round; advance offer round deadline 2026-11-12 (Medicine excluded from advance round)",
+  "programs": null,
+  "apAccepted": "Yes. SAT, ACT, AP, IB, A-level and others considered; minimum scores on a separate CUHK page not read. CUHK code 5690 for SAT and AP",
+  "english": "General language requirement applies; scores not read",
+  "cost": null,
+  "scholarship": null,
+  "notes": "A Korean citizen at a Korean school is a non-local applicant, so the HK$500 application fee and the two-round structure apply.",
+  "url": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+  "sources": [
+   "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+   "https://admission.cuhk.edu.hk/application/non-jupas/important-dates/"
+  ],
+  "uncertain": [
+   "appOpen: 2026-10-02 comes from the Non-JUPAS Local dates page; the non-local/international page did not list an opening date",
+   "programs: not read",
+   "cost: not read",
+   "scholarship: not read",
+   "english: not read"
+  ]
+ },
+ {
+  "id": "nus",
+  "name": "National University of Singapore",
+  "country": "Singapore",
+  "city": "Singapore",
+  "cycle": "AY2026/27 values (AY2027/28 not yet published; usually opens early December)",
+  "appOpen": "2025-12-03",
+  "deadline": "2026-02-23",
+  "deadlineNote": "AY2026/27 international qualifications window 3 Dec 2025 to 23 Feb 2026; most outcomes by July",
+  "programs": null,
+  "apAccepted": "Yes. Either at least 5 AP subjects, or SAT plus at least 3 AP (SAT minimums 600 Reading and Writing, 650 Math, scores sent via College Board code 3720); min AP score 3; AP Calculus BC required for all programmes except Law",
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "The deadline is around Feb 2028 for this student, which is later than Oct to Nov rounds elsewhere, and AP Calculus BC is required.",
+  "url": "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners",
+  "sources": [
+   "https://www.nus.edu.sg/oam/admissions/international-qualifications-for-foreigners",
+   "https://nus.edu.sg/oam/apply-to-nus/application",
+   "https://nus.edu.sg/oam/docs/default-source/default-document-library/standardised_test.pdf"
+  ],
+  "uncertain": [
+   "appOpen/deadline: dates come from official NUS page search summaries; the pages themselves would not load for reading",
+   "programs: not read from an official page",
+   "english: not read",
+   "cost: not read",
+   "scholarship: not read",
+   "apAccepted: from a Dec 2025 NUS standardised-test PDF search summary"
+  ]
+ },
+ {
+  "id": "ntu",
+  "name": "Nanyang Technological University",
+  "country": "Singapore",
+  "city": "Singapore",
+  "cycle": "AY2027 values (applications open 2026-10-15; AY2028 not yet published)",
+  "appOpen": "2026-10-15",
+  "deadline": "2027-03-19",
+  "deadlineNote": "reported closing date for American HS Diploma/AP applicants; AP scores must reach NTU by 2027-07-15",
+  "programs": null,
+  "apAccepted": "Yes. At least 5 AP tests scored 4 or 5 (3 for Singapore citizens/PR); AP Calculus BC required for Engineering, Computing and most Science; AP Physics C if Physics required; SAT not required",
+  "english": "Only if English not medium of instruction: IELTS 6.5, TOEFL 90, SAT 1250 with R and W 600, ACT 30/30/7, etc.",
+  "cost": null,
+  "scholarship": null,
+  "notes": "Five 4 or 5 AP scores are a heavy requirement for a Korean international-track student.",
+  "url": "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements/international-qualifications/american-high-school-diploma",
+  "sources": [
+   "https://www.ntu.edu.sg/admissions/undergraduate/admissions/general-admission-requirements/international-qualifications/american-high-school-diploma",
+   "https://www.ntu.edu.sg/admissions/undergraduate/important-links/important-dates"
+  ],
+  "uncertain": [
+   "deadline: 2027-03-19 came from a search summary; the AP page itself listed no open/close dates",
+   "programs: not verified on an official page",
+   "cost: not read",
+   "scholarship: not read"
+  ]
+ },
+ {
+  "id": "uoft",
+  "name": "University of Toronto (incl. Lester B. Pearson Scholarship)",
+  "country": "Canada",
+  "city": "Toronto",
+  "cycle": "fall 2027 entry values (fall 2028 not yet published)",
+  "appOpen": "late September 2026 (OUAC)",
+  "deadline": "2027-01-15",
+  "deadlineNote": "final OUAC deadline; early consideration 2026-11-07; supporting documents around 2027-02-01. Pearson: school nomination 2026-10-09, OUAC 2026-10-16, scholarship application 2026-11-06",
+  "programs": null,
+  "apAccepted": null,
+  "english": null,
+  "cost": null,
+  "scholarship": "Lester B. Pearson International Scholarship: about 37 per year, tuition, books, incidental fees and full residence for four years; school nominates one student per year, applicant must be in final year and apply to U of T",
+  "notes": "Pearson requires a school nomination in early October of senior year, so ask the school in Sept 2027 whether it participates.",
+  "url": "https://future.utoronto.ca/scholarships/lester-b-pearson-international-scholarship-program",
+  "sources": [
+   "https://future.utoronto.ca/scholarships/lester-b-pearson-international-scholarship-program"
+  ],
+  "uncertain": [
+   "deadline/appOpen: general dates came from a search summary of U of T pages; the bulletin PDF was unreadable",
+   "programs: not verified",
+   "apAccepted: not read",
+   "english: not read",
+   "cost: not read",
+   "scholarship: a Pearson applicant must be nominated by a school that is allowed to nominate; whether the student's school participates is unknown"
+  ]
+ },
+ {
+  "id": "ubc",
+  "name": "University of British Columbia (incl. International Scholars Program)",
+  "country": "Canada",
+  "city": "Vancouver",
+  "cycle": "September 2027 entry values (2028 not yet published)",
+  "appOpen": "late November 2026 (EducationPlannerBC)",
+  "deadline": "2026-12-02",
+  "deadlineNote": "International Scholars Program deadline (12:00 PCT); general UBC admission deadline not verified",
+  "programs": null,
+  "apAccepted": null,
+  "english": "TOEFL iBT 90 overall (Reading 22, Listening 22, Writing 21, Speaking 21) in one sitting; scores dated from 2025-01-01 for 2027/28 session",
+  "cost": null,
+  "scholarship": "International Scholars Program (includes Karen McKellin International Leader of Tomorrow Award, up to full cost of program and living for those with significant financial need, plus Wehrung and International Impact awards); needs nominator and teacher referee; school may nominate up to two students",
+  "notes": "Application is mandatory within a short window (documents due by 31 January), and the awardee needs significant financial need and all-A grades.",
+  "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+  "sources": [
+   "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+   "https://you.ubc.ca/applying-ubc/requirements/english-language-competency/"
+  ],
+  "uncertain": [
+   "deadline: UBC general application deadline was not found on an official page; Dec 2 is the ISP deadline only",
+   "appOpen: the 'late November' wording is from the ISP page timeline",
+   "apAccepted: not read",
+   "cost: not read",
+   "programs: not verified",
+   "english: from a search summary of the UBC English page",
+   "scholarship: eligibility lists study permit status; confirm how it applies from overseas"
+  ]
+ },
+ {
+  "id": "mcgill",
+  "name": "McGill University",
+  "country": "Canada",
+  "city": "Montreal",
+  "cycle": "fall 2027 entry values (fall 2028 not yet published)",
+  "appOpen": null,
+  "deadline": "2027-01-15",
+  "deadlineNote": "application deadline; transcripts and supporting documents 2027-03-01; Major Entrance Scholarship application 2027-01-21",
+  "programs": null,
+  "apAccepted": "AP results must be declared on the application; credit policies vary by faculty. SAT/ACT optional for US applicants fall 2027 per FAQ; policy for Korean applicants not confirmed",
+  "english": null,
+  "cost": null,
+  "scholarship": "Major Entrance Scholarship (separate application by 2027-01-21); amounts not verified",
+  "notes": "Official deadlines pages returned errors, so the dates come from McGill search summaries and need a recheck.",
+  "url": "https://www.mcgill.ca/undergraduate-admissions/apply/deadlines",
+  "sources": [
+   "https://www.mcgill.ca/undergraduate-admissions/apply/deadlines"
+  ],
+  "uncertain": [
+   "all dates: deadlines page returned 403; dates came from McGill search-result summaries (US applicant FAQ and a 2026-27 brochure)",
+   "appOpen: not found",
+   "apAccepted: Korean-school requirements not read",
+   "english: not read",
+   "cost: not read",
+   "programs: not verified"
+  ]
+ },
+ {
+  "id": "yonsei-uic",
+  "name": "Yonsei University, Underwood International College (UIC)",
+  "country": "South Korea",
+  "city": "Seoul",
+  "cycle": "2028 admission (Korean-citizen route; apply autumn 2027, matriculate March 2028)",
+  "appOpen": "2027-09-20 (reported start of 2028 early admission, per a news article)",
+  "deadline": null,
+  "deadlineNote": "exact application close date not published; 2028 early-admission period start only from a news report",
+  "programs": "UIC majors include Life Science and Biotechnology, Bio-Convergence; Cognitive Science and Psychology are not among the 16 listed majors; instruction language not stated on the page read",
+  "apAccepted": "UIC states that the international track is only for those whose parents and applicant are all non-Korean by passport, so a Korean citizen does not qualify. Korean citizens apply through the regular Yonsei Seoul early-admission tracks (UIC seats listed under 학생부종합 종합인재형/탐구인재형)",
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "For a Korean citizen the AP/SAT international route is closed, so UIC means the Korean 학생부종합 track and a Korean-style application.",
+  "url": "https://uic.yonsei.ac.kr/main/admission.php?mid=m04_05",
+  "sources": [
+   "https://uic.yonsei.ac.kr/main/admission.php?mid=m04_05",
+   "https://uic.yonsei.ac.kr/",
+   "https://www2.yonsei.ac.kr/entrance/plan/2028_plan.pdf"
+  ],
+  "uncertain": [
+   "appOpen: from a news article (hangyo.com) citing 대교협, not an official admission page",
+   "deadline: not found",
+   "apAccepted: whether international-track rules could ever apply is stated as 'not considered an International Student' only; no explicit bar found",
+   "programs: 2028 UIC seat counts (humanities/social 144, life sci/eng 15) came from a search summary of the 2028 plan; PDF unreadable",
+   "cost: not read",
+   "scholarship: not read"
+  ]
+ },
+ {
+  "id": "kaist",
+  "name": "KAIST",
+  "country": "South Korea",
+  "city": "Daejeon",
+  "cycle": "2027 admission values (2028 not yet published)",
+  "appOpen": null,
+  "deadline": null,
+  "deadlineNote": "2027 early-admission application dates not found",
+  "programs": null,
+  "apAccepted": null,
+  "english": null,
+  "cost": null,
+  "scholarship": null,
+  "notes": "KAIST is science and engineering focused, so a cognitive science route would be Brain and Cognitive Sciences or AI.",
+  "url": "https://admission.kaist.ac.kr/undergraduate/admission/rsub/2027",
+  "sources": [
+   "https://admission.kaist.ac.kr/undergraduate/admission/rsub/2027"
+  ],
+  "uncertain": [
+   "appOpen/deadline: not found on the page",
+   "programs: no major list read",
+   "apAccepted: stated from seat table; qualification rules not read",
+   "cost: not read",
+   "scholarship: not read",
+   "english: not read"
+  ]
+ }
+];
+window.SUMMER = [
+ {
+  "id": "rsi",
+  "name": "Research Science Institute (RSI)",
+  "host": "CEE, at MIT (2027 also at Stanford)",
+  "kind": "selective",
+  "field": "STEM research mentorship",
+  "format": "residential",
+  "where": "Cambridge, MA (MIT); Stanford, CA added for 2027",
+  "intlOk": true,
+  "intlNote": "Internationals apply only through a participating country's own selection process, arranged via CEE; check with CEE whether South Korea participates. US citizens abroad apply directly.",
+  "eligibility": "Current high school juniors (grade 11); seniors not eligible. No age limits stated on the page.",
+  "deadline2027": "2026-12-11",
+  "deadlineNote": "US applications due 11:59pm ET Dec 11, 2026, no late applications; international countries set their own schedules.",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": null,
+  "cost": "free",
+  "aid": "Cost-free to all admitted students (CEE states it is the first cost-free summer science program); applies to internationals who are admitted.",
+  "selectivity": "~100 students at MIT (+50 at Stanford in 2027); rate not published",
+  "summary": "Students take one week of intensive STEM classes, then complete a five-week mentored research internship, and finish with a week of presentations.",
+  "url": "https://www.cee.org/research-science-institute",
+  "sources": [
+   "https://www.cee.org/research-science-institute",
+   "http://www.cee.org/apply-rsi"
+  ],
+  "uncertain": [
+   "intlOk: whether South Korea is a participating country is not stated on the page",
+   "dates2027: not published on the pages read",
+   "deadline2026: not found"
+  ],
+  "verified": "partial: deadline Dec 11 2026 and grade 11 confirmed; page does not say whether South Korea participates (intlOk unconfirmed, verify with CEE)"
+ },
+ {
+  "id": "ssp",
+  "name": "Summer Science Program (SSP)",
+  "host": "Summer Science Program (nonprofit)",
+  "kind": "selective",
+  "field": "Astrophysics, biochemistry, genomics, chemistry research",
+  "format": "residential",
+  "where": "US university campuses (host campus list not read)",
+  "intlOk": true,
+  "intlNote": "International applicants accepted (anyone attending school outside the US or not a US citizen/PR); must submit English proficiency scores; international decisions mid-March.",
+  "eligibility": "Current high school juniors (grade 11), age at least 15 and not yet 19 during program; relevant coursework completed by June.",
+  "deadline2027": null,
+  "deadlineNote": "Deadlines to be announced in early December 2026; applications open Jan 4, 2027 10am ET.",
+  "deadline2026": null,
+  "dates2027": "Five weeks, begins mid-June 2027",
+  "dates2026": null,
+  "cost": "2026 fee USD 11,800 (2027 fee to be posted Dec 2026)",
+  "aid": "Covers 100% of demonstrated need; need does not affect admission. International applicants can request aid at admission (income documents translated to English); aid can include airfare and a stipend. Over 50% of 2026 participants received aid.",
+  "selectivity": "~700 admitted in 2026; applicant count not published",
+  "summary": "Students spend five weeks on a college campus doing a team-based, hands-on research project in a chosen science track.",
+  "url": "https://ssp.org/",
+  "sources": [
+   "https://ssp.org/",
+   "https://ssp.org/getting-started/",
+   "https://ssp.org/application/",
+   "https://ssp.org/fees-financial-aid/",
+   "https://ssp.org/faqs/"
+  ],
+  "uncertain": [
+   "deadline2027: not announced until early Dec 2026",
+   "dates2027: only 'mid-June' start given",
+   "host campuses not read",
+   "deadline2026: not found"
+  ],
+  "verified": "partial: eligibility, Jan 4 2027 opening, intl aid confirmed; 2027 deadline still unpublished (early Dec 2026)"
+ },
+ {
+  "id": "yygs",
+  "name": "Yale Young Global Scholars (YYGS)",
+  "host": "Yale University",
+  "kind": "paid",
+  "field": "Science and technology, global issues, law/politics/economics (IST, SGC, PLE)",
+  "format": "residential",
+  "where": "New Haven, CT",
+  "intlOk": true,
+  "intlNote": "Accepts applications from all countries; need-based aid open to students from all countries.",
+  "eligibility": "Current high school sophomore or junior (or international equivalent); age 16-18 by July 18, 2027 (no exceptions); graduating 2028 or 2029 (Northern Hemisphere); first-time participants only.",
+  "deadline2027": "2027-01-06",
+  "deadlineNote": "Regular Decision Jan 6, 2027 11:59pm ET; Early Action was Oct 15, 2026 (passed). Application fee $85 EA / $100 RD, waivers available.",
+  "deadline2026": null,
+  "dates2027": "Session I Jun 20-Jul 2; Session II Jul 4-16; Session III Jul 18-30 (one two-week session)",
+  "dates2026": null,
+  "cost": "USD 7,500 tuition (travel not included)",
+  "aid": "Need-based aid for domestic and international students, up to full tuition; students pay own travel.",
+  "selectivity": "Not published (Yale reports 10,000+ applications in recent years)",
+  "summary": "Students attend one two-week interdisciplinary session on Yale's campus with lectures, seminars, and a group project.",
+  "url": "https://globalscholars.yale.edu/",
+  "sources": [
+   "https://globalscholars.yale.edu/",
+   "https://globalscholars.yale.edu/eligibility",
+   "https://globalscholars.yale.edu/application-deadlines",
+   "https://globalscholars.yale.edu/tuition",
+   "https://globalscholars.yale.edu/apply/"
+  ],
+  "uncertain": [
+   "deadline2026: not given on pages read",
+   "selectivity: not published; the 10,000+ figure comes from a search-result headline, not read directly",
+   "age rule: must be 16-18 by July 18, 2027, check birth date"
+  ],
+  "verified": "partial: deadlines Oct 15 2026 / Jan 6 2027 confirmed; eligibility/tuition/aid not re-read on this pass"
+ },
+ {
+  "id": "rockefeller-ssrp",
+  "name": "Summer Science Research Program (SSRP)",
+  "host": "The Rockefeller University (RockEDU)",
+  "kind": "selective",
+  "field": "Biomedical laboratory research",
+  "format": "residential",
+  "where": "New York, NY",
+  "intlOk": true,
+  "intlNote": "FAQ says students outside the Tri-State Area, including outside the US, are encouraged to apply; no housing, travel help, or visa help provided.",
+  "eligibility": "Current high school junior or senior; at least 16 years old at program start; must attend the entire seven weeks (about 35 hrs/week).",
+  "deadline2027": "2027-01-04",
+  "deadlineNote": "Application and recommendation letters due Jan 4, 2027 5:00pm ET; Zoom interviews in March, decisions in April.",
+  "deadline2026": null,
+  "dates2027": "Jun 21-Aug 5, 2027",
+  "dates2026": null,
+  "cost": "free (application free; no housing provided, so living costs in NYC are on the student)",
+  "aid": "Program is free; stipends are not guaranteed but may go to students with financial hardship. No housing assistance, so international students must fund NYC lodging.",
+  "selectivity": null,
+  "summary": "Students work full time in a Rockefeller University laboratory on a mentored biomedical research project for seven weeks.",
+  "url": "https://www.rockefeller.edu/outreach/ssrp/",
+  "sources": [
+   "https://www.rockefeller.edu/outreach/ssrp/",
+   "https://www.rockefeller.edu/outreach/ssrp/faqs/"
+  ],
+  "uncertain": [
+   "selectivity: not published on pages read",
+   "housing for a non-local student is the main hurdle and cost is not quantified",
+   "deadline2026: not found"
+  ],
+  "verified": "partial: deadline Jan 4 2027 5pm ET, dates, age, junior/senior confirmed; main page silent on internationals and cost (FAQ not re-read)"
+ },
+ {
+  "id": "pioneer",
+  "name": "Pioneer Research Institute (Pioneer Research Program)",
+  "host": "Pioneer Academics",
+  "kind": "paid",
+  "field": "Online mentored research across many fields (incl. psychology, neuroscience, CS/AI)",
+  "format": "online",
+  "where": "online",
+  "intlOk": true,
+  "intlNote": "Online and globally accessible; no separate international rules. Need-based scholarships only in countries where need can be assessed or via partner nonprofits.",
+  "eligibility": "High school students (grade/age requirements not stated on page; marketed for grades 9-12); counselor assessment, transcript, essays, video interview and timed writing task required.",
+  "deadline2027": null,
+  "deadlineNote": "Spring-through-Summer term final deadline 11:59pm EST Dec 13, 2026 (page labels term as 2026, banner says 2027 cycle; confirm). Summer term deadline to be released in 2nd week of January.",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": null,
+  "cost": "USD 7,465 tuition (plus lab/materials fee up to 2%)",
+  "aid": "Limited need-based scholarships requiring verified family need; availability depends on country. Full-scholarship students pay a refundable deposit.",
+  "selectivity": null,
+  "summary": "Students complete a college-level, professor-mentored research paper online and earn four college credits.",
+  "url": "https://pioneeracademics.com/admission/",
+  "sources": [
+   "https://pioneeracademics.com/admission/"
+  ],
+  "uncertain": [
+   "deadline2027: Summer term deadline not announced; Dec 13 date's year is ambiguous on the page",
+   "dates2027: no program dates on page (a search summary said June-July 2027, not confirmed)",
+   "whether South Korea qualifies for need-based aid is unknown",
+   "selectivity: not given"
+  ],
+  "verified": "partial: Dec 13 2026 deadline (year labeling ambiguous on page), tuition 7,465 confirmed; no grade/age rules; summer-term deadline unpublished"
+ },
+ {
+  "id": "wolfram-wsrp",
+  "name": "Wolfram High School Summer Research Program",
+  "host": "Wolfram Research (at Bentley University)",
+  "kind": "paid",
+  "field": "Computational research, AI, data science, STEM projects",
+  "format": "residential",
+  "where": "Waltham/Boston area, MA (Bentley University)",
+  "intlOk": true,
+  "intlNote": "International students accepted per official admission page.",
+  "eligibility": "Any STEM background; must be under 18 at the end of the program (Jul 17, 2027). Coding experience not required.",
+  "deadline2027": "2027-03-15",
+  "deadlineNote": "Regular Decision Mar 15; Early Decision Jan 18 (results by Feb 15). Page does not print the year; inferred as 2027 because it lists June 28-July 17, 2027. Need-based aid requests must come with the application.",
+  "deadline2026": null,
+  "dates2027": "Jun 28-Jul 17, 2027",
+  "dates2026": null,
+  "cost": null,
+  "aid": "Need-based aid available and admissions are need-blind; aid request must be submitted with the application (none considered after Apr 23). Applies to international students per page (not explicit).",
+  "selectivity": "~80 students admitted per year from hundreds of qualified applicants",
+  "summary": "Students spend three weeks designing and completing a computational project with a mentor, using Wolfram Language, and finish with a presentation.",
+  "url": "https://education.wolfram.com/summer-research-high-school/admission/",
+  "sources": [
+   "https://education.wolfram.com/summer-research-high-school/admission/"
+  ],
+  "uncertain": [
+   "deadline2027: year inferred from 2027 program dates, not printed",
+   "cost: not on official page (a third-party blog said USD 5,500, unverified)",
+   "age: student must be under 18 on Jul 17, 2027, so a birth date before Jul 17, 2009 would be ineligible",
+   "whether aid is open to internationals is not explicit"
+  ],
+  "verified": "ok"
+ },
+ {
+  "id": "ucla-neuro-hs",
+  "name": "Neuroscience High School Scholars Program (Virtual Summer Program)",
+  "host": "UCLA Easton Center for Alzheimer's and Related Dementias",
+  "kind": "selective",
+  "field": "Neuroscience (Alzheimer's/neurology seminars, journal club, research project)",
+  "format": "online",
+  "where": "online",
+  "intlOk": null,
+  "intlNote": "Page does not say whether students outside the US may apply; ask the program.",
+  "eligibility": "Virtual Summer Program: rising juniors and seniors currently enrolled in high school; virtual interview; must attend all sessions (evening Pacific time).",
+  "deadline2027": null,
+  "deadlineNote": "Dates, deadline and decision timeline to be posted December 2026.",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": null,
+  "cost": "free ($0 fee)",
+  "aid": "No fee; no stipend mentioned.",
+  "selectivity": null,
+  "summary": "Students attend live neuroscience seminars and neurology grand rounds, join a journal club, and complete a final research project, all online.",
+  "url": "https://eastonad.ucla.edu/about/neuroscience-high-school-scholars-program",
+  "sources": [
+   "https://eastonad.ucla.edu/about/neuroscience-high-school-scholars-program"
+  ],
+  "uncertain": [
+   "intlOk: not stated",
+   "deadline2027 and dates2027: not yet posted",
+   "time zone could be hard from Korea if sessions run in Pacific evening or daytime"
+  ],
+  "verified": "ok: deadline and intl status still not stated on page"
+ },
+ {
+  "id": "ucsb-rmp",
+  "name": "Research Mentorship Program (RMP)",
+  "host": "UC Santa Barbara Summer Sessions",
+  "kind": "paid",
+  "field": "University research mentorship (engineering, biology, astrophysics, global studies, others)",
+  "format": "hybrid",
+  "where": "Santa Barbara, CA (virtual kickoff Jun 14-17)",
+  "intlOk": true,
+  "intlNote": "Described as for students from all over the world; TOEFL/English test not required.",
+  "eligibility": "10th or 11th grade (9th case by case); minimum 3.80 weighted academic GPA; must attend full program",
+  "deadline2027": "2027-03-09",
+  "deadlineNote": "Priority Feb 15, 2027; final Mar 9, 2027; applications open Dec 15, 2026.",
+  "deadline2026": null,
+  "dates2027": "Jun 14-Jul 30, 2027 (virtual component Jun 14-17)",
+  "dates2026": null,
+  "cost": "2026: USD 5,675 commuter / 13,274 residential (2027 prices due early Dec 2026)",
+  "aid": "Limited need-based scholarships; California residents get priority; guardian submits tax returns after admission. Unclear how often internationals receive awards.",
+  "selectivity": null,
+  "summary": "Students join a research project in a UCSB lab or group with a faculty/grad mentor for several weeks and write up results for college credit.",
+  "url": "https://www.summer.ucsb.edu/programs/research-mentorship-program/overview",
+  "sources": [
+   "https://www.summer.ucsb.edu/programs/research-mentorship-program/overview",
+   "https://summer.ucsb.edu/programs/research-mentorship-program/admissions",
+   "https://summer.ucsb.edu/programs/research-mentorship-program/cost-of-attendance"
+  ],
+  "uncertain": [
+   "neuroscience/psychology projects not confirmed on page",
+   "2027 cost not posted; 2026 prices shown",
+   "deadline2026: not found",
+   "aid for non-California internationals unclear"
+  ],
+  "verified": "ok: deadlines confirmed; NOTE additional rule min 3.80 weighted GPA; 2026 prices only"
+ },
+ {
+  "id": "stanford-spcs",
+  "name": "Stanford Pre-Collegiate Summer Institutes (online)",
+  "host": "Stanford University (SPCS)",
+  "kind": "paid",
+  "field": "Live online courses incl. AI, engineering, math, philosophy (85+ options)",
+  "format": "online",
+  "where": "online",
+  "intlOk": true,
+  "intlNote": "Students from 60+ countries attend; aid open to international applicants per search result (not read on an official aid page).",
+  "eligibility": "Students currently in grades 8-11; no separate age rule stated.",
+  "deadline2027": null,
+  "deadlineNote": "2027 application opens early December 2026; deadlines not yet posted.",
+  "deadline2026": "2026-03-13",
+  "dates2027": "Session One Jun 14-25; Session Two Jul 12-23, 2027",
+  "dates2026": null,
+  "cost": "2026 tuition USD 3,200 (2027 price not confirmed)",
+  "aid": "Need-based aid reported as available to domestic and international students; aid deadline usually about a week after admissions deadline.",
+  "selectivity": null,
+  "summary": "Students take one two-week live online course taught by Stanford-affiliated instructors with daily class meetings and assignments.",
+  "url": "https://summerinstitutes.spcs.stanford.edu/",
+  "sources": [
+   "https://summerinstitutes.spcs.stanford.edu/"
+  ],
+  "uncertain": [
+   "deadline2026: Mar 13, 2026 comes from a search result summary of Stanford pages, not read directly",
+   "cost 2026 and international aid availability come from a search result summary; official tuition/aid pages returned 404/403",
+   "no neuroscience course confirmed; AI listed"
+  ],
+  "verified": "partial: 2027 application opens early Dec, no deadline; tuition/aid pages not read"
+ },
+ {
+  "id": "harvard-ssp",
+  "name": "Secondary School Program (SSP)",
+  "host": "Harvard Summer School",
+  "kind": "paid",
+  "field": "Credit-bearing college courses across fields (psychology, neuroscience, CS and more)",
+  "format": "hybrid",
+  "where": "Cambridge, MA, or online",
+  "intlOk": true,
+  "intlNote": "International applicants accepted; international deadline Feb 10, 2027 for residential/commuting SSP; TOEFL/IELTS/Duolingo required for non-native speakers; F-1 visa route for SSP.",
+  "eligibility": "Age at least 16 by Jun 13, 2027 and not 19 before Jul 31, 2027; graduating and entering college in 2027, 2028 or 2029.",
+  "deadline2027": "2027-02-10",
+  "deadlineNote": "Early Jan 13, 2027 (opens Dec 1, 2026); regular and international Feb 10, 2027; late Mar 31 (no aid; internationals may use it for the 7-week Online SSP); application fee $75.",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": null,
+  "cost": "USD 15,980 (7-wk residential), 9,260 (4-wk residential), 4,180-8,160 (online/commuting)",
+  "aid": "Financial aid only for US citizens, permanent residents and DACA; international students not eligible.",
+  "selectivity": null,
+  "summary": "Students take for-credit Harvard Summer School courses alongside college students for four or seven weeks.",
+  "url": "https://summer.harvard.edu/high-school-programs/secondary-school-program/",
+  "sources": [
+   "https://summer.harvard.edu/high-school-programs/secondary-school-program/admissions/",
+   "https://summer.harvard.edu/high-school-programs/secondary-school-program/cost-and-financial-aid"
+  ],
+  "uncertain": [
+   "dates2027: not on admissions page (calendar page not read)",
+   "specific psychology/neuroscience course offering not checked"
+  ],
+  "verified": "ok"
+ },
+ {
+  "id": "jhu-precollege",
+  "name": "Summer at Hopkins Pre-College Programs",
+  "host": "Johns Hopkins University",
+  "kind": "paid",
+  "field": "Pre-college courses incl. biomedical, CS, other sciences",
+  "format": "hybrid",
+  "where": "Baltimore, MD (Homewood), or online",
+  "intlOk": true,
+  "intlNote": "International students may apply; English proficiency evidence, transcript evaluation, F-1 visa guidance; apply by Feb 23, 2027 for F-1 timing.",
+  "eligibility": "Must have completed 9th grade (2-week programs) or 10th grade (Next Generation Scholars and Summer Term); cumulative GPA at least 3.0.",
+  "deadline2027": "2027-02-23",
+  "deadlineNote": "On-campus Regular Decision Feb 23, 2027; Early Action Jan 26, 2027; online is rolling from Dec 1, 2026; Dean's Fellowship application Mar 16, 2027.",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": null,
+  "cost": null,
+  "aid": "Need-based Dean's Fellowship up to USD 1,100 (avg about 500), online programs only; page does not say whether internationals are eligible.",
+  "selectivity": null,
+  "summary": "Students take short for-credit or noncredit pre-college courses taught by Johns Hopkins faculty on campus or online.",
+  "url": "https://summer.jhu.edu/admissions/pre-college",
+  "sources": [
+   "https://summer.jhu.edu/admissions/pre-college",
+   "https://summer.jhu.edu/admissions/financial-assistance"
+  ],
+  "uncertain": [
+   "cost: tuition page not read",
+   "dates2027: not on page",
+   "neuroscience/cognitive science course availability not confirmed",
+   "international eligibility for Dean's Fellowship not stated"
+  ],
+  "verified": "partial: dates confirmed; tuition and fellowship intl eligibility not read"
+ },
+ {
+  "id": "columbia-precollege",
+  "name": "Columbia Pre-College Summer Programs (NYC Residential/Commuter and Online)",
+  "host": "Columbia University School of Professional Studies",
+  "kind": "paid",
+  "field": "Pre-college courses across fields (psychology, neuroscience, CS and others)",
+  "format": "hybrid",
+  "where": "New York, NY, or online",
+  "intlOk": true,
+  "intlNote": "International students may attend summer programs on a B visa/Visa Waiver or F-1 under stated conditions.",
+  "eligibility": "Rising seniors may apply; NYC Residential requires age 15 and turning 16 by Dec 31 of program year.",
+  "deadline2027": null,
+  "deadlineNote": "Summer 2027 application is open but the general deadline was not on the pages read; financial aid deadline Feb 10, 2027 (US citizens/PRs in US only).",
+  "deadline2026": null,
+  "dates2027": null,
+  "dates2026": "Residential Session A Jun 29-Jul 17; Session B Jul 21-Aug 7, 2026",
+  "cost": "2027: USD 12,838 (3-wk residential), 6,381 (3-wk commuter), 4,018 (2-wk online, one course)",
+  "aid": "Need-based aid only for US citizens/permanent residents located in the US or territories, limited to a single commuter/online course (25-50% of course cost); internationals not eligible.",
+  "selectivity": null,
+  "summary": "Students take college-level courses in New York or online with Columbia instructors for one to three weeks.",
+  "url": "https://precollege.sps.columbia.edu/",
+  "sources": [
+   "https://precollege.sps.columbia.edu/node/11845",
+   "https://precollege.sps.columbia.edu/highschool/summer-immersion-new-york-city/program-costs/3-week-residential"
+  ],
+  "uncertain": [
+   "deadline2027: general application deadline not found",
+   "dates2027: not published on pages read",
+   "specific psychology/neuroscience courses not checked"
+  ],
+  "verified": "partial: general deadlines now published; aid/eligibility pages not re-read"
  }
 ];

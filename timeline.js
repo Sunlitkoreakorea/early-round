@@ -27,7 +27,7 @@
     { id: 'sat-2708', date: '2027-08-28', kind: 'test', title: 'SAT', note: '예정', src: SAT },
     { id: 'sat-2709', date: '2027-09-18', kind: 'test', title: 'SAT', note: '예정', src: SAT },
     { id: 'css-open', date: '2027-10-01', kind: 'app', title: 'CSS Profile 열림', note: '매년 10월 1일' },
-    { id: 'sat-2710', date: '2027-10-09', kind: 'test', title: 'SAT', note: '예정, 얼리에 반영되는지 학교별 확인', src: SAT },
+    { id: 'sat-2710', date: '2027-10-09', kind: 'test', title: 'SAT', note: '예정', src: SAT },
     { id: 'sat-2711', date: '2027-11-06', kind: 'test', title: 'SAT', note: '예정', src: SAT },
     { id: 'sat-2712', date: '2027-12-04', kind: 'test', title: 'SAT', note: '예정', src: SAT },
 

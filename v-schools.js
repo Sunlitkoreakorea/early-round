@@ -25,7 +25,7 @@
   function fieldKo(k) {
     if (FIELD[k]) return FIELD[k];
     const rules = [
-      [/notify/i, '발표일'], [/netprice/i, '순비용 계산기'], [/fee/i, '원서비'], [/interview/i, '인터뷰'],
+      [/notif/i, '발표일'], [/netprice/i, '순비용 계산기'], [/fee/i, '원서비'], [/interview/i, '인터뷰'],
       [/supplement|short take|essay|prompt|member question/i, '보충 에세이'], [/english|toefl|ielts|duolingo/i, '영어 시험'],
       [/cogsci|cognitive/i, '인지과학'], [/aid|css|need|finaid|meets/i, '재정지원'], [/rec/i, '추천서'],
       [/sat|act|test/i, '시험 통계'], [/plans|deadline|ed2|date/i, '일정'],
@@ -69,8 +69,9 @@
       ['early', '11월 얼리', s => ['ED', 'REA', 'SCEA', 'EA'].includes(pickOf(s))],
       ['ed2', '1월 ED2', s => pickOf(s) === 'ED2'],
       ['rd', '정시', s => pickOf(s) === 'RD'],
-      ['none', '미정', s => !pickOf(s) && s.group !== 'explore'],
+      ['none', '미정', s => !pickOf(s) && s.group !== 'explore' && s.group !== 'candidate'],
       ['explore', '탐색 후보', s => !pickOf(s) && s.group === 'explore'],
+      ['cand', '보강 후보', s => !pickOf(s) && s.group === 'candidate'],
       ['x', '제외', s => pickOf(s) === 'X'],
     ];
     const bad = new Set(res.issues.filter(i => i.level === 'bad').flatMap(i => i.ids));
@@ -78,9 +79,9 @@
     for (const [key, label, fn] of groups) {
       const items = E.all().filter(fn).sort((a, b) => E.isStar(b) - E.isStar(a));
       if (!items.length) continue;
-      const fold = key === 'x';
-      const open = !fold || st.open.x || items.some(s => s.id === selId);
-      html += `<div class="grp${fold ? ' fold' : ''}${fold && open ? ' open' : ''}" ${fold ? 'data-fold="x"' : ''}>${label} ${items.length}</div>`;
+      const fold = key === 'x' || key === 'cand';
+      const open = !fold || st.open[key] || items.some(s => s.id === selId);
+      html += `<div class="grp${fold ? ' fold' : ''}${fold && open ? ' open' : ''}" ${fold ? `data-fold="${key}"` : ''}>${label} ${items.length}</div>`;
       if (!open) continue;
       for (const s of items) html += rowHtml(s, s.id === selId, bad.has(s.id));
     }
@@ -221,6 +222,7 @@
       const et = (s.plans || []).find(x => ['EA', 'REA', 'SCEA'].includes(x.type));
       tile(`${et ? et.type : 'EA'} 합격률`, `${t.ea.rate}%`, `${E.num(t.ea.admitted)} / ${E.num(t.ea.applied)}`);
     }
+    if (t.intl && t.intl.rate != null) tile('국제학생 합격률', `${t.intl.rate}%`, `${E.num(t.intl.admitted)} / ${E.num(t.intl.applied)}`);
     if (t.intlFirstYear != null && t.firstYearTotal) tile('신입생 중 국제학생', `${((t.intlFirstYear / t.firstYearTotal) * 100).toFixed(1)}%`, `${E.num(t.intlFirstYear)}명`);
     if (t.intlAidCount != null) tile('재정지원 받는 국제학생', `${E.num(t.intlAidCount)}명`, t.intlAidAvg ? `평균 $${E.num(t.intlAidAvg)}` : '');
     const advTxt = { required: '필수', blind: '안 봄', submit: '내기', maybe: '애매 (안 내는 쪽)', skip: '안 내기', nodata: '자료 없음', noscore: '점수 없음' }[adv.key];
@@ -232,6 +234,7 @@
     return `<section class="sec">
       <h3>합격 통계 <span class="fine">${t.cdsYear ? (/^\d{4}-\d{4}$/.test(t.cdsYear) ? `CDS ${esc(t.cdsYear)}` : esc(t.cdsYear)) : ''}${t.scoreBasis ? `, 점수는 ${esc(t.scoreBasis)} 기준` : ''}</span></h3>
       ${tiles.length ? `<div class="tiles">${tiles.join('')}</div>` : ''}
+      ${t.intlNote ? `<p class="orig">${esc(t.intlNote)}</p>` : ''}
       ${bars}
     </section>`;
   }
@@ -285,7 +288,20 @@
     }
     add('인터뷰', r.interviewDeadline ? `신청 ${C.md(C.shifted(r.interviewDeadline))}` : '', r.interview || s.interview);
     add('원서비', r.fee ? `$${r.fee}` : '', r.feeWaiver);
+    const pol = s.policy;
+    if (pol) {
+      const mo = x => { const m = C.monthOf(x); return m ? `${m}월` : null; };
+      const parts = [
+        pol.superscore === true ? '최고점 합산' : pol.superscore === false ? '최고점 합산 안 함' : null,
+        pol.selfReport === true ? '자기 보고 가능' : pol.selfReport === false ? '공식 점수 필요' : null,
+        mo(pol.lastSatEarly) ? `얼리 SAT ${mo(pol.lastSatEarly)}까지` : null,
+        mo(pol.lastSatRD) ? `정시 SAT ${mo(pol.lastSatRD)}까지` : null,
+      ].filter(Boolean);
+      if (parts.length || pol.note) add('점수 정책', parts.join(', '), `${pol.note || ''}${mo(pol.lastSatEarly) || mo(pol.lastSatRD) ? ' (시험 달은 학교 안내 기준, 권장일 수 있음)' : ''}`);
+    }
     add('인지과학', '', s.cogsci);
+    if (s.meritIntl) add('장학금', '', s.meritIntl);
+    if (s.why) add('보강 이유', '', s.why);
     if (r.portfolio) add('추가 자료', '', r.portfolio);
     if (s.nextCycle) add('내년 변경', '', s.nextCycle);
     return rows.length ? `<section class="sec"><dl class="dl">${rows.join('')}</dl></section>` : '';
@@ -298,7 +314,7 @@
       .map(u => fieldKo(String(u).split(':')[0].trim())))];
     const vf = s.verified || {};
     const vs = k => { const v = String(vf[k] || ''); return v.startsWith('ok') ? '확인됨' : v.startsWith('partial') ? '일부' : v.startsWith('filled') ? '보충 자료 (한 번 확인)' : v.startsWith('unreachable') ? '못 함' : '안 함'; };
-    const second = s.verified ? `<span>두 번째 대조: 통계 ${vs('stats')}, 서류 ${vs('req')}</span>` : '';
+    const second = s.verified ? `<span>두 번째 대조: 통계 ${vs(s.group === 'candidate' ? 'cand' : 'stats')}${s.req ? `, 서류 ${vs('req')}` : ''}${s.policy ? `, 점수 정책 ${vs('policy')}` : ''}</span>` : '';
     return `<div class="src"><span>확인 ${esc(s.checked || window.DATA_CHECKED || '')}</span>${second}${links}${uns.length ? `<span class="unsure">공식 페이지로 확정 못 한 것: ${esc(uns.join(', '))}</span>` : ''}</div>`;
   }
 
@@ -324,7 +340,8 @@
       const root = $('#view-schools');
       root.addEventListener('click', e => {
         const t = e.target;
-        if (t.closest('[data-fold]')) { st.open.x = !st.open.x; E.save(); E.render(); return; }
+        const fd = t.closest('[data-fold]');
+        if (fd) { const k = fd.dataset.fold; st.open[k] = !st.open[k]; E.save(); E.render(); return; }
         const s = current();
         if (!s) return;
         const pk = t.closest('[data-pick]');

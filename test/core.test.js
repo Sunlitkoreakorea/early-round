@@ -124,6 +124,18 @@ c = C.chance(ucb, { admitRate: 11.0 }, prof(700, 700));
 assert.strictEqual(c.tier, 1);
 assert.ok(c.reasons.includes('합격해도 국제학생 재정지원 없음'));
 
+// 국제학생 합격률이 있으면 그걸 기준으로 (전체 30% 라도 국제 5% 면 매우 어려움)
+const tri = { id: 'trinity', testing: 'optional', intlAid: 'need-aware' };
+c = C.chance(tri, { admitRate: 29.5, intl: { rate: 5.0 } }, prof(620, 800, { needAid: false }));
+assert.strictEqual(c.tier, 0);
+assert.ok(c.reasons[0].startsWith('국제학생 합격률 5%'));
+assert.ok(!c.reasons.some(x => x.startsWith('국제학생 합격률 자료가 없어요')));
+c = C.chance(tri, { admitRate: 79, intl: { rate: 39.9 } }, prof(620, 800, { needAid: false }));
+assert.strictEqual(c.tier, 3);
+// ED 이점은 전체 합격률과 비교
+c = C.chance(tri, { admitRate: 30, intl: { rate: 20 }, ed: { rate: 40 } }, prof(620, 800, { needAid: false }), 'ED');
+assert.strictEqual(c.tier, 2); // 40 < 30*1.5 → 이점 없음, 기본 2
+
 // 점수 낼까
 assert.strictEqual(C.submitAdvice(yale, yaleSt, C.satOf(prof(600, 600))).key, 'required');
 assert.strictEqual(C.submitAdvice(amh, amhSt, C.satOf(prof(750, 790))).key, 'submit'); // 1540 >= 1520
@@ -152,5 +164,44 @@ assert.strictEqual(C.chars('ab c'), 4);
 assert.strictEqual(C.chars('민사고'), 3);
 assert.strictEqual(C.words('  one two\nthree  '), 3);
 assert.strictEqual(C.words(''), 0);
+
+/* ───── 시험 정책 ───── */
+assert.strictEqual(C.monthOf('October'), 10);
+assert.strictEqual(C.monthOf(' november '), 11);
+assert.strictEqual(C.monthOf(null), null);
+assert.strictEqual(C.satCountsForEarly({ lastSatEarly: 'November' }, new Date(2027, 10, 6)), true);
+assert.strictEqual(C.satCountsForEarly({ lastSatEarly: 'October' }, new Date(2027, 10, 6)), false);
+assert.strictEqual(C.satCountsForEarly({ lastSatEarly: 'October' }, new Date(2027, 9, 9)), true);
+assert.strictEqual(C.satCountsForEarly({}, new Date(2027, 9, 9)), null);
+
+/* ───── 원서 비용 ───── */
+assert.strictEqual(C.usesCSS({ req: { cssCode: '3987' } }), true);
+assert.strictEqual(C.usesCSS({ req: {}, aidForms: ['Princeton Financial Aid Application (free; CSS Profile neither required nor accepted)'] }), false);
+assert.strictEqual(C.usesCSS({ req: {}, aidForms: ['CSS Profile (code 4704)'] }), true);
+assert.strictEqual(C.usesCSS({ req: {}, aidForms: ['UChicago Student Financial Aid Worksheet'] }), false);
+{
+  const st = { admitRate: 5, satEBRW: [700, 750, 780], satMath: [700, 760, 790] };
+  const mk = (id, extra) => Object.assign({ id, name: id, testing: 'required', intlAid: 'need-blind', stats: st, req: { fee: 80, cssCode: '1' }, plans: [{ type: 'RD', deadline: '2027-01-01' }] }, extra);
+  const list = [
+    mk('a'), mk('b'), mk('c'), mk('d'),
+    mk('e', { policy: { selfReport: true } }),           // 점수는 합격 후
+    mk('f', { aidAfter: true }),                         // CSS 는 합격 후
+    mk('g', { req: { fee: null, cssCode: null }, aidForms: [] }), // 원서비 모름, CSS 안 씀
+    mk('h'),
+  ];
+  const picks = { a: 'RD', b: 'RD', c: 'RD', d: 'RD', e: 'RD', f: 'RD', g: 'RD', h: 'X' };
+  const r = C.appCost(list, picks, { sat: { rw: 650, math: 750 }, needAid: true });
+  assert.strictEqual(r.rows.length, 7);         // 제외한 h 빠짐
+  assert.strictEqual(r.feeKnown, 480);          // 80 × 6
+  assert.strictEqual(r.feeUnknown, 1);
+  assert.strictEqual(r.cssNow, 5);              // a b c d e
+  assert.strictEqual(r.cssAfter, 1);            // f
+  assert.strictEqual(r.cssCost, 25 + 16 * 4);
+  assert.strictEqual(r.satNow, 6);              // e 는 자기 보고라 제외
+  assert.strictEqual(r.satCost, 2 * 15);        // 무료 4개 뒤 2개
+  assert.strictEqual(r.total, 480 + 89 + 30);
+  // 재정지원 안 받으면 CSS 0
+  assert.strictEqual(C.appCost(list, picks, { sat: { rw: 650, math: 750 }, needAid: false }).cssCost, 0);
+}
 
 console.log('core tests passed');

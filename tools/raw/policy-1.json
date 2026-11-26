@@ -1,0 +1,357 @@
+[
+ {
+  "id": "yale",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "May report a superscore; sending-all rule not stated",
+  "lastSatEarly": "November",
+  "lastSatRD": "February",
+  "note": "Early: Oct or Nov exams generally available; RD: Jan or Feb generally available",
+  "sources": [
+   "https://admissions.yale.edu/standardized-testing"
+  ],
+  "uncertain": [
+   "lastSatEarly/lastSatRD: page says generally and does not name the cycle"
+  ]
+ },
+ {
+  "id": "stanford",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Self-report highest scores; official scores for ALL self-reported sittings required if enrolling",
+  "lastSatEarly": "October",
+  "lastSatRD": "December",
+  "note": "Scores by end of Oct (REA) / end of Dec (RD)",
+  "sources": [
+   "https://admission.stanford.edu/apply/freshman/testing.html"
+  ],
+  "uncertain": []
+ },
+ {
+  "id": "amherst",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Optional; superscore across dates; official only if enrolling",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Test-optional; self-report via Common App/Coalition/portal",
+  "sources": [
+   "https://www.amherst.edu/admission/apply/firstyear/testing"
+  ],
+  "uncertain": [
+   "superscore/selfReport: from search-result summary of amherst.edu; page fetch blocked (405)",
+   "lastSat*: not stated"
+  ]
+ },
+ {
+  "id": "harvard",
+  "superscore": null,
+  "selfReport": true,
+  "scoreChoice": "Score Choice allowed, need not send all",
+  "lastSatEarly": "November",
+  "lastSatRD": "February",
+  "note": "Early: end of October, November series may be submitted if needed; RD: tests as late as February",
+  "sources": [
+   "https://college.harvard.edu/admissions/apply/application-requirements"
+  ],
+  "uncertain": [
+   "superscore: page does not address SAT superscoring",
+   "lastSatRD: February wording ambiguous"
+  ]
+ },
+ {
+  "id": "princeton",
+  "superscore": null,
+  "selfReport": null,
+  "scoreChoice": "Score choice allowed; submission of all scores encouraged",
+  "lastSatEarly": "October",
+  "lastSatRD": "December",
+  "note": "Take SAT by October date for SCEA; December date for RD. No superscoring between paper and digital",
+  "sources": [
+   "https://admission.princeton.edu/how-apply/standardized-testing"
+  ],
+  "uncertain": [
+   "superscore: page only says no cross-format superscore",
+   "selfReport: not stated on page",
+   "lastSat*: should-take-by guidance, not a hard cutoff"
+  ]
+ },
+ {
+  "id": "mit",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Must self-report all exams taken; no picking",
+  "lastSatEarly": "November",
+  "lastSatRD": "December",
+  "note": "Tests must be taken before Nov 30 (EA) and Dec 31 (RD); page lists no specific SAT dates",
+  "sources": [
+   "https://mitadmissions.org/apply/firstyear/tests-scores/"
+  ],
+  "uncertain": [
+   "lastSat*: inferred from before Nov 30 / Dec 31 wording"
+  ]
+ },
+ {
+  "id": "brown",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Self-report on Common App; Score Choice not mentioned",
+  "lastSatEarly": "October",
+  "lastSatRD": "December",
+  "note": "Testing complete by last October test date (ED) / last December date (RD); testing required",
+  "sources": [
+   "https://admission.brown.edu/first-year/standardized-tests"
+  ],
+  "uncertain": [
+   "scoreChoice: not stated",
+   "page does not say which exam the dates cover; assumed SAT/ACT"
+  ]
+ },
+ {
+  "id": "columbia",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; yes/no whether scores considered",
+  "lastSatEarly": "November",
+  "lastSatRD": "February",
+  "note": "Test-optional for 2026-27; required from 2027-28. Test dates through Nov 2026 (ED), Feb 2027 (RD)",
+  "sources": [
+   "https://undergrad.admissions.columbia.edu/apply/process/testing"
+  ],
+  "uncertain": [
+   "all fields from search-result summary; direct page fetch returned 403",
+   "scoreChoice: all-scores rule not stated"
+  ]
+ },
+ {
+  "id": "penn",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Score Choice allowed but entire testing history encouraged",
+  "lastSatEarly": "November",
+  "lastSatRD": "December",
+  "note": "Nov 7, 2026 SAT for ED; Dec 5, 2026 SAT for RD. Testing required (waiver available)",
+  "sources": [
+   "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing"
+  ],
+  "uncertain": []
+ },
+ {
+  "id": "uchicago",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; submit only if it helps; self-reported as-is",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Test-optional no-harm policy",
+  "sources": [
+   "https://collegeadmissions.uchicago.edu/apply/uchicago-admissions-faq/"
+  ],
+  "uncertain": [
+   "superscore/selfReport: from search-result summary only",
+   "lastSat*: only a third-party claim (Nov SAT EA/ED I, Jan RD), not verified on official page"
+  ]
+ },
+ {
+  "id": "jhu",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Report all available scores; most competitive profile considered",
+  "lastSatEarly": "October",
+  "lastSatRD": "December",
+  "note": "Testing required; encourage no later than October (ED) / December (RD) of senior year",
+  "sources": [
+   "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/"
+  ],
+  "uncertain": [
+   "page names no cycle; lastSat* are encouragement, not hard cutoffs"
+  ]
+ },
+ {
+  "id": "williams",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; full set of scores required (no sections only); Score Choice allowed",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "CDS 2025-26 lists scores received by Jan 12; no SAT date list found",
+  "sources": [
+   "https://www.williams.edu/admission-aid/how-to-apply/first-year/"
+  ],
+  "uncertain": [
+   "all fields from search-result summary; direct fetch 403",
+   "lastSat*: not stated"
+  ]
+ },
+ {
+  "id": "swarthmore",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Not required to send all scores",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "SAT superscore only (ACT not); strongly encourages testing by mid-December",
+  "sources": [
+   "https://www.swarthmore.edu/admissions-aid/standardized-testing-policy"
+  ],
+  "uncertain": [
+   "lastSat*: only mid-December encouragement from search summary"
+  ]
+ },
+ {
+  "id": "pomona",
+  "superscore": null,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; yes/no on application, self-report in portal",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "ED I deadline Nov 8; ED II/RD Jan 8; page only states ACT superscore",
+  "sources": [
+   "https://www.pomona.edu/admissions/paths-apply"
+  ],
+  "uncertain": [
+   "superscore: SAT not addressed",
+   "lastSat*: not stated"
+  ]
+ },
+ {
+  "id": "berkeley",
+  "superscore": null,
+  "selfReport": null,
+  "scoreChoice": null,
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Test-free: SAT/ACT not used in any part of admissions; scores only for placement/credit if admitted",
+  "sources": [
+   "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/"
+  ],
+  "uncertain": []
+ },
+ {
+  "id": "wesleyan",
+  "superscore": true,
+  "selfReport": null,
+  "scoreChoice": "Test-optional; choose via Common App which scores considered",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Best SAT section scores across dates used",
+  "sources": [
+   "https://www.wesleyan.edu/admission/admission-faq.html"
+  ],
+  "uncertain": [
+   "all fields from search-result summary",
+   "selfReport: not clearly stated",
+   "lastSat*: not found"
+  ]
+ },
+ {
+  "id": "carleton",
+  "superscore": null,
+  "selfReport": true,
+  "scoreChoice": "Test-optional",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Self-report in lieu of official; score receipt deadlines Nov 15 (Fall ED), Jan 15 (Winter ED/RD)",
+  "sources": [
+   "https://www.carleton.edu/admissions/apply/steps/materials/"
+  ],
+  "uncertain": [
+   "superscore: not stated",
+   "lastSat*: only receipt deadlines given"
+  ]
+ },
+ {
+  "id": "bowdoin",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; applicants choose yes/no per test",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Highest CR and Math across dates considered",
+  "sources": [
+   "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html"
+  ],
+  "uncertain": [
+   "lastSat*: not on page"
+  ]
+ },
+ {
+  "id": "middlebury",
+  "superscore": null,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; box on Common App to have scores considered",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Self-report accepted at application",
+  "sources": [
+   "https://www.middlebury.edu/college/admissions/application-instructions-and-deadlines"
+  ],
+  "uncertain": [
+   "all fields from search-result summary",
+   "superscore/lastSat*: not found"
+  ]
+ },
+ {
+  "id": "grinnell",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; either official or self-reported",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Highest subscores across reports; enrolling students send official scores",
+  "sources": [
+   "https://www.grinnell.edu/admission/apply/first-year/faqs-domestic"
+  ],
+  "uncertain": [
+   "from search-result summary",
+   "a Standardized Testing page says scores required, contradicting rest of site"
+  ]
+ },
+ {
+  "id": "colby",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional",
+  "lastSatEarly": null,
+  "lastSatRD": null,
+  "note": "Superscores all exams; official report before enrollment",
+  "sources": [
+   "https://afa.colby.edu/apply/requirements/"
+  ],
+  "uncertain": [
+   "from search-result summary",
+   "lastSat*: not found"
+  ]
+ },
+ {
+  "id": "conncoll",
+  "superscore": true,
+  "selfReport": null,
+  "scoreChoice": "Send scores from every date with a best section score; may switch to no-tests election",
+  "lastSatEarly": "October",
+  "lastSatRD": "December",
+  "note": "Oct tests typically arrive for ED I; Dec tests for ED II and RD",
+  "sources": [
+   "https://www.conncoll.edu/admission/apply/standardized-test-policy/"
+  ],
+  "uncertain": [
+   "selfReport: not stated",
+   "from search-result summary of official pages"
+  ]
+ },
+ {
+  "id": "rochester",
+  "superscore": true,
+  "selfReport": true,
+  "scoreChoice": "Test-optional; no hybrid SAT/ACT superscore",
+  "lastSatEarly": "November",
+  "lastSatRD": "December",
+  "note": "Latest SAT: Nov for ED I, Dec for RD (CDS says Jan 5 receipt)",
+  "sources": [
+   "https://admissions.rochester.edu/applying/testing-policies/"
+  ],
+  "uncertain": [
+   "from search-result summary; page may be ~8 months old"
+  ]
+ }
+]
