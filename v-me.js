@@ -47,7 +47,11 @@
             </section>
             <section class="card2">
               <h3>GPA</h3>
-              <div class="meStep"><span class="lbl">5.0 만점</span><div class="step"><button type="button" data-gpa="-0.01">−</button><b>${p.gpa != null ? p.gpa.toFixed(2) : '—'}</b><button type="button" data-gpa="0.01">＋</button></div></div>
+              <div class="gpaRow">
+                <input type="text" inputmode="decimal" autocomplete="off" class="gpaIn" data-gpa-in value="${p.gpa != null ? p.gpa : ''}" placeholder="4.94" aria-label="GPA">
+                <span class="gpaMax">/ 5.0</span>
+                <span class="gpaErr" hidden>0~5 사이 숫자로</span>
+              </div>
             </section>
           </div>
           <div class="meCol">
@@ -85,8 +89,21 @@
         }
         const apP = t.closest('[data-ap-plan]');
         if (apP) { const k = apP.dataset.apPlan; p.ap[k] = p.ap[k] || {}; p.ap[k].plan = !p.ap[k].plan; E.save(); E.render(); return; }
-        const g = t.closest('[data-gpa]');
-        if (g) { const v = p.gpa == null ? 4.5 : Math.round((p.gpa + Number(g.dataset.gpa)) * 100) / 100; p.gpa = Math.max(0, Math.min(5, v)); E.save(); E.render(); }
+      });
+      // GPA 직접 입력: 칠 때마다 저장하고, 화면은 다시 그리지 않음(입력 칸 유지)
+      $('#view-me').addEventListener('input', e => {
+        const el = e.target;
+        if (!el.matches('[data-gpa-in]')) return;
+        const raw = el.value.trim().replace(',', '.');
+        const err = el.parentElement.querySelector('.gpaErr');
+        if (raw === '') { st.profile.gpa = null; el.classList.remove('bad'); err.hidden = true; E.save(false); return; }
+        const ok = /^\d(\.\d{0,3})?$/.test(raw) && Number(raw) <= 5;
+        el.classList.toggle('bad', !ok);
+        err.hidden = ok;
+        if (ok) { st.profile.gpa = Math.round(Number(raw) * 1000) / 1000; E.save(false); }
+      });
+      $('#view-me').addEventListener('keydown', e => {
+        if (e.key === 'Enter' && e.target.matches('[data-gpa-in]')) e.target.blur();
       });
     },
   };
