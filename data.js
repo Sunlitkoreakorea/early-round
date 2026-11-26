@@ -91,7 +91,8 @@ window.SCHOOLS = [
    "notes": "No ED; C22 SCEA yes but counts blank. applied/admitted = men+women sums (no unknown-sex row).",
    "uncertain": [
     "firstYearTotal: C1 enrolled 799+834; B2 first-year column total row not seen on page"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -282,7 +283,8 @@ window.SCHOOLS = [
    "uncertain": [
     "ea: C22 counts appear blank in text layer; not visually confirmed",
     "firstYearTotal: B2 1,866 vs C1 enrolled 1,839"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, QuestBridge",
@@ -482,7 +484,8 @@ window.SCHOOLS = [
    "notes": "enrolled mid-50%; means EBRW 750 / Math 756; SAT submitted by 192 of 485 enrolled; about 10% international",
    "uncertain": [
     "ed: profile gives no ED applicant/admit counts"
-   ]
+   ],
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, QuestBridge (other platforms not confirmed)",
@@ -646,7 +649,8 @@ window.SCHOOLS = [
    "intlAidAvg": 83013,
    "notes": "No CDS. Class of 2029 (fall 2025) per Harvard Gazette; 1,675 accepted (83.6% yield). Harvard no longer releases EA data; no SAT/ACT stats found. Harvard admissions-statistics page (https://college.harvard.edu/admissions/admissions-statistics) now shows Class of 2030: 55,104 applied, 2,037 admitted, ~1,648 enrolling, 15% international.",
    "uncertain": [],
-   "cds": "Harvard published a 2025-26 CDS (OIRA, 2026-07-13)"
+   "cds": "Harvard published a 2025-26 CDS (OIRA, 2026-07-13)",
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App (QuestBridge Match also referenced on aid page)",
@@ -846,7 +850,12 @@ window.SCHOOLS = [
    "notes": "No ED; SCEA (restrictive) yes but C22 counts blank. applied uses C1 residency-table total 42,303 (incl. 18 unknown sex).",
    "uncertain": [
     "firstYearTotal: B2 total 1,404 vs C1 enrolled 1,408"
-   ]
+   ],
+   "intl": {
+    "applied": 10567,
+    "admitted": 241,
+    "rate": 2.3
+   }
   },
   "req": {
    "application": "Common App (QuestBridge for Match participants)",
@@ -1049,7 +1058,13 @@ window.SCHOOLS = [
    "notes": "CDS is a web page (no PDF); values read via WebFetch extraction, gender sums reconcile to totals. EA counts blank (MIT EA not reported in C22); no ED. SAT composite 1520/1550/1570.",
    "uncertain": [
     "all values read via WebFetch summarizer, not eyeballed in the page; intlFirstYear 124 and H6 not independently verified"
-   ]
+   ],
+   "intl": {
+    "applied": 6926,
+    "admitted": 136,
+    "rate": 2.0
+   },
+   "intlSource": "https://mitadmissions.org/apply/process/stats/"
   },
   "req": {
    "application": "MIT's own application (MyMIT portal at apply.mitadmissions.org); no Common App",
@@ -1253,7 +1268,12 @@ window.SCHOOLS = [
    "intlAidCount": 254,
    "intlAidAvg": 85194,
    "notes": "Brown CDS only as Tableau dashboard (exported to PDF, selected year 2025-2026). No EA. applied = men 17,972 + women 24,771 + unknown 31. Brown press release said 42,765/2,418 but CDS includes 295 waitlist admits.",
-   "uncertain": []
+   "uncertain": [],
+   "intl": {
+    "applied": 9861,
+    "admitted": 404,
+    "rate": 4.1
+   }
   },
   "req": {
    "application": "Common App, QuestBridge",
@@ -1452,7 +1472,12 @@ window.SCHOOLS = [
    "notes": "Columbia College + Columbia Engineering CDS only (General Studies is a separate CDS, excluded). No EA.",
    "uncertain": [
     "satEBRW p75 777 is as printed (unusual value)"
-   ]
+   ],
+   "intl": {
+    "applied": 15380,
+    "admitted": 407,
+    "rate": 2.6
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -1670,7 +1695,8 @@ window.SCHOOLS = [
    "notes": "No EA. SAT Composite row blank in C9. firstYearTotal from B2 (C1 enrolled 2,420).",
    "uncertain": [
     "firstYearTotal: B2 2,414 vs C1 enrolled 2,420"
-   ]
+   ],
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -1867,7 +1893,8 @@ window.SCHOOLS = [
     "ed: C21 offers ED but applied/admitted left blank in CDS",
     "ea: C22 says Yes but no EA counts reported (CDS has no fields for EA counts)",
     "header-label: PDF header reads 2024-2025"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -2051,7 +2078,12 @@ window.SCHOOLS = [
    "notes": "Applied/admitted include unknown-sex (45 / 11). No EA (C22 = No). ED total is both ED rounds as reported.",
    "uncertain": [
     "intlAidCount: 183 coincides with the international enrolled count in the C1 residency table; H6 box itself reads 183"
-   ]
+   ],
+   "intl": {
+    "applied": 10705,
+    "admitted": 404,
+    "rate": 3.8
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir)",
@@ -2199,7 +2231,8 @@ window.SCHOOLS = [
    "uncertain": [
     "firstYearTotal: 567 vs 584 incl. deferred, CDS B2 not seen",
     "all test/intl/aid fields: CDS not accessible"
-   ]
+   ],
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, Coalition with Scoir, QuestBridge (per search summary)",
@@ -2369,7 +2402,8 @@ window.SCHOOLS = [
    "notes": "Applied = men 5,709 + women 7,286; admitted = 472 + 505. ACT submit 14.79%. No EA. Waitlist admits 14.",
    "uncertain": [
     "ed: single ED total given (likely ED I + ED II combined)"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, Coalition with Scoir, QuestBridge",
@@ -2535,7 +2569,8 @@ window.SCHOOLS = [
     "admitted: from a separate announcement page, not the same page as applied",
     "firstYearTotal: not stated; 414 matriculant sum unconfirmed",
     "admitRate: 861/12470 computed"
-   ]
+   ],
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, Coalition on Scoir, QuestBridge",
@@ -2686,7 +2721,8 @@ window.SCHOOLS = [
    "intlAidCount": null,
    "intlAidAvg": null,
    "notes": "Test-free; C9 blank. No ED/EA (UC). H6 blank in CDS. Applied total is the CDS C1 total (men 62,395 + women 64,469 + unknown-sex remainder).",
-   "uncertain": []
+   "uncertain": [],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "UC Application (University of California)",
@@ -2864,7 +2900,8 @@ window.SCHOOLS = [
     "intlFirstYear: percent only",
     "ed: single figure, may combine ED rounds"
    ],
-   "scoreBasis": "합격자"
+   "scoreBasis": "합격자",
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, Coalition on Scoir",
@@ -3027,7 +3064,12 @@ window.SCHOOLS = [
    "notes": "C1 totals are sums of men+women+unknown sex (6796 matches residency table total; 1480 likewise). No EA plan.",
    "uncertain": [
     "ed: CDS C21 block is labeled 'For the Fall 2024 entering class' in the 2025-26 file, so it may be the prior cycle"
-   ]
+   ],
+   "intl": {
+    "applied": 3290,
+    "admitted": 132,
+    "rate": 4.0
+   }
   },
   "req": {
    "application": "Common App, QuestBridge, Coalition",
@@ -3188,7 +3230,12 @@ window.SCHOOLS = [
    "notes": "C1 sums: men 6690+women 7355 applied, 440+517 admitted. No EA plan. SAT 34.76% (ACT 17.28%).",
    "uncertain": [
     "ed: CDS C21 block is labeled 'For the Fall 2024 entering class' in the 2025-26 file, so it may be the prior cycle"
-   ]
+   ],
+   "intl": {
+    "applied": 6041,
+    "admitted": 76,
+    "rate": 1.3
+   }
   },
   "req": {
    "application": "Common App, Coalition on Scoir, QuestBridge",
@@ -3368,7 +3415,8 @@ window.SCHOOLS = [
     "ed.admitted: excludes February (ED II) admits per the form, so ED rate is understated",
     "admitted: September-only admits (school states 12.8% admit rate on form)",
     "intlAid: H6 text extraction misaligned but values 198 x $83,697 = $16,572,104 total, consistent"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, Coalition, QuestBridge",
@@ -3526,7 +3574,8 @@ window.SCHOOLS = [
    "notes": "2025-2026 CDS not posted on Grinnell IR page as of 2026-11-26; used 2024-2025 (fall 2024 entering class). No EA plan (C22 = N).",
    "uncertain": [
     "whole record is fall 2024 cohort, not fall 2025"
-   ]
+   ],
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
   },
   "req": {
    "application": "Common App, QuestBridge",
@@ -3680,7 +3729,8 @@ window.SCHOOLS = [
     "admitRate: only rounded 7% published",
     "intlFirstYear: only a percent (10% non-U.S. citizens)"
    ],
-   "rateNote": "학교 발표 (반올림 값)"
+   "rateNote": "학교 발표 (반올림 값)",
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
   },
   "req": {
    "application": "Common App, Coalition, QuestBridge, Colby Application",
@@ -3846,7 +3896,12 @@ window.SCHOOLS = [
    "intlAidCount": 111,
    "intlAidAvg": 69638,
    "notes": "C1 totals from residency table (7,338 / 2,875), match men+women+unknown sums. No EA plan. Test-optional: SAT 52%, ACT 14%.",
-   "uncertain": []
+   "uncertain": [],
+   "intl": {
+    "applied": 2552,
+    "admitted": 115,
+    "rate": 4.5
+   }
   },
   "req": {
    "application": "Common App with Conn supplemental application",
@@ -4011,7 +4066,12 @@ window.SCHOOLS = [
    "notes": "June 2026 version ('Updated June 9'); an April 2026 version also exists. No EA plan. B2 first-year total 1245 vs C1 enrolled 1231 (as printed). Rochester is test-optional: SAT 15.7%, ACT 6.4%.",
    "uncertain": [
     "satSubmitPct: low share because test-optional; scores reflect only submitters"
-   ]
+   ],
+   "intl": {
+    "applied": 7998,
+    "admitted": 1453,
+    "rate": 18.2
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir)",

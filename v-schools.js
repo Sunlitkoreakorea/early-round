@@ -308,7 +308,7 @@
   }
 
   function srcHtml(s) {
-    const urls = [...new Set([...(s.sources || []), ...((s.req && s.req.sources) || []), ...(s.stats && s.stats.source ? [s.stats.source] : [])])];
+    const urls = [...new Set([...(s.sources || []), ...((s.req && s.req.sources) || []), ...(s.stats && s.stats.source ? [s.stats.source] : []), ...(s.stats && s.stats.intlSource ? [s.stats.intlSource] : [])])];
     const links = urls.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">출처 ${i + 1}</a>`).join('');
     const uns = [...new Set([...(s.uncertain || []), ...((s.req && s.req.uncertain) || []), ...((s.stats && s.stats.uncertain) || [])]
       .map(u => fieldKo(String(u).split(':')[0].trim())))];

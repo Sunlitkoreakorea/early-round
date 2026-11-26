@@ -96,6 +96,17 @@ STATS_PATCH = {
     "colby": {"admitRate": 7.0, "rateNote": "학교 발표 (반올림 값)"},
     # Wesleyan 프로필의 점수는 입학생이 아니라 합격자 기준
     "wesleyan": {"scoreBasis": "합격자"},
+    # 국제학생 지원/합격 수 (CDS C1 거주지 표, 2026-11-26 직접 확인: 칸 합계가 전체와 맞음)
+    "princeton": {"intl": {"applied": 10567, "admitted": 241}},   # 4602+27134+10567=42303, 229+1398+241=1868
+    "columbia": {"intl": {"applied": 15380, "admitted": 407}},    # 8882+35349+15380=59611, 447+2092+407=2946
+    "jhu": {"intl": {"applied": 10705, "admitted": 404}},         # 4233+35321+10705=50259, 199+2469+404=3072
+    "brown": {"intl": {"applied": 9861, "admitted": 404}},        # 559+32351+9861+3=42774, 63+2243+404=2710
+    "carleton": {"intl": {"applied": 3290, "admitted": 132}},     # 636+2870+3290=6796, 221+1127+132=1480
+    "bowdoin": {"intl": {"applied": 6041, "admitted": 76}},       # 540+7464+6041=14045, 74+807+76=957
+    "rochester": {"intl": {"applied": 7998, "admitted": 1453}},   # 4551+9060+7998=21609, 2292+5311+1453=9056
+    "conncoll": {"intl": {"applied": 2552, "admitted": 115}},     # 810+3976+2552=7338, 301+2459+115=2875
+    # MIT 은 CDS 칸이 비어 있어서 입학처 통계 페이지 (22355+6926=29281, 1198+136=1334)
+    "mit": {"intl": {"applied": 6926, "admitted": 136}, "intlSource": "https://mitadmissions.org/apply/process/stats/"},
     # 두 번째 대조에서 Harvard CDS 2025-26 을 찾음 (숫자는 verify-S1.json 정정으로 채움)
     "harvard": {"cdsYear": "2025-2026", "source": "https://oira.harvard.edu/files/2026/07/CDS_2025-2026.pdf", "uncertain": []},
 }
@@ -261,7 +272,18 @@ def main():
         stats[sid] = s
         verified.setdefault(sid, {})["stats"] = "ok: 직접 확인"
     for sid, patch in STATS_PATCH.items():
+        if "intl" in patch and isinstance(stats[sid].get("intl"), dict):
+            patch = dict(patch, intl=dict(stats[sid]["intl"], **patch["intl"]))
         stats[sid].update(patch)
+    # 국제학생 줄이 없는 이유
+    BLANK = {"yale", "harvard", "stanford", "uchicago", "swarthmore", "middlebury", "berkeley", "grinnell"}
+    NOFILE = {"amherst", "williams", "pomona", "colby", "wesleyan", "penn"}
+    for sid in BLANK:
+        if not stats[sid].get("intl"):
+            stats[sid]["intlNote"] = "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+    for sid in NOFILE:
+        if not stats[sid].get("intl"):
+            stats[sid]["intlNote"] = "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
     for sid, path, val in REQ_FIX:
         set_path(reqs[sid], path, val)
 
@@ -272,12 +294,13 @@ def main():
             if t.get("admitRate") is None or abs(r - t["admitRate"]) > 0.051:
                 print(f"주의 {sid}: admitRate {t.get('admitRate')} -> {r}")
                 t["admitRate"] = r
-        for k in ("ed", "ea"):
+        for k in ("ed", "ea", "intl"):
             x = t.get(k)
             if x and x.get("applied") and x.get("admitted") is not None:
                 r = rate(x["applied"], x["admitted"])
                 if x.get("rate") is None or abs(r - x["rate"]) > 0.051:
-                    print(f"주의 {sid}.{k}: rate {x.get('rate')} -> {r}")
+                    if k != "intl":
+                        print(f"주의 {sid}.{k}: rate {x.get('rate')} -> {r}")
                     x["rate"] = r
 
     out = []
