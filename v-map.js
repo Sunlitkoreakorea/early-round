@@ -57,7 +57,7 @@
       if (!xy) continue;
       const [x, y] = xy;
       const star = E.isStar(s);
-      out += `<g class="pt ${cls(s)}${star ? ' dream' : ''}${s.group === 'candidate' && !E.pickOf(s) ? ' cand' : ''}" data-pt="${esc(s.id)}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})">
+      out += `<g class="pt ${cls(s)}${star ? ' dream' : ''}${s.group === 'candidate' && !E.pickOf(s) ? ' cand' : ''}${C.majorHas(s, E.st.profile.majors) === false ? ' nomaj' : ''}" data-pt="${esc(s.id)}" transform="translate(${x.toFixed(1)},${y.toFixed(1)})">
         <circle class="hit" r="${r + 7}"></circle>
         <circle class="mk" r="${r}"></circle>
         ${withLabels ? `<text x="${s.loc.lx ?? r + 4}" y="${s.loc.ly ?? 4}" text-anchor="${s.loc.la || 'start'}">${esc(s.name)}${star ? ' ★' : ''}</text>` : ''}

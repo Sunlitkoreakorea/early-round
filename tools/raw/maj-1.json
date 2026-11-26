@@ -1,0 +1,1180 @@
+[
+ {
+  "id": "yale",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (B.A./B.S.)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.A./B.S.), sponsored by MCDB and Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A./B.S.)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.A./B.S.); also joint CS & Psychology (B.A.), CS & Math, CS & Economics, CS & EE",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular, Cellular, and Developmental Biology (MCDB) and Ecology and Evolutionary Biology (EEB); no major named just Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Many fields allow choosing major in sophomore year; STEM majors want a first-year course sequence. Pre-med is advising only."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72500,
+   "fees": 185,
+   "housing": 21600,
+   "direct": 94285,
+   "full": 97985,
+   "intlExtra": "Travel excluded from total. Aid may have US tax implications for international students.",
+   "source": "https://finaid.yale.edu/coa"
+  },
+  "sources": [
+   "https://finaid.yale.edu/coa",
+   "https://college.yale.edu/academics/explore-majors",
+   "https://student-accounts.yale.edu/tuition-and-fees"
+  ],
+  "uncertain": [
+   "majors.restricted: no cap info found, set open from absence only",
+   "bio.note: pre-med advising not read on a Yale page"
+  ]
+ },
+ {
+  "id": "stanford",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Symbolic Systems (equivalent to cognitive science)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after at least one quarter, with SYMSYS 1, course plan and advisor interview/approval."
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "No Neuroscience major; neuroscience track/concentration inside Psychology, Biology (Neurobiology) and Symbolic Systems",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Data Science, Data Science & Social Systems)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (also Human Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified on a page)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 67731,
+   "fees": 2610,
+   "housing": 22944,
+   "direct": 93285,
+   "full": 97545,
+   "intlExtra": "Cardinal Care health insurance assumed for international students and included in their budget (premium not listed); new students also pay $525 orientation + $250 document fee.",
+   "source": "https://financialaid.stanford.edu/undergrad/budget/index.html"
+  },
+  "sources": [
+   "https://financialaid.stanford.edu/undergrad/budget/index.html",
+   "https://majors.stanford.edu/majors/text-only-lists-majors-and-offerings",
+   "https://symsys.stanford.edu/undergraduates/how-declare"
+  ],
+  "uncertain": [
+   "coa.fees: 'Student Fees Allowance' used as fees",
+   "neuro: from search summary of Stanford SUNS/symsys pages, not a full catalog read"
+  ]
+ },
+ {
+  "id": "amherst",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major found; cognitive content sits in Neuroscience and Psychology; students can design an interdisciplinary major"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Amherst was first to offer a neuroscience major; declare in second year."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 75330,
+   "fees": 710,
+   "housing": 20320,
+   "direct": 96360,
+   "full": null,
+   "intlExtra": "Health insurance required or waivable; fall plan listed $3,627 (not in billed total). Sample aid packages show total COA about $98,000-99,500.",
+   "source": "https://www.amherst.edu/tuition"
+  },
+  "sources": [
+   "https://www.amherst.edu/tuition",
+   "https://www.amherst.edu/academiclife/departments/neuroscience/major"
+  ],
+  "uncertain": [
+   "cogsci none: absence in search results only",
+   "coa read via search summary; WebFetch blocked by amherst.edu (405)"
+  ]
+ },
+ {
+  "id": "harvard",
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Mind, Brain, and Behavior (MBB) track in Psychology ('Cognitive Science (MBB)' track), also MBB tracks in CS and Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Psychology MBB track requires a thesis."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (committee concentration, home MCB)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare fall of sophomore year; Neuro 80 usually fall sophomore."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.A.), SEAS",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No separate admission to SEAS; concentration declared sophomore year."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cellular Biology; Integrative Biology; Human Developmental and Regenerative Biology; Chemical and Physical Biology; Human Evolutionary Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 62226,
+   "fees": 6216,
+   "housing": 23192,
+   "direct": 91634,
+   "full": null,
+   "intlExtra": "Required health insurance $4,954 (waivable if covered). Total billed+unbilled $95,134-$100,134 depending on travel ($0-5,000).",
+   "source": "https://college.harvard.edu/financial-aid/how-aid-works/cost-attendance"
+  },
+  "sources": [
+   "https://college.harvard.edu/financial-aid/how-aid-works/cost-attendance",
+   "https://college.harvard.edu/academics/liberal-arts-sciences/concentrations",
+   "https://mbb.harvard.edu/pages/tracks"
+  ],
+  "uncertain": [
+   "cs.college: SEAS is part of Harvard College, not chosen at application (from background knowledge)",
+   "full left null because the page gives a range"
+  ]
+ },
+ {
+  "id": "princeton",
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Program in Cognitive Science (undergraduate certificate)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (concentration; also a certificate)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (concentration)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science, offered as A.B. or B.S.E.",
+    "college": "A.B. or B.S.E. degree path (choice made at application)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "A.B. needs junior IW + senior thesis; B.S.E. thesis optional; about 25% of each class is B.S.E."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular Biology; Ecology and Evolutionary Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 68140,
+   "fees": 314,
+   "housing": 22120,
+   "direct": 90574,
+   "full": 94624,
+   "intlExtra": "Student Health Plan $4,220 unless family policy confirmed. Figures are first-year/sophomore; junior/senior higher. Transportation excluded ($50-5,000).",
+   "source": "https://finaid.princeton.edu/how-aid-works/student-budget"
+  },
+  "sources": [
+   "https://finaid.princeton.edu/how-aid-works/student-budget",
+   "https://cogsci.princeton.edu/certificate",
+   "https://ua.princeton.edu/fields-study/departmental-majors-degree-bachelor-arts/computer-science",
+   "https://admission.princeton.edu/academics"
+  ],
+  "uncertain": [
+   "cs.college: A.B./B.S.E. applicant choice per Princeton admission page via search summary",
+   "neuro/psych/bio offered status from search summaries"
+  ]
+ },
+ {
+  "id": "mit",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (Course 9); also 6-9 Computation and Cognition",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Most students declare spring of first year."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (Course 9) covers neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No psychology major found; Course 9 is closest. Minor availability not verified"
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science and Engineering (6-3); AI and Decision Making (6-4)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (Course 7); also 6-7 Computer Science and Molecular Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 66720,
+   "fees": 420,
+   "housing": 22194,
+   "direct": 89334,
+   "full": 92760,
+   "intlExtra": "Massachusetts requires coverage: auto-enrolled in MIT SHIP unless waived (premium not listed). Housing/dining are the max-priced double/21-meal plan. Travel allowance excluded. Catalog PDF lists $93,730 total (unexplained $970 gap).",
+   "source": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/"
+  },
+  "sources": [
+   "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/",
+   "https://registrar.mit.edu/registration-academics/academic-requirements/majors-minors/declaring-major",
+   "https://catalog.mit.edu/degree-charts/"
+  ],
+  "uncertain": [
+   "psych none: not verified on an MIT page",
+   "restricted open: Course 6 may have its own process, not verified"
+  ]
+ },
+ {
+  "id": "brown",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (also Cognitive Neuroscience)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (also Cognitive Neuroscience, Computational Neuroscience)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Applied Math-CS, CS-Economics, Math-CS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (also Computational Biology, Applied Math-Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 74568,
+   "fees": 2984,
+   "housing": 19464,
+   "direct": 97016,
+   "full": 99994,
+   "intlExtra": "Health insurance $5,283 waivable; one-time $100 academic record fee for new students (not in direct). Brown ISSS I-20 estimate differs (tuition+fees $77,552, room+board $19,464, other $9,314).",
+   "source": "https://finaid.brown.edu/estimate-cost-aid/cost"
+  },
+  "sources": [
+   "https://finaid.brown.edu/estimate-cost-aid/cost",
+   "https://sfs.brown.edu/tuition-and-fees/undergraduate",
+   "https://bulletin.brown.edu/the-college/concentrations/cogs/"
+  ],
+  "uncertain": [
+   "coa read from search summary",
+   "fees = activities 442 + resources 1136 + recreation 110 + health services 1296"
+  ]
+ },
+ {
+  "id": "columbia",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major found at Columbia College; Neuroscience and Behavior and Psychology are closest"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience and Behavior (co-sponsored by Biological Sciences and Psychology)",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (Columbia Engineering/SEAS; Columbia College also offers CS)",
+    "college": "Columbia College or SEAS (choice at application)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (Biological Sciences); also Computational Biology",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "3-2 Combined Plan with Engineering exists. Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72800,
+   "fees": 4160,
+   "housing": 19650,
+   "direct": 96610,
+   "full": 99774,
+   "intlExtra": "Travel listed separately, not included. College bulletin shows a different total ($99,044: fees $3,430, room+board $19,650, books+personal $3,164).",
+   "source": "https://undergrad.admissions.columbia.edu/affordability/cost"
+  },
+  "sources": [
+   "https://undergrad.admissions.columbia.edu/affordability/cost",
+   "https://bulletin.columbia.edu/columbia-college/fees-expenses-financial-aid/",
+   "https://undergrad.admissions.columbia.edu/academics/college/majors"
+  ],
+  "uncertain": [
+   "cogsci none: absence only",
+   "coa: admissions page vs bulletin disagree on fees; admissions figures used",
+   "cs: SEAS offering and CS in CC from search summaries"
+  ]
+ },
+ {
+  "id": "penn",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science, BA (tracks: Cognitive Neuroscience, Computation and Cognition, Language & Mind, Individualized)",
+    "college": "College of Arts and Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Major chosen by end of sophomore year; requires 2.0 GPA in major courses. Also a CogSci minor open to engineering students."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Arts and Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Arts and Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BSE; BAS also offered)",
+    "college": "SEAS",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts and Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 65670,
+   "fees": 8308,
+   "housing": 20604,
+   "direct": 94582,
+   "full": 99082,
+   "intlExtra": "None listed on page; first two years must live on campus.",
+   "source": "https://srfs.upenn.edu/costs-budgeting/undergraduate-cost-attendance"
+  },
+  "sources": [
+   "https://srfs.upenn.edu/costs-budgeting/undergraduate-cost-attendance",
+   "https://admissions.upenn.edu/academics/exploring-academics/majors-minors",
+   "https://penntoday.upenn.edu/news/penn-trustees-approve-2026-2027-undergraduate-charges-and-financial-aid-budget"
+  ],
+  "uncertain": [
+   "coa from search summary of SRFS page",
+   "cs direct-admit: applicants apply to SEAS directly (school-level, from background knowledge)",
+   "Penn does not publish admit rate by school"
+  ]
+ },
+ {
+  "id": "uchicago",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BA and BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA only)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences (BA/BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 75960,
+   "fees": 1995,
+   "housing": 21414,
+   "direct": 99369,
+   "full": 103821,
+   "intlExtra": "Health insurance excluded from figures. First-years pay $720 class fee in each of first two years (not in direct). Fees = Student Services 1,677 + UPASS 318. Room and board no longer billed by the university.",
+   "source": "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/"
+  },
+  "sources": [
+   "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/",
+   "http://collegecatalog.uchicago.edu/thecollege/cognitivescience/",
+   "https://collegeadmissions.uchicago.edu/academics/areas-of-study/"
+  ],
+  "uncertain": [
+   "coa from search summary",
+   "housing: 21,414 is the aid allowance, not the billed room rate"
+  ]
+ },
+ {
+  "id": "jhu",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (Psychological and Brain Sciences)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS, Whiting School of Engineering)",
+    "college": "Whiting School of Engineering",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cellular Biology",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 68670,
+   "fees": null,
+   "housing": 21967,
+   "direct": null,
+   "full": 94858,
+   "intlExtra": "F-1/J-1 students cannot waive health insurance: $3,624 (not in totals). One-time $500 matriculation fee included in the 94,858 freshman total.",
+   "source": "https://sfs.jhu.edu/cost-tuition/"
+  },
+  "sources": [
+   "https://sfs.jhu.edu/cost-tuition/",
+   "https://krieger.jhu.edu/academics/majors-minors/",
+   "https://cogsci.jhu.edu/undergraduate/cognitive-science-major/"
+  ],
+  "uncertain": [
+   "psych and bio names, cs college, not confirmed by a page read (search did not return them)",
+   "coa.fees/direct null: page lists only the one-time $500 matriculation fee; full is freshman total",
+   "housing = freshman double 13,073 + meals 8,894"
+  ]
+ },
+ {
+  "id": "williams",
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Science (concentration, not a major)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Two core courses + four electives; declare spring of sophomore year."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (interdisciplinary program)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 76300,
+   "fees": 340,
+   "housing": 19320,
+   "direct": 95960,
+   "full": null,
+   "intlExtra": "Williams health plan $3,365 if not waived; optional study-away fee $1,500 not included; books about $1,000 outside comprehensive fee (covered for aid students).",
+   "source": "https://catalog.williams.edu/tuition-fees/"
+  },
+  "sources": [
+   "https://catalog.williams.edu/tuition-fees/",
+   "https://www.williams.edu/admission-aid/financial-aid/cost-and-aid/",
+   "https://catalog.williams.edu/nsci/"
+  ],
+  "uncertain": [
+   "neuro: listed as major from search summary, not a catalog read",
+   "coa from search summary"
+  ]
+ },
+ {
+  "id": "swarthmore",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (special major; also minor)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (special major run by Psychology and Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (course major, minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (course major/minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Department applies via sophomore paper and departmental form."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (course major/minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72722,
+   "fees": 482,
+   "housing": 22566,
+   "direct": 95770,
+   "full": 98370,
+   "intlExtra": "Student health insurance and transportation not included (vary).",
+   "source": "https://www.swarthmore.edu/financial-aid/tuition-books-housing-food-plan-activities-fee"
+  },
+  "sources": [
+   "https://www.swarthmore.edu/financial-aid/tuition-books-housing-food-plan-activities-fee",
+   "https://www.swarthmore.edu/cognitive-science/academic-program",
+   "https://www.swarthmore.edu/computer-science/honors-majors-and-minors"
+  ],
+  "uncertain": [
+   "coa.tuition: source labels 72,722 as 'tuition and books' (books apparently included; separate 825 course materials in full)",
+   "cogsci/neuro 'special major' counted as major"
+  ]
+ },
+ {
+  "id": "pomona",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Linguistics and Cognitive Science (catalog); academics page lists Cognitive Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychological Science (catalog) / Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 71660,
+   "fees": 420,
+   "housing": 23590,
+   "direct": 95670,
+   "full": null,
+   "intlExtra": "Medical insurance $3,312 per Cost of Attendance page ($3,219 per catalog); books included in comprehensive fee from fall 2026.",
+   "source": "https://www.pomona.edu/administration/finance-office/student-accounts/tuition-and-costs"
+  },
+  "sources": [
+   "https://www.pomona.edu/administration/finance-office/student-accounts/tuition-and-costs",
+   "https://www.pomona.edu/academics",
+   "https://catalog.pomona.edu/majorsminors"
+  ],
+  "uncertain": [
+   "cogsci name inconsistent across Pomona pages",
+   "coa from search summary; Pomona pages disagree on off-campus totals"
+  ]
+ },
+ {
+  "id": "berkeley",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "L&S major; freshmen generally enter L&S undeclared; requirements not verified."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (launched July 2024)",
+    "college": "College of Letters and Science",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after prerequisites (Chem 1A, Math 10A/B, Bio 1A, Physics 8A) before end of 5th semester; Neurobiology emphasis in MCB closed to new majors 2025-26."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Entry rules not verified."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (CDSS), or EECS (College of Engineering)",
+    "college": "CDSS or College of Engineering (EECS)",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "CDSS admits directly into CS/DS/Stats major; Engineering applicants apply to the college; L&S CS petition route also reported."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cell Biology (and Integrative Biology)",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 57484,
+   "fees": null,
+   "housing": 23640,
+   "direct": 81124,
+   "full": 93944,
+   "intlExtra": "Nonresident Supplemental Tuition $39,270 (tuition 57,484 = 18,214 tuition+fees combined + 39,270). Student Health Insurance Plan $5,066 charged to international students (budget direct total incl. SHIP is $86,190). Housing = residence hall 16,640 + meal plan 7,000.",
+   "source": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/"
+  },
+  "sources": [
+   "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/",
+   "https://neuroscience.berkeley.edu/academics/undergraduate/declare",
+   "https://cdss.berkeley.edu/admissions",
+   "https://eecs.berkeley.edu/academics/undergraduate/"
+  ],
+  "uncertain": [
+   "admitRate: no official per-college/major freshman rate found (Engineering brochure says 6% for 2023-24, not major-level)",
+   "cogsci/psych/bio status from search summary; L&S entry rules not verified",
+   "coa fees null: tuition and fees combined on page; direct excludes SHIP"
+  ]
+ },
+ {
+  "id": "wesleyan",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major; cognitive science is a pathway grouping CS, Neuroscience and Behavior, and Psychology"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience and Behavior",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Tied to health studies pathway; pre-med is advising only."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 75916,
+   "fees": 404,
+   "housing": 21660,
+   "direct": 97980,
+   "full": 100780,
+   "intlExtra": "First-years also pay one-time $300 matriculation fee (first-year total $101,080); full includes optional $50 Green Fund fee and $2,750 books/personal.",
+   "source": "https://www.wesleyan.edu/admission/affordability-and-aid/cost-of-attendance.html"
+  },
+  "sources": [
+   "https://www.wesleyan.edu/admission/affordability-and-aid/cost-of-attendance.html",
+   "https://catalog.wesleyan.edu/majors/",
+   "https://www.wesleyan.edu/cis/about/pathways.html"
+  ],
+  "uncertain": [
+   "cogsci none: from CIS pathways page via search summary",
+   "coa from search summary"
+  ]
+ },
+ {
+  "id": "carleton",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (major and minor; merged department with Linguistics)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "minor",
+    "name": "Neuroscience (minor)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 75186,
+   "fees": 480,
+   "housing": 19314,
+   "direct": 94980,
+   "full": 97870,
+   "intlExtra": "Carleton's international-student estimate is $104,746 (adds books, personal, travel, health insurance ~$2,355, break expenses).",
+   "source": "https://www.carleton.edu/financial-aid/cost/"
+  },
+  "sources": [
+   "https://www.carleton.edu/financial-aid/cost/",
+   "https://www.carleton.edu/admissions/explore/majors/",
+   "https://www.carleton.edu/business/students/tuition/"
+  ],
+  "uncertain": [
+   "coa from search summary",
+   "neuro minor-only per Carleton program finder via search summary"
+  ]
+ }
+]

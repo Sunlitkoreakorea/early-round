@@ -1,0 +1,1091 @@
+[
+ {
+  "id": "bowdoin",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found; Digital and Computational Studies is a coordinate major"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 74268,
+   "fees": 700,
+   "housing": 20432,
+   "direct": 95400,
+   "full": 97900,
+   "intlExtra": null,
+   "source": "https://www.bowdoin.edu/student-aid/cost-of-attendance/index.html"
+  },
+  "sources": [
+   "https://www.bowdoin.edu/ir/data/currentmajorsminors.html",
+   "https://www.bowdoin.edu/neuroscience/requirements/index.html"
+  ],
+  "uncertain": [
+   "cogsci: absence inferred from major list/search, not an explicit statement",
+   "coa.full: page says $97,900+ (travel varies)"
+  ]
+ },
+ {
+  "id": "middlebury",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major or minor listed"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72924,
+   "fees": 542,
+   "housing": 20920,
+   "direct": 94386,
+   "full": 97386,
+   "intlExtra": null,
+   "source": "https://www.middlebury.edu/student-financial-services/tuition-fees-and-payment/tuition-and-fees"
+  },
+  "sources": [
+   "https://www.middlebury.edu/college/academics/majors-minors",
+   "https://www.middlebury.edu/stories/archive/2026/02/trustees-accept-major-gift-art-museum-discuss-strategic-plan-and-approve-tuition"
+  ],
+  "uncertain": [
+   "coa.fees: Student Government Association fee"
+  ]
+ },
+ {
+  "id": "grinnell",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Cognitive science only as an independent major"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 73582,
+   "fees": 572,
+   "housing": 17784,
+   "direct": 91938,
+   "full": 93338,
+   "intlExtra": "Student health insurance $2,769 appears on the bill; transportation estimate $1,300 for students from abroad",
+   "source": "https://www.grinnell.edu/admission/financial-aid/cost-attendance"
+  },
+  "sources": [
+   "https://www.grinnell.edu/academics/majors-concentrations",
+   "https://www.grinnell.edu/news/comprehensive-fees-2026-27-academic-year"
+  ],
+  "uncertain": [
+   "coa: figures from search summary of official pages, not read directly",
+   "intlExtra: whether insurance is waivable not verified"
+  ]
+ },
+ {
+  "id": "colby",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program; closest is Computational Psychology major"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration within Biology or Psychology major)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also Psychology with neuroscience concentration and Computational Psychology majors"
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "AI concentration available; Data Science major separate"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 75790,
+   "fees": 0,
+   "housing": 19480,
+   "direct": 95270,
+   "full": 97020,
+   "intlExtra": null,
+   "source": "https://afa.colby.edu/apply/college-profile/"
+  },
+  "sources": [
+   "https://afa.colby.edu/apply/college-profile/",
+   "https://www.colby.edu/academics/majors-and-minors/"
+  ],
+  "uncertain": [
+   "coa: tuition figure $75,790 includes fees (fees set 0 as not separately listed)",
+   "coa.full: range $97,020-$98,270 by travel; lower bound used",
+   "majors: Colby major pages blocked (403/refused); based on search summaries",
+   "neuro: concentration structure not confirmed on official page"
+  ]
+ },
+ {
+  "id": "conncoll",
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Only source is an international brochure; unconfirmed"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary (formerly Behavioral Neuroscience)"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72281,
+   "fees": 449,
+   "housing": 20070,
+   "direct": 92800,
+   "full": 94800,
+   "intlExtra": "Health insurance may be billed; can be waived",
+   "source": "https://www.conncoll.edu/admission/tuition-fees/"
+  },
+  "sources": [
+   "https://www.conncoll.edu/offices/office-of-the-controller/student-accounts/fees-and-payments/"
+  ],
+  "uncertain": [
+   "cogsci minor unverified",
+   "bio official name unverified (Biological Sciences per fact sheet)",
+   "coa: one page lists tuition+fees as $72,730 vs $72,281+$449 elsewhere"
+  ]
+ },
+ {
+  "id": "rochester",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (BA/BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Treated as cognitive science equivalent"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Biological Sciences: Neuroscience (BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Neuroscience track in Biological Sciences"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": "Hajim School of Engineering & Applied Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Housed in Hajim"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA) / Biological Sciences (BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 71750,
+   "fees": 1622,
+   "housing": 21328,
+   "direct": 94700,
+   "full": 96022,
+   "intlExtra": "None listed; higher travel allowance than standard $300 for international",
+   "source": "https://www.rochester.edu/financial-aid/undergraduate-tuition-expenses/"
+  },
+  "sources": [
+   "https://www.rochester.edu/bulletin/college/programs.html"
+  ],
+  "uncertain": [
+   "whether applicants choose a school at application not verified (college field is where program is housed)",
+   "major/track labels inferred from program listing",
+   "books included in tuition (UR Essentials)"
+  ]
+ },
+ {
+  "id": "macalester",
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Cognitive Science (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 74394,
+   "fees": 330,
+   "housing": 17430,
+   "direct": 92154,
+   "full": null,
+   "intlExtra": null,
+   "source": "https://www.macalester.edu/student-accounts/tuition-and-fees-2/"
+  },
+  "sources": [
+   "https://www.macalester.edu/academics/",
+   "https://www.macalester.edu/financial-aid/tuition/"
+  ],
+  "uncertain": [
+   "coa: tuition includes required course materials; admissions page says activity fee $230 vs $330",
+   "coa.full: federal COA about $96k-97k not confirmed",
+   "major types from search summary; academics page did not label types"
+  ]
+ },
+ {
+  "id": "oberlin",
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Sciences",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also an integrative concentration"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "BA or BS"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 70320,
+   "fees": 1142,
+   "housing": 20700,
+   "direct": 92162,
+   "full": null,
+   "intlExtra": "Student health insurance $3,028 unless waived",
+   "source": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees"
+  },
+  "sources": [
+   "https://www.oberlin.edu/arts-and-sciences/areas-of-study",
+   "https://www.oberlin.edu/student-accounts/tuition-and-fees"
+  ],
+  "uncertain": [
+   "college field: College vs Conservatory choice exists at application, programs here are in the College",
+   "fees = activity 592 + health 500 + Green Edge 50 (summed from search summary)",
+   "coa.full: books $930 and personal $978 estimates not added"
+  ]
+ },
+ {
+  "id": "lafayette",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 70486,
+   "fees": 360,
+   "housing": 20896,
+   "direct": 91742,
+   "full": null,
+   "intlExtra": "Optional health insurance $3,131; one-time $750 matriculation fee for new students",
+   "source": "https://president.lafayette.edu/2026/01/23/tuition-and-fees-for-2026-27/"
+  },
+  "sources": [
+   "https://academics.lafayette.edu/departments-programs/",
+   "https://admissions.lafayette.edu/college-costs/"
+  ],
+  "uncertain": [
+   "coa.full: billed 91,742 plus books $1,000, transport $250, misc $940 not summed; federal COA first-year $95,580"
+  ]
+ },
+ {
+  "id": "kenyon",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also a concentration"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "track",
+    "name": "Computing (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No standalone CS major found"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72880,
+   "fees": 350,
+   "housing": 19860,
+   "direct": 93090,
+   "full": 96940,
+   "intlExtra": "Optional student health insurance $1,938",
+   "source": "https://www.kenyon.edu/admissions-aid/financial-aid-scholarships/tuition-costs/"
+  },
+  "sources": [
+   "https://www.kenyon.edu/academics/departments-and-majors/"
+  ],
+  "uncertain": [
+   "cs: only Computing concentration appears in departments list; a CS major not ruled out beyond that"
+  ]
+ },
+ {
+  "id": "richmond",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary, housed with Psychology"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration; BS only)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Taken with Biology, Psychology or BMB major"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": "School of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 70725,
+   "fees": 0,
+   "housing": 18815,
+   "direct": 89540,
+   "full": 92320,
+   "intlExtra": null,
+   "source": "https://financialaid.richmond.edu/applying/cost.html"
+  },
+  "sources": [
+   "https://as.richmond.edu/majors-minors/index.html",
+   "https://universityfinance.richmond.edu/tuition/fees/index.html"
+  ],
+  "uncertain": [
+   "college: I believe applicants choose among A&S, Jepson, Robins at application; not verified on page read",
+   "coa: required fees not separately listed (0 used); housing/food are aid-office averages"
+  ]
+ },
+ {
+  "id": "case-western",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": "College of Arts and Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": "College of Arts and Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Joint Biology and School of Medicine program"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Arts and Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "BA in Arts and Sciences; BS offered through engineering (not verified)"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": "College of Arts and Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 71410,
+   "fees": 696,
+   "housing": 20288,
+   "direct": 92394,
+   "full": 95704,
+   "intlExtra": "None listed; $760 one-time matriculation fee; student medical plan charged per term unless waived",
+   "source": "https://case.edu/financialaid/undergraduates/estimated-costs-attendance-2026-27"
+  },
+  "sources": [
+   "https://bulletin.case.edu/undergraduate-academics/majors-minors/",
+   "https://case.edu/artsci/cognitivescience/academics/undergraduate-academics/bachelor-arts"
+  ],
+  "uncertain": [
+   "restricted/direct-admit status of programs not verified",
+   "CS college not verified; no AI-specific major found",
+   "full includes matriculation fee, books, personal; nursing students +$1,450"
+  ]
+ },
+ {
+  "id": "trinity-ct",
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary minor, 6 courses"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 72820,
+   "fees": 3330,
+   "housing": 20330,
+   "direct": 96480,
+   "full": 98480,
+   "intlExtra": null,
+   "source": "https://www.trincoll.edu/student-accounts/tuition-and-fees/"
+  },
+  "sources": [
+   "https://bulletin.trincoll.edu/programs/BS-NESC",
+   "https://www.trincoll.edu/admissions/finaid/first-year-students/fees-and-packages/"
+  ],
+  "uncertain": [
+   "cogsci minor and CS/Biology majors from search summaries, not an official list",
+   "fees = general 2,900 + activity 430",
+   "full from consumer information page via search (travel $0-1,500)"
+  ]
+ },
+ {
+  "id": "whitman",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain, Behavior & Cognition",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Neuroscience-focused interdisciplinary major (Biology+Psychology), counted as cogsci equivalent; launched 2023"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Brain, Behavior & Cognition",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Whitman neuroscience major; no major named Neuroscience"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 68692,
+   "fees": null,
+   "housing": 15952,
+   "direct": null,
+   "full": 86620,
+   "intlExtra": null,
+   "source": "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/how-much-does-whitman-cost"
+  },
+  "sources": [
+   "https://www.whitman.edu/academics/majors-and-programs/brain-behavior-and-cognition",
+   "https://catalog.whitman.edu/more/charges"
+  ],
+  "uncertain": [
+   "coa.fees/direct: ASWC fee amount not confirmed, so null",
+   "full excludes travel"
+  ]
+ },
+ {
+  "id": "dickinson",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 71100,
+   "fees": 550,
+   "housing": 18650,
+   "direct": 90300,
+   "full": 93706,
+   "intlExtra": "Student health insurance about $1,829-$2,000 billed unless waived (sources differ)",
+   "source": "https://www.dickinson.edu/info/20081/financial_aid/1125/cost_of_attendance"
+  },
+  "sources": [
+   "https://www.dickinson.edu/info/20082/financial_operations/1436/annual_fees_tuitionhousingfood"
+  ],
+  "uncertain": [
+   "costs may not be finalized per aid guide (total $93,642 there)",
+   "cogsci absence based on search only"
+  ]
+ },
+ {
+  "id": "earlham",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  },
+  "coa": {
+   "year": "2026-27",
+   "tuition": 56784,
+   "fees": 980,
+   "housing": 15762,
+   "direct": 73526,
+   "full": null,
+   "intlExtra": "Health insurance estimate $2,285",
+   "source": "https://catalog.earlham.edu/academic-catalog-2026-27/2026-2027-tuition-and-fees"
+  },
+  "sources": [
+   "https://earlham.edu/academics/majors-minors-programs/",
+   "https://earlham.edu/cost-affordability/tuition-and-costs/"
+  ],
+  "uncertain": [
+   "housing = double room 8,300 + 19-meal board 7,462",
+   "coa.full not read"
+  ]
+ }
+]

@@ -54,7 +54,9 @@ window.SCHOOLS = [
    "aidDeadlines: Dec 1 (intl early) and Feb 15 (RD) come from a search summary labeled 2027-28 aid cycle, not read directly",
    "english: tests/minimums not named",
    "cogsci: not verified on official page",
-   "RD notifyDate: only 'late March'"
+   "RD notifyDate: only 'late March'",
+   "majors.restricted: no cap info found, set open from absence only",
+   "bio.note: pre-med advising not read on a Yale page"
   ],
   "nextCycle": null,
   "dream": true,
@@ -92,7 +94,17 @@ window.SCHOOLS = [
    "uncertain": [
     "firstYearTotal: C1 enrolled 799+834; B2 first-year column total row not seen on page"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72500,
+    "fees": 185,
+    "housing": 21600,
+    "direct": 94285,
+    "full": 97985,
+    "intlExtra": "Travel excluded from total. Aid may have US tax implications for international students.",
+    "source": "https://finaid.yale.edu/coa"
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -170,6 +182,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (page: Oct or Nov exams 'generally available' for SCEA, Jan or Feb for RD; not a hard cutoff)",
    "req": "partial: essays/platforms/2 teacher recs/counselor confirmed; fee $80, interview, CSS 3987 not on pages read",
    "stats": "ok"
@@ -187,6 +200,53 @@ window.SCHOOLS = [
    "uncertain": [
     "lastSatEarly/lastSatRD: page says generally and does not name the cycle"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (B.A./B.S.)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.A./B.S.), sponsored by MCDB and Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A./B.S.)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.A./B.S.); also joint CS & Psychology (B.A.), CS & Math, CS & Economics, CS & EE",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular, Cellular, and Developmental Biology (MCDB) and Ecology and Evolutionary Biology (EEB); no major named just Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Many fields allow choosing major in sophomore year; STEM majors want a first-year course sequence. Pre-med is advising only."
+   }
   }
  },
  {
@@ -245,7 +305,9 @@ window.SCHOOLS = [
    "ed2Elsewhere: page says ED II allowed if Stanford denies or defers (Stanford REA decisions come before Jan ED II notices)",
    "aidDeadlines.rd: Feb 15 from search summary of financial aid table, intl RD page not read",
    "cogsci: not verified",
-   "RD notifyDate: only 'early April'"
+   "RD notifyDate: only 'early April'",
+   "coa.fees: 'Student Fees Allowance' used as fees",
+   "neuro: from search summary of Stanford SUNS/symsys pages, not a full catalog read"
   ],
   "nextCycle": null,
   "dream": true,
@@ -284,7 +346,17 @@ window.SCHOOLS = [
     "ea: C22 counts appear blank in text layer; not visually confirmed",
     "firstYearTotal: B2 1,866 vs C1 enrolled 1,839"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 67731,
+    "fees": 2610,
+    "housing": 22944,
+    "direct": 93285,
+    "full": 97545,
+    "intlExtra": "Cardinal Care health insurance assumed for international students and included in their budget (premium not listed); new students also pay $525 orientation + $250 document fee.",
+    "source": "https://financialaid.stanford.edu/undergrad/budget/index.html"
+   }
   },
   "req": {
    "application": "Common App, QuestBridge",
@@ -379,6 +451,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (page: scores 'by the end of October (REA)' / 'end of December (RD)')",
    "req": "partial: $100, 2 teacher recs, 5 short (3-50 words) + 3 essays (100-250) confirmed; pages list Common App only (QuestBridge not seen); interview page empty",
    "stats": "ok"
@@ -394,6 +467,53 @@ window.SCHOOLS = [
     "https://admission.stanford.edu/apply/freshman/testing.html"
    ],
    "uncertain": []
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Symbolic Systems (equivalent to cognitive science)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after at least one quarter, with SYMSYS 1, course plan and advisor interview/approval."
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "No Neuroscience major; neuroscience track/concentration inside Psychology, Biology (Neurobiology) and Symbolic Systems",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Data Science, Data Science & Social Systems)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (also Human Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified on a page)."
+   }
   }
  },
  {
@@ -447,7 +567,9 @@ window.SCHOOLS = [
   ],
   "uncertain": [
    "plans.ED.notifyDate: school gives only 'early-to-mid December'",
-   "cogsci: absence of a cog sci program inferred from search, not from a full majors list"
+   "cogsci: absence of a cog sci program inferred from search, not from a full majors list",
+   "cogsci none: absence in search results only",
+   "coa read via search summary; WebFetch blocked by amherst.edu (405)"
   ],
   "nextCycle": null,
   "dream": true,
@@ -485,7 +607,17 @@ window.SCHOOLS = [
    "uncertain": [
     "ed: profile gives no ED applicant/admit counts"
    ],
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 75330,
+    "fees": 710,
+    "housing": 20320,
+    "direct": 96360,
+    "full": null,
+    "intlExtra": "Health insurance required or waivable; fall plan listed $3,627 (not in billed total). Sample aid packages show total COA about $98,000-99,500.",
+    "source": "https://www.amherst.edu/tuition"
+   }
   },
   "req": {
    "application": "Common App, QuestBridge (other platforms not confirmed)",
@@ -540,6 +672,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "partial: coa ok via search of official controller page (page blocked 405); cogsci none not shown on a full official list, only absence in search of amherst.edu",
    "policy": "partial: official page fetch 405; official-domain search summaries confirm self-report and most-favorable-combination superscore regardless of date; no test dates stated",
    "req": "unreachable",
    "stats": "ok: 직접 확인"
@@ -558,6 +691,53 @@ window.SCHOOLS = [
     "superscore/selfReport: from search-result summary of amherst.edu; page fetch blocked (405)",
     "lastSat*: not stated"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major found; cognitive content sits in Neuroscience and Psychology; students can design an interdisciplinary major"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Amherst was first to offer a neuroscience major; declare in second year."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -613,7 +793,9 @@ window.SCHOOLS = [
    "MBB secondary field: from general knowledge, not on pages read",
    "aid deadlines: from search summary of official aid page (Nov 1 REA, Feb 1 RD)",
    "need-blind and CSS code: from search summary of official pages",
-   "supplement word limits: from requirements page, prompts not read in full"
+   "supplement word limits: from requirements page, prompts not read in full",
+   "cs.college: SEAS is part of Harvard College, not chosen at application (from background knowledge)",
+   "full left null because the page gives a range"
   ],
   "nextCycle": null,
   "dream": false,
@@ -650,7 +832,17 @@ window.SCHOOLS = [
    "notes": "No CDS. Class of 2029 (fall 2025) per Harvard Gazette; 1,675 accepted (83.6% yield). Harvard no longer releases EA data; no SAT/ACT stats found. Harvard admissions-statistics page (https://college.harvard.edu/admissions/admissions-statistics) now shows Class of 2030: 55,104 applied, 2,037 admitted, ~1,648 enrolling, 15% international.",
    "uncertain": [],
    "cds": "Harvard published a 2025-26 CDS (OIRA, 2026-07-13)",
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 62226,
+    "fees": 6216,
+    "housing": 23192,
+    "direct": 91634,
+    "full": null,
+    "intlExtra": "Required health insurance $4,954 (waivable if covered). Total billed+unbilled $95,134-$100,134 depending on travel ($0-5,000).",
+    "source": "https://college.harvard.edu/financial-aid/how-aid-works/cost-attendance"
+   }
   },
   "req": {
    "application": "Common App (QuestBridge Match also referenced on aid page)",
@@ -743,6 +935,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (page asks for results by end of October for REA but says November tests acceptable if needed => Nov is allowed, Oct is the recommendation; RD 'as late as February'; superscore not addressed, null correct)",
    "req": "partial: official 2026-27 PDF confirms $95, 5 prompts x150 words max, 2 teacher evals, Common App; interview/CSS not rechecked",
    "stats": "ok: applied/admitted match Gazette and Harvard CDS 2025-26; CDS exists, so null fields can be filled (see corrections)"
@@ -761,6 +954,53 @@ window.SCHOOLS = [
     "superscore: page does not address SAT superscoring",
     "lastSatRD: February wording ambiguous"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Mind, Brain, and Behavior (MBB) track in Psychology ('Cognitive Science (MBB)' track), also MBB tracks in CS and Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Psychology MBB track requires a thesis."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (committee concentration, home MCB)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare fall of sophomore year; Neuro 80 usually fall sophomore."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.A.), SEAS",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No separate admission to SEAS; concentration declared sophomore year."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cellular Biology; Integrative Biology; Human Developmental and Regenerative Biology; Chemical and Physical Biology; Human Evolutionary Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -813,7 +1053,9 @@ window.SCHOOLS = [
    "ed2Elsewhere: page does not mention ED II",
    "cogsci: not verified on official page",
    "RD notifyDate: only 'late March'",
-   "need-blind/meetsNeed: from official international page text (read) and search summary"
+   "need-blind/meetsNeed: from official international page text (read) and search summary",
+   "cs.college: A.B./B.S.E. applicant choice per Princeton admission page via search summary",
+   "neuro/psych/bio offered status from search summaries"
   ],
   "nextCycle": "Testing required again for fall 2028 entry (the 2027-28 cycle) - per Princeton application checklist page",
   "dream": false,
@@ -855,6 +1097,16 @@ window.SCHOOLS = [
     "applied": 10567,
     "admitted": 241,
     "rate": 2.3
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 68140,
+    "fees": 314,
+    "housing": 22120,
+    "direct": 90574,
+    "full": 94624,
+    "intlExtra": "Student Health Plan $4,220 unless family policy confirmed. Figures are first-year/sophomore; junior/senior higher. Transportation excluded ($50-5,000).",
+    "source": "https://finaid.princeton.edu/how-aid-works/student-budget"
    }
   },
   "req": {
@@ -949,6 +1201,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (page: take SAT 'by the October test date' for SCEA and 'December date' for RD; this is guidance, not a hard cutoff; no cross-format superscore; self-report of SAT not addressed)",
    "req": "partial: prompts/limits confirmed (250/400-500/250/3x50, graded paper required); fee, recs, interview, CSS null not rechecked",
    "stats": "ok"
@@ -968,6 +1221,53 @@ window.SCHOOLS = [
     "selfReport: not stated on page",
     "lastSat*: should-take-by guidance, not a hard cutoff"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Program in Cognitive Science (undergraduate certificate)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (concentration; also a certificate)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (concentration)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science, offered as A.B. or B.S.E.",
+    "college": "A.B. or B.S.E. degree path (choice made at application)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "A.B. needs junior IW + senior thesis; B.S.E. thesis optional; about 25% of each class is B.S.E."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular Biology; Ecology and Evolutionary Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -1021,7 +1321,9 @@ window.SCHOOLS = [
    "RD notifyDate: 'mid-March' mapped to 03-14 (Pi Day), not a confirmed date",
    "ed2Elsewhere/publicEA: MIT EA is not restrictive per page, only 'one application per entry year'; not applicable",
    "aid deadlines: Nov 30 / Feb 15 from MIT deadlines page",
-   "MIT meetsNeed and need-blind from SFS international page and search summary"
+   "MIT meetsNeed and need-blind from SFS international page and search summary",
+   "psych none: not verified on an MIT page",
+   "restricted open: Course 6 may have its own process, not verified"
   ],
   "nextCycle": null,
   "dream": false,
@@ -1064,7 +1366,17 @@ window.SCHOOLS = [
     "admitted": 136,
     "rate": 2.0
    },
-   "intlSource": "https://mitadmissions.org/apply/process/stats/"
+   "intlSource": "https://mitadmissions.org/apply/process/stats/",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 66720,
+    "fees": 420,
+    "housing": 22194,
+    "direct": 89334,
+    "full": 92760,
+    "intlExtra": "Massachusetts requires coverage: auto-enrolled in MIT SHIP unless waived (premium not listed). Housing/dining are the max-priced double/21-meal plan. Travel allowance excluded. Catalog PDF lists $93,730 total (unexplained $970 gap).",
+    "source": "https://sfs.mit.edu/undergraduate-students/the-cost-of-attendance/coa/"
+   }
   },
   "req": {
    "application": "MIT's own application (MyMIT portal at apply.mitadmissions.org); no Common App",
@@ -1159,6 +1471,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (page: tests 'before November 30 (EA)' and 'before December 31 (RA)'; November/December inference reasonable; highest section scores; self-report on application)",
    "req": "ok: 4 essays ~100-200, 4 short 40-50, 4 activities, 1 open box, $75, 2 teacher recs, interview waived if unavailable, own portal. CSS 3514 and optional counselor letter not rechecked",
    "stats": "ok"
@@ -1176,6 +1489,53 @@ window.SCHOOLS = [
    "uncertain": [
     "lastSat*: inferred from before Nov 30 / Dec 31 wording"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (Course 9); also 6-9 Computation and Cognition",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Most students declare spring of first year."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (Course 9) covers neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No psychology major found; Course 9 is closest. Minor availability not verified"
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science and Engineering (6-3); AI and Decision Making (6-4)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (Course 7); also 6-7 Computer Science and Molecular Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -1229,7 +1589,9 @@ window.SCHOOLS = [
    "supplements: only Open Curriculum prompt confirmed",
    "cogsci: not verified",
    "RD notifyDate: newsletter says March 31, RD page says early April",
-   "fetch of admission.brown.edu apply pages 404"
+   "fetch of admission.brown.edu apply pages 404",
+   "coa read from search summary",
+   "fees = activities 442 + resources 1136 + recreation 110 + health services 1296"
   ],
   "nextCycle": null,
   "dream": false,
@@ -1273,6 +1635,16 @@ window.SCHOOLS = [
     "applied": 9861,
     "admitted": 404,
     "rate": 4.1
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 74568,
+    "fees": 2984,
+    "housing": 19464,
+    "direct": 97016,
+    "full": 99994,
+    "intlExtra": "Health insurance $5,283 waivable; one-time $100 academic record fee for new students (not in direct). Brown ISSS I-20 estimate differs (tuition+fees $77,552, room+board $19,464, other $9,314).",
+    "source": "https://finaid.brown.edu/estimate-cost-aid/cost"
    }
   },
   "req": {
@@ -1358,6 +1730,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "partial: tuition 74568, housing+food 19464 ok; page lists fees 3084 incl. one-time $100 record fee (3084-100=2984 as stored, recurring fees); direct 97016 excludes the $100",
    "policy": "ok (page: testing complete by 'last October test date' for ED, 'last December test date' for RD; superscore SAT/ACT; self-report via Common App)",
    "req": "partial: 4 essays (150-250/150-250/100-150/100-150), $80, Common App confirmed; interview/CSS not rechecked",
    "stats": "ok"
@@ -1376,6 +1749,53 @@ window.SCHOOLS = [
     "scoreChoice: not stated",
     "page does not say which exam the dates cover; assumed SAT/ACT"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (also Cognitive Neuroscience)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (also Cognitive Neuroscience, Computational Neuroscience)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Applied Math-CS, CS-Economics, Math-CS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (also Computational Biology, Applied Math-Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -1431,7 +1851,10 @@ window.SCHOOLS = [
   ],
   "uncertain": [
    "plans.notifyDate: Columbia only says 'mid-December' / 'late March' (dates 'may vary'); exact release dates are emailed to applicants",
-   "cogsci: confirmed via search snippet of Columbia psychology page, not read in full"
+   "cogsci: confirmed via search snippet of Columbia psychology page, not read in full",
+   "cogsci none: absence only",
+   "coa: admissions page vs bulletin disagree on fees; admissions figures used",
+   "cs: SEAS offering and CS in CC from search summaries"
   ],
   "nextCycle": "Standardized testing (SAT or ACT) becomes REQUIRED effective the 2027-28 admission cycle (August 2027), i.e. likely applies to this student; hardship waiver available.",
   "dream": false,
@@ -1477,6 +1900,16 @@ window.SCHOOLS = [
     "applied": 15380,
     "admitted": 407,
     "rate": 2.6
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72800,
+    "fees": 4160,
+    "housing": 19650,
+    "direct": 96610,
+    "full": 99774,
+    "intlExtra": "Travel listed separately, not included. College bulletin shows a different total ($99,044: fees $3,430, room+board $19,650, books+personal $3,164).",
+    "source": "https://undergrad.admissions.columbia.edu/affordability/cost"
    }
   },
   "req": {
@@ -1579,6 +2012,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "partial: coa ok (admissions page via search snippet, page itself 403); cogsci corrected; official Columbia pages returned 403 on direct fetch",
    "policy": "partial: direct fetch 403; official-domain search summary confirms ED through Nov 2026, RD through Feb 2027, superscore, self-report",
    "req": "unreachable",
    "stats": "ok"
@@ -1597,6 +2031,53 @@ window.SCHOOLS = [
     "all fields from search-result summary; direct page fetch returned 403",
     "scoreChoice: all-scores rule not stated"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major found at Columbia College; Neuroscience and Behavior and Psychology are closest"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience and Behavior (co-sponsored by Biological Sciences and Psychology)",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (Columbia Engineering/SEAS; Columbia College also offers CS)",
+    "college": "Columbia College or SEAS (choice at application)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (Biological Sciences); also Computational Biology",
+    "college": "Columbia College",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "3-2 Combined Plan with Engineering exists. Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -1654,7 +2135,10 @@ window.SCHOOLS = [
    "plans.notifyDate: Penn only says 'December' / 'April'; exact time announced one week ahead",
    "aidDeadlines.early/rd: Penn's SRFS table gives Nov 6 2026 / Feb 5 2027 as target dates to have an award letter at admission; late filing still gets full consideration (not a hard cutoff)",
    "interview: Penn pages read do not state an alumni-interview policy; only the optional InitialView FAQ (seen in search snippet)",
-   "earlyRule: Penn page read states only that ED is binding; restrictions on other early apps not stated"
+   "earlyRule: Penn page read states only that ED is binding; restrictions on other early apps not stated",
+   "coa from search summary of SRFS page",
+   "cs direct-admit: applicants apply to SEAS directly (school-level, from background knowledge)",
+   "Penn does not publish admit rate by school"
   ],
   "nextCycle": null,
   "dream": false,
@@ -1696,7 +2180,17 @@ window.SCHOOLS = [
    "uncertain": [
     "firstYearTotal: B2 2,414 vs C1 enrolled 2,420"
    ],
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 65670,
+    "fees": 8308,
+    "housing": 20604,
+    "direct": 94582,
+    "full": 99082,
+    "intlExtra": "None listed on page; first two years must live on campus.",
+    "source": "https://srfs.upenn.edu/costs-budgeting/undergraduate-cost-attendance"
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -1770,6 +2264,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok after corrections (restricted)",
    "policy": "ok (official table: Nov 7, 2026 SAT for ED, Dec 5, 2026 for RD; superscore; self-report)",
    "req": "partial: 1 teacher required + 1 optional, counselor required, $75, platforms incl. QuestBridge, essays 3x50-200 confirmed; interview not on page",
    "stats": "unreachable: Box link redirects to boxcloud and cannot be read; arithmetic check only (3570/72544 = 4.9%); third-party Esslo transcription shows SAT composite 1510-1570 and 4.9% rate, consistent but unverified"
@@ -1785,6 +2280,53 @@ window.SCHOOLS = [
     "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing"
    ],
    "uncertain": []
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science, BA (tracks: Cognitive Neuroscience, Computation and Cognition, Language & Mind, Individualized)",
+    "college": "College of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Major chosen by end of sophomore year; requires 2.0 GPA in major courses. Also a CogSci minor open to engineering students."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BSE; BAS also offered)",
+    "college": "SEAS",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -1854,7 +2396,9 @@ window.SCHOOLS = [
    "aidDeadlines: Nov 15 / Jan 15 / Feb 15 are listed on the page for US citizens/PRs; the international aid page read gives no separate dates (international application deadlines are stated as same as all first-years). Nov 15 2026 is a Sunday, so rule says next business day (Nov 16)",
    "intlAid need-aware: from a search snippet of UChicago's QuestBridge page ('must be need-aware for international candidates'), not read in full",
    "earlyRule: EA non-restrictive per task statement and page (reply May 1); official 'what decisions mean/early rules' page text did not render, so restriction wording not directly read",
-   "plans: EA and ED I share the Nov 2 deadline; page lists them as separate plans"
+   "plans: EA and ED I share the Nov 2 deadline; page lists them as separate plans",
+   "coa from search summary",
+   "housing: 21,414 is the aid allowance, not the billed room rate"
   ],
   "nextCycle": null,
   "dream": false,
@@ -1894,7 +2438,17 @@ window.SCHOOLS = [
     "ea: C22 says Yes but no EA counts reported (CDS has no fields for EA counts)",
     "header-label: PDF header reads 2024-2025"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 75960,
+    "fees": 1995,
+    "housing": 21414,
+    "direct": 99369,
+    "full": 103821,
+    "intlExtra": "Health insurance excluded from figures. First-years pay $720 class fee in each of first two years (not in direct). Fees = Student Services 1,677 + UPASS 318. Room and board no longer billed by the university.",
+    "source": "https://financialaid.uchicago.edu/undergraduate/how-aid-works/undergraduate-costs/"
+   }
   },
   "req": {
    "application": "Common App, Coalition (Scoir), QuestBridge",
@@ -1956,10 +2510,11 @@ window.SCHOOLS = [
    "lon": -87.5987,
    "region": "mw",
    "lx": 0,
-   "ly": -11,
+   "ly": 18,
    "la": "middle"
   },
   "verified": {
+   "maj": "partial: coa 75960/1677+318/21414 confirmed via search snippet of official aid page (direct fetch returned empty); majors not rechecked (all offered=major/open)",
    "policy": "partial: FAQ fetch returned no body text; official-domain search summary confirms self-report and superscore; no test dates stated",
    "req": "partial: pages gave no usable content (essay page empty, requirements page without details); essays page 403/empty",
    "stats": "ok"
@@ -1978,6 +2533,53 @@ window.SCHOOLS = [
     "superscore/selfReport: from search-result summary only",
     "lastSat*: only a third-party claim (Nov SAT EA/ED I, Jan RD), not verified on official page"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BA and BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA only)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences (BA/BS)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2037,7 +2639,10 @@ window.SCHOOLS = [
   ],
   "uncertain": [
    "interview: no statement found on apply.jhu.edu pages read",
-   "aidDeadlines.rd: JHU deadlines table lists Jan 15, 2027 for RD aid; international-specific filter on the aid page was not separately verified"
+   "aidDeadlines.rd: JHU deadlines table lists Jan 15, 2027 for RD aid; international-specific filter on the aid page was not separately verified",
+   "psych and bio names, cs college, not confirmed by a page read (search did not return them)",
+   "coa.fees/direct null: page lists only the one-time $500 matriculation fee; full is freshman total",
+   "housing = freshman double 13,073 + meals 8,894"
   ],
   "nextCycle": null,
   "dream": false,
@@ -2136,6 +2741,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "partial: tuition 68670 and housing 13073+8894=21967 ok; no recurring fee line on page so fees/direct left null",
    "policy": "ok (page: 'encourage' tests no later than October (ED) / December (RD): recommendation, not cutoff; superscore; self-report)",
    "req": "partial: 350-word essay, $70, 2 teachers, Common App+Coalition confirmed; interview not on page",
    "stats": "ok (H6 box reads 183, avg $43,101, total $7,887,392 = 183 x avg; B2 nonresident first-year is 188, separate from 183)"
@@ -2153,6 +2759,53 @@ window.SCHOOLS = [
    "uncertain": [
     "page names no cycle; lastSat* are encouragement, not hard cutoffs"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (Psychological and Brain Sciences)",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS, Whiting School of Engineering)",
+    "college": "Whiting School of Engineering",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cellular Biology",
+    "college": "Krieger School of Arts and Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2204,7 +2857,9 @@ window.SCHOOLS = [
   "uncertain": [
    "aidForms: exact form for internationals (CSS Profile presumed) is only given to admitted students; not stated on public page",
    "plans: deadline pages carry no explicit year label; aid page references 2027-28 academic year so treated as current",
-   "cogsci: concentration status from search snippets (hub.williams.edu/cogsci, neuroscience.williams.edu), not read in full"
+   "cogsci: concentration status from search snippets (hub.williams.edu/cogsci, neuroscience.williams.edu), not read in full",
+   "neuro: listed as major from search summary, not a catalog read",
+   "coa from search summary"
   ],
   "nextCycle": null,
   "aidAfter": true,
@@ -2232,7 +2887,17 @@ window.SCHOOLS = [
     "firstYearTotal: 567 vs 584 incl. deferred, CDS B2 not seen",
     "all test/intl/aid fields: CDS not accessible"
    ],
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 76300,
+    "fees": 340,
+    "housing": 19320,
+    "direct": 95960,
+    "full": null,
+    "intlExtra": "Williams health plan $3,365 if not waived; optional study-away fee $1,500 not included; books about $1,000 outside comprehensive fee (covered for aid students).",
+    "source": "https://catalog.williams.edu/tuition-fees/"
+   }
   },
   "req": {
    "application": "Common App, Coalition with Scoir, QuestBridge (per search summary)",
@@ -2285,6 +2950,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "partial: coa ok via search snippet of official page (direct fetch 403); majors corrected from search snippets of williams.edu pages (direct fetch 403)",
    "policy": "partial: fetch 403; official-domain search summary confirms superscore and self-report; no test dates",
    "req": "unreachable",
    "stats": "filled"
@@ -2303,6 +2969,53 @@ window.SCHOOLS = [
     "all fields from search-result summary; direct fetch 403",
     "lastSat*: not stated"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Cognitive Science (concentration, not a major)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Two core courses + four electives; declare spring of sophomore year."
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (interdisciplinary program)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2360,7 +3073,9 @@ window.SCHOOLS = [
   "uncertain": [
    "plans.notifyDate: only 'mid-December' / 'mid-February' given",
    "aidDeadlines: internationals apply for aid after admission (no round deadline); domestic aid deadlines equal admission deadlines (Nov 15, Jan 4, Jan 4)",
-   "cogsci: program structure from search snippets, not read in full"
+   "cogsci: program structure from search snippets, not read in full",
+   "coa.tuition: source labels 72,722 as 'tuition and books' (books apparently included; separate 825 course materials in full)",
+   "cogsci/neuro 'special major' counted as major"
   ],
   "nextCycle": null,
   "aidAfter": true,
@@ -2403,7 +3118,17 @@ window.SCHOOLS = [
    "uncertain": [
     "ed: single ED total given (likely ED I + ED II combined)"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72722,
+    "fees": 482,
+    "housing": 22566,
+    "direct": 95770,
+    "full": 98370,
+    "intlExtra": "Student health insurance and transportation not included (vary).",
+    "source": "https://www.swarthmore.edu/financial-aid/tuition-books-housing-food-plan-activities-fee"
+   }
   },
   "req": {
    "application": "Common App, Coalition with Scoir, QuestBridge",
@@ -2464,6 +3189,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (superscore SAT, self-report accepted in lieu of official; no cutoff dates on page)",
    "req": "ok: $60, 2 teachers, counselor, 2x250-word required, optional interview, 3 platforms confirmed; CSS 2821 not rechecked",
    "stats": "ok"
@@ -2481,6 +3207,53 @@ window.SCHOOLS = [
    "uncertain": [
     "lastSat*: only mid-December encouragement from search summary"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (special major; also minor)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (special major run by Psychology and Biology)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (course major, minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (course major/minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Department applies via sophomore paper and departmental form."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (course major/minor, honors)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2542,7 +3315,9 @@ window.SCHOOLS = [
    "aidDeadlines: aid page (Nov 15 / Jan 15 / Jan 15) has no year label and differs from admission dates",
    "supplements: prompts on apply page were labeled Fall 2026 cycle, not confirmed for 2026-27",
    "interview: no page found stating interview policy",
-   "testingNote: no 2026-27-specific testing page read; relied on international applicants page"
+   "testingNote: no 2026-27-specific testing page read; relied on international applicants page",
+   "cogsci name inconsistent across Pomona pages",
+   "coa from search summary; Pomona pages disagree on off-campus totals"
   ],
   "nextCycle": null,
   "dream": false,
@@ -2570,7 +3345,17 @@ window.SCHOOLS = [
     "firstYearTotal: not stated; 414 matriculant sum unconfirmed",
     "admitRate: 861/12470 computed"
    ],
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 71660,
+    "fees": 420,
+    "housing": 23590,
+    "direct": 95670,
+    "full": null,
+    "intlExtra": "Medical insurance $3,312 per Cost of Attendance page ($3,219 per catalog); books included in comprehensive fee from fall 2026.",
+    "source": "https://www.pomona.edu/administration/finance-office/student-accounts/tuition-and-costs"
+   }
   },
   "req": {
    "application": "Common App, Coalition on Scoir, QuestBridge",
@@ -2629,10 +3414,11 @@ window.SCHOOLS = [
    "lon": -117.7131,
    "region": "w",
    "lx": 11,
-   "ly": 5,
+   "ly": -4,
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (SAT superscore not addressed, null correct; self-report in portal; no dates)",
    "req": "partial: 150 + 1-of-3 250 confirmed, platforms ok, teacher recs 2 + 1 optional ok; fee/interview/counselor not on page",
    "stats": "filled"
@@ -2651,6 +3437,53 @@ window.SCHOOLS = [
     "superscore: SAT not addressed",
     "lastSat*: not stated"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Linguistics and Cognitive Science (catalog); academics page lists Cognitive Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychological Science (catalog) / Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2698,7 +3531,10 @@ window.SCHOOLS = [
    "plans.notifyDate: UC says decisions posted Mar 1-31, Berkeley says 'end of March'; exact date emailed",
    "testing: test-free wording taken from search snippet of Berkeley FAQ, not read in full",
    "meetsNeed/aidForms: Berkeley states international students are ineligible for federal, state and need-based university aid; only private/outside scholarships (Berkeley international merit scholarships page not checked)",
-   "interview: no UC interview policy statement read except English-skills note in search snippet"
+   "interview: no UC interview policy statement read except English-skills note in search snippet",
+   "admitRate: no official per-college/major freshman rate found (Engineering brochure says 6% for 2023-24, not major-level)",
+   "cogsci/psych/bio status from search summary; L&S entry rules not verified",
+   "coa fees null: tuition and fees combined on page; direct excludes SHIP"
   ],
   "nextCycle": null,
   "dream": false,
@@ -2722,7 +3558,17 @@ window.SCHOOLS = [
    "intlAidAvg": null,
    "notes": "Test-free; C9 blank. No ED/EA (UC). H6 blank in CDS. Applied total is the CDS C1 total (men 62,395 + women 64,469 + unknown-sex remainder).",
    "uncertain": [],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 57484,
+    "fees": null,
+    "housing": 23640,
+    "direct": 81124,
+    "full": 93944,
+    "intlExtra": "Nonresident Supplemental Tuition $39,270 (tuition 57,484 = 18,214 tuition+fees combined + 39,270). Student Health Insurance Plan $5,066 charged to international students (budget direct total incl. SHIP is $86,190). Housing = residence hall 16,640 + meal plan 7,000.",
+    "source": "https://financialaid.berkeley.edu/how-aid-works/student-budgets-cost-of-attendance/"
+   }
   },
   "req": {
    "application": "UC Application (University of California)",
@@ -2775,10 +3621,11 @@ window.SCHOOLS = [
    "lon": -122.2585,
    "region": "w",
    "lx": 11,
-   "ly": -6,
+   "ly": 2,
    "la": "start"
   },
   "verified": {
+   "maj": "partial: coa ok (18214+39270 tuition/fees combined, housing 16640+7000, direct excludes SHIP); neuro restricted corrected; cogsci/psych/bio entry rules left null",
    "policy": "ok (nothing to verify; all null)",
    "req": "partial: 4 of 8 PIQs 350 words confirmed; activities/awards limit and fee not readable (PDF unreadable); no QuestBridge/Common App",
    "stats": "ok"
@@ -2794,6 +3641,53 @@ window.SCHOOLS = [
     "https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/"
    ],
    "uncertain": []
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "L&S major; freshmen generally enter L&S undeclared; requirements not verified."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (launched July 2024)",
+    "college": "College of Letters and Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after prerequisites (Chem 1A, Math 10A/B, Bio 1A, Physics 8A) before end of 5th semester; Neurobiology emphasis in MCB closed to new majors 2025-26."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Entry rules not verified."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (CDSS), or EECS (College of Engineering)",
+    "college": "CDSS or College of Engineering (EECS)",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "CDSS admits directly into CS/DS/Stats major; Engineering applicants apply to the college; L&S CS petition route also reported."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Molecular and Cell Biology (and Integrative Biology)",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -2856,7 +3750,9 @@ window.SCHOOLS = [
    "intlAid: Wesleyan does not use the term; page says international aid is limited and admission for aid-seekers is 'extremely competitive', treated as need-aware (US applicants need-blind not re-verified)",
    "supplements: could not confirm whether member questions include an essay",
    "interview: not mentioned on pages read",
-   "international page seen shows 2025-26 round dates labeled '2026-27 entry'; used the 2027-28 aid page instead"
+   "international page seen shows 2025-26 round dates labeled '2026-27 entry'; used the 2027-28 aid page instead",
+   "cogsci none: from CIS pathways page via search summary",
+   "coa from search summary"
   ],
   "nextCycle": null,
   "dream": false,
@@ -2901,7 +3797,17 @@ window.SCHOOLS = [
     "ed: single figure, may combine ED rounds"
    ],
    "scoreBasis": "합격자",
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 75916,
+    "fees": 404,
+    "housing": 21660,
+    "direct": 97980,
+    "full": 100780,
+    "intlExtra": "First-years also pay one-time $300 matriculation fee (first-year total $101,080); full includes optional $50 Green Fund fee and $2,750 books/personal.",
+    "source": "https://www.wesleyan.edu/admission/affordability-and-aid/cost-of-attendance.html"
+   }
   },
   "req": {
    "application": "Common App, Coalition on Scoir",
@@ -2945,6 +3851,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "partial: coa ok; cogsci none: catalog shows a Cognitive Science concentration inside the Psychology major (departmental certificate) via search snippet, not a standalone major, so none/track is a judgement call and was left",
    "policy": "ok (SAT best sections across any dates; self-report null acceptable, Common App choice only)",
    "req": "partial: $65 and Common App+Coalition confirmed; recs/supplements/interview not read; 'Member Questions' exist so supplements [] means unknown",
    "stats": "filled"
@@ -2964,6 +3871,53 @@ window.SCHOOLS = [
     "selfReport: not clearly stated",
     "lastSat*: not found"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Cognitive Science concentration (in Psychology)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major; cognitive science is a pathway grouping CS, Neuroscience and Behavior, and Psychology"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience and Behavior",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Tied to health studies pathway; pre-med is advising only."
+   }
   }
  },
  {
@@ -3023,7 +3977,9 @@ window.SCHOOLS = [
    "notifyDate RD: April 1 on admissions page vs April 15 on aid page",
    "supplements: not read",
    "cogsci: major not verified on official page",
-   "meetsNeed: search summary of international page says meets 100% without loans; the page fetched did not state it"
+   "meetsNeed: search summary of international page says meets 100% without loans; the page fetched did not state it",
+   "coa from search summary",
+   "neuro minor-only per Carleton program finder via search summary"
   ],
   "nextCycle": "Starting 2027-28, Carleton plans to replace loans in need-based packages with grants and scholarships (no-loan policy announced); 2027-28 admission dates not found.",
   "dream": false,
@@ -3069,6 +4025,16 @@ window.SCHOOLS = [
     "applied": 3290,
     "admitted": 132,
     "rate": 4.0
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 75186,
+    "fees": 480,
+    "housing": 19314,
+    "direct": 94980,
+    "full": 97870,
+    "intlExtra": "Carleton's international-student estimate is $104,746 (adds books, personal, travel, health insurance ~$2,355, break expenses).",
+    "source": "https://www.carleton.edu/financial-aid/cost/"
    }
   },
   "req": {
@@ -3110,10 +4076,11 @@ window.SCHOOLS = [
    "lon": -93.1544,
    "region": "mw",
    "lx": 11,
-   "ly": 5,
+   "ly": 10,
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (self-report in lieu of official; receipt deadlines Nov 15 / Jan 15 only; superscore not stated)",
    "req": "ok: no fee, 2 teachers + counselor, optional interview to Jan 15, 3 platforms, no essay on this page; CSS 6081 not rechecked",
    "stats": "partial: all values match; ED 760/263 sits under a 'Fall 2024 entering class' label in the 2025-26 CDS, so it may be the prior cycle"
@@ -3132,6 +4099,53 @@ window.SCHOOLS = [
     "superscore: not stated",
     "lastSat*: only receipt deadlines given"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (major and minor; merged department with Linguistics)",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "minor",
+    "name": "Neuroscience (minor)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising only (not verified)."
+   }
   }
  },
  {
@@ -3188,7 +4202,9 @@ window.SCHOOLS = [
   "uncertain": [
    "plans: deadlines page has no year label (Nov 15 / Jan 5 / Jan 5; domestic RD aid Feb 1); one search snippet showed ED2 aid Jan 1 on the student-aid calendar vs Jan 5 on admissions page",
    "notifyDate: school gives month-level wording only",
-   "interview/supplement: taken from apply-page summary, not independently cross-checked"
+   "interview/supplement: taken from apply-page summary, not independently cross-checked",
+   "cogsci: absence inferred from major list/search, not an explicit statement",
+   "coa.full: page says $97,900+ (travel varies)"
   ],
   "nextCycle": null,
   "aidAfter": true,
@@ -3235,6 +4251,16 @@ window.SCHOOLS = [
     "applied": 6041,
     "admitted": 76,
     "rate": 1.3
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 74268,
+    "fees": 700,
+    "housing": 20432,
+    "direct": 95400,
+    "full": 97900,
+    "intlExtra": null,
+    "source": "https://www.bowdoin.edu/student-aid/cost-of-attendance/index.html"
    }
   },
   "req": {
@@ -3297,6 +4323,7 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
+   "maj": "partial: coa ok; cogsci none not shown (IR page list empty), absence unconfirmed on official list",
    "policy": "ok (superscore, self-report for all applicants)",
    "req": "partial: fee 70, platforms, optional interview ok; two 250-word essays optional ok; recs differ (see correction)",
    "stats": "partial: all values match; ED 1985/296 sits under a 'Fall 2024 entering class' label in the 2025-26 CDS, so it may be the prior cycle"
@@ -3314,6 +4341,53 @@ window.SCHOOLS = [
    "uncertain": [
     "lastSat*: not on page"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found; Digital and Computational Studies is a coordinate major"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -3371,7 +4445,8 @@ window.SCHOOLS = [
    "cogsci: not verified on official program list",
    "TOEFL recommended minimum text garbled (page says 5.5 and 105 pre Jan 21 2026); verify current TOEFL minimum",
    "notifyDate approximations: mid-December / mid-February / late March are the school's wording only",
-   "ED I application deadline Nov 2 is as read; page does not state entering year explicitly"
+   "ED I application deadline Nov 2 is as read; page does not state entering year explicitly",
+   "coa.fees: Student Government Association fee"
   ],
   "nextCycle": null,
   "dream": false,
@@ -3416,7 +4491,17 @@ window.SCHOOLS = [
     "admitted: September-only admits (school states 12.8% admit rate on form)",
     "intlAid: H6 text extraction misaligned but values 198 x $83,697 = $16,572,104 total, consistent"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72924,
+    "fees": 542,
+    "housing": 20920,
+    "direct": 94386,
+    "full": 97386,
+    "intlExtra": null,
+    "source": "https://www.middlebury.edu/student-financial-services/tuition-fees-and-payment/tuition-and-fees"
+   }
   },
   "req": {
    "application": "Common App, Coalition, QuestBridge",
@@ -3459,6 +4544,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (self-report at application; superscore not stated)",
    "req": "partial: >=2 teachers, interview request dates, 3 platforms, no supplemental essay confirmed; fee not mentioned on page",
    "stats": "ok (headers say 2024-2025 but items say Fall 2025; admitted is September-only)"
@@ -3477,6 +4563,53 @@ window.SCHOOLS = [
     "all fields from search-result summary",
     "superscore/lastSat*: not found"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science major or minor listed"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -3533,7 +4666,9 @@ window.SCHOOLS = [
   "uncertain": [
    "cogsci: not verified",
    "notifyDate: school gives only ranges",
-   "ED II deposit date conflicts (Feb 14 vs Feb 20) between pages"
+   "ED II deposit date conflicts (Feb 14 vs Feb 20) between pages",
+   "coa: figures from search summary of official pages, not read directly",
+   "intlExtra: whether insurance is waivable not verified"
   ],
   "nextCycle": null,
   "dream": false,
@@ -3575,7 +4710,17 @@ window.SCHOOLS = [
    "uncertain": [
     "whole record is fall 2024 cohort, not fall 2025"
    ],
-   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요"
+   "intlNote": "학교 통계표(CDS)에 국제학생 지원/합격 칸이 비어 있어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 73582,
+    "fees": 572,
+    "housing": 17784,
+    "direct": 91938,
+    "full": 93338,
+    "intlExtra": "Student health insurance $2,769 appears on the bill; transportation estimate $1,300 for students from abroad",
+    "source": "https://www.grinnell.edu/admission/financial-aid/cost-attendance"
+   }
   },
   "req": {
    "application": "Common App, QuestBridge",
@@ -3628,6 +4773,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "ok",
    "policy": "ok (superscore SAT math+ERW, self-reported accepted; Dec SAT strongly encouraged for RD)",
    "req": "ok: no fee, 2 teachers, optional 200-450 word supplement, Common App+QuestBridge, interview optional",
    "stats": "ok (CDS 2024-2025, fall 2024 cohort; values match)"
@@ -3646,6 +4792,53 @@ window.SCHOOLS = [
     "from search-result summary",
     "a Standardized Testing page says scores required, contradicting rest of site"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Cognitive science only as an independent major"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -3702,7 +4895,11 @@ window.SCHOOLS = [
    "ED II / RD admissions deadline: summaries say Jan 4 but some pages say Jan 1, 2 or 5; aid deadlines for RD Jan 15",
    "intlAid: Colby FAQ labels need-aware per summary; third-party lists once said need-blind",
    "supplements: 'none required' per summary; verify against 2026-27 Common App",
-   "cogsci: not verified"
+   "cogsci: not verified",
+   "coa: tuition figure $75,790 includes fees (fees set 0 as not separately listed)",
+   "coa.full: range $97,020-$98,270 by travel; lower bound used",
+   "majors: Colby major pages blocked (403/refused); based on search summaries",
+   "neuro: concentration structure not confirmed on official page"
   ],
   "nextCycle": null,
   "dream": false,
@@ -3730,7 +4927,17 @@ window.SCHOOLS = [
     "intlFirstYear: only a percent (10% non-U.S. citizens)"
    ],
    "rateNote": "학교 발표 (반올림 값)",
-   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요"
+   "intlNote": "학교 통계표를 열지 못해 국제학생 합격률은 확인 못 했어요",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72590,
+    "fees": 3200,
+    "housing": 19480,
+    "direct": 95270,
+    "full": 97020,
+    "intlExtra": null,
+    "source": "https://afa.colby.edu/apply/college-profile/"
+   }
   },
   "req": {
    "application": "Common App, Coalition, QuestBridge, Colby Application",
@@ -3772,6 +4979,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "partial: coa corrected via search snippet of official pages (direct fetch 403); neuro track consistent with Psychology-with-neuroscience-concentration and Biology neuroscience concentration; cogsci none found no listing",
    "policy": "partial: fetch 403; official-domain search summary confirms superscore and self-report. FAQ says take tests by Nov 15 (ED I) and Jan 4 (ED II); lastSat fields left null",
    "req": "unreachable",
    "stats": "filled"
@@ -3790,6 +4998,53 @@ window.SCHOOLS = [
     "from search-result summary",
     "lastSat*: not found"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program; closest is Computational Psychology major"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration within Biology or Psychology major)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also Psychology with neuroscience concentration and Computational Psychology majors"
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "AI concentration available; Data Science major separate"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -3857,7 +5112,10 @@ window.SCHOOLS = [
    "meetsNeed: not stated",
    "supplements: prompts not read",
    "cogsci: not verified",
-   "Common-App ED I admissions deadline Nov 1; aid Nov 16 (ED page says Nov 1 for aid, aid page says Nov 16)"
+   "Common-App ED I admissions deadline Nov 1; aid Nov 16 (ED page says Nov 1 for aid, aid page says Nov 16)",
+   "cogsci minor unverified",
+   "bio official name unverified (Biological Sciences per fact sheet)",
+   "coa: one page lists tuition+fees as $72,730 vs $72,281+$449 elsewhere"
   ],
   "nextCycle": null,
   "dream": false,
@@ -3901,6 +5159,16 @@ window.SCHOOLS = [
     "applied": 2552,
     "admitted": 115,
     "rate": 4.5
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72281,
+    "fees": 449,
+    "housing": 20070,
+    "direct": 92800,
+    "full": 94800,
+    "intlExtra": "Health insurance may be billed; can be waived",
+    "source": "https://www.conncoll.edu/admission/tuition-fees/"
    }
   },
   "req": {
@@ -3944,6 +5212,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "partial: comprehensive fee 92800 confirmed but page gives no tuition/fees/housing split so 72281/449/20070 not verified; cogsci minor not found on any official page (could not confirm); neuroscience major confirmed",
    "policy": "ok except selfReport (see correction); Oct tests 'typically arrive' for ED I, Dec for ED II/RD, general tests not SAT-specific",
    "req": "partial: 1 academic teacher required (2 recommended), fee waived, optional interview, Common App confirmed; supplement content unknown",
    "stats": "ok"
@@ -3962,6 +5231,53 @@ window.SCHOOLS = [
     "selfReport: not stated",
     "from search-result summary of official pages"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Only source is an international brochure; unconfirmed"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary (formerly Behavioral Neuroscience)"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4025,7 +5341,10 @@ window.SCHOOLS = [
    "plans: dates page lists no year; consistent with 2026-27 (supplement page and aid page are labelled 2026-27 / fall 2027)",
    "plans.notifyDate: only RD has a fixed date (April 1); ED I/II are 'mid-December' / 'early February'",
    "aidDeadlines: Dec 1 / Jan 5 / Feb 15 come from the page for US citizens and eligible non-citizens; the international page says the CSS Profile is due 'by the application deadline for your admission plan' (so intl early aid may be Nov 1 / Jan 5 / Jan 5); verify",
-   "intlAid: Rochester says it meets full demonstrated need of all admitted students, but international admission is 'highly selective for students with financial need' and 'only a small number' receive need-based aid, so labelled limited"
+   "intlAid: Rochester says it meets full demonstrated need of all admitted students, but international admission is 'highly selective for students with financial need' and 'only a small number' receive need-based aid, so labelled limited",
+   "whether applicants choose a school at application not verified (college field is where program is housed)",
+   "major/track labels inferred from program listing",
+   "books included in tuition (UR Essentials)"
   ],
   "nextCycle": null,
   "dream": false,
@@ -4071,6 +5390,16 @@ window.SCHOOLS = [
     "applied": 7998,
     "admitted": 1453,
     "rate": 18.2
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 71750,
+    "fees": 1622,
+    "housing": 21328,
+    "direct": 94700,
+    "full": 96022,
+    "intlExtra": "None listed; higher travel allowance than standard $300 for international",
+    "source": "https://www.rochester.edu/financial-aid/undergraduate-tuition-expenses/"
    }
   },
   "req": {
@@ -4126,6 +5455,7 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
+   "maj": "partial: coa ok; cogsci BCS BA/BS ok; neuro appears as 'Biological Sciences: Neuroscience (BS)' registered program, labeled track by collector, left; college field is where program is housed, applicant choice unverified",
    "policy": "ok (page: Nov SAT accepted for ED, Dec for RD; superscore SAT/ACT subscores; self-report on application)",
    "req": "partial: 250-word required supplement and Common App+Coalition confirmed; fee/recs/interview not on page",
    "stats": "ok"
@@ -4143,6 +5473,53 @@ window.SCHOOLS = [
    "uncertain": [
     "from search-result summary; page may be ~8 months old"
    ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain and Cognitive Sciences (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Treated as cognitive science equivalent"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Biological Sciences: Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Neuroscience track in Biological Sciences"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Housed in Hajim"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA) / Biological Sciences (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4212,7 +5589,10 @@ window.SCHOOLS = [
    "ea: C22 gives no EA applicant/admit counts",
    "intl admit rate: CDS C1 international row not filled, so intl admit rate unknown",
    "aidDeadlines: dates are 'priority for financial aid' on deadlines page (not form-specific)",
-   "lastSat: not stated"
+   "lastSat: not stated",
+   "coa: tuition includes required course materials; admissions page says activity fee $230 vs $330",
+   "coa.full: federal COA about $96k-97k not confirmed",
+   "major types from search summary; academics page did not label types"
   ],
   "why": "A Midwest liberal arts college with about 29% overall admit rate and the largest international first-year group on this list (117), though aid-seeking internationals face competition.",
   "stats": {
@@ -4241,7 +5621,17 @@ window.SCHOOLS = [
    "firstYearTotal": 560,
    "intlFirstYear": 117,
    "intlAidCount": 255,
-   "intlAidAvg": 60806
+   "intlAidAvg": 60806,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 74394,
+    "fees": 330,
+    "housing": 17430,
+    "direct": 92154,
+    "full": null,
+    "intlExtra": null,
+    "source": "https://www.macalester.edu/student-accounts/tuition-and-fees-2/"
+   }
   },
   "policy": {
    "superscore": null,
@@ -4265,7 +5655,55 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
-   "cand": "unreachable: CDS residency row not filled (collector) and 2025-26 file too large; not re-checked"
+   "cand": "unreachable: CDS residency row not filled (collector) and 2025-26 file too large; not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "track",
+    "name": "Cognitive Science (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4332,7 +5770,10 @@ window.SCHOOLS = [
    "page says the international aid budget is limited and aid cannot be added later; meetsNeed unknown",
    "ea: CDS C22 gives dates but no counts",
    "deadline table on page has no year printed; matches CDS 2025-26 dates",
-   "lastSat: not stated"
+   "lastSat: not stated",
+   "college field: College vs Conservatory choice exists at application, programs here are in the College",
+   "fees = activity 592 + health 500 + Green Edge 50 (summed from search summary)",
+   "coa.full: books $930 and personal $978 estimates not added"
   ],
   "why": "One-third overall admit rate and a large intl aid pool (292 recipients, about $51.6k average), but internationals admit at only about 8-11%.",
   "stats": {
@@ -4366,6 +5807,16 @@ window.SCHOOLS = [
     "applied": 4015,
     "admitted": 446,
     "rate": 11.1
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 70320,
+    "fees": 1142,
+    "housing": 20700,
+    "direct": 92162,
+    "full": null,
+    "intlExtra": "Student health insurance $3,028 unless waived",
+    "source": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees"
    }
   },
   "policy": {
@@ -4385,12 +5836,60 @@ window.SCHOOLS = [
    "lat": 41.2939,
    "lon": -82.2174,
    "region": "mw",
-   "lx": -10,
-   "ly": 12,
-   "la": "end"
+   "lx": 0,
+   "ly": 16,
+   "la": "middle"
   },
   "verified": {
-   "cand": "partial: C1 totals and international 446/4015 checked by hand (793+6924+4015=11732, 283+3144+446=3873); deadlines/aid not re-checked"
+   "cand": "partial: C1 totals and international 446/4015 checked by hand (793+6924+4015=11732, 283+3144+446=3873); deadlines/aid not re-checked",
+   "maj": "partial: coa ok; cogsci minor vs concentration unresolved (catalog shows Cognitive Sciences Minor, older pages say concentration); neuro major not labeled on fetched page"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Sciences",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also an integrative concentration"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "BA or BS"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4452,7 +5951,8 @@ window.SCHOOLS = [
    "notification dates given only as months on the page",
    "a search summary showed Nov 1/Jan 5 dates on another Lafayette page; deadlines page and apply page both say Nov 15 / Jan 15, which were used",
    "meritIntl: not stated on page read",
-   "cogsci: majors from general knowledge, not read on a page"
+   "cogsci: majors from general knowledge, not read on a page",
+   "coa.full: billed 91,742 plus books $1,000, transport $250, misc $940 not summed; federal COA first-year $95,580"
   ],
   "why": "About 31% overall admit rate and an explicit guarantee to meet full need for admitted internationals (105 recipients, about $69k average), though internationals admit near 7%.",
   "stats": {
@@ -4486,6 +5986,16 @@ window.SCHOOLS = [
     "applied": 3705,
     "admitted": 258,
     "rate": 7.0
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 70486,
+    "fees": 360,
+    "housing": 20896,
+    "direct": 91742,
+    "full": null,
+    "intlExtra": "Optional health insurance $3,131; one-time $750 matriculation fee for new students",
+    "source": "https://president.lafayette.edu/2026/01/23/tuition-and-fees-for-2026-27/"
    }
   },
   "policy": {
@@ -4510,7 +6020,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 (fall 2024) international 258/3705 checked by hand (1180+5310+3705=10195, 419+2529+258=3206); deadlines/aid not re-checked"
+   "cand": "partial: C1 (fall 2024) international 258/3705 checked by hand (1180+5310+3705=10195, 419+2529+258=3206); deadlines/aid not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (AB/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4573,7 +6131,8 @@ window.SCHOOLS = [
    "SAT percentiles come from only 30 submitters",
    "english/interview: not read",
    "dates on page have no year printed",
-   "cogsci: majors from general knowledge"
+   "cogsci: majors from general knowledge",
+   "cs: only Computing concentration appears in departments list; a CS major not ruled out beyond that"
   ],
   "why": "About 30% overall admit rate with strong aid per recipient (149 recipients, about $73k), but a published note suggests aid-seeking internationals are rarely admitted.",
   "stats": {
@@ -4603,7 +6162,17 @@ window.SCHOOLS = [
    "intlFirstYear": 39,
    "intlAidCount": 149,
    "intlAidAvg": 73082,
-   "intlNote": "Kenyon 공식 페이지 요약: 재정지원이 필요한 국제학생 합격은 5% 미만 (직접 확인 못 함)"
+   "intlNote": "Kenyon 공식 페이지 요약: 재정지원이 필요한 국제학생 합격은 5% 미만 (직접 확인 못 함)",
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72880,
+    "fees": 350,
+    "housing": 19860,
+    "direct": 93090,
+    "full": 96940,
+    "intlExtra": "Optional student health insurance $1,938",
+    "source": "https://www.kenyon.edu/admissions-aid/financial-aid-scholarships/tuition-costs/"
+   }
   },
   "policy": {
    "superscore": null,
@@ -4627,7 +6196,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: CDS C1 residency rows are blank, so no international admit rate; other fields not re-checked"
+   "cand": "partial: CDS C1 residency rows are blank, so no international admit rate; other fields not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Also a concentration"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "track",
+    "name": "Computing (concentration)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No standalone CS major found"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4696,7 +6313,9 @@ window.SCHOOLS = [
    "intlAid/meetsNeed: aid page does not say whether internationals are eligible or fully met; general policy is to meet demonstrated need",
    "international admit rate only 6.8% (280 of 4104)",
    "aid deadlines Nov 15 / Feb 1 are from the financial aid page (differ from admission deadlines)",
-   "cogsci: majors from general knowledge"
+   "cogsci: majors from general knowledge",
+   "college: I believe applicants choose among A&S, Jepson, Robins at application; not verified on page read",
+   "coa: required fees not separately listed (0 used); housing/food are aid-office averages"
   ],
   "why": "A 22% admit-rate school that sits at the low end of this list but pays about $68k average to 187 international recipients.",
   "stats": {
@@ -4730,6 +6349,16 @@ window.SCHOOLS = [
     "applied": 4104,
     "admitted": 280,
     "rate": 6.8
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 70725,
+    "fees": 0,
+    "housing": 18815,
+    "direct": 89540,
+    "full": 92320,
+    "intlExtra": null,
+    "source": "https://financialaid.richmond.edu/applying/cost.html"
    }
   },
   "policy": {
@@ -4754,7 +6383,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 international 280/4104 checked by hand (2273+10183+4104=16560, 495+2908+280=3683); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 280/4104 checked by hand (2273+10183+4104=16560, 495+2908+280=3683); deadlines/aid not re-checked",
+   "maj": "partial: tuition 70725, housing 8705+food 10110 ok; no fees line on official page so fees 0 unverified; cogsci BA major and neuro concentration-only confirmed; college field applicant choice unverified"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary, housed with Psychology"
+   },
+   "neuro": {
+    "offered": "track",
+    "name": "Neuroscience (concentration; BS only)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Taken with Biology, Psychology or BMB major"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4823,7 +6500,10 @@ window.SCHOOLS = [
    "also lists a Pre-Professional Scholars Program round (Dec 1) and spring entry, not included",
    "english: not on page read",
    "cogsci: major titles from general knowledge, not read on a page",
-   "lastSat: not stated"
+   "lastSat: not stated",
+   "restricted/direct-admit status of programs not verified",
+   "CS college not verified; no AI-specific major found",
+   "full includes matriculation fee, books, personal; nursing students +$1,450"
   ],
   "why": "A 35% admit-rate research university with a cognitive science major and merit scholarship competitions open to internationals (about 21% intl admit rate).",
   "stats": {
@@ -4857,6 +6537,16 @@ window.SCHOOLS = [
     "applied": 11112,
     "admitted": 2360,
     "rate": 21.2
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 71410,
+    "fees": 696,
+    "housing": 20288,
+    "direct": 92394,
+    "full": 95704,
+    "intlExtra": "None listed; $760 one-time matriculation fee; student medical plan charged per term unless waived",
+    "source": "https://case.edu/financialaid/undergraduates/estimated-costs-attendance-2026-27"
    }
   },
   "policy": {
@@ -4881,7 +6571,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 international 2360/11112 checked by hand (3596+24624+11112=39332, 972+10558+2360=13890); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 2360/11112 checked by hand (3596+24624+11112=39332, 972+10558+2360=13890); deadlines/aid not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (BA)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Joint Biology and School of Medicine program"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "BA in Arts and Sciences; BS offered through engineering (not verified)"
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -4943,7 +6681,10 @@ window.SCHOOLS = [
    "need-blind/aware not stated; policy says meets full need if admitted",
    "notification months from a search summary",
    "interview and English details from search summary of Trinity pages",
-   "cogsci: no standalone cognitive science major; neuroscience and psychology majors"
+   "cogsci: no standalone cognitive science major; neuroscience and psychology majors",
+   "cogsci minor and CS/Biology majors from search summaries, not an official list",
+   "fees = general 2,900 + activity 430",
+   "full from consumer information page via search (travel $0-1,500)"
   ],
   "why": "29.5% overall admit rate with a full-need pledge and heavy intl aid (295 recipients, about $70k), but internationals admit near 5%.",
   "stats": {
@@ -4977,6 +6718,16 @@ window.SCHOOLS = [
     "applied": 3348,
     "admitted": 167,
     "rate": 5.0
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 72820,
+    "fees": 3330,
+    "housing": 20330,
+    "direct": 96480,
+    "full": 98480,
+    "intlExtra": null,
+    "source": "https://www.trincoll.edu/student-accounts/tuition-and-fees/"
    }
   },
   "policy": {
@@ -5001,7 +6752,55 @@ window.SCHOOLS = [
    "la": "end"
   },
   "verified": {
-   "cand": "partial: C1 international 167/3348 checked by hand (663+3262+3348=7273, 241+1740+167=2148); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 167/3348 checked by hand (663+3262+3348=7273, 241+1740+167=2148); deadlines/aid not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "minor",
+    "name": "Cognitive Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary minor, 6 courses"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BS)",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -5067,7 +6866,9 @@ window.SCHOOLS = [
    "deadlines page has no year printed; cycle not confirmed",
    "international admit rate only 7.7% (253 of 3265); page says to apply RD for aid and Whitman is 'highly need-aware'",
    "english/interview not read",
-   "no major titled Neuroscience; the Brain, Behavior and Cognition major is the neuroscience route"
+   "no major titled Neuroscience; the Brain, Behavior and Cognition major is the neuroscience route",
+   "coa.fees/direct: ASWC fee amount not confirmed, so null",
+   "full excludes travel"
   ],
   "why": "40% overall admit rate with a stated full-need commitment for internationals (201 recipients, about $52k average).",
   "stats": {
@@ -5101,6 +6902,16 @@ window.SCHOOLS = [
     "applied": 3265,
     "admitted": 253,
     "rate": 7.7
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 68692,
+    "fees": 576,
+    "housing": 15952,
+    "direct": 85220,
+    "full": 86620,
+    "intlExtra": null,
+    "source": "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/how-much-does-whitman-cost"
    }
   },
   "policy": {
@@ -5125,7 +6936,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 international 253/3265 checked by hand (1178+2507+3265=6950, 818+1720+253=2791); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 253/3265 checked by hand (1178+2507+3265=6950, 818+1720+253=2791); deadlines/aid not re-checked",
+   "maj": "ok after corrections (fees and direct)"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain, Behavior & Cognition",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Neuroscience-focused interdisciplinary major (Biology+Psychology), counted as cogsci equivalent; launched 2023"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Brain, Behavior & Cognition",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Whitman neuroscience major; no major named Neuroscience"
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -5192,7 +7051,9 @@ window.SCHOOLS = [
    "CDS text lists ED closing 12/15 and EA unclear, conflicting with the page's Nov 15; page used",
    "aid page says need-based aid is limited and does not say full need is met (meetsNeed false); international admit rate 13.4% (208 of 1549)",
    "international enrolled is 36 in C residency table vs 34 in B2; B2 used",
-   "cogsci: majors from general knowledge"
+   "cogsci: majors from general knowledge",
+   "costs may not be finalized per aid guide (total $93,642 there)",
+   "cogsci absence based on search only"
   ],
   "why": "About 41% overall admit rate and a 13% intl admit rate with sizeable aid (221 recipients, about $59k).",
   "stats": {
@@ -5226,6 +7087,16 @@ window.SCHOOLS = [
     "applied": 1549,
     "admitted": 208,
     "rate": 13.4
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 71100,
+    "fees": 550,
+    "housing": 18650,
+    "direct": 90300,
+    "full": 93706,
+    "intlExtra": "Student health insurance about $1,829-$2,000 billed unless waived (sources differ)",
+    "source": "https://www.dickinson.edu/info/20081/financial_aid/1125/cost_of_attendance"
    }
   },
   "policy": {
@@ -5250,7 +7121,55 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 international 208/1549 checked by hand (1068+3102+1549=5719, 539+1626+208=2373); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 208/1549 checked by hand (1068+3102+1549=5719, 539+1626+208=2373); deadlines/aid not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
   }
  },
  {
@@ -5311,7 +7230,9 @@ window.SCHOOLS = [
    "international admit rate 39.9% (258 of 647); only 16 international first-years enrolled",
    "SAT stats come from only 50 submitters",
    "aidDeadlines not stated for internationals",
-   "cogsci: neuroscience and psychology majors confirmed via search summary of Earlham catalog"
+   "cogsci: neuroscience and psychology majors confirmed via search summary of Earlham catalog",
+   "housing = double room 8,300 + 19-meal board 7,462",
+   "coa.full not read"
   ],
   "why": "A true higher-admit option (79% overall, about 40% for internationals) with merit awards up to $37k, though need is not fully met.",
   "stats": {
@@ -5341,6 +7262,16 @@ window.SCHOOLS = [
     "applied": 647,
     "admitted": 258,
     "rate": 39.9
+   },
+   "coa": {
+    "year": "2026-27",
+    "tuition": 56784,
+    "fees": 980,
+    "housing": 15762,
+    "direct": 73526,
+    "full": null,
+    "intlExtra": "Health insurance estimate $2,285",
+    "source": "https://catalog.earlham.edu/academic-catalog-2026-27/2026-2027-tuition-and-fees"
    }
   },
   "policy": {
@@ -5365,7 +7296,2381 @@ window.SCHOOLS = [
    "la": "start"
   },
   "verified": {
-   "cand": "partial: C1 international 258/647 checked by hand (556+925+647=2128, 536+888+258=1682); deadlines/aid not re-checked"
+   "cand": "partial: C1 international 258/647 checked by hand (556+925+647=2128, 536+888+258=1682); deadlines/aid not re-checked",
+   "maj": "ok"
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No cognitive science program found"
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": null
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is health-professions advising, not a major"
+   }
+  }
+ },
+ {
+  "id": "ucla",
+  "name": "UCLA",
+  "full": "University of California, Los Angeles",
+  "public": true,
+  "commonApp": false,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": null,
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UCLA does not consider SAT or ACT for admission or scholarship; scores are not requested on the UC Application.",
+  "english": "Required if all secondary school was in a non-English-language country or under 3 years of English instruction. UCLA competitive scores: TOEFL iBT 5 (new scale; above 100 old scale), IELTS 7.5, Duolingo 135 (UC systemwide minimums are TOEFL 4.5/IELTS 6.5/DET 115).",
+  "cogsci": "Cognitive Science major in the Dept. of Psychology (College of Letters and Science); freshmen enter as pre-major, complete prep courses, then apply to the major.",
+  "interview": "UCLA does not accept letters of recommendation or interviews.",
+  "url": "https://admission.ucla.edu/apply/international-applicants",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science (Psychology dept.)",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply after prep courses by end of fall of year 3; prep GPA 3.2+ with all requirements reportedly guarantees admission to the major, 2.9-3.19 competitive pool. Transfers must be admitted directly."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.S.)",
+    "college": "College of Letters and Science (Life Sciences, interdepartmental program)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Freshman admits declare after finishing prep courses with C- or better and good standing per the department; capacity limit not stated. Psychobiology (B.S., Psychology dept.) is a related major."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science (Psychology dept.)",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-major, then apply by end of fall of year 3; prep GPA 2.9+ reportedly guaranteed, 2.5-2.89 competitive pool."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Samueli School of Engineering",
+    "restricted": "capped",
+    "admitRate": 7.3,
+    "admitNote": "Fall 2025 first-year admit rate for Samueli Computer Science (6,806 applicants), UCLA first-year profile admission.ucla.edu/apply/first-year/first-year-profile/major",
+    "note": "Admitted to the major directly. Changing into CS later is difficult: earliest after 2 quarters and the major is severely impacted. Computer Science and Engineering is a separate Samueli major."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (B.S.)",
+    "college": "College of Letters and Science (Life Sciences; Ecology and Evolutionary Biology dept.)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after finishing the entry life-sciences course with C- or better (LS 7B or LS 1; version uncertain). Pre-med is advising only (UCLA has no designated pre-health program); Life Sciences division admit rate was 11% in Fall 2025 but major is not considered in College admission."
+   }
+  },
+  "sources": [
+   "https://apb.ucla.edu/file/f8f5c864-93be-4b44-b646-7807a685749f",
+   "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf",
+   "https://admission.ucla.edu/tuition-fees",
+   "https://admission.ucla.edu/apply/international-applicants",
+   "https://admission.ucla.edu/apply/first-year/first-year-profile/major",
+   "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html"
+  ],
+  "uncertain": [
+   "stats.intl: CDS C1 residency table and CDS sections G (cost) and H (aid) are blank in UCLA's 2025-26 CDS; intlFirstYear 549 is the B2 nonresident first-time first-year count. UCLA International Guide 2026 reports Fall 2026 international applicants 24,728 and an 8% acceptance rate (mid-summer, rounded).",
+   "stats.firstYearTotal: B2 degree-seeking first-time first-year 6,551 (C1 enrolled sums to 6,553)",
+   "coa.tuition: combined tuition+fees+nonresident supplemental; fees field null because UCLA lists a single University Fees line",
+   "majors GPA thresholds for cogsci/psych and neuro declaration rules come from department pages seen only via search summaries; fetch of psych.ucla.edu and neurosci.ucla.edu failed",
+   "majors.bio.note: EEB vs Life Sciences pages disagree on the entry course"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://apb.ucla.edu/file/f8f5c864-93be-4b44-b646-7807a685749f",
+   "applied": 145086,
+   "admitted": 13659,
+   "admitRate": 9.4,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6551,
+   "intlFirstYear": 549,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 55700,
+    "fees": null,
+    "housing": 19867,
+    "total": 84770,
+    "source": "https://admission.ucla.edu/tuition-fees",
+    "note": "Nonresident, residence halls. tuition = University Fees $16,430 (tuition+fees, UCLA lists them combined) + nonresident supplemental tuition $39,270; housing = food $7,568 + housing $12,299; total also includes books $1,588, transportation, personal and health insurance $3,885.",
+    "direct": 75567
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Letters of recommendation are not accepted by UCLA"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "Not accepted (UCLA does not accept interviews)",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    },
+    {
+     "type": "other",
+     "required": false,
+     "count": 1,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "Only applicants to Arts and Architecture, Music, Nursing, or Theater, Film and Television submit a separate supplemental application."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://admission.ucla.edu/apply/international-applicants",
+    "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf"
+   ],
+   "uncertain": [
+    "interview: UCLA says not accepted (International Guide 2026)"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Los Angeles",
+   "state": "CA",
+   "lat": 34.0689,
+   "lon": -118.4452,
+   "region": "w",
+   "lx": -10,
+   "ly": 4,
+   "la": "end"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read from PDF (applied 65,079+73,508+6,499=145,086; admitted 13,659); residency table blank in CDS so intl null is right; B2 nonresident first-year 549 ok; CS 7.3% (6,806 applicants, fall 2025) ok on UCLA first-year profile; COA 2026-27 page matches (16,430+39,270+12,299+7,568+1,588=84,770). Not verified: cogsci/psych/neuro apply-later GPA thresholds"
+  }
+ },
+ {
+  "id": "ucsd",
+  "name": "UC San Diego",
+  "full": "University of California, San Diego",
+  "public": true,
+  "commonApp": false,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "CDS 2025-26 H6: 214 nonresident undergraduates received institutional aid, average $10,290 (type not specified)",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UC San Diego does not consider SAT or ACT in admission; scores may be used to meet eligibility or for placement only if submitted.",
+  "english": "Needed if instruction was not in English (under 3 years of English). UCSD minimums: TOEFL iBT 4.5 (exams from Jan 2026; 83 before), IELTS 7, Duolingo 115; AP/IB English also accepted.",
+  "cogsci": "Cognitive Science B.A./B.S. in the Division of Social Sciences with B.S. specializations (Machine Learning and Neural Computation, Neuroscience, Clinical Aspects, Design and Interaction, Language and Culture).",
+  "interview": "No interview.",
+  "url": "https://admissions.ucsd.edu/international/index.html",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (B.A./B.S.) with B.S. specializations",
+    "college": "Division of Social Sciences (applicants also pick one of the residential colleges)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Not on UCSD's selective-major list. Specializations: Clinical Aspects, Design and Interaction, Language and Culture, Machine Learning and Neural Computation, Neuroscience."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (B.S.)",
+    "college": "Division of Biological Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No standalone Neuroscience major. Other options: Cognitive and Behavioral Neuroscience (B.S.) and Cognitive Science with Specialization in Neuroscience (B.S.)."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A.) plus B.S. options",
+    "college": "Division of Social Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "B.S. options: Clinical Psychology, Experimental Psychology, Business Psychology, Cognitive and Behavioral Neuroscience."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Jacobs School of Engineering (CS and Engineering dept.)",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Selective major; admitted directly. First-year admits may apply to switch into selective majors only after first year (cycle opens July 2027, deadline Sep 1, 2027 for Fall 2025/2026 admits), no guarantee. Also Artificial Intelligence B.S. and CS with Bioinformatics."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology majors (General Biology, Molecular and Cell Biology, Human Biology, etc., B.S.)",
+    "college": "Division of Biological Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Not on UCSD's official selective-major list. Pre-med is advising, not a major; pre-health advising is offered."
+   }
+  },
+  "sources": [
+   "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+   "https://admissions.ucsd.edu/international/index.html",
+   "https://fas.ucsd.edu/applying/international-students/index.html",
+   "https://students.ucsd.edu/finances/fees/registration/2026-27/index.html",
+   "https://undergrad.ucsd.edu/academics/selective-major-process/index.html",
+   "http://students.ucsd.edu/academics/advising/majors-minors/undergraduate-majors.html"
+  ],
+  "uncertain": [
+   "stats.firstYearTotal: C1 enrolled total (3,511+4,096+194)",
+   "intlAid: UCSD pages say international students are not eligible for federal/state aid; CDS H6 boxes are blank and H7 says Not eligible, yet 214 nonresidents received institutional aid averaging $10,290 (merit or other)",
+   "coa: official 2026-27 housing/food and total not retrieved; fees left null",
+   "meetsNeed false: not applicable to internationals",
+   "english: UCSD 'Alternative' TOEFL minimum from admissions.ucsd.edu page"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+   "applied": 136750,
+   "admitted": 39054,
+   "admitRate": 28.6,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 24254,
+    "admitted": 7496,
+    "rate": 30.9
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 7801,
+   "intlFirstYear": 1409,
+   "intlAidCount": 214,
+   "intlAidAvg": 10290,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": null,
+    "housing": null,
+    "total": null,
+    "source": "https://students.ucsd.edu/finances/fees/registration/2026-27/index.html",
+    "note": "Nonresident, class first enrolled 2026-27. tuition = tuition $14,202 + Student Services Fee $1,386 + nonresident supplemental tuition $39,270 (quarterly rates x3). Campus fees about $2,464 plus mandatory health insurance $3,195 (sum of listed items, not stated as annual). Official on-campus housing/food and total not retrieved.",
+    "direct": null
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://fas.ucsd.edu/resources/helpful-tools/financial-aid-estimator/",
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+    "https://admissions.ucsd.edu/international/index.html"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a UCSD page"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "La Jolla",
+   "state": "CA",
+   "lat": 32.8801,
+   "lon": -117.234,
+   "region": "w",
+   "lx": 11,
+   "ly": 8,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read (136,750 / 39,054; intl 24,254 / 7,496; enrolled 7,801 / intl 1,409). Registrar page confirms nonresident 2026-27 tuition 14,202+1,386+39,270=54,858 (quarterly rates x3). partial: on-campus housing/food and total still not found (fas.ucsd.edu cost page has no figures)"
+  }
+ },
+ {
+  "id": "ucdavis",
+  "name": "UC Davis",
+  "full": "University of California, Davis",
+  "public": true,
+  "commonApp": false,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "Institutional and prestigious scholarships may be open to internationals (amounts not published on pages read); CDS 2025-26 H6: 195 nonresident undergraduates received institutional aid, average $14,753",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UC Davis does not use SAT or ACT in admission (UC test-blind policy).",
+  "english": "UC requirement if under 3 years of English instruction: TOEFL iBT 4.5 (80 on old scale), IELTS 6.5, Duolingo 115; AP/IB English, SAT/ACT sub-scores also accepted by UC. Campus may ask for more after admission.",
+  "cogsci": "Cognitive Science major in the College of Letters and Science.",
+  "interview": "No interview.",
+  "url": "https://www.ucdavis.edu/international",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Listed among L&S majors. Switching from Cognitive Science into Computer Science is reported as very difficult."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology, Physiology and Behavior",
+    "college": "College of Biological Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Selective major (higher overall/series GPA requirements); strong pre-health focus."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Listed among L&S majors; admission restrictions not verified."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Computer Science and Engineering)",
+    "college": "College of Engineering",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Impacted: changing in requires MAT 21A/21B with C- or better and 3.0 GPA; admitted under another major makes switching very difficult."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences",
+    "college": "College of Biological Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major; pre-health advising is offered through the colleges."
+   }
+  },
+  "sources": [
+   "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+   "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+   "https://www.ucdavis.edu/sites/default/files/media/documents/F26_International_One_Pager_digital_FINAL.pdf",
+   "https://cs.ucdavis.edu/undergraduate/changing-majors-double-majors"
+  ],
+  "uncertain": [
+   "intlAid: CDS H6 checks both need-based and non-need-based institutional aid for nonresidents (H7: International Work-Study Application), but UC pages say internationals are eligible for very few scholarships and generally not loans; need-based eligibility not confirmed",
+   "stats: firstYearTotal is the C1 enrolled total",
+   "majors restricted values left null for cogsci/psych/bio: Davis pages not read",
+   "english: Davis-specific extra testing not verified"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+   "applied": 102988,
+   "admitted": 45674,
+   "admitRate": 44.3,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 21246,
+    "admitted": 11886,
+    "rate": 55.9
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6824,
+   "intlFirstYear": 926,
+   "intlAidCount": 195,
+   "intlAidAvg": 14753,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": 2904,
+    "housing": 30931,
+    "total": 88693,
+    "source": "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+    "note": "International, living on campus (residence hall). tuition = systemwide tuition and fees $15,588 + nonresident supplemental tuition $39,270; fees = international student administrative fee $414 + campus-based fees $2,490; housing = total student living expenses $30,931 (room and board, books, personal, transportation, optional health insurance).",
+    "direct": 88693
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+    "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a Davis page"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Davis",
+   "state": "CA",
+   "lat": 38.5382,
+   "lon": -121.7617,
+   "region": "w",
+   "lx": 11,
+   "ly": -6,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read (102,988 / 45,674; intl 21,246 / 11,886; enrolled 6,824 / intl 926). partial: COA one-pager not re-opened; intlAid 'none' is plausible (UC pages) but CDS H6 shows institutional aid to nonresidents"
+  }
+ },
+ {
+  "id": "uci",
+  "name": "UC Irvine",
+  "full": "University of California, Irvine",
+  "public": true,
+  "commonApp": false,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "UCI Distinguished Scholarships and Campuswide Scholarships (merit, no separate application) can go to internationals; amounts not verified. CDS 2025-26 H6: 52 nonresident undergraduates received institutional aid, average $24,494",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "Per CDS: standardized exams (SAT, ACT) are not used for admissions or scholarship decisions; may be used for placement after admission.",
+  "english": "UC requirement if under 3 years of English instruction: TOEFL iBT 4.5 (80 on old scale), IELTS 6.5, Duolingo 115. UCI-specific higher scores not verified.",
+  "cogsci": "Department of Cognitive Sciences (School of Social Sciences) offers a B.S. in Cognitive Sciences (cognitive psychology, cognitive neuroscience, math, stats, CS) and a B.S. in Psychology.",
+  "interview": "No interview.",
+  "url": "https://admissions.uci.edu/",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Sciences (B.S.)",
+    "college": "School of Social Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary: cognitive psychology, cognitive neuroscience, math, statistics, CS. Changing in later requires 3.2 UC GPA and 3.2 prior-quarter GPA; no double majoring within the department."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (B.S.)",
+    "college": "School of Biological Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Run by the Dept. of Neurobiology and Behavior; the department says students apply by change-of-major, most in years 2-3."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.S.); also Psychological Science (B.A.)",
+    "college": "School of Social Sciences (B.S.); School of Social Ecology (B.A.)",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Two psychology majors on different schools; B.S. is in the Dept. of Cognitive Sciences."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Donald Bren School of Information and Computer Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "ICS does not accept pre-admission change-of-major requests; later change needs 3.0 cumulative and prior-quarter GPA plus prerequisites. Computer Science and Engineering (Samueli, 2.7 GPA) is separate."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences (B.S.)",
+    "college": "School of Biological Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Change-of-major criteria: 2.00 cumulative and prior-quarter GPA plus course grades. Pre-med is advising, not a major; pre-health advising is offered."
+   }
+  },
+  "sources": [
+   "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+   "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html",
+   "https://ics.uci.edu/academics/undergrad/change-of-major/",
+   "https://neurobiology.uci.edu/undergraduate-programs/neurobiology-major/",
+   "https://catalogue.uci.edu/schoolofsocialsciences/departmentofcognitivesciences/cognitivesciences_bs"
+  ],
+  "uncertain": [
+   "stats.intl enrolled etc.: CDS C1 table text is scrambled; applied/admitted columns cross-checked against totals (OOS admitted 7,784 and enrolled 472 confirmed by form fields)",
+   "intlAid: UCI aid office says internationals are not eligible for most aid and only merit scholarships (seen via search summary, page blocked); CDS H6 checks both need-based and non-need-based for 52 nonresidents (own aid form on H7)",
+   "coa.housing: from a search-result snippet of ofas.uci.edu; total null",
+   "majors neuro: apply-later based on department page; direct freshman admission to Neurobiology not verified",
+   "majors psych restricted left null; url is the general UCI admissions home (international page blocked)"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+   "applied": 124231,
+   "admitted": 35964,
+   "admitRate": 28.9,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 21620,
+    "admitted": 9258,
+    "rate": 42.8
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6421,
+   "intlFirstYear": 1079,
+   "intlAidCount": 52,
+   "intlAidAvg": 24494,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": 1303,
+    "housing": 20926,
+    "total": null,
+    "source": "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html",
+    "note": "Nonresident, class first enrolled 2026-27. tuition = tuition $14,202 + Student Services Fee $1,386 + nonresident supplemental tuition $39,270; fees = sum of listed campus fees $1,303 (excludes one-time document/writing/eTech fees and health insurance $3,214); housing = on-campus housing and food $20,926 per UCI aid office (seen in a search result, page itself blocked). Registrar total incl. health insurance $59,375. Overall total not published in retrieved sources.",
+    "direct": null
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://www.ofas.uci.edu/cost/net-price-calculator.php",
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+    "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a UCI page"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Irvine",
+   "state": "CA",
+   "lat": 33.6405,
+   "lon": -117.8443,
+   "region": "w",
+   "lx": 11,
+   "ly": 6,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read (124,231 / 35,964; intl 21,620 / 9,258; enrolled 6,421 / intl 1,079). Registrar fee page confirms tuition 14,202+1,386+39,270=54,858 and listed fees; total incl. insurance $59,375. partial: housing 20,926 from search snippet only"
+  }
+ },
+ {
+  "id": "umich",
+  "name": "Michigan",
+  "full": "University of Michigan",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "by Dec 24 (reply Jan 6)",
+    "notifyDate": "2026-12-24"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "by Jan 29",
+    "notifyDate": "2027-01-29"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-02-01",
+    "notify": "by Apr 2",
+    "notifyDate": "2027-04-02"
+   }
+  ],
+  "earlyRule": "ED is binding (new plan; CDS 2025-26 still lists none) and EA is non-binding and non-restrictive per CDS C22; no international-specific restriction found.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None described; U-M admissions says international students on temporary visas are not eligible for aid and few scholarships exist. CDS H6: no institutional aid for nonresidents.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Application page says SAT/ACT optional; CDS C8 ticks SAT/ACT as 'recommended' for Fall 2027. CDS C8E: scores received by Feb 1.",
+  "english": "Required of non-native English speakers: TOEFL (code 1839), IELTS or MET Digital (4-skill); U-M publishes score ranges (minimums not read).",
+  "cogsci": "Cognitive Science major in LSA with four tracks; gateway course COGSCI 200 to declare.",
+  "interview": "No admissions interview found.",
+  "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Literature, Science, and the Arts (LSA)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Four tracks; declare after gateway COGSCI 200."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "LSA",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Can declare without finishing all prerequisites; cannot be combined with Biology or BCN."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (also Biopsychology, Cognition, and Neuroscience, BCN)",
+    "college": "LSA",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after intro psych (C) and statistics (C-); 32 credits, major GPA 2.0. BCN is a separate major."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (LSA BS or Engineering BSE)",
+    "college": "LSA or College of Engineering",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Students admitted Fall 2023 or later must be selected into CS before declaring, in either college."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "LSA",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major; Biology is not combinable with Neuroscience."
+   }
+  },
+  "sources": [
+   "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+   "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7570/Materials-Needed-to-Complete-a-First-year-Application",
+   "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7497/Admissions-Application-Deadline",
+   "https://www.ivystrides.com/blog/umich-early-decision/"
+  ],
+  "uncertain": [
+   "plans: ED/EA/RD decision dates from a third-party blog (ivystrides); official page 403",
+   "english: minimum scores not read",
+   "majors.bio.restricted: not verified",
+   "stats.intl: CDS residency table left blank by U-M",
+   "ed/ea counts: not reported in CDS"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+   "applied": 109112,
+   "admitted": 17915,
+   "admitRate": 16.4,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": 55,
+   "satEBRW": [
+    690,
+    730,
+    750
+   ],
+   "satMath": [
+    680,
+    740,
+    780
+   ],
+   "firstYearTotal": 8178,
+   "intlFirstYear": 391,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 66602,
+    "fees": 1494,
+    "housing": 17220,
+    "total": 89394,
+    "source": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+    "note": "CDS G1 international first-year: tuition 66,602; fees 494 + 1,000 international fee; food+housing 17,220. Total derived by adding G5 books 1,220, transport 400, other 2,458. Official OBP 2025-26 out-of-state lower division total was 84,164.",
+    "direct": 89394
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; submit only if you want them considered",
+   "lastSatEarly": null,
+   "lastSatRD": "2027-02-01",
+   "note": "CDS C8E: scores must arrive by 2/1."
+  },
+  "req": {
+   "application": "Common App + U-M questions",
+   "fee": 75,
+   "feeWaiver": "Waiver available for financial need",
+   "teacherRecs": {
+    "required": 1,
+    "optionalExtra": null,
+    "note": "One teacher evaluation from a core academic teacher or non-relative"
+   },
+   "counselorRec": true,
+   "midYearReport": null,
+   "interview": "No admissions interview found",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "leadership/citizenship",
+     "required": true,
+     "count": 1,
+     "words": 300,
+     "chars": null,
+     "choose": null,
+     "summary": "Short essay on leading or contributing to a community (not verified for this cycle)."
+    },
+    {
+     "type": "why",
+     "required": true,
+     "count": 1,
+     "words": 550,
+     "chars": null,
+     "choose": null,
+     "summary": "Why the specific U-M college or school fits your interests (not verified for this cycle)."
+    }
+   ],
+   "supplementsUrl": "https://admissions.umich.edu/essay-questions",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7570/Materials-Needed-to-Complete-a-First-year-Application"
+   ],
+   "uncertain": [
+    "supplements: prompts/word limits (300 and 550) come from third-party guides; official page 403 to fetch",
+    "midYearReport: not on materials page"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Ann Arbor",
+   "state": "MI",
+   "lat": 42.278,
+   "lon": -83.738,
+   "region": "mw",
+   "lx": 0,
+   "ly": 16,
+   "la": "middle"
+  },
+  "verified": {
+   "pub": "partial: CDS C1 read (53,044+56,068=109,112 applied; 7,593+10,322=17,915 admitted), residency table blank so intl null ok. Deadlines (ED Nov 1 -> by Dec 24; EA Nov 1 -> by Jan 29; RD Feb 1 -> by Apr 2) match official U-M search-result text (admissions.umich.edu pages 403 to WebFetch); ED is new and binding. COA: official OBP 2025-26 lower-division OOS total 84,164 confirmed (matches collector note); 2026-27 66,602 tuition is from CDS G1, not re-read"
+  }
+ },
+ {
+  "id": "uva",
+  "name": "UVA",
+  "full": "University of Virginia",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "by Dec 15",
+    "notifyDate": "2026-12-15"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "by Feb 15",
+    "notifyDate": "2027-02-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-05",
+    "notify": "by Apr 1",
+    "notifyDate": "2027-04-01"
+   }
+  ],
+  "earlyRule": "ED is binding; EA is non-binding; apply to one of the first-year schools (College of A&S, Engineering, Architecture, Nursing, Kinesiology) through Common App.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None for undergraduates: UVA Admission and Student Financial Services say no funds for foreign nationals (United World College graduates are the stated exception); AccessUVA is US citizens/permanent residents only.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Fall 2027 applicants may choose whether to share scores; no disadvantage. Enrolled middle 50% SAT 1410-1510 (secondary transcription of CDS).",
+  "english": "Strongly encouraged for all applicants whose first language is not English; Financial Guarantee for Foreign National Applicants is required to accept an offer.",
+  "cogsci": "Interdisciplinary Cognitive Science BA in College of A&S (five areas: cognitive psychology, neuroscience, linguistics, philosophy, CS).",
+  "interview": "InitialView or Vericant evaluations accepted for international applicants (deadlines Nov 1 ED/EA, Jan 5 RD).",
+  "url": "https://admission.virginia.edu/i-am/international",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (interdisciplinary BA)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare with two approved courses from two areas at C+; CS concentration needs form approval."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (interdisciplinary BA); also Behavioral Neuroscience BS in Psychology",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare needs a 3000-level BIOL/PSYC course at C+ and 2.5 GPA."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA) and Behavioral Neuroscience (BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after STAT 1601, PSYC 2005 and two 2000-level PSYC courses; BS is pre-med friendly."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS in SEAS or BA in A&S)",
+    "college": "School of Engineering and Applied Science, or College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply first-year to a school, not a CS major; CS entry is by major application after early CS courses."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://ira.virginia.edu/common-data-set/common-data-set-2025-2026",
+   "https://www.esslo.org/colleges/university-of-virginia/llms.txt",
+   "https://sfs.virginia.edu/our-financial-aid-commitment-you-0",
+   "https://cogsci.as.virginia.edu/admission-and-requirements",
+   "https://psychology.as.virginia.edu/bs-behavioral-neuroscience"
+  ],
+  "uncertain": [
+   "stats: applied 64,457 matches two secondary sources; admitted 10,086 and 15.6% only from esslo transcription of CDS (UVA CDS and admission pages returned 403)",
+   "stats: SAT submit %, EBRW/Math split, first-year total, intl counts not read",
+   "coa: totals not official; fee figure conflicts (4,552 vs 4,614)",
+   "req: application fee, recs, mid-year not verified",
+   "majors.bio and neuro/psych 'open': inferred from declaration prerequisites"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ira.virginia.edu/common-data-set/common-data-set-2025-2026",
+   "applied": 64457,
+   "admitted": 10086,
+   "admitRate": 15.6,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": null,
+   "intlFirstYear": null,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "CDS G1",
+    "tuition": 59035,
+    "fees": 3945,
+    "housing": 16070,
+    "direct": 79050,
+    "source": "UVA Common Data Set G1 (via second check)",
+    "note": "nonresident"
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; may change choice by Nov 22 (ED/EA) or Jan 15 (RD)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Test-optional for Fall 2027."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": null,
+   "feeWaiver": null,
+   "teacherRecs": {
+    "required": null,
+    "optionalExtra": null,
+    "note": "Not verified"
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "InitialView/Vericant accepted for international applicants",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admission.virginia.edu/admission/deadlines-instructions",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://cavalierdaily.com/article/2025/10/uva-removes-supplemental-essay-prompt-from-2025-2026-undergraduate-application"
+   ],
+   "uncertain": [
+    "supplements: per secondary sources UVA dropped its general supplement for 2026-27 (Nursing short answer only); not confirmed on UVA site",
+    "fee, recommendations, mid-year report: UVA pages 403"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Charlottesville",
+   "state": "VA",
+   "lat": 38.0336,
+   "lon": -78.508,
+   "region": "s",
+   "lx": -10,
+   "ly": 2,
+   "la": "end"
+  },
+  "verified": {
+   "pub": "partial: ED 11/1 -> 12/15 and EA 11/1 -> 2/15 confirmed by UVA CDS section C page; RD Jan 5 -> by Apr 1 confirmed by UVA admission site search result. C1 applied 64,457 / admitted 10,086 only seen via third-party transcriptions (UVA CDS C1 table loads dynamically, admission.virginia.edu 403) so not officially confirmed. COA: UVA CDS G1 page (2026-27) shows first-year out-of-state tuition 59,035, required fees 3,945, food+housing 16,070, which differs from collector's A&S 57,432 / 4,552 / ~21-23k (likely different basis: CDS G1 vs SFS A&S page); not changed, recheck sfs.virginia.edu"
+  }
+ },
+ {
+  "id": "unc",
+  "name": "UNC Chapel Hill",
+  "full": "University of North Carolina at Chapel Hill",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-10-15",
+    "notify": "by Dec 20 (NC residents) / Feb 15 (others)",
+    "notifyDate": "2027-02-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "by Mar 31",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "EA is non-binding and non-restrictive; there is no ED; confirmation due May 1 for both rounds.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None found; UNC says non-citizens are not eligible for need-based aid and should plan to pay full non-resident cost. CDS H6: no institutional aid for nonresidents.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Optional for most; required only if weighted GPA is below 2.8. 28% of enrolled first-years submitted SAT, 41% ACT (CDS C9).",
+  "english": "Non-native speakers: TOEFL (code C182), IELTS, Duolingo, Cambridge C1/C2. Typical strong scores: TOEFL 100 (or 5 on new scale for tests from Jan 21, 2026), IELTS 7.5, Duolingo 130, not stated as minimums; waived after 4 years in English-speaking country or school.",
+  "cogsci": "No Cognitive Science major; the minor is deactivated. Related study via Psychology and Neuroscience.",
+  "interview": "None found.",
+  "url": "https://admissions.unc.edu/apply/types-of-applications/international-first-year-students/",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No major; cognitive science minor deactivated (no new declarations)."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Start chemistry sequence first; gateway grade of C required, 2.0 GPA in major core."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Department of Psychology and Neuroscience; declaration rules not fully read."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS and BA)",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply to the major in spring after finishing or while taking COMP 210; department GPA bars differ across pages."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+   "https://admissions.unc.edu/apply/types-of-applications/international-first-year-students/ (via search summary)",
+   "https://admissions.unc.edu/faqs/what-is-the-deadline-to-send-in-my-supporting-documents/",
+   "https://cogpsych.unc.edu/application-process/"
+  ],
+  "uncertain": [
+   "plans: EA notification Jan 31 (CDS) vs Feb 15 for non-NC (admissions page); used Feb 15",
+   "english: scores are typical strong scores per UNC page via search summary, page itself 403",
+   "majors.psych/bio 'open': not directly verified",
+   "intl admit/enrolled counts come from CDS residency table (labelled Fall 2024 in file but sums match 2025 totals)"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+   "applied": 76247,
+   "admitted": 12751,
+   "admitRate": 16.7,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 9756,
+    "admitted": 1461,
+    "rate": 15.0
+   },
+   "satSubmitPct": 28,
+   "satEBRW": [
+    690,
+    730,
+    750
+   ],
+   "satMath": [
+    700,
+    750,
+    780
+   ],
+   "firstYearTotal": 5091,
+   "intlFirstYear": 300,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2025-26",
+    "tuition": 47472,
+    "fees": 2129,
+    "housing": 15870,
+    "total": 69137,
+    "source": "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+    "note": "CDS G1 out-of-state values (2026-27 costs flagged 'not available', due August, so treated as 2025-26). Housing = room 9,168 + board 6,702. Total derived adding G5 books 638, transport 1,078, other 1,950. Check studentaid.unc.edu for 2026-27.",
+    "direct": 69137
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; considered as one factor if shared",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores received by Jan 31; EA supporting materials/scores due Nov 7, RD Feb 15-21 (sources differ)."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": 85,
+   "feeWaiver": "Waiver available for financial need",
+   "teacherRecs": {
+    "required": null,
+    "optionalExtra": null,
+    "note": "Not verified"
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "None found",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admissions.unc.edu/apply/types-of-applications/first-year/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf"
+   ],
+   "uncertain": [
+    "supplements: third-party guides say short answers were removed for 2026-27; Honors Carolina has its own short response; not confirmed on UNC site",
+    "recommendations and mid-year report: UNC pages 403",
+    "supporting-materials deadlines differ between sources (Feb 15 vs Feb 21)"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Chapel Hill",
+   "state": "NC",
+   "lat": 35.9132,
+   "lon": -79.0558,
+   "region": "s",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read (76,247 / 12,751; intl 9,756 / 1,461; enrolled 5,091 / intl 300). Official admissions page: EA Oct 15 (materials Nov 7), decision Feb 15 for international (Dec 20 NC only); RD Jan 15 (materials Feb 15), decision Mar 31. UNC page says international students are not eligible for need-based aid (intlAid none ok). COA not re-verified"
+  }
+ },
+ {
+  "id": "uiuc",
+  "name": "Illinois",
+  "full": "University of Illinois Urbana-Champaign",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "Jan 29",
+    "notifyDate": "2027-01-29"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-05",
+    "notify": "Feb 26",
+    "notifyDate": "2027-02-26"
+   }
+  ],
+  "earlyRule": "EA is non-binding; materials due Nov 7 (EA) / Jan 11 (RD); you apply directly to a first-choice major with an optional second choice.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "Limited scholarships and loans via International Student & Scholar Services (no amounts stated); no need-based aid for international undergraduates.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional for all; scores cannot be added later for scholarships, honors or placement; no major requires SAT/ACT.",
+  "english": "Required unless grades 10-12 were in an approved English-speaking country: TOEFL iBT, IELTS or Duolingo (or SAT/ACT); cannot be waived; scores within 2 years; no minimums stated (ranges on class profile).",
+  "cogsci": "Brain & Cognitive Science BSLAS major in LAS (psychology, neuroscience, computation).",
+  "interview": "No interview except Fine and Applied Arts audition/portfolio.",
+  "url": "https://www.admissions.illinois.edu/international-requirements/",
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain & Cognitive Science (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": null,
+    "admitRate": 40.6,
+    "admitNote": "LAS first-choice-major admit rate for the 2026 entering class (admissions.illinois.edu/admit-rates); not major-specific.",
+    "note": "Core covers psychology, neuroscience, programming and statistics, lab."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": null,
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Newer interdisciplinary LAS major; declaration needs 2.5 major GPA after a semester of coursework."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BSLAS), incl. Cognitive Neuroscience concentration",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Apply directly to the major; Cognitive Neuroscience concentration 35 hours."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS, Grainger Engineering), plus CS+X",
+    "college": "The Grainger College of Engineering",
+    "restricted": "direct-admit",
+    "admitRate": 23.3,
+    "admitNote": "Grainger first-choice-major admit rate, 2026 entering class; CS alone is lower but no verified official figure.",
+    "note": "Closed to on-campus transfer for students who entered as first-years, so the application is the only way in."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Integrative Biology / Molecular and Cellular Biology (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://www.admissions.illinois.edu/invest/financial-aid",
+   "https://admissions.illinois.edu/first-year-dates/",
+   "https://www.admissions.illinois.edu/international-requirements/",
+   "https://www.admissions.illinois.edu/admit-rates/",
+   "https://www.pb.uillinois.edu/documents/transfer-characteristics/PB_Freshman_Characteristics_Fall25.pdf",
+   "https://news.illinois.edu/illinois-sets-another-freshman-record-as-enrollment-tops-60000/"
+  ],
+  "uncertain": [
+   "stats.admitRate 36.6 is as reported by UIUC-linked sources, admitted count not verified; applied 83,045 per UIUC news bureau",
+   "stats: CDS xlsx unreachable so SAT split, ED/EA, intl applied/admitted not read; esslo transcription suggests intl admit about 30.5% (not used)",
+   "majors.cogsci/neuro restricted: whether applied at entry not verified; neuro rate is LAS college rate only",
+   "majors.psych/bio direct-admit: inferred from 'apply directly to a major' policy",
+   "coa fees derived; fall 2027 rate unknown"
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://dair.illinois.edu/access-data/common-data-set/",
+   "applied": 83045,
+   "admitted": null,
+   "admitRate": 36.6,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 9207,
+   "intlFirstYear": 1435,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 38576,
+    "fees": 3672,
+    "housing": 15858,
+    "total": 62146,
+    "source": "https://www.admissions.illinois.edu/invest/tuition",
+    "note": "International first-year, LAS base rate: tuition 38,576 (cost.illinois.edu, new fall 2026 rate); fees derived as 42,248 minus 38,576; food+housing 15,858; books 1,200; other 2,840. Admissions page range for international is 62,146-72,976 (Engineering/CS higher: tuition 47,800 total at fall 2026 rate). Fall 2027 entrants' rate may differ.",
+    "direct": 62146
+   }
+  },
+  "policy": {
+   "superscore": false,
+   "selfReport": true,
+   "scoreChoice": "Optional; report highest composite/total, no superscoring; official scores only after enrollment",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "SAT code 1836, ACT 1154; cannot change test-optional choice after submitting."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": 75,
+   "feeWaiver": "Counselor-submitted fee waiver form",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Illinois does not accept letters of recommendation; removed before review"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None for most majors",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "major",
+     "required": true,
+     "count": 2,
+     "words": 150,
+     "chars": null,
+     "choose": null,
+     "summary": "Major-related experience, and goals after graduation with the major."
+    },
+    {
+     "type": "second-choice major",
+     "required": false,
+     "count": 1,
+     "words": 150,
+     "chars": null,
+     "choose": null,
+     "summary": "Interest in second-choice major, only if one is listed."
+    }
+   ],
+   "supplementsUrl": "https://admissions.illinois.edu/essays",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://admissions.illinois.edu/essays",
+    "https://admissions.illinois.edu/first-year-apply/"
+   ],
+   "uncertain": [
+    "admitted count and CDS residency table not read (Box xlsx not fetchable)",
+    "counselorRec: no counselor letter appears in listed materials, inferred from 'no recommendations' rule"
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Urbana",
+   "state": "IL",
+   "lat": 40.102,
+   "lon": -88.2272,
+   "region": "mw",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "partial: dates page confirms EA Nov 1 (materials Nov 7, decision Jan 29), RD Jan 5 (materials Jan 11, decision Feb 26); year not printed on page. applied 83,045 and 36.6% total admit rate confirmed via search (archived official admit-rate page, fall 2025); admitted count (~30,384) not confirmed from an official source; CDS xlsx on Box not readable; intl applied/admitted not found. Major rates on the current page are for the 2026 entering class (LAS 40.6, Grainger 23.3, university 38.1), not fall 2025, so they are not the same year as stats.admitRate. International COA range 62,146-72,976 and components (tuition 42,248-53,078, food+housing 15,858, books 1,200, other 2,840) confirmed on admissions tuition page"
+  }
+ },
+ {
+  "id": "uw",
+  "name": "UW Seattle",
+  "full": "University of Washington",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-12-01",
+    "notify": "March 1-15, 2027 (deadline extended from Nov 15)",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No Early Decision or Early Action; one application deadline (Dec 1, extended from Nov 15) with decisions March 1-15.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None: UW states it does not provide financial aid or scholarships to undergraduate international students.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "SAT/ACT not required for most applicants; required only for homeschooled or schools without grades.",
+  "english": "TOEFL iBT 76 (4.0 on new scale for tests from Jan 21, 2026), IELTS 6.0, Duolingo 110; or SAT EBRW 580 / ACT English 22 plus B average in English; exempt if primary and secondary school in US/UK/Ireland/Canada/Australia/NZ.",
+  "cogsci": "No Cognitive Science major or minor at UW Seattle; nearest options are Psychology, Neuroscience, Linguistics, and the Neural Computation and Engineering minor.",
+  "interview": "None; UW does not interview or consider demonstrated interest.",
+  "url": "https://admit.washington.edu/apply/first-year/how-to-apply/",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No Cognitive Science major or minor listed in UW advising major/minor lists."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Arts & Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published on admissions page.",
+    "note": "Capacity-constrained; a small percentage admitted directly as first-years by listing it first choice, most apply after enrolling."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published.",
+    "note": "Capacity-constrained with no direct option; separate department application after enrolling."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (Allen School; also Computer Engineering)",
+    "college": "Paul G. Allen School / College of Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 3.5,
+    "admitNote": "Allen School published 2026 direct-to-major rates: international 37 of 1,049 (stated as 4%; 3.5% computed), WA residents 41%, domestic non-residents 8%.",
+    "note": "Direct to Major applies autumn only; list CS or CE as first choice; no minimum GPA; priority to Washington residents. Other CS applicants enter as pre-major."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published.",
+    "note": "Capacity-constrained, no direct option; second application after enrolling. Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2026/02/27111247/CDS_2025-2026_Seattle.pdf",
+   "https://admit.washington.edu/apply/first-year/how-to-apply/",
+   "https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/",
+   "https://admit.washington.edu/costs/scholarships",
+   "https://admit.washington.edu/apply/dates-deadlines/",
+   "https://www.cs.washington.edu/academics/undergraduate/admissions/direct-major",
+   "https://admit.washington.edu/majors/neuroscience/",
+   "https://admit.washington.edu/majors/psychology/",
+   "https://admit.washington.edu/majors/biology/",
+   "https://advising.uw.edu/degree-overview/majors/list-of-undergraduate-majors/",
+   "https://advising.uw.edu/degree-overview/minors/"
+  ],
+  "uncertain": [
+   "plans: Dec 1 2026 deadline stated as extended from Nov 15; page and CS page (Autumn 2027 cycle) agree, but check for further change.",
+   "stats.admitRate/intl: CDS C1 residency table used as-is (CDS Fall 2025 entrants).",
+   "intlAidCount/intlAidAvg: CDS H2 not split by international status.",
+   "COA total includes books/personal/transportation estimate."
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2026/02/27111247/CDS_2025-2026_Seattle.pdf",
+   "applied": 72933,
+   "admitted": 30446,
+   "admitRate": 41.7,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 13054,
+    "admitted": 4653,
+    "rate": 35.6
+   },
+   "satSubmitPct": 19.1,
+   "satEBRW": [
+    650,
+    710,
+    740
+   ],
+   "satMath": [
+    650,
+    730,
+    780
+   ],
+   "firstYearTotal": 7129,
+   "intlFirstYear": 691,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 44580,
+    "fees": 1676,
+    "housing": 18858,
+    "total": 69596,
+    "source": "https://cdn.uw.edu/wp-content/uploads/sites/162/2026/06/12115617/Cost-of-Attendance-for-the-2026-27-academic-year.pdf",
+    "note": "Nonresident first-year, Seattle; housing = room and board; total also includes $4,482 books/personal/transportation.",
+    "direct": 69596
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; submitted scores are considered. Only 19.1% of enrolled first-years submitted SAT (CDS C9).",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS SAT percentiles are for the 19% who submitted; Fall 2025 enrollees."
+  },
+  "req": {
+   "application": "Common App plus STARS self-reported courses and grades (required of all first-year applicants incl. international).",
+   "fee": 95,
+   "feeWaiver": "Not available to international applicants ($85 and waivers for US students).",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Letters of recommendation not accepted; applicants asked not to send them."
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": 1,
+     "words": 650,
+     "chars": null,
+     "choose": 7,
+     "summary": "Common App personal essay only; no UW-specific supplement found."
+    }
+   ],
+   "supplementsUrl": "https://admit.washington.edu/apply/first-year/how-to-apply/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://www.washington.edu/financialaid/getting-started/net-price-calculator/",
+   "netPriceIntl": null,
+   "appFormat": "Common App",
+   "sources": [
+    "https://admit.washington.edu/apply/first-year/how-to-apply/",
+    "https://admit.washington.edu/apply/first-year/how-to-apply/app-fee/"
+   ],
+   "uncertain": [
+    "No international transcript page fetched beyond how-to-apply summary."
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Seattle",
+   "state": "WA",
+   "lat": 47.6553,
+   "lon": -122.3035,
+   "region": "w",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "ok: CDS C1 read (72,933 / 30,446; intl 13,054 / 4,653; enrolled 7,129 / intl 691). Dec 1 deadline confirmed on admit.washington.edu dates page and CS page (extended from Nov 15; decisions Mar 1-15). Allen School DTM 2026: international 37 of 1,049 (page says 4%, 3.5% computed), WA 41%, domestic nonresident 8% confirmed. COA PDF confirmed (nonresident tuition 44,580, fees 1,676, room and board 18,858, books/personal/transport 4,482, total 69,596)"
+  }
+ },
+ {
+  "id": "utaustin",
+  "name": "UT Austin",
+  "full": "The University of Texas at Austin",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-10-15",
+    "notify": "By Jan 15, 2027 (supplemental materials Oct 22)",
+    "notifyDate": "2027-01-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2026-12-01",
+    "notify": "By Feb 15, 2027 (supplemental materials Dec 10)",
+    "notifyDate": "2027-02-15"
+   }
+  ],
+  "earlyRule": "Early Action (Oct 15) and Regular (Dec 1) both via Common App or ApplyTexas; Honors decisions March 1.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "No central need-based or merit aid found for first-year internationals; ISSS offers small awards (Feb 1-Mar 1 application, e.g. STEM Scholarship $4,800 fall tuition) mostly restricted by region or after two semesters.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "required",
+  "testingNote": "At least one official SAT, ACT or Classic Learning Test score required for fall 2025 applicants and later.",
+  "english": "Official TOEFL, IELTS or Duolingo 'if applicable'; admissions page lists no minimum scores.",
+  "cogsci": "No Cognitive Science major or minor found at UT Austin; only CGS courses. Related: Psychology (Liberal Arts), Neuroscience (Natural Sciences).",
+  "interview": "Not mentioned on official admissions pages.",
+  "url": "https://admissions.utexas.edu/apply/international-students/",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No Cognitive Science major or minor found in catalog search; CGS courses only."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Natural Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": "No major-level admit rate published.",
+    "note": "Restricted entry-level major: only students admitted by the Office of Admissions (or later by internal transfer)."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Liberal Arts",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Admission process for Psychology not confirmed on official pages fetched."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": "College of Natural Sciences (School of Computing)",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": "No major-level admit rate published.",
+    "note": "Restricted entry-level major; admitted directly by Admissions, otherwise very competitive internal transfer."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology / Human Biology (CNS)",
+    "college": "College of Natural Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is a pathway, not a major (CNS statement). Biology major admission rules not confirmed."
+   }
+  },
+  "sources": [
+   "https://reports.utexas.edu/common-data-set/pdf",
+   "https://admissions.utexas.edu/apply/international-students/",
+   "https://admissions.utexas.edu/apply/freshman/",
+   "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/",
+   "https://global.utexas.edu/isss/advising-services/scholarships",
+   "https://news.utexas.edu/2025/09/18/ut-sets-all-time-highs-for-enrollment-and-student-performance/",
+   "https://cns.utexas.edu/info-future-students/first-year-applications",
+   "https://cns.utexas.edu/info-future-students/faqs-undergrad-applicants"
+  ],
+  "uncertain": [
+   "stats: 2025-26 CDS is on Box and could not be opened; all CDS-derived values left null.",
+   "stats.firstYearTotal 9,900 is the UT News figure for entering FTIC students (Fall 2025), not CDS.",
+   "english: minimum scores not found.",
+   "plans: Oct 15 / Dec 1 deadlines inferred as 2026 cycle (decisions dated Jan/Feb 2027).",
+   "majors.psych/bio restricted status unconfirmed; cogsci 'none' based on catalog search only.",
+   "coa.tuition/total null because tuition varies by college."
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja",
+   "applied": 90690,
+   "admitted": null,
+   "admitRate": null,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": null,
+    "admitted": null
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 9900,
+   "intlFirstYear": null,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": null,
+    "fees": null,
+    "housing": 15420,
+    "total": null,
+    "source": "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/",
+    "note": "Nonresident undergraduate; total ranges $64,204-$72,916 by college (tuition $42,554-$51,106, housing and food $15,420-$15,580, transportation $1,840, books $724, personal $3,666). Housing is the lower bound.",
+    "direct": null
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": null,
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UT does not publish admitted score ranges in the CDS per third-party report; CDS PDF (Box) could not be read."
+  },
+  "req": {
+   "application": "Common App or ApplyTexas; MyStatus for uploads.",
+   "fee": 90,
+   "feeWaiver": "Not available for international applicants ($75 with waiver for domestic).",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": 2,
+    "note": "Up to two optional letters, ideally from outside the high school."
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "Not mentioned",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": null,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "At least one essay plus required short answers; optional 250-300 word note on circumstances affecting high school performance."
+    }
+   ],
+   "supplementsUrl": "https://admissions.utexas.edu/apply/freshman/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or ApplyTexas",
+   "sources": [
+    "https://admissions.utexas.edu/apply/international-students/",
+    "https://admissions.utexas.edu/apply/freshman/"
+   ],
+   "uncertain": [
+    "Essay count and word limits not stated on official page fetched."
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Austin",
+   "state": "TX",
+   "lat": 30.2849,
+   "lon": -97.7341,
+   "region": "s",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "partial: deadlines confirmed on admissions.utexas.edu (EA Oct 15, supplemental Oct 22, decision by Jan 15 2027; RD Dec 1, supplemental Dec 10, decision Feb 15 2027; Honors Mar 1). CDS is on Box and could not be opened. COA page confirmed: nonresident total 64,204-72,916, tuition 42,554-51,106, housing/food 15,420-15,580. UT's own news reports 90,690 fall 2025 applications; admitted 20,154 and international 8,543 / 673 appear only in third-party transcriptions of the CDS (esslo, collegewise)"
+  }
+ },
+ {
+  "id": "wisc",
+  "name": "UW-Madison",
+  "full": "University of Wisconsin-Madison",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "On or before Jan 31, 2027 (materials by Nov 9)",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "On or before Mar 31, 2027 (materials by Jan 22)",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "Non-binding Early Action (Nov 1) with decision by Jan 31; Regular Jan 15; reply by May 1.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "King-Morgridge Scholars (full four-year, need-based, six per year, only for Africa/Caribbean/Latin America/South Asia/Southeast Asia, so not Korea); Western Union $1,000 one-time for underrepresented countries.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "SAT/ACT optional through the spring 2028 term; not submitting does not hurt review; no superscore.",
+  "english": "TOEFL iBT 80 (4.5 for tests from Jan 21, 2026), IELTS 6.5, Duolingo 115; waived only if English was the language of instruction all four secondary years.",
+  "cogsci": "No undergraduate Cognitive Science major or certificate found; closest are Psychology, Neurobiology, Computer Sciences (all L&S).",
+  "interview": "None (only dance and music auditions).",
+  "url": "https://admissions.wisc.edu/apply-as-a-freshman/",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No undergraduate Cognitive Science major or certificate found."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Guide lists no application, GPA or credit prerequisites; declare with an advisor by 86 credits."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after PSYCH 202 (or equivalent) with C or better via department form."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Sciences (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No direct admit; declare after COMP SCI 300, MATH 222 and BC in intro programming with 2.25 GPA on eligible courses; no cap found. Computer Engineering is in College of Engineering."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Letters & Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Cannot combine with Neurobiology. Pre-med is advising, not a major. Declaration rules not confirmed."
+   }
+  },
+  "sources": [
+   "https://www.wisconsin.edu/education-reports-statistics/wp-content/uploads/sites/364/2026/03/MSN_202526_Admissions.pdf",
+   "https://admissions.wisc.edu/deadlines/",
+   "https://admissions.wisc.edu/required-materials/",
+   "https://admissions.wisc.edu/international/",
+   "https://admissions.wisc.edu/international-scholarships/",
+   "https://financialaid.wisc.edu/cost-of-attendance/",
+   "https://www.wisc.edu/about/facts/"
+  ],
+  "uncertain": [
+   "stats: from IPEDS ADM 2025-26 (UW System PDF), not CDS; CDS 2025-26 is Excel on Box.",
+   "stats.intl uses IPEDS 'U.S. Nonresident'.",
+   "stats.satEBRW/Math percentiles apply only to the 12% who submitted SAT.",
+   "plans: dates not labeled with a cycle year on page; assumed 2026-27.",
+   "majors.bio: declaration rules not confirmed; cs 'open' reflects eligibility thresholds without cap.",
+   "english TOEFL 4.5 new-scale threshold looks unusual per page; confirm."
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.wisconsin.edu/education-reports-statistics/wp-content/uploads/sites/364/2026/03/MSN_202526_Admissions.pdf",
+   "applied": 69640,
+   "admitted": 30164,
+   "admitRate": 43.3,
+   "ed": null,
+   "ea": {
+    "applied": 53981,
+    "admitted": 20050,
+    "rate": 37.1
+   },
+   "intl": {
+    "applied": 12316,
+    "admitted": 4582,
+    "rate": 37.2
+   },
+   "satSubmitPct": 12,
+   "satEBRW": [
+    680,
+    710,
+    740
+   ],
+   "satMath": [
+    700,
+    740,
+    780
+   ],
+   "firstYearTotal": 8495,
+   "intlFirstYear": 490,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 45518,
+    "fees": null,
+    "housing": 14994,
+    "total": 66152,
+    "source": "https://financialaid.wisc.edu/cost-of-attendance/",
+    "note": "Nonresident incoming first-year on campus; tuition figure is tuition and fees combined. Total excludes $330 new student fee and $68 loan fees; includes books/computer $1,800, personal $2,618, transportation $1,222.",
+    "direct": 66152
+   }
+  },
+  "policy": {
+   "superscore": false,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; only top composite considered if submitted; choice on application is final.",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Source is IPEDS ADM 2025-26 (Fall 2025), not the CDS (CDS posted only as Excel on Box); 12% SAT, 29% ACT submitted; percentile figures are for submitters. International = IPEDS 'U.S. Nonresident'."
+  },
+  "req": {
+   "application": "Common App or UW (Universities of Wisconsin) Application.",
+   "fee": 80,
+   "feeWaiver": "Available for financial hardship (in application or by form).",
+   "teacherRecs": {
+    "required": 1,
+    "optionalExtra": 1,
+    "note": "One academic letter (teacher, counselor or professor) required; one optional second letter."
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": 2,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "One Common App/UW essay plus a why-UW-Madison and why-your-major essay."
+    }
+   ],
+   "supplementsUrl": "https://admissions.wisc.edu/required-materials/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or UW Application",
+   "sources": [
+    "https://admissions.wisc.edu/required-materials/",
+    "https://admissions.wisc.edu/deadlines/",
+    "https://admissions.wisc.edu/international/",
+    "https://admissions.wisc.edu/international-scholarships/"
+   ],
+   "uncertain": [
+    "Essay word limits not stated on page."
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Madison",
+   "state": "WI",
+   "lat": 43.0766,
+   "lon": -89.4125,
+   "region": "mw",
+   "lx": 11,
+   "ly": 5,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "partial: EA Nov 1 (materials Nov 9, decision by Jan 31) and RD Jan 15 (materials Jan 22, decision by Mar 31) confirmed on admissions.wisc.edu/deadlines (cycle year inferred). COA page confirmed: tuition and fees 45,518, housing/meals 14,994, personal 2,618, transportation 1,222, computer-adjusted books 1,800 (collector total 66,152 excludes $68 loan fee and $330 new student fee; official page total without computer is 65,120). Admissions stats are IPEDS not CDS; not re-read"
+  }
+ },
+ {
+  "id": "umn",
+  "name": "UMN Twin Cities",
+  "full": "University of Minnesota, Twin Cities",
+  "public": true,
+  "commonApp": true,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "Early Action I: by Jan 31, 2027",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-01",
+    "notify": "By Mar 31, 2027",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "Two early action deadlines (Nov 1, Dec 1) and a Jan 1 regular deadline; decisions by Jan 31, Feb 28, Mar 31. Also: another EA round 2026-12-01.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "Global Excellence Scholarship: tuition waiver of $5,000-$20,000 per year for up to four years, merit-based, automatic if applied by deadline and Certification of Finances submitted.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "ACT/SAT not required for freshmen (sources differ on end date: fall 2027 vs fall 2029).",
+  "english": "TOEFL iBT 79, IELTS Academic 6.5, Duolingo 110 listed as benchmarks (also PTE, C1 Advanced); some countries exempt.",
+  "cogsci": "No undergraduate Cognitive Science major or minor at Twin Cities (graduate minor and PhD only; B.A. exists at UMN Duluth).",
+  "interview": "None found.",
+  "url": "https://admissions.tc.umn.edu/admissions/international-freshman-admissions-timeline",
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No undergraduate Cognitive Science at Twin Cities; UMN Duluth offers B.A. and minor."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.S.)",
+    "college": "College of Biological Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Entrance requirement after admission to CBS (catalog snippet: 60+ credits, 3.25 GPA); verify."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A./B.S.)",
+    "college": "College of Liberal Arts",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Admission rules for Psychology not confirmed."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S. in CSE; B.A. in CLA)",
+    "college": "College of Science and Engineering / College of Liberal Arts",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "CSE says nearly 90% of internal applicants admitted in recent cycles; not a first-year admit rate.",
+    "note": "Incoming students typically start as pre-majors and apply after prerequisites; 3.2 technical GPA gives guaranteed fall admission."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (CBS)",
+    "college": "College of Biological Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major. Major details not confirmed."
+   }
+  },
+  "sources": [
+   "https://idr.umn.edu/sites/idr.umn.edu/files/cds_2025_2026_tc.pdf",
+   "https://admissions.tc.umn.edu/admissions/international-freshman-admissions-timeline",
+   "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman",
+   "https://admissions.tc.umn.edu/global-excellence-scholarships",
+   "https://onestop.umn.edu/finances/costs/cost-attendance",
+   "https://pub.umn.edu/oem/Undergraduate-Enrollment-Report-26/files/Accessible-OEM-Report.pdf"
+  ],
+  "uncertain": [
+   "All umn.edu admissions pages returned 403 to WebFetch; values taken from WebSearch snippets of official pages.",
+   "stats: CDS C values null; firstYearTotal 7,180 and intl 541 from 2025-26 OEM enrollment report snippet.",
+   "english benchmarks from older/international factsheet; timeline page says program minimums apply.",
+   "COA numbers conflict between OneStop, Admissions and Carlson pages.",
+   "majors: neuro/cs entry rules from search snippets; psych/bio unconfirmed."
+  ],
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://idr.umn.edu/sites/idr.umn.edu/files/cds_2025_2026_tc.pdf",
+   "applied": null,
+   "admitted": null,
+   "admitRate": null,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": null,
+    "admitted": null
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 7180,
+   "intlFirstYear": 541,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 43348,
+    "fees": null,
+    "housing": 15552,
+    "total": 63762,
+    "source": "https://onestop.umn.edu/finances/costs/cost-attendance",
+    "note": "Nonresident living in residence hall; tuition figure is tuition and fees combined; CSE and Carlson add $3,010 per year; Carlson page lists different room and board.",
+    "direct": 63762
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": null,
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS PDF returned 403 so C-section values left null; about 50% of fall 2025 admits submitted no test score; enrolled SAT composite middle 50% 1310-1460 per enrollment report."
+  },
+  "req": {
+   "application": "Common App or Golden Gopher Application (one only) plus Self-Reported Academic Record.",
+   "fee": 55,
+   "feeWaiver": "Waivable for financial need or specific programs; applicability to international applicants not confirmed.",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required."
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or Golden Gopher Application",
+   "sources": [
+    "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman"
+   ],
+   "uncertain": [
+    "Essays stated as not required (search snippet); admissions pages blocked WebFetch."
+   ]
+  },
+  "group": "public",
+  "dream": false,
+  "checked": "2026-11-26",
+  "loc": {
+   "city": "Minneapolis",
+   "state": "MN",
+   "lat": 44.974,
+   "lon": -93.2277,
+   "region": "mw",
+   "lx": 11,
+   "ly": -7,
+   "la": "start"
+  },
+  "verified": {
+   "pub": "partial: EA I Nov 1 -> by Jan 31, EA II Dec 1 -> by Feb 28 (another page says Feb 15), RD Jan 1 -> by Mar 31 per umn.edu search results (umn.edu pages 403 to WebFetch). CDS PDF 403, so C1 still unfilled; third-party (esslo) transcription: applied about 43,929, admitted about 34,648, enrolled 7,180 (matches OEM report), intl 7,903 / 6,040; CollegeData lists different numbers (21,161 applicants) so definition unresolved. COA not re-verified (onestop 403)"
   }
  }
 ];

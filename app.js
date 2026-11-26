@@ -18,7 +18,7 @@
   function blank() {
     return {
       picks: {}, star: {}, todo: {}, memo: {}, custom: [], cal: null, open: {},
-      profile: { gpa: null, sat: { rw: null, math: null }, target: { rw: null, math: null }, useTarget: false, ap: {}, needAid: false },
+      profile: { gpa: null, sat: { rw: null, math: null }, target: { rw: null, math: null }, useTarget: false, ap: {}, needAid: false, majors: [] },
       apply: {
         acts: Array.from({ length: 10 }, blankAct),
         honors: Array.from({ length: 5 }, blankHonor),
@@ -42,6 +42,7 @@
     out.profile.sat = Object.assign({ rw: null, math: null }, out.profile.sat || {});
     out.profile.target = Object.assign({ rw: null, math: null }, out.profile.target || {});
     out.profile.ap = out.profile.ap || {};
+    if (!Array.isArray(out.profile.majors)) out.profile.majors = [];
     const a = v.apply || {};
     out.apply = Object.assign(blank().apply, a);
     out.apply.acts = Array.from({ length: 10 }, (_, i) => Object.assign(blankAct(), (a.acts || [])[i] || {}));

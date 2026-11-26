@@ -1,0 +1,700 @@
+[
+ {
+  "id": "ucla",
+  "name": "UCLA",
+  "full": "University of California, Los Angeles",
+  "public": true,
+  "commonApp": false,
+  "city": "Los Angeles",
+  "state": "CA",
+  "lat": 34.0689,
+  "lon": -118.4452,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "late March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": null,
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UCLA does not consider SAT or ACT for admission or scholarship; scores are not requested on the UC Application.",
+  "english": "Required if all secondary school was in a non-English-language country or under 3 years of English instruction. UCLA competitive scores: TOEFL iBT 5 (new scale; above 100 old scale), IELTS 7.5, Duolingo 135 (UC systemwide minimums are TOEFL 4.5/IELTS 6.5/DET 115).",
+  "cogsci": "Cognitive Science major in the Dept. of Psychology (College of Letters and Science); freshmen enter as pre-major, complete prep courses, then apply to the major.",
+  "interview": "UCLA does not accept letters of recommendation or interviews.",
+  "url": "https://admission.ucla.edu/apply/international-applicants",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://apb.ucla.edu/file/f8f5c864-93be-4b44-b646-7807a685749f",
+   "applied": 145086,
+   "admitted": 13659,
+   "admitRate": 9.4,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6551,
+   "intlFirstYear": 549,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 55700,
+    "fees": null,
+    "housing": 19867,
+    "total": 84770,
+    "source": "https://admission.ucla.edu/tuition-fees",
+    "note": "Nonresident, residence halls. tuition = University Fees $16,430 (tuition+fees, UCLA lists them combined) + nonresident supplemental tuition $39,270; housing = food $7,568 + housing $12,299; total also includes books $1,588, transportation, personal and health insurance $3,885."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Letters of recommendation are not accepted by UCLA"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "Not accepted (UCLA does not accept interviews)",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    },
+    {
+     "type": "other",
+     "required": false,
+     "count": 1,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "Only applicants to Arts and Architecture, Music, Nursing, or Theater, Film and Television submit a separate supplemental application."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://admission.ucla.edu/apply/international-applicants",
+    "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf"
+   ],
+   "uncertain": [
+    "interview: UCLA says not accepted (International Guide 2026)"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science (Psychology dept.)",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply after prep courses by end of fall of year 3; prep GPA 3.2+ with all requirements reportedly guarantees admission to the major, 2.9-3.19 competitive pool. Transfers must be admitted directly."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.S.)",
+    "college": "College of Letters and Science (Life Sciences, interdepartmental program)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Freshman admits declare after finishing prep courses with C- or better and good standing per the department; capacity limit not stated. Psychobiology (B.S., Psychology dept.) is a related major."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science (Psychology dept.)",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-major, then apply by end of fall of year 3; prep GPA 2.9+ reportedly guaranteed, 2.5-2.89 competitive pool."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Samueli School of Engineering",
+    "restricted": "capped",
+    "admitRate": 7.3,
+    "admitNote": "Fall 2025 first-year admit rate for Samueli Computer Science (6,806 applicants), UCLA first-year profile admission.ucla.edu/apply/first-year/first-year-profile/major",
+    "note": "Admitted to the major directly. Changing into CS later is difficult: earliest after 2 quarters and the major is severely impacted. Computer Science and Engineering is a separate Samueli major."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (B.S.)",
+    "college": "College of Letters and Science (Life Sciences; Ecology and Evolutionary Biology dept.)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after finishing the entry life-sciences course with C- or better (LS 7B or LS 1; version uncertain). Pre-med is advising only (UCLA has no designated pre-health program); Life Sciences division admit rate was 11% in Fall 2025 but major is not considered in College admission."
+   }
+  },
+  "sources": [
+   "https://apb.ucla.edu/file/f8f5c864-93be-4b44-b646-7807a685749f",
+   "https://admission.ucla.edu/sites/default/files/documents/UCLA-International-Admission-Guide-2026.pdf",
+   "https://admission.ucla.edu/tuition-fees",
+   "https://admission.ucla.edu/apply/international-applicants",
+   "https://admission.ucla.edu/apply/first-year/first-year-profile/major",
+   "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html"
+  ],
+  "uncertain": [
+   "stats.intl: CDS C1 residency table and CDS sections G (cost) and H (aid) are blank in UCLA's 2025-26 CDS; intlFirstYear 549 is the B2 nonresident first-time first-year count. UCLA International Guide 2026 reports Fall 2026 international applicants 24,728 and an 8% acceptance rate (mid-summer, rounded).",
+   "stats.firstYearTotal: B2 degree-seeking first-time first-year 6,551 (C1 enrolled sums to 6,553)",
+   "coa.tuition: combined tuition+fees+nonresident supplemental; fees field null because UCLA lists a single University Fees line",
+   "majors GPA thresholds for cogsci/psych and neuro declaration rules come from department pages seen only via search summaries; fetch of psych.ucla.edu and neurosci.ucla.edu failed",
+   "majors.bio.note: EEB vs Life Sciences pages disagree on the entry course"
+  ]
+ },
+ {
+  "id": "ucsd",
+  "name": "UC San Diego",
+  "full": "University of California, San Diego",
+  "public": true,
+  "commonApp": false,
+  "city": "La Jolla",
+  "state": "CA",
+  "lat": 32.8801,
+  "lon": -117.234,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "CDS 2025-26 H6: 214 nonresident undergraduates received institutional aid, average $10,290 (type not specified)",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UC San Diego does not consider SAT or ACT in admission; scores may be used to meet eligibility or for placement only if submitted.",
+  "english": "Needed if instruction was not in English (under 3 years of English). UCSD minimums: TOEFL iBT 4.5 (exams from Jan 2026; 83 before), IELTS 7, Duolingo 115; AP/IB English also accepted.",
+  "cogsci": "Cognitive Science B.A./B.S. in the Division of Social Sciences with B.S. specializations (Machine Learning and Neural Computation, Neuroscience, Clinical Aspects, Design and Interaction, Language and Culture).",
+  "interview": "No interview.",
+  "url": "https://admissions.ucsd.edu/international/index.html",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+   "applied": 136750,
+   "admitted": 39054,
+   "admitRate": 28.6,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 24254,
+    "admitted": 7496
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 7801,
+   "intlFirstYear": 1409,
+   "intlAidCount": 214,
+   "intlAidAvg": 10290,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": null,
+    "housing": null,
+    "total": null,
+    "source": "https://students.ucsd.edu/finances/fees/registration/2026-27/index.html",
+    "note": "Nonresident, class first enrolled 2026-27. tuition = tuition $14,202 + Student Services Fee $1,386 + nonresident supplemental tuition $39,270 (quarterly rates x3). Campus fees about $2,464 plus mandatory health insurance $3,195 (sum of listed items, not stated as annual). Official on-campus housing/food and total not retrieved."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://fas.ucsd.edu/resources/helpful-tools/financial-aid-estimator/",
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+    "https://admissions.ucsd.edu/international/index.html"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a UCSD page"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (B.A./B.S.) with B.S. specializations",
+    "college": "Division of Social Sciences (applicants also pick one of the residential colleges)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Not on UCSD's selective-major list. Specializations: Clinical Aspects, Design and Interaction, Language and Culture, Machine Learning and Neural Computation, Neuroscience."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (B.S.)",
+    "college": "Division of Biological Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No standalone Neuroscience major. Other options: Cognitive and Behavioral Neuroscience (B.S.) and Cognitive Science with Specialization in Neuroscience (B.S.)."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A.) plus B.S. options",
+    "college": "Division of Social Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "B.S. options: Clinical Psychology, Experimental Psychology, Business Psychology, Cognitive and Behavioral Neuroscience."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Jacobs School of Engineering (CS and Engineering dept.)",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Selective major; admitted directly. First-year admits may apply to switch into selective majors only after first year (cycle opens July 2027, deadline Sep 1, 2027 for Fall 2025/2026 admits), no guarantee. Also Artificial Intelligence B.S. and CS with Bioinformatics."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology majors (General Biology, Molecular and Cell Biology, Human Biology, etc., B.S.)",
+    "college": "Division of Biological Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Not on UCSD's official selective-major list. Pre-med is advising, not a major; pre-health advising is offered."
+   }
+  },
+  "sources": [
+   "https://ir.ucsd.edu/stats/undergrad/CDS-2025-2026-Final4.pdf",
+   "https://admissions.ucsd.edu/international/index.html",
+   "https://fas.ucsd.edu/applying/international-students/index.html",
+   "https://students.ucsd.edu/finances/fees/registration/2026-27/index.html",
+   "https://undergrad.ucsd.edu/academics/selective-major-process/index.html",
+   "http://students.ucsd.edu/academics/advising/majors-minors/undergraduate-majors.html"
+  ],
+  "uncertain": [
+   "stats.firstYearTotal: C1 enrolled total (3,511+4,096+194)",
+   "intlAid: UCSD pages say international students are not eligible for federal/state aid; CDS H6 boxes are blank and H7 says Not eligible, yet 214 nonresidents received institutional aid averaging $10,290 (merit or other)",
+   "coa: official 2026-27 housing/food and total not retrieved; fees left null",
+   "meetsNeed false: not applicable to internationals",
+   "english: UCSD 'Alternative' TOEFL minimum from admissions.ucsd.edu page"
+  ]
+ },
+ {
+  "id": "ucdavis",
+  "name": "UC Davis",
+  "full": "University of California, Davis",
+  "public": true,
+  "commonApp": false,
+  "city": "Davis",
+  "state": "CA",
+  "lat": 38.5382,
+  "lon": -121.7617,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "Institutional and prestigious scholarships may be open to internationals (amounts not published on pages read); CDS 2025-26 H6: 195 nonresident undergraduates received institutional aid, average $14,753",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "UC Davis does not use SAT or ACT in admission (UC test-blind policy).",
+  "english": "UC requirement if under 3 years of English instruction: TOEFL iBT 4.5 (80 on old scale), IELTS 6.5, Duolingo 115; AP/IB English, SAT/ACT sub-scores also accepted by UC. Campus may ask for more after admission (not verified).",
+  "cogsci": "Cognitive Science major in the College of Letters and Science.",
+  "interview": "No interview.",
+  "url": "https://www.ucdavis.edu/international",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+   "applied": 102988,
+   "admitted": 45674,
+   "admitRate": 44.3,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 21246,
+    "admitted": 11886
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6824,
+   "intlFirstYear": 926,
+   "intlAidCount": 195,
+   "intlAidAvg": 14753,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": 2904,
+    "housing": 30931,
+    "total": 88693,
+    "source": "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+    "note": "International, living on campus (residence hall). tuition = systemwide tuition and fees $15,588 + nonresident supplemental tuition $39,270; fees = international student administrative fee $414 + campus-based fees $2,490; housing = total student living expenses $30,931 (room and board, books, personal, transportation, optional health insurance)."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+    "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a Davis page"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Listed among L&S majors. Switching from Cognitive Science into Computer Science is reported as very difficult."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology, Physiology and Behavior",
+    "college": "College of Biological Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Selective major (higher overall/series GPA requirements); strong pre-health focus."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Letters and Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Listed among L&S majors; admission restrictions not verified."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (also Computer Science and Engineering)",
+    "college": "College of Engineering",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Impacted: changing in requires MAT 21A/21B with C- or better and 3.0 GPA; admitted under another major makes switching very difficult."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences",
+    "college": "College of Biological Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major; pre-health advising is offered through the colleges."
+   }
+  },
+  "sources": [
+   "https://aggiedata.ucdavis.edu/sites/g/files/dgvnsk1841/files/media/documents/CDS_UCD_0.pdf",
+   "https://www.ucdavis.edu/sites/default/files/media/documents/F27_International_One_Pager.pdf",
+   "https://www.ucdavis.edu/sites/default/files/media/documents/F26_International_One_Pager_digital_FINAL.pdf",
+   "https://cs.ucdavis.edu/undergraduate/changing-majors-double-majors"
+  ],
+  "uncertain": [
+   "intlAid: CDS H6 checks both need-based and non-need-based institutional aid for nonresidents (H7: International Work-Study Application), but UC pages say internationals are eligible for very few scholarships and generally not loans; need-based eligibility not confirmed",
+   "stats: firstYearTotal is the C1 enrolled total",
+   "majors restricted values left null for cogsci/psych/bio: Davis pages not read",
+   "english: Davis-specific extra testing not verified"
+  ]
+ },
+ {
+  "id": "uci",
+  "name": "UC Irvine",
+  "full": "University of California, Irvine",
+  "public": true,
+  "commonApp": false,
+  "city": "Irvine",
+  "state": "CA",
+  "lat": 33.6405,
+  "lon": -117.8443,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-11-30",
+    "notify": "March",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No early rounds; a single UC Application filing window Oct 1 - Nov 30, 2026 with decisions in spring.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "UCI Distinguished Scholarships and Campuswide Scholarships (merit, no separate application) can go to internationals; amounts not verified. CDS 2025-26 H6: 52 nonresident undergraduates received institutional aid, average $24,494",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "blind",
+  "testingNote": "Per CDS: standardized exams (SAT, ACT) are not used for admissions or scholarship decisions; may be used for placement after admission.",
+  "english": "UC requirement if under 3 years of English instruction: TOEFL iBT 4.5 (80 on old scale), IELTS 6.5, Duolingo 115. UCI-specific higher scores not verified.",
+  "cogsci": "Department of Cognitive Sciences (School of Social Sciences) offers a B.S. in Cognitive Sciences (cognitive psychology, cognitive neuroscience, math, stats, CS) and a B.S. in Psychology.",
+  "interview": "No interview.",
+  "url": "https://admissions.uci.edu/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+   "applied": 124231,
+   "admitted": 35964,
+   "admitRate": 28.9,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 21620,
+    "admitted": 9258
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 6421,
+   "intlFirstYear": 1079,
+   "intlAidCount": 52,
+   "intlAidAvg": 24494,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 54858,
+    "fees": 1303,
+    "housing": 20926,
+    "total": null,
+    "source": "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html",
+    "note": "Nonresident, class first enrolled 2026-27. tuition = tuition $14,202 + Student Services Fee $1,386 + nonresident supplemental tuition $39,270; fees = sum of listed campus fees $1,303 (excludes one-time document/writing/eTech fees and health insurance $3,214); housing = on-campus housing and food $20,926 per UCI aid office (seen in a search result, page itself blocked). Registrar total incl. health insurance $59,375. Overall total not published in retrieved sources."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "SAT/ACT are not considered and not requested (test-blind)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UC does not use SAT/ACT for admission or scholarships."
+  },
+  "req": {
+   "application": "UC Application",
+   "fee": 95,
+   "feeWaiver": "$80 domestic / $95 international per campus; UC fee waiver is for US applicants and is not available to non-immigrant visa holders (based on a 2024-25 UC waiver form)",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required by UC"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "No interview",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "other",
+     "required": true,
+     "count": 4,
+     "words": 350,
+     "chars": null,
+     "choose": "4 of 8",
+     "summary": "Answer four of eight Personal Insight Questions, max 350 words each (leadership, creativity, talent, education, challenge, subject you love, community, why you)."
+    }
+   ],
+   "supplementsUrl": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-first-year/personal-insight-questions.html",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://www.ofas.uci.edu/cost/net-price-calculator.php",
+   "netPriceIntl": null,
+   "appFormat": "UC Application (shared by all UC campuses): self-reported grades and A-G coursework, activities and awards lists, 4 Personal Insight Questions (350 words each), international external exams section; no SAT/ACT, no recommendations.",
+   "sources": [
+    "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+    "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html"
+   ],
+   "uncertain": [
+    "interview and recommendation: UC-wide practice; not verified on a UCI page"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Sciences (B.S.)",
+    "college": "School of Social Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Interdisciplinary: cognitive psychology, cognitive neuroscience, math, statistics, CS. Changing in later requires 3.2 UC GPA and 3.2 prior-quarter GPA; no double majoring within the department."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (B.S.)",
+    "college": "School of Biological Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Run by the Dept. of Neurobiology and Behavior; the department says students apply by change-of-major, most in years 2-3."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.S.); also Psychological Science (B.A.)",
+    "college": "School of Social Sciences (B.S.); School of Social Ecology (B.A.)",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Two psychology majors on different schools; B.S. is in the Dept. of Cognitive Sciences."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S.)",
+    "college": "Donald Bren School of Information and Computer Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "ICS does not accept pre-admission change-of-major requests; later change needs 3.0 cumulative and prior-quarter GPA plus prerequisites. Computer Science and Engineering (Samueli, 2.7 GPA) is separate."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biological Sciences (B.S.)",
+    "college": "School of Biological Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Change-of-major criteria: 2.00 cumulative and prior-quarter GPA plus course grades. Pre-med is advising, not a major; pre-health advising is offered."
+   }
+  },
+  "sources": [
+   "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/2/5478/files/2026/05/2025-26-CDS-PDF-Upload.pdf",
+   "https://www.reg.uci.edu/fees/2026-2027/undergrad_26.html",
+   "https://ics.uci.edu/academics/undergrad/change-of-major/",
+   "https://neurobiology.uci.edu/undergraduate-programs/neurobiology-major/",
+   "https://catalogue.uci.edu/schoolofsocialsciences/departmentofcognitivesciences/cognitivesciences_bs"
+  ],
+  "uncertain": [
+   "stats.intl enrolled etc.: CDS C1 table text is scrambled; applied/admitted columns cross-checked against totals (OOS admitted 7,784 and enrolled 472 confirmed by form fields)",
+   "intlAid: UCI aid office says internationals are not eligible for most aid and only merit scholarships (seen via search summary, page blocked); CDS H6 checks both need-based and non-need-based for 52 nonresidents (own aid form on H7)",
+   "coa.housing: from a search-result snippet of ofas.uci.edu; total null",
+   "majors neuro: apply-later based on department page; direct freshman admission to Neurobiology not verified",
+   "majors psych restricted left null; url is the general UCI admissions home (international page blocked)"
+  ]
+ }
+]

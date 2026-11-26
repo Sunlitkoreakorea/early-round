@@ -1,0 +1,135 @@
+{
+ "checked": {
+  "yale": "ok",
+  "stanford": "ok",
+  "amherst": "partial: coa ok via search of official controller page (page blocked 405); cogsci none not shown on a full official list, only absence in search of amherst.edu",
+  "harvard": "ok",
+  "princeton": "ok",
+  "mit": "ok",
+  "brown": "partial: tuition 74568, housing+food 19464 ok; page lists fees 3084 incl. one-time $100 record fee (3084-100=2984 as stored, recurring fees); direct 97016 excludes the $100",
+  "columbia": "partial: coa ok (admissions page via search snippet, page itself 403); cogsci corrected; official Columbia pages returned 403 on direct fetch",
+  "penn": "ok after corrections (restricted)",
+  "uchicago": "partial: coa 75960/1677+318/21414 confirmed via search snippet of official aid page (direct fetch returned empty); majors not rechecked (all offered=major/open)",
+  "jhu": "partial: tuition 68670 and housing 13073+8894=21967 ok; no recurring fee line on page so fees/direct left null",
+  "williams": "partial: coa ok via search snippet of official page (direct fetch 403); majors corrected from search snippets of williams.edu pages (direct fetch 403)",
+  "swarthmore": "ok",
+  "pomona": "ok",
+  "berkeley": "partial: coa ok (18214+39270 tuition/fees combined, housing 16640+7000, direct excludes SHIP); neuro restricted corrected; cogsci/psych/bio entry rules left null",
+  "wesleyan": "partial: coa ok; cogsci none: catalog shows a Cognitive Science concentration inside the Psychology major (departmental certificate) via search snippet, not a standalone major, so none/track is a judgement call and was left",
+  "carleton": "ok",
+  "bowdoin": "partial: coa ok; cogsci none not shown (IR page list empty), absence unconfirmed on official list",
+  "middlebury": "ok",
+  "grinnell": "ok",
+  "colby": "partial: coa corrected via search snippet of official pages (direct fetch 403); neuro track consistent with Psychology-with-neuroscience-concentration and Biology neuroscience concentration; cogsci none found no listing",
+  "conncoll": "partial: comprehensive fee 92800 confirmed but page gives no tuition/fees/housing split so 72281/449/20070 not verified; cogsci minor not found on any official page (could not confirm); neuroscience major confirmed",
+  "rochester": "partial: coa ok; cogsci BCS BA/BS ok; neuro appears as 'Biological Sciences: Neuroscience (BS)' registered program, labeled track by collector, left; college field is where program is housed, applicant choice unverified",
+  "macalester": "ok",
+  "oberlin": "partial: coa ok; cogsci minor vs concentration unresolved (catalog shows Cognitive Sciences Minor, older pages say concentration); neuro major not labeled on fetched page",
+  "lafayette": "ok",
+  "kenyon": "ok",
+  "richmond": "partial: tuition 70725, housing 8705+food 10110 ok; no fees line on official page so fees 0 unverified; cogsci BA major and neuro concentration-only confirmed; college field applicant choice unverified",
+  "case-western": "ok",
+  "trinity-ct": "ok",
+  "whitman": "ok after corrections (fees and direct)",
+  "dickinson": "ok",
+  "earlham": "ok"
+ },
+ "corrections": [
+  {
+   "id": "columbia",
+   "field": "majors.cogsci.offered",
+   "old": "none",
+   "new": "major",
+   "source": "https://psychology.columbia.edu/content/cognitive-science-major",
+   "evidence": "Columbia official Cognitive Science Major page (5 tracks); Columbia College admissions Areas of Study lists Cognitive Science as a major. Direct fetch was 403; read via search results. Name should be Cognitive Science (psychology.columbia.edu)."
+  },
+  {
+   "id": "williams",
+   "field": "majors.neuro.offered",
+   "old": "major",
+   "new": "track",
+   "source": "https://neuroscience.williams.edu/the-program/current-concentrators/",
+   "evidence": "Williams has a Neuroscience Concentration paired with another major; no Neuroscience major found (direct fetch 403, read via search)."
+  },
+  {
+   "id": "williams",
+   "field": "majors.cogsci.offered",
+   "old": "minor",
+   "new": "track",
+   "source": "https://hub.williams.edu/cogsci/",
+   "evidence": "Official page describes a Cognitive Science concentration; concentrations are coded track elsewhere (Grinnell, Richmond, Macalester). Consistency fix."
+  },
+  {
+   "id": "colby",
+   "field": "coa.tuition",
+   "old": 75790,
+   "new": 72590,
+   "source": "https://afa.colby.edu/cost-and-aid/tuition-and-fees/",
+   "evidence": "Tuition 72,590 + General Fee 3,200 = 75,790; direct 95,270 unchanged"
+  },
+  {
+   "id": "colby",
+   "field": "coa.fees",
+   "old": 0,
+   "new": 3200,
+   "source": "https://afa.colby.edu/cost-and-aid/tuition-and-fees/",
+   "evidence": "General Fee 3,200 full year; 72,590+3,200+19,480 = 95,270"
+  },
+  {
+   "id": "whitman",
+   "field": "coa.fees",
+   "old": null,
+   "new": 576,
+   "source": "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/how-much-does-whitman-cost",
+   "evidence": "ASWC fee $576 on official page"
+  },
+  {
+   "id": "whitman",
+   "field": "coa.direct",
+   "old": null,
+   "new": 85220,
+   "source": "https://www.whitman.edu/admission-and-aid/financial-aid-and-costs/how-much-does-whitman-cost",
+   "evidence": "68692 tuition + 576 ASWC + 15952 housing/food = 85220"
+  },
+  {
+   "id": "berkeley",
+   "field": "majors.neuro.restricted",
+   "old": "apply-later",
+   "new": "open",
+   "source": "https://neuroscience.berkeley.edu/academics/undergraduate/declare",
+   "evidence": "Declare by meeting prerequisites and submitting an online form; not a competitive application (GPA 2.0 in major courses)."
+  },
+  {
+   "id": "penn",
+   "field": "majors.cogsci.restricted",
+   "old": "apply-later",
+   "new": "open",
+   "source": "https://web.sas.upenn.edu/cogsci/major/",
+   "evidence": "College of Arts and Sciences declares majors internally via Path@Penn, no separate application; cogsci needs no advisor meeting."
+  },
+  {
+   "id": "penn",
+   "field": "majors.neuro.restricted",
+   "old": "apply-later",
+   "new": "open",
+   "source": "https://neuroscience.sas.upenn.edu/advising/declaring-bbb-major",
+   "evidence": "Declaration needs intro course plus advisor meeting and request, not a competitive application."
+  },
+  {
+   "id": "penn",
+   "field": "majors.psych.restricted",
+   "old": "apply-later",
+   "new": "open",
+   "source": "https://psychology.sas.upenn.edu/undergraduate-handbook",
+   "evidence": "Declare via advisor meetings and Path@Penn; no competitive application."
+  },
+  {
+   "id": "penn",
+   "field": "majors.bio.restricted",
+   "old": "apply-later",
+   "new": "open",
+   "source": "https://www.bio.upenn.edu/undergraduate/FAQ",
+   "evidence": "Biology major can be declared any time; no application."
+  }
+ ]
+}

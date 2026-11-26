@@ -154,6 +154,26 @@
   /* ───── 가능성 판정 (규칙 기반, 퍼센트 없음) ───── */
 
   const TIERS = ['매우 어려움', '어려움', '도전', '적정', '안정'];
+  const MAJORS = [['cogsci', '인지과학'], ['neuro', '신경과학'], ['psych', '심리학'], ['cs', '컴퓨터과학/AI'], ['bio', '생명과학/의예']];
+  const MAJOR_KO = Object.fromEntries(MAJORS);
+  const HAS = ['major', 'track'];
+
+  // 고른 전공 중 이 학교에 있는 것 (전공 또는 트랙). 자료가 없으면 null
+  function majorHas(s, keys) {
+    if (!keys || !keys.length || !s.majors) return null;
+    const known = keys.filter(k => s.majors[k] && s.majors[k].offered);
+    if (!known.length) return null;
+    return keys.some(k => s.majors[k] && HAS.includes(s.majors[k].offered));
+  }
+  // 고른 전공 순서대로 처음 나오는, 학교가 공개한 전공별 합격률
+  function majorRate(s, keys) {
+    if (!keys || !s.majors) return null;
+    for (const k of keys) {
+      const m = s.majors[k];
+      if (m && m.admitRate != null) return { key: k, rate: m.admitRate, note: m.admitNote || '' };
+    }
+    return null;
+  }
   const MUST_TEST = ['required', 'flexible'];
 
   // 지금 점수 또는 목표 점수
@@ -200,10 +220,18 @@
     if (!st || st.admitRate == null) return { tier: null, label: '자료 없음', reasons: ['합격률 자료 없음'] };
     // 국제학생 합격률(CDS C1 국제학생 줄)이 있으면 그걸 기준으로
     const useIntl = !!(st.intl && st.intl.rate != null);
-    const r = useIntl ? st.intl.rate : st.admitRate;
+    let r = useIntl ? st.intl.rate : st.admitRate;
+    reasons.push(useIntl ? `국제학생 합격률 ${r}% (전체 ${st.admitRate}%)` : `전체 합격률 ${r}%`);
+    // 전공(단과대)별 합격률을 학교가 공개했으면, 더 낮은 쪽을 기준으로
+    const keys = profile && profile.majors;
+    const mr = majorRate(s, keys);
+    if (mr) {
+      reasons.push(`${MAJOR_KO[mr.key]} 쪽 합격률 ${mr.rate}%${mr.rate < r ? ' (이걸 기준으로)' : ''}`);
+      if (mr.rate < r) r = mr.rate;
+    }
+    if (majorHas(s, keys) === false) reasons.push('고른 전공이 이 학교엔 없어요');
     const base = r >= 50 ? 4 : r >= 30 ? 3 : r >= 15 ? 2 : r >= 8 ? 1 : 0;
     let adj = 0;
-    reasons.push(useIntl ? `국제학생 합격률 ${r}% (전체 ${st.admitRate}%)` : `전체 합격률 ${r}%`);
 
     const sat = satOf(profile);
     const adv = submitAdvice(s, st, sat);
@@ -233,8 +261,8 @@
 
     if (profile && profile.needAid) {
       if (s.intlAid === 'need-aware') { adj -= 1; reasons.push('국제학생 need-aware인데 재정지원 신청'); }
-      else if (s.intlAid === 'limited') { adj -= 1; reasons.push('국제학생 재정지원이 적어 신청자 합격이 더 어려움'); }
-      else if (s.intlAid === 'none') reasons.push('합격해도 국제학생 재정지원 없음');
+      else if (s.intlAid === 'limited' && !s.public) { adj -= 1; reasons.push('국제학생 재정지원이 적어 신청자 합격이 더 어려움'); }
+      else if (s.intlAid === 'none' || (s.intlAid === 'limited' && s.public)) reasons.push('합격해도 국제학생 필요 기반 재정지원은 거의 없음 (장학금은 따로)');
       else if (s.intlAid === 'need-blind') reasons.push('need-blind라 재정지원 신청이 합격에 영향 없음');
     }
 
@@ -338,7 +366,7 @@
   const api = {
     EARLY, RESTRICT, BINDING, ORDER, SLOTS, TIERS, parse, shifted, dday, md, notifyKo, plan, sortPlans, check, slotOf,
     wouldConflict, satOf, submitAdvice, sectionPos, chance, balance, scenarios, chars, words,
-    monthOf, satCountsForEarly, FEES, usesCSS, appCost,
+    monthOf, satCountsForEarly, FEES, usesCSS, appCost, MAJORS, MAJOR_KO, majorHas, majorRate,
   };
   root.Core = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

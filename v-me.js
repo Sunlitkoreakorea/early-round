@@ -15,7 +15,8 @@
     list.sort((a, b) => ((b.tier ?? -1) - (a.tier ?? -1)) || a.s.name.localeCompare(b.s.name));
     return `<div class="ov">${list.map(x => {
       const p = E.pickOf(x.s);
-      return `<a class="ovRow" href="#s/${encodeURIComponent(x.s.id)}">${tierChip(x.tier, x.label)}<span class="nm">${E.isStar(x.s) ? '<span class="cstar">★</span> ' : ''}${esc(x.s.name)}</span>${p ? chip(p) : '<span></span>'}</a>`;
+      const noAid = st.profile.needAid && (x.s.intlAid === 'none' || (x.s.public && x.s.intlAid === 'limited'));
+      return `<a class="ovRow" href="#s/${encodeURIComponent(x.s.id)}">${tierChip(x.tier, x.label)}<span class="nm">${E.isStar(x.s) ? '<span class="cstar">★</span> ' : ''}${esc(x.s.name)}${noAid ? ' <span class="noaid">재정지원 거의 없음</span>' : ''}</span>${p ? chip(p) : '<span></span>'}</a>`;
     }).join('')}</div>`;
   }
 
@@ -32,6 +33,13 @@
               <div class="satRow"><span class="satK">지금</span>${stepper('sat.rw', p.sat.rw, 'RW')}${stepper('sat.math', p.sat.math, 'Math')}<span class="satT">${now ?? '—'}</span></div>
               <div class="satRow"><span class="satK">목표</span>${stepper('target.rw', p.target.rw, 'RW')}${stepper('target.math', p.target.math, 'Math')}<span class="satT">${tgt ?? '—'}</span></div>
               <button type="button" class="sw${p.useTarget ? ' on' : ''}" data-me="useTarget" role="switch" aria-checked="${p.useTarget}" ${tgt ? '' : 'disabled'}><span>목표 점수로 판단</span><span class="knob"></span></button>
+            </section>
+            <section class="card2">
+              <h3>관심 전공 <span class="fine">누른 순서가 1지망</span></h3>
+              <div class="majChips">${C.MAJORS.map(([k, l]) => {
+                const i = (p.majors || []).indexOf(k);
+                return `<button type="button" class="mchip${i >= 0 ? ' on' : ''}" data-major="${k}">${i >= 0 ? `<b>${i + 1}</b>` : ''}${l}</button>`;
+              }).join('')}</div>
             </section>
             <section class="card2">
               <h3>재정지원</h3>
@@ -74,6 +82,12 @@
           const start = cur == null ? (k === 'math' ? 700 : 650) : cur + Number(sb.dataset.d);
           p[grp][k] = Math.max(200, Math.min(800, cur == null ? start : start));
           if (!(p.target.rw && p.target.math)) p.useTarget = false;
+          E.save(); E.render(); return;
+        }
+        const mj = t.closest('[data-major]');
+        if (mj) {
+          const k = mj.dataset.major;
+          p.majors = (p.majors || []).includes(k) ? p.majors.filter(x => x !== k) : (p.majors || []).concat(k);
           E.save(); E.render(); return;
         }
         const me = t.closest('[data-me]');

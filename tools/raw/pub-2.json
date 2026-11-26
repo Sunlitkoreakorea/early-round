@@ -1,0 +1,735 @@
+[
+ {
+  "id": "umich",
+  "name": "Michigan",
+  "full": "University of Michigan",
+  "public": true,
+  "commonApp": true,
+  "city": "Ann Arbor",
+  "state": "MI",
+  "lat": 42.278,
+  "lon": -83.738,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "by Dec 24 (reply Jan 6)",
+    "notifyDate": "2026-12-24"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "by Jan 29",
+    "notifyDate": "2027-01-29"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-02-01",
+    "notify": "by Apr 2",
+    "notifyDate": "2027-04-02"
+   }
+  ],
+  "earlyRule": "ED is binding (new plan; CDS 2025-26 still lists none) and EA is non-binding and non-restrictive per CDS C22; no international-specific restriction found.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None described; U-M admissions says international students on temporary visas are not eligible for aid and few scholarships exist. CDS H6: no institutional aid for nonresidents.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Application page says SAT/ACT optional; CDS C8 ticks SAT/ACT as 'recommended' for Fall 2027. CDS C8E: scores received by Feb 1.",
+  "english": "Required of non-native English speakers: TOEFL (code 1839), IELTS or MET Digital (4-skill); U-M publishes score ranges (minimums not read).",
+  "cogsci": "Cognitive Science major in LSA with four tracks; gateway course COGSCI 200 to declare.",
+  "interview": "No admissions interview found.",
+  "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+   "applied": 109112,
+   "admitted": 17915,
+   "admitRate": 16.4,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": 55,
+   "satEBRW": [
+    690,
+    730,
+    750
+   ],
+   "satMath": [
+    680,
+    740,
+    780
+   ],
+   "firstYearTotal": 8178,
+   "intlFirstYear": 391,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 66602,
+    "fees": 1494,
+    "housing": 17220,
+    "total": 89394,
+    "source": "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+    "note": "CDS G1 international first-year: tuition 66,602; fees 494 + 1,000 international fee; food+housing 17,220. Total derived by adding G5 books 1,220, transport 400, other 2,458. Official OBP 2025-26 out-of-state lower division total was 84,164."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; submit only if you want them considered",
+   "lastSatEarly": null,
+   "lastSatRD": "2027-02-01",
+   "note": "CDS C8E: scores must arrive by 2/1."
+  },
+  "req": {
+   "application": "Common App + U-M questions",
+   "fee": 75,
+   "feeWaiver": "Waiver available for financial need",
+   "teacherRecs": {
+    "required": 1,
+    "optionalExtra": null,
+    "note": "One teacher evaluation from a core academic teacher or non-relative"
+   },
+   "counselorRec": true,
+   "midYearReport": null,
+   "interview": "No admissions interview found",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "leadership/citizenship",
+     "required": true,
+     "count": 1,
+     "words": 300,
+     "chars": null,
+     "choose": null,
+     "summary": "Short essay on leading or contributing to a community (not verified for this cycle)."
+    },
+    {
+     "type": "why",
+     "required": true,
+     "count": 1,
+     "words": 550,
+     "chars": null,
+     "choose": null,
+     "summary": "Why the specific U-M college or school fits your interests (not verified for this cycle)."
+    }
+   ],
+   "supplementsUrl": "https://admissions.umich.edu/essay-questions",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7570/Materials-Needed-to-Complete-a-First-year-Application"
+   ],
+   "uncertain": [
+    "supplements: prompts/word limits (300 and 550) come from third-party guides; official page 403 to fetch",
+    "midYearReport: not on materials page"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science",
+    "college": "College of Literature, Science, and the Arts (LSA)",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Four tracks; declare after gateway COGSCI 200."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "LSA",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Can declare without finishing all prerequisites; cannot be combined with Biology or BCN."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (also Biopsychology, Cognition, and Neuroscience, BCN)",
+    "college": "LSA",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after intro psych (C) and statistics (C-); 32 credits, major GPA 2.0. BCN is a separate major."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (LSA BS or Engineering BSE)",
+    "college": "LSA or College of Engineering",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Students admitted Fall 2023 or later must be selected into CS before declaring, in either college."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "LSA",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major; Biology is not combinable with Neuroscience."
+   }
+  },
+  "sources": [
+   "https://obp.umich.edu/wp-content/uploads/pubdata/cds/cds_2025-26_umaa.pdf",
+   "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7570/Materials-Needed-to-Complete-a-First-year-Application",
+   "https://teamdynamix.umich.edu/TDClient/154/Portal/KB/Article/7497/Admissions-Application-Deadline",
+   "https://www.ivystrides.com/blog/umich-early-decision/"
+  ],
+  "uncertain": [
+   "plans: ED/EA/RD decision dates from a third-party blog (ivystrides); official page 403",
+   "english: minimum scores not read",
+   "majors.bio.restricted: not verified",
+   "stats.intl: CDS residency table left blank by U-M",
+   "ed/ea counts: not reported in CDS"
+  ]
+ },
+ {
+  "id": "uva",
+  "name": "UVA",
+  "full": "University of Virginia",
+  "public": true,
+  "commonApp": true,
+  "city": "Charlottesville",
+  "state": "VA",
+  "lat": 38.0336,
+  "lon": -78.508,
+  "plans": [
+   {
+    "type": "ED",
+    "deadline": "2026-11-01",
+    "notify": "by Dec 15",
+    "notifyDate": "2026-12-15"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "by Feb 15",
+    "notifyDate": "2027-02-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-05",
+    "notify": "by Apr 1",
+    "notifyDate": "2027-04-01"
+   }
+  ],
+  "earlyRule": "ED is binding; EA is non-binding; apply to one of the first-year schools (College of A&S, Engineering, Architecture, Nursing, Kinesiology) through Common App.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None for undergraduates: UVA Admission and Student Financial Services say no funds for foreign nationals (United World College graduates are the stated exception); AccessUVA is US citizens/permanent residents only.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Fall 2027 applicants may choose whether to share scores; no disadvantage. Enrolled middle 50% SAT 1410-1510 (secondary transcription of CDS).",
+  "english": "Strongly encouraged for all applicants whose first language is not English; Financial Guarantee for Foreign National Applicants is required to accept an offer.",
+  "cogsci": "Interdisciplinary Cognitive Science BA in College of A&S (five areas: cognitive psychology, neuroscience, linguistics, philosophy, CS).",
+  "interview": "InitialView or Vericant evaluations accepted for international applicants (deadlines Nov 1 ED/EA, Jan 5 RD).",
+  "url": "https://admission.virginia.edu/i-am/international",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://ira.virginia.edu/common-data-set/common-data-set-2025-2026",
+   "applied": 64457,
+   "admitted": 10086,
+   "admitRate": 15.6,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": null,
+   "intlFirstYear": null,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 57432,
+    "fees": 4552,
+    "housing": null,
+    "total": null,
+    "source": "https://sfs.virginia.edu/financial-aid-new-applicants/financial-aid-basics/estimated-undergraduate-cost-attendance-2026-2027",
+    "note": "Non-Virginian College of A&S years 1-2 tuition 57,432; comprehensive fee 4,552 (another page lists mandatory fees 4,614). SFS lists housing/food/books/personal/travel for first-years at roughly 21,232-22,922 (depends on housing). Total not computed."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; may change choice by Nov 22 (ED/EA) or Jan 15 (RD)",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Test-optional for Fall 2027."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": null,
+   "feeWaiver": null,
+   "teacherRecs": {
+    "required": null,
+    "optionalExtra": null,
+    "note": "Not verified"
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "InitialView/Vericant accepted for international applicants",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admission.virginia.edu/admission/deadlines-instructions",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://cavalierdaily.com/article/2025/10/uva-removes-supplemental-essay-prompt-from-2025-2026-undergraduate-application"
+   ],
+   "uncertain": [
+    "supplements: per secondary sources UVA dropped its general supplement for 2026-27 (Nursing short answer only); not confirmed on UVA site",
+    "fee, recommendations, mid-year report: UVA pages 403"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Cognitive Science (interdisciplinary BA)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare with two approved courses from two areas at C+; CS concentration needs form approval."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (interdisciplinary BA); also Behavioral Neuroscience BS in Psychology",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare needs a 3000-level BIOL/PSYC course at C+ and 2.5 GPA."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA) and Behavioral Neuroscience (BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after STAT 1601, PSYC 2005 and two 2000-level PSYC courses; BS is pre-med friendly."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS in SEAS or BA in A&S)",
+    "college": "School of Engineering and Applied Science, or College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply first-year to a school, not a CS major; CS entry is by major application after early CS courses."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://ira.virginia.edu/common-data-set/common-data-set-2025-2026",
+   "https://www.esslo.org/colleges/university-of-virginia/llms.txt",
+   "https://sfs.virginia.edu/our-financial-aid-commitment-you-0",
+   "https://cogsci.as.virginia.edu/admission-and-requirements",
+   "https://psychology.as.virginia.edu/bs-behavioral-neuroscience"
+  ],
+  "uncertain": [
+   "stats: applied 64,457 matches two secondary sources; admitted 10,086 and 15.6% only from esslo transcription of CDS (UVA CDS and admission pages returned 403)",
+   "stats: SAT submit %, EBRW/Math split, first-year total, intl counts not read",
+   "coa: totals not official; fee figure conflicts (4,552 vs 4,614)",
+   "req: application fee, recs, mid-year not verified",
+   "majors.bio and neuro/psych 'open': inferred from declaration prerequisites"
+  ]
+ },
+ {
+  "id": "unc",
+  "name": "UNC Chapel Hill",
+  "full": "University of North Carolina at Chapel Hill",
+  "public": true,
+  "commonApp": true,
+  "city": "Chapel Hill",
+  "state": "NC",
+  "lat": 35.9132,
+  "lon": -79.0558,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-10-15",
+    "notify": "by Dec 20 (NC residents) / Feb 15 (others)",
+    "notifyDate": "2027-02-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "by Mar 31",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "EA is non-binding and non-restrictive; there is no ED; confirmation due May 1 for both rounds.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None found; UNC says non-citizens are not eligible for need-based aid and should plan to pay full non-resident cost. CDS H6: no institutional aid for nonresidents.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Optional for most; required only if weighted GPA is below 2.8. 28% of enrolled first-years submitted SAT, 41% ACT (CDS C9).",
+  "english": "Non-native speakers: TOEFL (code C182), IELTS, Duolingo, Cambridge C1/C2. Typical strong scores: TOEFL 100 (or 5 on new scale for tests from Jan 21, 2026), IELTS 7.5, Duolingo 130, not stated as minimums; waived after 4 years in English-speaking country or school.",
+  "cogsci": "No Cognitive Science major; the minor is deactivated. Related study via Psychology and Neuroscience.",
+  "interview": "None found.",
+  "url": "https://admissions.unc.edu/apply/types-of-applications/international-first-year-students/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+   "applied": 76247,
+   "admitted": 12751,
+   "admitRate": 16.7,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 9756,
+    "admitted": 1461
+   },
+   "satSubmitPct": 28,
+   "satEBRW": [
+    690,
+    730,
+    750
+   ],
+   "satMath": [
+    700,
+    750,
+    780
+   ],
+   "firstYearTotal": 5091,
+   "intlFirstYear": 300,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2025-26",
+    "tuition": 47472,
+    "fees": 2129,
+    "housing": 15870,
+    "total": 69137,
+    "source": "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+    "note": "CDS G1 out-of-state values (2026-27 costs flagged 'not available', due August, so treated as 2025-26). Housing = room 9,168 + board 6,702. Total derived adding G5 books 638, transport 1,078, other 1,950. Check studentaid.unc.edu for 2026-27."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Optional; considered as one factor if shared",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS C8E: scores received by Jan 31; EA supporting materials/scores due Nov 7, RD Feb 15-21 (sources differ)."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": 85,
+   "feeWaiver": "Waiver available for financial need",
+   "teacherRecs": {
+    "required": null,
+    "optionalExtra": null,
+    "note": "Not verified"
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "None found",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admissions.unc.edu/apply/types-of-applications/first-year/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf"
+   ],
+   "uncertain": [
+    "supplements: third-party guides say short answers were removed for 2026-27; Honors Carolina has its own short response; not confirmed on UNC site",
+    "recommendations and mid-year report: UNC pages 403",
+    "supporting-materials deadlines differ between sources (Feb 15 vs Feb 21)"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No major; cognitive science minor deactivated (no new declarations)."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Start chemistry sequence first; gateway grade of C required, 2.0 GPA in major core."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Department of Psychology and Neuroscience; declaration rules not fully read."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS and BA)",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Apply to the major in spring after finishing or while taking COMP 210; department GPA bars differ across pages."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (BA/BS)",
+    "college": "College of Arts & Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://oira.unc.edu/wp-content/uploads/sites/297/2026/06/CDS_UNCCH_2025-26_20260615.pdf",
+   "https://admissions.unc.edu/apply/types-of-applications/international-first-year-students/ (via search summary)",
+   "https://admissions.unc.edu/faqs/what-is-the-deadline-to-send-in-my-supporting-documents/",
+   "https://cogpsych.unc.edu/application-process/"
+  ],
+  "uncertain": [
+   "plans: EA notification Jan 31 (CDS) vs Feb 15 for non-NC (admissions page); used Feb 15",
+   "english: scores are typical strong scores per UNC page via search summary, page itself 403",
+   "majors.psych/bio 'open': not directly verified",
+   "intl admit/enrolled counts come from CDS residency table (labelled Fall 2024 in file but sums match 2025 totals)"
+  ]
+ },
+ {
+  "id": "uiuc",
+  "name": "Illinois",
+  "full": "University of Illinois Urbana-Champaign",
+  "public": true,
+  "commonApp": true,
+  "city": "Urbana",
+  "state": "IL",
+  "lat": 40.102,
+  "lon": -88.2272,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "Jan 29",
+    "notifyDate": "2027-01-29"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-05",
+    "notify": "Feb 26",
+    "notifyDate": "2027-02-26"
+   }
+  ],
+  "earlyRule": "EA is non-binding; materials due Nov 7 (EA) / Jan 11 (RD); you apply directly to a first-choice major with an optional second choice.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "Limited scholarships and loans via International Student & Scholar Services (no amounts stated); no need-based aid for international undergraduates.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "Test-optional for all; scores cannot be added later for scholarships, honors or placement; no major requires SAT/ACT.",
+  "english": "Required unless grades 10-12 were in an approved English-speaking country: TOEFL iBT, IELTS or Duolingo (or SAT/ACT); cannot be waived; scores within 2 years; no minimums stated (ranges on class profile).",
+  "cogsci": "Brain & Cognitive Science BSLAS major in LAS (psychology, neuroscience, computation).",
+  "interview": "No interview except Fine and Applied Arts audition/portfolio.",
+  "url": "https://www.admissions.illinois.edu/international-requirements/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://dair.illinois.edu/access-data/common-data-set/",
+   "applied": 83045,
+   "admitted": null,
+   "admitRate": 36.6,
+   "ed": null,
+   "ea": null,
+   "intl": null,
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 9207,
+   "intlFirstYear": 1435,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 38576,
+    "fees": 3672,
+    "housing": 15858,
+    "total": 62146,
+    "source": "https://www.admissions.illinois.edu/invest/tuition",
+    "note": "International first-year, LAS base rate: tuition 38,576 (cost.illinois.edu, new fall 2026 rate); fees derived as 42,248 minus 38,576; food+housing 15,858; books 1,200; other 2,840. Admissions page range for international is 62,146-72,976 (Engineering/CS higher: tuition 47,800 total at fall 2026 rate). Fall 2027 entrants' rate may differ."
+   }
+  },
+  "policy": {
+   "superscore": false,
+   "selfReport": true,
+   "scoreChoice": "Optional; report highest composite/total, no superscoring; official scores only after enrollment",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "SAT code 1836, ACT 1154; cannot change test-optional choice after submitting."
+  },
+  "req": {
+   "application": "Common App",
+   "fee": 75,
+   "feeWaiver": "Counselor-submitted fee waiver form",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Illinois does not accept letters of recommendation; removed before review"
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None for most majors",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "major",
+     "required": true,
+     "count": 2,
+     "words": 150,
+     "chars": null,
+     "choose": null,
+     "summary": "Major-related experience, and goals after graduation with the major."
+    },
+    {
+     "type": "second-choice major",
+     "required": false,
+     "count": 1,
+     "words": 150,
+     "chars": null,
+     "choose": null,
+     "summary": "Interest in second-choice major, only if one is listed."
+    }
+   ],
+   "supplementsUrl": "https://admissions.illinois.edu/essays",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": null,
+   "sources": [
+    "https://admissions.illinois.edu/essays",
+    "https://admissions.illinois.edu/first-year-apply/"
+   ],
+   "uncertain": [
+    "admitted count and CDS residency table not read (Box xlsx not fetchable)",
+    "counselorRec: no counselor letter appears in listed materials, inferred from 'no recommendations' rule"
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "major",
+    "name": "Brain & Cognitive Science (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": null,
+    "admitRate": 40.6,
+    "admitNote": "LAS first-choice-major admit rate for the 2026 entering class (admissions.illinois.edu/admit-rates); not major-specific.",
+    "note": "Core covers psychology, neuroscience, programming and statistics, lab."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": null,
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Newer interdisciplinary LAS major; declaration needs 2.5 major GPA after a semester of coursework."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BSLAS), incl. Cognitive Neuroscience concentration",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Apply directly to the major; Cognitive Neuroscience concentration 35 hours."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (BS, Grainger Engineering), plus CS+X",
+    "college": "The Grainger College of Engineering",
+    "restricted": "direct-admit",
+    "admitRate": 23.3,
+    "admitNote": "Grainger first-choice-major admit rate, 2026 entering class; CS alone is lower but no verified official figure.",
+    "note": "Closed to on-campus transfer for students who entered as first-years, so the application is the only way in."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Integrative Biology / Molecular and Cellular Biology (BSLAS)",
+    "college": "College of Liberal Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 40.6,
+    "admitNote": "LAS college rate, 2026 entering class; not major-specific.",
+    "note": "Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://www.admissions.illinois.edu/invest/financial-aid",
+   "https://admissions.illinois.edu/first-year-dates/",
+   "https://www.admissions.illinois.edu/international-requirements/",
+   "https://www.admissions.illinois.edu/admit-rates/",
+   "https://www.pb.uillinois.edu/documents/transfer-characteristics/PB_Freshman_Characteristics_Fall25.pdf",
+   "https://news.illinois.edu/illinois-sets-another-freshman-record-as-enrollment-tops-60000/"
+  ],
+  "uncertain": [
+   "stats.admitRate 36.6 is as reported by UIUC-linked sources, admitted count not verified; applied 83,045 per UIUC news bureau",
+   "stats: CDS xlsx unreachable so SAT split, ED/EA, intl applied/admitted not read; esslo transcription suggests intl admit about 30.5% (not used)",
+   "majors.cogsci/neuro restricted: whether applied at entry not verified; neuro rate is LAS college rate only",
+   "majors.psych/bio direct-admit: inferred from 'apply directly to a major' policy",
+   "coa fees derived; fall 2027 rate unknown"
+  ]
+ }
+]

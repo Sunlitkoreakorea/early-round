@@ -1,0 +1,741 @@
+[
+ {
+  "id": "uw",
+  "name": "UW Seattle",
+  "full": "University of Washington",
+  "public": true,
+  "commonApp": true,
+  "city": "Seattle",
+  "state": "WA",
+  "lat": 47.6553,
+  "lon": -122.3035,
+  "plans": [
+   {
+    "type": "RD",
+    "deadline": "2026-12-01",
+    "notify": "March 1-15, 2027 (deadline extended from Nov 15)",
+    "notifyDate": null
+   }
+  ],
+  "earlyRule": "No Early Decision or Early Action; one application deadline (Dec 1, extended from Nov 15) with decisions March 1-15.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "none",
+  "meetsNeed": false,
+  "meritIntl": "None: UW states it does not provide financial aid or scholarships to undergraduate international students.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "SAT/ACT not required for most applicants; required only for homeschooled or schools without grades.",
+  "english": "TOEFL iBT 76 (4.0 on new scale for tests from Jan 21, 2026), IELTS 6.0, Duolingo 110; or SAT EBRW 580 / ACT English 22 plus B average in English; exempt if primary and secondary school in US/UK/Ireland/Canada/Australia/NZ.",
+  "cogsci": "No Cognitive Science major or minor at UW Seattle; nearest options are Psychology, Neuroscience, Linguistics, and the Neural Computation and Engineering minor.",
+  "interview": "None; UW does not interview or consider demonstrated interest.",
+  "url": "https://admit.washington.edu/apply/first-year/how-to-apply/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2026/02/27111247/CDS_2025-2026_Seattle.pdf",
+   "applied": 72933,
+   "admitted": 30446,
+   "admitRate": 41.7,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": 13054,
+    "admitted": 4653
+   },
+   "satSubmitPct": 19.1,
+   "satEBRW": [
+    650,
+    710,
+    740
+   ],
+   "satMath": [
+    650,
+    730,
+    780
+   ],
+   "firstYearTotal": 7129,
+   "intlFirstYear": 691,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 44580,
+    "fees": 1676,
+    "housing": 18858,
+    "total": 69596,
+    "source": "https://cdn.uw.edu/wp-content/uploads/sites/162/2026/06/12115617/Cost-of-Attendance-for-the-2026-27-academic-year.pdf",
+    "note": "Nonresident first-year, Seattle; housing = room and board; total also includes $4,482 books/personal/transportation."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; submitted scores are considered. Only 19.1% of enrolled first-years submitted SAT (CDS C9).",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS SAT percentiles are for the 19% who submitted; Fall 2025 enrollees."
+  },
+  "req": {
+   "application": "Common App plus STARS self-reported courses and grades (required of all first-year applicants incl. international).",
+   "fee": 95,
+   "feeWaiver": "Not available to international applicants ($85 and waivers for US students).",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "Letters of recommendation not accepted; applicants asked not to send them."
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": 1,
+     "words": 650,
+     "chars": null,
+     "choose": 7,
+     "summary": "Common App personal essay only; no UW-specific supplement found."
+    }
+   ],
+   "supplementsUrl": "https://admit.washington.edu/apply/first-year/how-to-apply/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": "https://www.washington.edu/financialaid/getting-started/net-price-calculator/",
+   "netPriceIntl": null,
+   "appFormat": "Common App",
+   "sources": [
+    "https://admit.washington.edu/apply/first-year/how-to-apply/",
+    "https://admit.washington.edu/apply/first-year/how-to-apply/app-fee/"
+   ],
+   "uncertain": [
+    "No international transcript page fetched beyond how-to-apply summary."
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No Cognitive Science major or minor listed in UW advising major/minor lists."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Arts & Sciences",
+    "restricted": "capped",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published on admissions page.",
+    "note": "Capacity-constrained; a small percentage admitted directly as first-years by listing it first choice, most apply after enrolling."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published.",
+    "note": "Capacity-constrained with no direct option; separate department application after enrolling."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (Allen School; also Computer Engineering)",
+    "college": "Paul G. Allen School / College of Arts & Sciences",
+    "restricted": "direct-admit",
+    "admitRate": 3.5,
+    "admitNote": "Allen School published 2026 direct-to-major rates: international 37 of 1,049 (stated as 4%; 3.5% computed), WA residents 41%, domestic non-residents 8%.",
+    "note": "Direct to Major applies autumn only; list CS or CE as first choice; no minimum GPA; priority to Washington residents. Other CS applicants enter as pre-major."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Arts & Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "No first-year admit rate published.",
+    "note": "Capacity-constrained, no direct option; second application after enrolling. Pre-med is advising, not a major."
+   }
+  },
+  "sources": [
+   "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2026/02/27111247/CDS_2025-2026_Seattle.pdf",
+   "https://admit.washington.edu/apply/first-year/how-to-apply/",
+   "https://admit.washington.edu/apply/first-year/how-to-apply/english-proficiency/",
+   "https://admit.washington.edu/costs/scholarships",
+   "https://admit.washington.edu/apply/dates-deadlines/",
+   "https://www.cs.washington.edu/academics/undergraduate/admissions/direct-major",
+   "https://admit.washington.edu/majors/neuroscience/",
+   "https://admit.washington.edu/majors/psychology/",
+   "https://admit.washington.edu/majors/biology/",
+   "https://advising.uw.edu/degree-overview/majors/list-of-undergraduate-majors/",
+   "https://advising.uw.edu/degree-overview/minors/"
+  ],
+  "uncertain": [
+   "plans: Dec 1 2026 deadline stated as extended from Nov 15; page and CS page (Autumn 2027 cycle) agree, but check for further change.",
+   "stats.admitRate/intl: CDS C1 residency table used as-is (CDS Fall 2025 entrants).",
+   "intlAidCount/intlAidAvg: CDS H2 not split by international status.",
+   "COA total includes books/personal/transportation estimate."
+  ]
+ },
+ {
+  "id": "utaustin",
+  "name": "UT Austin",
+  "full": "The University of Texas at Austin",
+  "public": true,
+  "commonApp": true,
+  "city": "Austin",
+  "state": "TX",
+  "lat": 30.2849,
+  "lon": -97.7341,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-10-15",
+    "notify": "By Jan 15, 2027 (supplemental materials Oct 22)",
+    "notifyDate": "2027-01-15"
+   },
+   {
+    "type": "RD",
+    "deadline": "2026-12-01",
+    "notify": "By Feb 15, 2027 (supplemental materials Dec 10)",
+    "notifyDate": "2027-02-15"
+   }
+  ],
+  "earlyRule": "Early Action (Oct 15) and Regular (Dec 1) both via Common App or ApplyTexas; Honors decisions March 1.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "No central need-based or merit aid found for first-year internationals; ISSS offers small awards (Feb 1-Mar 1 application, e.g. STEM Scholarship $4,800 fall tuition) mostly restricted by region or after two semesters.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "required",
+  "testingNote": "At least one official SAT, ACT or Classic Learning Test score required for fall 2025 applicants and later.",
+  "english": "Official TOEFL, IELTS or Duolingo 'if applicable'; admissions page lists no minimum scores.",
+  "cogsci": "No Cognitive Science major or minor found at UT Austin; only CGS courses. Related: Psychology (Liberal Arts), Neuroscience (Natural Sciences).",
+  "interview": "Not mentioned on official admissions pages.",
+  "url": "https://admissions.utexas.edu/apply/international-students/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://utexas.box.com/s/z5p8zzbr6yk4eluam3v3dt2wyaha3cja",
+   "applied": null,
+   "admitted": null,
+   "admitRate": null,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": null,
+    "admitted": null
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 9900,
+   "intlFirstYear": null,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": null,
+    "fees": null,
+    "housing": 15420,
+    "total": null,
+    "source": "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/",
+    "note": "Nonresident undergraduate; total ranges $64,204-$72,916 by college (tuition $42,554-$51,106, housing and food $15,420-$15,580, transportation $1,840, books $724, personal $3,666). Housing is the lower bound."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": null,
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "UT does not publish admitted score ranges in the CDS per third-party report; CDS PDF (Box) could not be read."
+  },
+  "req": {
+   "application": "Common App or ApplyTexas; MyStatus for uploads.",
+   "fee": 90,
+   "feeWaiver": "Not available for international applicants ($75 with waiver for domestic).",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": 2,
+    "note": "Up to two optional letters, ideally from outside the high school."
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "Not mentioned",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": null,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "At least one essay plus required short answers; optional 250-300 word note on circumstances affecting high school performance."
+    }
+   ],
+   "supplementsUrl": "https://admissions.utexas.edu/apply/freshman/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or ApplyTexas",
+   "sources": [
+    "https://admissions.utexas.edu/apply/international-students/",
+    "https://admissions.utexas.edu/apply/freshman/"
+   ],
+   "uncertain": [
+    "Essay count and word limits not stated on official page fetched."
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No Cognitive Science major or minor found in catalog search; CGS courses only."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience",
+    "college": "College of Natural Sciences",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": "No major-level admit rate published.",
+    "note": "Restricted entry-level major: only students admitted by the Office of Admissions (or later by internal transfer)."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Liberal Arts",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Admission process for Psychology not confirmed on official pages fetched."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science",
+    "college": "College of Natural Sciences (School of Computing)",
+    "restricted": "direct-admit",
+    "admitRate": null,
+    "admitNote": "No major-level admit rate published.",
+    "note": "Restricted entry-level major; admitted directly by Admissions, otherwise very competitive internal transfer."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology / Human Biology (CNS)",
+    "college": "College of Natural Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is a pathway, not a major (CNS statement). Biology major admission rules not confirmed."
+   }
+  },
+  "sources": [
+   "https://reports.utexas.edu/common-data-set/pdf",
+   "https://admissions.utexas.edu/apply/international-students/",
+   "https://admissions.utexas.edu/apply/freshman/",
+   "https://onestop.utexas.edu/managing-costs/cost-tuition-rates/cost-of-attendance/",
+   "https://global.utexas.edu/isss/advising-services/scholarships",
+   "https://news.utexas.edu/2025/09/18/ut-sets-all-time-highs-for-enrollment-and-student-performance/",
+   "https://cns.utexas.edu/info-future-students/first-year-applications",
+   "https://cns.utexas.edu/info-future-students/faqs-undergrad-applicants"
+  ],
+  "uncertain": [
+   "stats: 2025-26 CDS is on Box and could not be opened; all CDS-derived values left null.",
+   "stats.firstYearTotal 9,900 is the UT News figure for entering FTIC students (Fall 2025), not CDS.",
+   "english: minimum scores not found.",
+   "plans: Oct 15 / Dec 1 deadlines inferred as 2026 cycle (decisions dated Jan/Feb 2027).",
+   "majors.psych/bio restricted status unconfirmed; cogsci 'none' based on catalog search only.",
+   "coa.tuition/total null because tuition varies by college."
+  ]
+ },
+ {
+  "id": "wisc",
+  "name": "UW-Madison",
+  "full": "University of Wisconsin-Madison",
+  "public": true,
+  "commonApp": true,
+  "city": "Madison",
+  "state": "WI",
+  "lat": 43.0766,
+  "lon": -89.4125,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "On or before Jan 31, 2027 (materials by Nov 9)",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-15",
+    "notify": "On or before Mar 31, 2027 (materials by Jan 22)",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "Non-binding Early Action (Nov 1) with decision by Jan 31; Regular Jan 15; reply by May 1.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "King-Morgridge Scholars (full four-year, need-based, six per year, only for Africa/Caribbean/Latin America/South Asia/Southeast Asia, so not Korea); Western Union $1,000 one-time for underrepresented countries.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "SAT/ACT optional through the spring 2028 term; not submitting does not hurt review; no superscore.",
+  "english": "TOEFL iBT 80 (4.5 for tests from Jan 21, 2026), IELTS 6.5, Duolingo 115; waived only if English was the language of instruction all four secondary years.",
+  "cogsci": "No undergraduate Cognitive Science major or certificate found; closest are Psychology, Neurobiology, Computer Sciences (all L&S).",
+  "interview": "None (only dance and music auditions).",
+  "url": "https://admissions.wisc.edu/apply-as-a-freshman/",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://www.wisconsin.edu/education-reports-statistics/wp-content/uploads/sites/364/2026/03/MSN_202526_Admissions.pdf",
+   "applied": 69640,
+   "admitted": 30164,
+   "admitRate": 43.3,
+   "ed": null,
+   "ea": {
+    "applied": 53981,
+    "admitted": 20050
+   },
+   "intl": {
+    "applied": 12316,
+    "admitted": 4582
+   },
+   "satSubmitPct": 12,
+   "satEBRW": [
+    680,
+    710,
+    740
+   ],
+   "satMath": [
+    700,
+    740,
+    780
+   ],
+   "firstYearTotal": 8495,
+   "intlFirstYear": 490,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 45518,
+    "fees": null,
+    "housing": 14994,
+    "total": 66152,
+    "source": "https://financialaid.wisc.edu/cost-of-attendance/",
+    "note": "Nonresident incoming first-year on campus; tuition figure is tuition and fees combined. Total excludes $330 new student fee and $68 loan fees; includes books/computer $1,800, personal $2,618, transportation $1,222."
+   }
+  },
+  "policy": {
+   "superscore": false,
+   "selfReport": null,
+   "scoreChoice": "Test-optional; only top composite considered if submitted; choice on application is final.",
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "Source is IPEDS ADM 2025-26 (Fall 2025), not the CDS (CDS posted only as Excel on Box); 12% SAT, 29% ACT submitted; percentile figures are for submitters. International = IPEDS 'U.S. Nonresident'."
+  },
+  "req": {
+   "application": "Common App or UW (Universities of Wisconsin) Application.",
+   "fee": 80,
+   "feeWaiver": "Available for financial hardship (in application or by form).",
+   "teacherRecs": {
+    "required": 1,
+    "optionalExtra": 1,
+    "note": "One academic letter (teacher, counselor or professor) required; one optional second letter."
+   },
+   "counselorRec": null,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [
+    {
+     "type": "essay",
+     "required": true,
+     "count": 2,
+     "words": null,
+     "chars": null,
+     "choose": null,
+     "summary": "One Common App/UW essay plus a why-UW-Madison and why-your-major essay."
+    }
+   ],
+   "supplementsUrl": "https://admissions.wisc.edu/required-materials/",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or UW Application",
+   "sources": [
+    "https://admissions.wisc.edu/required-materials/",
+    "https://admissions.wisc.edu/deadlines/",
+    "https://admissions.wisc.edu/international/",
+    "https://admissions.wisc.edu/international-scholarships/"
+   ],
+   "uncertain": [
+    "Essay word limits not stated on page."
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No undergraduate Cognitive Science major or certificate found."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neurobiology (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Guide lists no application, GPA or credit prerequisites; declare with an advisor by 86 credits."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Declare after PSYCH 202 (or equivalent) with C or better via department form."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Sciences (BA/BS)",
+    "college": "College of Letters & Science",
+    "restricted": "open",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No direct admit; declare after COMP SCI 300, MATH 222 and BC in intro programming with 2.25 GPA on eligible courses; no cap found. Computer Engineering is in College of Engineering."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology",
+    "college": "College of Letters & Science",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Cannot combine with Neurobiology. Pre-med is advising, not a major. Declaration rules not confirmed."
+   }
+  },
+  "sources": [
+   "https://www.wisconsin.edu/education-reports-statistics/wp-content/uploads/sites/364/2026/03/MSN_202526_Admissions.pdf",
+   "https://admissions.wisc.edu/deadlines/",
+   "https://admissions.wisc.edu/required-materials/",
+   "https://admissions.wisc.edu/international/",
+   "https://admissions.wisc.edu/international-scholarships/",
+   "https://financialaid.wisc.edu/cost-of-attendance/",
+   "https://www.wisc.edu/about/facts/"
+  ],
+  "uncertain": [
+   "stats: from IPEDS ADM 2025-26 (UW System PDF), not CDS; CDS 2025-26 is Excel on Box.",
+   "stats.intl uses IPEDS 'U.S. Nonresident'.",
+   "stats.satEBRW/Math percentiles apply only to the 12% who submitted SAT.",
+   "plans: dates not labeled with a cycle year on page; assumed 2026-27.",
+   "majors.bio: declaration rules not confirmed; cs 'open' reflects eligibility thresholds without cap.",
+   "english TOEFL 4.5 new-scale threshold looks unusual per page; confirm."
+  ]
+ },
+ {
+  "id": "umn",
+  "name": "UMN Twin Cities",
+  "full": "University of Minnesota, Twin Cities",
+  "public": true,
+  "commonApp": true,
+  "city": "Minneapolis",
+  "state": "MN",
+  "lat": 44.974,
+  "lon": -93.2277,
+  "plans": [
+   {
+    "type": "EA",
+    "deadline": "2026-11-01",
+    "notify": "Early Action I: by Jan 31, 2027",
+    "notifyDate": "2027-01-31"
+   },
+   {
+    "type": "EA",
+    "deadline": "2026-12-01",
+    "notify": "Early Action II: by Feb 28, 2027",
+    "notifyDate": "2027-02-28"
+   },
+   {
+    "type": "RD",
+    "deadline": "2027-01-01",
+    "notify": "By Mar 31, 2027",
+    "notifyDate": "2027-03-31"
+   }
+  ],
+  "earlyRule": "Two early action deadlines (Nov 1, Dec 1) and a Jan 1 regular deadline; decisions by Jan 31, Feb 28, Mar 31.",
+  "ed2Elsewhere": null,
+  "publicEA": null,
+  "intlAid": "limited",
+  "meetsNeed": false,
+  "meritIntl": "Global Excellence Scholarship: tuition waiver of $5,000-$20,000 per year for up to four years, merit-based, automatic if applied by deadline and Certification of Finances submitted.",
+  "aidForms": [],
+  "aidDeadlines": {
+   "early": null,
+   "ed2": null,
+   "rd": null
+  },
+  "testing": "optional",
+  "testingNote": "ACT/SAT not required for freshmen (sources differ on end date: fall 2027 vs fall 2029).",
+  "english": "TOEFL iBT 79, IELTS Academic 6.5, Duolingo 110 listed as benchmarks (also PTE, C1 Advanced); some countries exempt.",
+  "cogsci": "No undergraduate Cognitive Science major or minor at Twin Cities (graduate minor and PhD only; B.A. exists at UMN Duluth).",
+  "interview": "None found.",
+  "url": "https://admissions.tc.umn.edu/admissions/international-freshman-admissions-timeline",
+  "stats": {
+   "cdsYear": "2025-2026",
+   "source": "https://idr.umn.edu/sites/idr.umn.edu/files/cds_2025_2026_tc.pdf",
+   "applied": null,
+   "admitted": null,
+   "admitRate": null,
+   "ed": null,
+   "ea": null,
+   "intl": {
+    "applied": null,
+    "admitted": null
+   },
+   "satSubmitPct": null,
+   "satEBRW": null,
+   "satMath": null,
+   "firstYearTotal": 7180,
+   "intlFirstYear": 541,
+   "intlAidCount": null,
+   "intlAidAvg": null,
+   "coa": {
+    "year": "2026-27",
+    "tuition": 43348,
+    "fees": null,
+    "housing": 15552,
+    "total": 63762,
+    "source": "https://onestop.umn.edu/finances/costs/cost-attendance",
+    "note": "Nonresident living in residence hall; tuition figure is tuition and fees combined; CSE and Carlson add $3,010 per year; Carlson page lists different room and board."
+   }
+  },
+  "policy": {
+   "superscore": null,
+   "selfReport": null,
+   "scoreChoice": null,
+   "lastSatEarly": null,
+   "lastSatRD": null,
+   "note": "CDS PDF returned 403 so C-section values left null; about 50% of fall 2025 admits submitted no test score; enrolled SAT composite middle 50% 1310-1460 per enrollment report."
+  },
+  "req": {
+   "application": "Common App or Golden Gopher Application (one only) plus Self-Reported Academic Record.",
+   "fee": 55,
+   "feeWaiver": "Waivable for financial need or specific programs; applicability to international applicants not confirmed.",
+   "teacherRecs": {
+    "required": 0,
+    "optionalExtra": null,
+    "note": "No letters of recommendation required."
+   },
+   "counselorRec": false,
+   "midYearReport": null,
+   "interview": "None",
+   "interviewDeadline": null,
+   "supplements": [],
+   "supplementsUrl": "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman",
+   "portfolio": null,
+   "cssCode": null,
+   "netPriceUrl": null,
+   "netPriceIntl": null,
+   "appFormat": "Common App or Golden Gopher Application",
+   "sources": [
+    "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman"
+   ],
+   "uncertain": [
+    "Essays stated as not required (search snippet); admissions pages blocked WebFetch."
+   ]
+  },
+  "majors": {
+   "cogsci": {
+    "offered": "none",
+    "name": null,
+    "college": null,
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "No undergraduate Cognitive Science at Twin Cities; UMN Duluth offers B.A. and minor."
+   },
+   "neuro": {
+    "offered": "major",
+    "name": "Neuroscience (B.S.)",
+    "college": "College of Biological Sciences",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Entrance requirement after admission to CBS (catalog snippet: 60+ credits, 3.25 GPA); verify."
+   },
+   "psych": {
+    "offered": "major",
+    "name": "Psychology (B.A./B.S.)",
+    "college": "College of Liberal Arts",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Admission rules for Psychology not confirmed."
+   },
+   "cs": {
+    "offered": "major",
+    "name": "Computer Science (B.S. in CSE; B.A. in CLA)",
+    "college": "College of Science and Engineering / College of Liberal Arts",
+    "restricted": "apply-later",
+    "admitRate": null,
+    "admitNote": "CSE says nearly 90% of internal applicants admitted in recent cycles; not a first-year admit rate.",
+    "note": "Incoming students typically start as pre-majors and apply after prerequisites; 3.2 technical GPA gives guaranteed fall admission."
+   },
+   "bio": {
+    "offered": "major",
+    "name": "Biology (CBS)",
+    "college": "College of Biological Sciences",
+    "restricted": null,
+    "admitRate": null,
+    "admitNote": null,
+    "note": "Pre-med is advising, not a major. Major details not confirmed."
+   }
+  },
+  "sources": [
+   "https://idr.umn.edu/sites/idr.umn.edu/files/cds_2025_2026_tc.pdf",
+   "https://admissions.tc.umn.edu/admissions/international-freshman-admissions-timeline",
+   "https://admissions.tc.umn.edu/apply/application-checklist/application-checklist-freshman",
+   "https://admissions.tc.umn.edu/global-excellence-scholarships",
+   "https://onestop.umn.edu/finances/costs/cost-attendance",
+   "https://pub.umn.edu/oem/Undergraduate-Enrollment-Report-26/files/Accessible-OEM-Report.pdf"
+  ],
+  "uncertain": [
+   "All umn.edu admissions pages returned 403 to WebFetch; values taken from WebSearch snippets of official pages.",
+   "stats: CDS C values null; firstYearTotal 7,180 and intl 541 from 2025-26 OEM enrollment report snippet.",
+   "english benchmarks from older/international factsheet; timeline page says program minimums apply.",
+   "COA numbers conflict between OneStop, Admissions and Carlson pages.",
+   "majors: neuro/cs entry rules from search snippets; psych/bio unconfirmed."
+  ]
+ }
+]

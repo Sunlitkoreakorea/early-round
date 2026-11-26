@@ -8,6 +8,8 @@
 #   raw/cand-us.json    보강 후보 미국 학교 (얼리, 재정지원, 통계, 정책 한 묶음)
 #   raw/cand-intl.json  미국 밖 선택지
 #   raw/summer-*.json   2027 여름 프로그램
+#   raw/pub-*.json      주립대 (얼리, 통계, 비용, 전공 한 묶음)
+#   raw/maj-*.json      기존 학교들의 전공 5개와 1년 비용
 import json
 import re
 from pathlib import Path
@@ -40,15 +42,15 @@ LOC = {
     "brown": ("Providence", "RI", 41.8268, -71.4025, "ne", 11, 6, "start"),
     "columbia": ("New York", "NY", 40.8075, -73.9626, "ne", 11, 4, "start"),
     "penn": ("Philadelphia", "PA", 39.9522, -75.1932, "ne", 11, 2, "start"),
-    "uchicago": ("Chicago", "IL", 41.7886, -87.5987, "mw", 0, -11, "middle"),
+    "uchicago": ("Chicago", "IL", 41.7886, -87.5987, "mw", 0, 18, "middle"),
     "jhu": ("Baltimore", "MD", 39.3299, -76.6205, "ne", -10, 5, "end"),
-    "berkeley": ("Berkeley", "CA", 37.8719, -122.2585, "w", 11, -6, "start"),
+    "berkeley": ("Berkeley", "CA", 37.8719, -122.2585, "w", 11, 2, "start"),
     "amherst": ("Amherst", "MA", 42.3709, -72.5170, "ne", -10, 15, "end"),
     "williams": ("Williamstown", "MA", 42.7128, -73.2032, "ne", -10, 5, "end"),
     "swarthmore": ("Swarthmore", "PA", 39.9054, -75.3541, "ne", -10, 16, "end"),
-    "pomona": ("Claremont", "CA", 34.0977, -117.7131, "w", 11, 5, "start"),
+    "pomona": ("Claremont", "CA", 34.0977, -117.7131, "w", 11, -4, "start"),
     "wesleyan": ("Middletown", "CT", 41.5566, -72.6569, "ne", -10, 12, "end"),
-    "carleton": ("Northfield", "MN", 44.4605, -93.1544, "mw", 11, 5, "start"),
+    "carleton": ("Northfield", "MN", 44.4605, -93.1544, "mw", 11, 10, "start"),
     "bowdoin": ("Brunswick", "ME", 43.9077, -69.9640, "ne", -10, 16, "end"),
     "middlebury": ("Middlebury", "VT", 44.0081, -73.1774, "ne", 11, 5, "start"),
     "grinnell": ("Grinnell", "IA", 41.7490, -92.7199, "mw", 11, 5, "start"),
@@ -175,8 +177,11 @@ MW_STATES = {"OH", "MI", "IN", "IL", "WI", "MN", "IA", "MO", "ND", "SD", "NE", "
 W_STATES = {"CA", "OR", "WA", "NV", "AZ", "UT", "CO", "NM", "ID", "MT", "WY", "AK", "HI"}
 NE_BOX = ((-78.3, 38.85), (-69.2, 45.15))
 
+# 주립대 지도 이름표 (겹칠 때만 손으로)
+PUB_LABEL = {"ucdavis": (11, -6, "start"), "ucla": (-10, 4, "end"), "uci": (11, 6, "start"), "ucsd": (11, 8, "start"), "umn": (11, -7, "start"), "umich": (0, 16, "middle"), "uva": (-10, 2, "end"), "wisc": (11, 5, "start")}
+
 # 보강 후보 지도 이름표 (겹칠 때만 손으로)
-CAND_LABEL = {"macalester": (-10, 2, "end"), "oberlin": (-10, 12, "end"), "case-western": (11, -3, "start"), "kenyon": (11, 9, "start"), "trinity-ct": (-10, -3, "end")}
+CAND_LABEL = {"macalester": (-10, 2, "end"), "oberlin": (0, 16, "middle"), "case-western": (11, -3, "start"), "kenyon": (11, 9, "start"), "trinity-ct": (-10, -3, "end")}
 
 
 def region_of(state, lat, lon):
@@ -206,6 +211,21 @@ def main():
     policies = load_list("policy-*.json")
     summer = load_list("summer-*.json")
     cands = load_list("cand-us.json")
+    pubs = load_list("pub-*.json")
+    majs = load_list("maj-*.json")
+    # 같은 방식이 두 번 있으면(예: EA 두 번) 사이트는 방식당 하나라 첫 번째만 두고 나머지는 규칙 문장에 적음
+    for d in (pubs,):
+        for c in d.values():
+            seen, keep, extra = set(), [], []
+            for pl in c.get("plans") or []:
+                if pl["type"] in seen:
+                    extra.append(f"another {pl['type']} round {pl.get('deadline')}")
+                else:
+                    seen.add(pl["type"])
+                    keep.append(pl)
+            if extra:
+                c["plans"] = keep
+                c["earlyRule"] = ((c.get("earlyRule") or "") + " Also: " + "; ".join(extra) + ".").strip()
     # 후보 학교: 수집 에이전트가 메모에만 적은 CDS C1 국제학생 지원/합격 수를 칸으로 (대조 정정이 있으면 덮어씀)
     CAND_BASE = {
         "oberlin": {"intl": {"applied": 4015, "admitted": 446}},
@@ -243,6 +263,10 @@ def main():
         tag = f.stem.split("-")[1]
         if tag.startswith("SUM"):
             kind = "summer"
+        elif tag.startswith("PUB"):
+            kind = "pub"
+        elif tag.startswith("MAJ"):
+            kind = "maj"
         elif tag.startswith("CAND"):
             kind = "cand"
         elif tag.startswith("R"):
@@ -259,7 +283,7 @@ def main():
             stats[sid] = fill
             verified.setdefault(sid, {})["stats"] = "filled"
             applied.append(f"{f.name}: {sid} 통계 채움")
-        target = {"req": reqs, "policy": policies, "summer": summer, "cand": cands}.get(kind, stats)
+        target = {"req": reqs, "policy": policies, "summer": summer, "cand": cands, "pub": pubs, "maj": majs}.get(kind, stats)
         for c in v.get("corrections", []):
             sid = ALIAS.get(c["id"], c["id"])
             try:
@@ -371,6 +395,65 @@ def main():
         for k in ("earlyRule", "testingNote", "english", "cogsci", "interview"):
             c[k] = clean(c.get(k))
         out.append(c)
+
+    # 주립대 대조에서 나온 값: UVA 비용은 수집 값이 서로 어긋나 UVA CDS G1 표 값으로
+    if "uva" in pubs:
+        pubs["uva"].setdefault("stats", {})["coa"] = {"year": "CDS G1", "tuition": 59035, "fees": 3945, "housing": 16070, "direct": 79050,
+                                                   "source": "UVA Common Data Set G1 (via second check)", "note": "nonresident"}
+    # 주립대: 후보 학교와 같은 방식, 묶음만 public
+    for c in pubs.values():
+        sid = c["id"]
+        if sid in ids:
+            continue
+        st = dict(c.pop("stats", None) or {})
+        if st.get("applied") and st.get("admitted"):
+            r = rate(st["applied"], st["admitted"])
+            if st.get("admitRate") is None or abs(r - st["admitRate"]) > 0.051:
+                print(f"주의 {sid}: admitRate {st.get('admitRate')} -> {r}")
+                st["admitRate"] = r
+        for k in ("ed", "ea", "intl"):
+            x = st.get(k)
+            if x and x.get("applied") and x.get("admitted") is not None:
+                x["rate"] = rate(x["applied"], x["admitted"])
+        if st.get("coa") and not st["coa"].get("direct"):
+            st["coa"]["direct"] = st["coa"].get("total")
+        pol = c.pop("policy", None)
+        rq = c.pop("req", None)
+        city, state, lat, lon = c.pop("city", ""), c.pop("state", ""), c.pop("lat", None), c.pop("lon", None)
+        lab = PUB_LABEL.get(sid, (11, 5, "start"))
+        c.update({
+            "stats": st, "policy": pol, "req": rq, "group": "public", "public": True, "dream": False, "checked": CHECKED,
+            "loc": {"city": city, "state": state, "lat": lat, "lon": lon, "region": region_of(state, lat or 0, lon or 0),
+                    "lx": lab[0], "ly": lab[1], "la": lab[2]} if lat is not None and lon is not None else None,
+            "verified": verified.get(sid, {}),
+        })
+        for k in ("earlyRule", "testingNote", "english", "cogsci", "interview"):
+            c[k] = clean(c.get(k))
+        out.append(c)
+
+    # 기존 학교(원래 23곳 + 보강 후보)의 전공과 1년 비용
+    # 지원할 때 단과대를 고르지 않는 학교는 단과대 칸을 비움 (수집 에이전트가 소속 단과대를 적었을 뿐)
+    NO_COLLEGE_CHOICE = {"rochester", "oberlin", "richmond", "case-western"}
+    # 대조에서 '부분'으로 남은 것 중 앞선 조사(raw/schools-C)와 맞춰 고친 값
+    if "wesleyan" in majs:
+        majs["wesleyan"]["majors"]["cogsci"].update({"offered": "track", "name": "Cognitive Science concentration (in Psychology)"})
+    for s_ in out:
+        m = majs.get(s_["id"])
+        if not m:
+            continue
+        if m.get("majors"):
+            if s_["id"] in NO_COLLEGE_CHOICE:
+                for v in m["majors"].values():
+                    if isinstance(v, dict):
+                        v["college"] = None
+            s_["majors"] = m["majors"]
+        coa = m.get("coa")
+        if coa and (coa.get("direct") or coa.get("total")):
+            s_.setdefault("stats", {})["coa"] = coa
+        s_.setdefault("verified", {})["maj"] = verified.get(s_["id"], {}).get("maj")
+        unc = [f"{u}" for u in (m.get("uncertain") or [])]
+        if unc:
+            s_["uncertain"] = (s_.get("uncertain") or []) + unc
 
     intl = load_json("cand-intl.json")
     # 대조 정정이 원래 문장을 덮어쓴 것을 합쳐서 다시 씀

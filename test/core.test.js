@@ -122,7 +122,7 @@ assert.strictEqual(C.chance(roch, rochSt, prof(700, 760, { needAid: false })).ti
 const ucb = { id: 'berkeley', testing: 'blind', intlAid: 'none' };
 c = C.chance(ucb, { admitRate: 11.0 }, prof(700, 700));
 assert.strictEqual(c.tier, 1);
-assert.ok(c.reasons.includes('합격해도 국제학생 재정지원 없음'));
+assert.ok(c.reasons.some(x => x.includes('필요 기반 재정지원은 거의 없음')));
 
 // 국제학생 합격률이 있으면 그걸 기준으로 (전체 30% 라도 국제 5% 면 매우 어려움)
 const tri = { id: 'trinity', testing: 'optional', intlAid: 'need-aware' };
@@ -135,6 +135,22 @@ assert.strictEqual(c.tier, 3);
 // ED 이점은 전체 합격률과 비교
 c = C.chance(tri, { admitRate: 30, intl: { rate: 20 }, ed: { rate: 40 } }, prof(620, 800, { needAid: false }), 'ED');
 assert.strictEqual(c.tier, 2); // 40 < 30*1.5 → 이점 없음, 기본 2
+
+// 전공별 합격률: 고른 전공 순서대로 처음 나오는 것, 더 낮으면 그걸 기준으로
+const pub = { id: 'uiuc', testing: 'optional', intlAid: 'limited', public: true,
+  majors: { cs: { offered: 'major', admitRate: 7.0, admitNote: '2025' }, cogsci: { offered: 'none' }, psych: { offered: 'major' } } };
+c = C.chance(pub, { admitRate: 43, intl: { rate: 40 } }, prof(620, 800, { majors: ['cs'] }));
+assert.strictEqual(c.tier, 0); // 7% 기준
+assert.ok(c.reasons.some(x => x.startsWith('컴퓨터과학/AI 쪽 합격률 7%')));
+c = C.chance(pub, { admitRate: 43, intl: { rate: 40 } }, prof(620, 800, { majors: ['psych'] }));
+assert.strictEqual(c.tier, 3); // 40% 기준, 주립대 limited 는 감점 없음
+assert.ok(c.reasons.some(x => x.includes('필요 기반 재정지원은 거의 없음')));
+c = C.chance(pub, { admitRate: 43, intl: { rate: 40 } }, prof(620, 800, { majors: ['cogsci'] }));
+assert.ok(c.reasons.includes('고른 전공이 이 학교엔 없어요'));
+assert.strictEqual(C.majorHas(pub, ['cogsci']), false);
+assert.strictEqual(C.majorHas(pub, ['cogsci', 'psych']), true);
+assert.strictEqual(C.majorHas(pub, ['bio']), null);   // 자료 없음
+assert.strictEqual(C.majorHas({ id: 'x' }, ['cs']), null);
 
 // 점수 낼까
 assert.strictEqual(C.submitAdvice(yale, yaleSt, C.satOf(prof(600, 600))).key, 'required');

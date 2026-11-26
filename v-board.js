@@ -19,7 +19,7 @@
   }
 
   function balanceHtml() {
-    const base = E.chosen().length ? E.chosen() : E.live().filter(s => !s.own && s.group !== 'candidate');
+    const base = E.chosen().length ? E.chosen() : E.live().filter(s => !s.own && s.group !== 'candidate' && s.group !== 'public');
     const items = base.map(s => Object.assign({ s }, E.chanceOf(s)));
     const b = C.balance(items);
     const total = items.length;
@@ -46,6 +46,7 @@
       <td>${r.fee == null ? '<span class="fine">확인 필요</span>' : r.fee === 0 ? '무료' : money(r.fee)}</td>
       <td>${r.css === 'now' ? '○' : r.css === 'after' ? '<span class="fine">합격 후</span>' : '—'}</td>
       <td>${r.satSend === 'now' ? '○' : r.satSend === 'after' ? '<span class="fine">합격 후</span>' : '—'}</td>
+      <td>${r.s.stats && r.s.stats.coa && (r.s.stats.coa.direct || r.s.stats.coa.total) ? money(r.s.stats.coa.direct || r.s.stats.coa.total) : '<span class="fine">—</span>'}</td>
     </tr>`).join('');
     return `<section class="slot">
       <header><h3>원서 비용</h3><span>고른 학교 ${c.rows.length}곳</span></header>
@@ -55,7 +56,7 @@
         <div class="tile"><div class="tk">CSS Profile</div><div class="tv">${money(c.cssCost)}</div><div class="ts">${c.cssNow}곳: 첫 곳 $${F.cssFirst}, 추가 $${F.cssMore}${c.cssAfter ? `, 합격 후 ${c.cssAfter}곳 더` : ''}</div></div>
         <div class="tile"><div class="tk">SAT 점수 보내기</div><div class="tv">${money(c.satCost)}</div><div class="ts">${c.satNow}곳: 무료 ${F.satFree}곳 뒤 1곳 $${F.satReport}</div></div>
       </div>
-      <table class="costT"><thead><tr><th>학교</th><th>원서비</th><th>CSS</th><th>SAT 보내기</th></tr></thead><tbody>${rows}</tbody></table>
+      <table class="costT"><thead><tr><th>학교</th><th>원서비</th><th>CSS</th><th>SAT 보내기</th><th>1년 비용</th></tr></thead><tbody>${rows}</tbody></table>
       <p class="fine costNote">요금은 College Board 2026-27 기준 (CSS Profile 첫 곳 $25, 추가 $16 / SAT 시험 뒤 9일 안에 고른 4곳 무료, 그 뒤 $15). 점수 자기 보고가 되는 학교는 합격 후에만 공식 점수를 보내요.</p>
     </section>`;
   }

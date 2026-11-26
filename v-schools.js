@@ -69,17 +69,22 @@
       ['early', '11월 얼리', s => ['ED', 'REA', 'SCEA', 'EA'].includes(pickOf(s))],
       ['ed2', '1월 ED2', s => pickOf(s) === 'ED2'],
       ['rd', '정시', s => pickOf(s) === 'RD'],
-      ['none', '미정', s => !pickOf(s) && s.group !== 'explore' && s.group !== 'candidate'],
+      ['none', '미정', s => !pickOf(s) && !['explore', 'candidate', 'public'].includes(s.group)],
       ['explore', '탐색 후보', s => !pickOf(s) && s.group === 'explore'],
+      ['pub', '주립대', s => !pickOf(s) && s.group === 'public'],
       ['cand', '보강 후보', s => !pickOf(s) && s.group === 'candidate'],
       ['x', '제외', s => pickOf(s) === 'X'],
     ];
     const bad = new Set(res.issues.filter(i => i.level === 'bad').flatMap(i => i.ids));
-    let html = '';
+    const keys = st.profile.majors || [];
+    const only = keys.length && st.open.majorOnly;
+    let html = keys.length
+      ? `<button type="button" class="sw majSw${only ? ' on' : ''}" data-majonly role="switch" aria-checked="${!!only}"><span>내 전공 있는 학교만</span><span class="knob"></span></button>`
+      : '';
     for (const [key, label, fn] of groups) {
-      const items = E.all().filter(fn).sort((a, b) => E.isStar(b) - E.isStar(a));
+      const items = E.all().filter(fn).filter(s => !only || pickOf(s) || C.majorHas(s, keys) !== false).sort((a, b) => E.isStar(b) - E.isStar(a));
       if (!items.length) continue;
-      const fold = key === 'x' || key === 'cand';
+      const fold = key === 'x' || key === 'cand' || key === 'pub';
       const open = !fold || st.open[key] || items.some(s => s.id === selId);
       html += `<div class="grp${fold ? ' fold' : ''}${fold && open ? ' open' : ''}" ${fold ? `data-fold="${key}"` : ''}>${label} ${items.length}</div>`;
       if (!open) continue;
@@ -96,7 +101,8 @@
     const kp = E.keyPlan(s);
     const n = kp && p !== 'X' ? C.dday(E.due(s, kp), E.today()) : null;
     const ch = s.own ? null : E.chanceOf(s);
-    return `<a class="row${on ? ' on' : ''}${p === 'X' ? ' x' : ''}" href="#s/${encodeURIComponent(s.id)}">
+    const noMaj = C.majorHas(s, st.profile.majors) === false;
+    return `<a class="row${on ? ' on' : ''}${p === 'X' ? ' x' : ''}${noMaj ? ' nomaj' : ''}" href="#s/${encodeURIComponent(s.id)}">
       <span class="star">${E.isStar(s) ? '★' : ''}</span>
       <span class="nm">${esc(s.name)}${bad ? '<span class="bad" title="충돌"></span>' : ''}</span>
       <span class="chips">${chips}</span>
@@ -129,6 +135,7 @@
       <div class="seg" role="group" aria-label="지원 방식">${segs}</div>
       ${iss.length ? `<ul class="issues">${iss.map(i => `<li class="${i.level}">${esc(i.msg)}</li>`).join('')}</ul>` : ''}
       ${s.own ? '' : chanceHtml(s)}
+      ${s.own ? '' : majorHtml(s)}
       <section class="sec">
         <h3>일정 ${s.own ? '' : '<span class="fine">2026-27 날짜를 1년 뒤로 옮김</span>'}</h3>
         <table class="sched">${plans.map(x => {
@@ -172,6 +179,26 @@
       <div class="chBody">${tierChip(ch.tier, ch.label)}<ul class="why">${ch.reasons.map(r => `<li>${esc(r)}</li>`).join('')}</ul></div>
       ${noProfile}
     </section>`;
+  }
+
+  // 전공: 고른 전공(없으면 다섯 개 전부)이 이 학교에 어떻게 있는지
+  const OFFER = { major: '전공', track: '트랙', minor: '부전공만', none: '없음' };
+  const RESTR = { open: '자유롭게 선택', capped: '정원 제한', 'apply-later': '입학 후 따로 지원', 'direct-admit': '입학할 때 바로 배정' };
+  function majorHtml(s) {
+    if (!s.majors) return '';
+    const keys = (st.profile.majors && st.profile.majors.length) ? st.profile.majors : C.MAJORS.map(m => m[0]);
+    const rows = keys.map(k => {
+      const m = s.majors[k];
+      if (!m) return `<tr><td class="mk">${C.MAJOR_KO[k]}</td><td colspan="2"><span class="fine">자료 없음</span></td></tr>`;
+      const off = m.offered ? `<span class="off off-${m.offered}">${OFFER[m.offered] || m.offered}</span>` : '<span class="fine">확인 못 함</span>';
+      const bits = [
+        m.college ? `지원 단과대: ${esc(m.college)}` : '',
+        m.restricted ? RESTR[m.restricted] || m.restricted : '',
+        m.admitRate != null ? `합격률 ${m.admitRate}%${m.admitNote ? ` (${esc(m.admitNote)})` : ''}` : '',
+      ].filter(Boolean).join(', ');
+      return `<tr><td class="mk">${C.MAJOR_KO[k]}</td><td>${off}${m.name && m.offered !== 'none' ? ` <span class="mname">${esc(m.name)}</span>` : ''}${bits ? `<div class="sub">${bits}</div>` : ''}${m.note ? `<div class="sub fine">${esc(m.note)}</div>` : ''}</td></tr>`;
+    }).join('');
+    return `<section class="sec"><h3>전공 ${st.profile.majors && st.profile.majors.length ? '<span class="fine">내가 고른 전공</span>' : '<a class="fine lnk" href="#me">나 탭에서 관심 전공 고르기</a>'}</h3><table class="majT">${rows}</table></section>`;
   }
 
   function rulesHtml(s) {
@@ -223,6 +250,7 @@
       tile(`${et ? et.type : 'EA'} 합격률`, `${t.ea.rate}%`, `${E.num(t.ea.admitted)} / ${E.num(t.ea.applied)}`);
     }
     if (t.intl && t.intl.rate != null) tile('국제학생 합격률', `${t.intl.rate}%`, `${E.num(t.intl.admitted)} / ${E.num(t.intl.applied)}`);
+    if (t.coa && (t.coa.direct || t.coa.total)) tile('1년 비용', `$${E.num(t.coa.direct || t.coa.total)}`, `${esc(t.coa.year || '')} 학비, 수수료, 기숙사/식비`);
     if (t.intlFirstYear != null && t.firstYearTotal) tile('신입생 중 국제학생', `${((t.intlFirstYear / t.firstYearTotal) * 100).toFixed(1)}%`, `${E.num(t.intlFirstYear)}명`);
     if (t.intlAidCount != null) tile('재정지원 받는 국제학생', `${E.num(t.intlAidCount)}명`, t.intlAidAvg ? `평균 $${E.num(t.intlAidAvg)}` : '');
     const advTxt = { required: '필수', blind: '안 봄', submit: '내기', maybe: '애매 (안 내는 쪽)', skip: '안 내기', nodata: '자료 없음', noscore: '점수 없음' }[adv.key];
@@ -314,7 +342,7 @@
       .map(u => fieldKo(String(u).split(':')[0].trim())))];
     const vf = s.verified || {};
     const vs = k => { const v = String(vf[k] || ''); return v.startsWith('ok') ? '확인됨' : v.startsWith('partial') ? '일부' : v.startsWith('filled') ? '보충 자료 (한 번 확인)' : v.startsWith('unreachable') ? '못 함' : '안 함'; };
-    const second = s.verified ? `<span>두 번째 대조: 통계 ${vs(s.group === 'candidate' ? 'cand' : 'stats')}${s.req ? `, 서류 ${vs('req')}` : ''}${s.policy ? `, 점수 정책 ${vs('policy')}` : ''}</span>` : '';
+    const second = s.verified ? `<span>두 번째 대조: 통계 ${vs(s.group === 'candidate' ? 'cand' : s.group === 'public' ? 'pub' : 'stats')}${s.majors && s.group !== 'public' ? `, 전공/비용 ${vs('maj')}` : ''}${s.req ? `, 서류 ${vs('req')}` : ''}${s.policy ? `, 점수 정책 ${vs('policy')}` : ''}</span>` : '';
     return `<div class="src"><span>확인 ${esc(s.checked || window.DATA_CHECKED || '')}</span>${second}${links}${uns.length ? `<span class="unsure">공식 페이지로 확정 못 한 것: ${esc(uns.join(', '))}</span>` : ''}</div>`;
   }
 
@@ -340,6 +368,7 @@
       const root = $('#view-schools');
       root.addEventListener('click', e => {
         const t = e.target;
+        if (t.closest('[data-majonly]')) { st.open.majorOnly = !st.open.majorOnly; E.save(); E.render(); return; }
         const fd = t.closest('[data-fold]');
         if (fd) { const k = fd.dataset.fold; st.open[k] = !st.open[k]; E.save(); E.render(); return; }
         const s = current();
