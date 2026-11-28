@@ -10,6 +10,7 @@
 #   raw/summer-*.json   2027 여름 프로그램
 #   raw/pub-*.json      주립대 (얼리, 통계, 비용, 전공 한 묶음)
 #   raw/maj-*.json      기존 학교들의 전공 5개와 1년 비용
+#   raw/uk-*.json       영국 대학 (UCAS 마감, 과정, 기준, 학비, 순위)
 import json
 import re
 from pathlib import Path
@@ -213,6 +214,7 @@ def main():
     cands = load_list("cand-us.json")
     pubs = load_list("pub-*.json")
     majs = load_list("maj-*.json")
+    uks = load_list("uk-*.json")
     # 같은 방식이 두 번 있으면(예: EA 두 번) 사이트는 방식당 하나라 첫 번째만 두고 나머지는 규칙 문장에 적음
     for d in (pubs,):
         for c in d.values():
@@ -267,6 +269,8 @@ def main():
             kind = "pub"
         elif tag.startswith("MAJ"):
             kind = "maj"
+        elif tag.startswith("UK"):
+            kind = "uk"
         elif tag.startswith("CAND"):
             kind = "cand"
         elif tag.startswith("R"):
@@ -283,7 +287,7 @@ def main():
             stats[sid] = fill
             verified.setdefault(sid, {})["stats"] = "filled"
             applied.append(f"{f.name}: {sid} 통계 채움")
-        target = {"req": reqs, "policy": policies, "summer": summer, "cand": cands, "pub": pubs, "maj": majs}.get(kind, stats)
+        target = {"req": reqs, "policy": policies, "summer": summer, "cand": cands, "pub": pubs, "maj": majs, "uk": uks}.get(kind, stats)
         for c in v.get("corrections", []):
             sid = ALIAS.get(c["id"], c["id"])
             try:
@@ -464,6 +468,19 @@ def main():
     snu = ranks.get("snu") or {}
     rank_ref = {"qs": snu.get("qs"), "the": snu.get("the")}
 
+    uk_out = []
+    for sid, u in uks.items():
+        # 순위 표기 통일: "2 (joint with Stanford)" -> "=2"
+        for k in ("qs", "the"):
+            v = (u.get("rank") or {}).get(k)
+            if isinstance(v, str):
+                m = re.match(r"^=?(\d+)\s*\(joint.*\)$", v.strip(), re.I)
+                if m:
+                    u["rank"][k] = "=" + m.group(1)
+        u["checked"] = CHECKED
+        u["verified"] = verified.get(sid, {}).get("uk")
+        uk_out.append(u)
+
     intl = load_json("cand-intl.json")
     # 대조 정정이 원래 문장을 덮어쓴 것을 합쳐서 다시 씀
     SUMMER_PATCH = {
@@ -484,6 +501,7 @@ def main():
         "window.INTL_OPTS = " + json.dumps(intl, ensure_ascii=False, indent=1) + ";\n"
         "window.SUMMER = " + json.dumps(summer_out, ensure_ascii=False, indent=1) + ";\n"
         "window.RANK_REF = " + json.dumps(rank_ref, ensure_ascii=False) + ";\n"
+        "window.UK = " + json.dumps(uk_out, ensure_ascii=False, indent=1) + ";\n"
     )
     (ROOT / "data.js").write_text(js, encoding="utf-8")
     for line in applied:

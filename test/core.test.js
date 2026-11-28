@@ -232,4 +232,28 @@ assert.strictEqual(C.vsRef('101-150', '56'), 'below');
 assert.strictEqual(C.vsRef('51-60', '56'), null); // 구간이 서울대를 걸치면 판단 안 함
 assert.strictEqual(C.vsRef('unranked', '56'), null);
 
+/* ───── 영국 UCAS ───── */
+{
+  const L = (...xs) => xs.map(([school, course]) => ({ school, course }));
+  assert.strictEqual(C.ucasCheck(L(['uk-ucl', 'psych'], ['uk-kcl', 'neuro'])).length, 0);
+  let is = C.ucasCheck(L(['uk-oxford', 'psych'], ['uk-cambridge', 'psych']));
+  assert.ok(is.some(i => i.level === 'bad' && i.msg.includes('하나만 지원')));
+  assert.ok(is.some(i => i.level === 'warn' && i.msg.includes('10월 15일')));
+  is = C.ucasCheck(L(['uk-ucl', 'a'], ['uk-ucl', 'b'], ['uk-kcl', 'c'], ['uk-lse', 'd'], ['uk-imperial', 'e'], ['uk-edinburgh', 'f']));
+  assert.ok(is.some(i => i.msg.startsWith('UCAS는 최대 5개')));
+  is = C.ucasCheck(L(['uk-oxford', 'psych'], ['uk-oxford', 'cs']));
+  assert.ok(is.some(i => i.msg === 'Oxford는 과정 하나만 지원할 수 있어요'));
+  // 가능성
+  const sch = { satMin: 1470 };
+  let c2 = C.ukChance(sch, { offerRate: 12.0 }, { sat: { rw: 620, math: 800 }, needAid: true });
+  assert.strictEqual(c2.tier, 0); // 12% → 1, SAT 미달 −1
+  assert.ok(c2.reasons.some(x => x.includes('못 미침')));
+  c2 = C.ukChance(sch, { offerRate: 12.0 }, { sat: { rw: 730, math: 800 } });
+  assert.strictEqual(c2.tier, 1);
+  c2 = C.ukChance(sch, { offerRate: 60, satMin: 1300 }, { sat: { rw: 620, math: 800 } });
+  assert.strictEqual(c2.tier, 4);
+  c2 = C.ukChance(sch, { offerRate: null }, { sat: { rw: 620, math: 800 } });
+  assert.strictEqual(c2.tier, null);
+}
+
 console.log('core tests passed');

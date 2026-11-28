@@ -378,6 +378,44 @@
     return null;
   }
 
+  /* ───── 영국 (UCAS) ───── */
+  // list: [{ school: 'uk-oxford', course: 'psych' }, ...]
+  function ucasCheck(list) {
+    const issues = [];
+    if (list.length > 5) issues.push({ level: 'bad', msg: `UCAS는 최대 5개까지예요 (지금 ${list.length}개)` });
+    const ox = list.filter(x => x.school === 'uk-oxford');
+    const cam = list.filter(x => x.school === 'uk-cambridge');
+    if (ox.length && cam.length) issues.push({ level: 'bad', msg: 'Oxford와 Cambridge는 같은 해에 하나만 지원할 수 있어요' });
+    if (ox.length > 1) issues.push({ level: 'bad', msg: 'Oxford는 과정 하나만 지원할 수 있어요' });
+    if (cam.length > 1) issues.push({ level: 'bad', msg: 'Cambridge는 과정 하나만 지원할 수 있어요' });
+    if (ox.length || cam.length) issues.push({ level: 'warn', msg: 'Oxford나 Cambridge를 넣으면 UCAS 지원서를 10월 15일까지 내야 해요' });
+    return issues;
+  }
+
+  // 영국 과정 가능성: 과정 오퍼 비율(공식 통계) 기준 + SAT 최소 기준
+  function ukChance(school, course, profile) {
+    const reasons = [];
+    if (!course) return { tier: null, label: '자료 없음', reasons: ['과정 자료 없음'] };
+    const sat = satOf(profile);
+    const min = course.satMin != null ? course.satMin : school.satMin;
+    let adj = 0;
+    if (sat && min) {
+      if (sat.total < min) { adj -= 1; reasons.push(`SAT ${sat.total}, 학교 기준 ${min}에 못 미침`); }
+      else reasons.push(`SAT ${sat.total}, 학교 기준 ${min} 넘음`);
+    } else if (min) reasons.push(`SAT 기준 ${min}`);
+    if (profile && profile.needAid) reasons.push('국제학생 장학금이 거의 없어요');
+    if (course.offerRate == null) {
+      reasons.unshift('과정 경쟁률 자료 없음');
+      return { tier: null, label: '자료 없음', reasons };
+    }
+    const r = course.offerRate;
+    reasons.unshift(`과정 오퍼 비율 ${r}% (국제학생은 보통 더 낮아요)`);
+    const base = r >= 50 ? 4 : r >= 30 ? 3 : r >= 15 ? 2 : r >= 8 ? 1 : 0;
+    let tier = Math.max(0, Math.min(4, base + adj));
+    if (r < 15) tier = Math.min(tier, 2);
+    return { tier, label: TIERS[tier], reasons };
+  }
+
   /* ───── 글자 수 ───── */
   function chars(str) { return [...String(str || '')].length; }
   function words(str) { const t = String(str || '').trim(); return t ? t.split(/\s+/).length : 0; }
@@ -385,7 +423,7 @@
   const api = {
     EARLY, RESTRICT, BINDING, ORDER, SLOTS, TIERS, parse, shifted, dday, md, notifyKo, plan, sortPlans, check, slotOf,
     wouldConflict, satOf, submitAdvice, sectionPos, chance, balance, scenarios, chars, words,
-    monthOf, satCountsForEarly, FEES, usesCSS, appCost, MAJORS, MAJOR_KO, majorHas, majorRate, rankNum, vsRef,
+    monthOf, satCountsForEarly, FEES, usesCSS, appCost, MAJORS, MAJOR_KO, majorHas, majorRate, rankNum, vsRef, ucasCheck, ukChance,
   };
   root.Core = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

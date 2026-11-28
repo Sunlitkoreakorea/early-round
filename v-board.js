@@ -201,7 +201,7 @@
           <div class="cards">${items.map(({ s, t }) => card(s, t, badIds.has(s.id))).join('')}<button type="button" class="addCard" data-slot="${sl.key}">+ 추가</button></div>
         </section>`;
       }).join('');
-      $('#view-board').innerHTML = `${verdict}${res.issues.length ? `<ul class="issues">${res.issues.map(i => `<li class="${i.level}">${esc(i.msg)}</li>`).join('')}</ul>` : ''}${slots}${balanceHtml()}${intlHtml()}${scenHtml()}${compareHtml()}${costHtml()}`;
+      $('#view-board').innerHTML = `${verdict}${res.issues.length ? `<ul class="issues">${res.issues.map(i => `<li class="${i.level}">${esc(i.msg)}</li>`).join('')}</ul>` : ''}${slots}${balanceHtml()}${E.ucasHtml ? E.ucasHtml() : ''}${intlHtml()}${scenHtml()}${compareHtml()}${costHtml()}`;
     },
     bind() {
       $('#view-board').addEventListener('click', e => {

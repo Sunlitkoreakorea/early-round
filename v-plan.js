@@ -74,6 +74,7 @@
       if (!ev || !ev.date) continue;
       items.push({ id: ev.id, date: ev.date, month: ev.date.slice(0, 7), sort: ev.date, kind: 'mine', title: ev.title, own: true });
     }
+    if (E.ukRoadItems) for (const it of E.ukRoadItems()) items.push(Object.assign({ month: it.date.slice(0, 7), sort: it.date }, it));
     for (const p of window.SUMMER || []) {
       const v = st.summer[p.id];
       if (!v || v === 'out' || !p.deadline2027) continue;

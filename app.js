@@ -30,6 +30,7 @@
       compare: { ids: [], score: {} },
       summer: {},
       intlOpt: {},
+      ucas: [],
     };
   }
 
@@ -54,6 +55,7 @@
     out.compare = Object.assign(blank().compare, v.compare || {});
     for (const k of ['picks', 'star', 'todo', 'memo', 'open', 'summer', 'intlOpt']) if (!out[k] || typeof out[k] !== 'object') out[k] = {};
     if (!Array.isArray(out.custom)) out.custom = [];
+    if (!Array.isArray(out.ucas)) out.ucas = [];
     return out;
   }
 

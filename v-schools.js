@@ -90,6 +90,7 @@
       if (!open) continue;
       for (const s of items) html += rowHtml(s, s.id === selId, bad.has(s.id));
     }
+    if (E.ukListHtml) html += E.ukListHtml(selId);
     $('#list').innerHTML = html;
   }
 
@@ -114,6 +115,7 @@
   /* ───── 상세 ───── */
   function renderDetail(id, res) {
     const el = $('#detail');
+    if (id && id.startsWith('uk-') && E.ukDetailHtml) { el.innerHTML = E.ukDetailHtml(id); return; }
     const s = id && E.byId(id);
     if (!s) { el.innerHTML = ''; return; }
     const p = E.pickOf(s);
@@ -370,12 +372,13 @@
 
   E.views.schools = {
     render(r, res) {
-      let id = r.id && E.byId(r.id) ? r.id : null;
+      const known = x => x && (E.byId(x) || (E.ukById && E.ukById(x)));
+      let id = known(r.id) ? r.id : null;
       const narrow = matchMedia('(max-width: 760px)').matches;
       if (!id && !narrow) id = (E.all().find(E.isStar) || E.all()[0] || {}).id || null;
       renderList(id, res);
       renderDetail(id, res);
-      $('#view-schools').classList.toggle('open', !!(r.id && E.byId(r.id)));
+      $('#view-schools').classList.toggle('open', !!known(r.id));
     },
     bind() {
       const root = $('#view-schools');

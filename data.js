@@ -10671,3 +10671,822 @@ window.SUMMER = [
  }
 ];
 window.RANK_REF = {"qs": "38", "the": "56"};
+window.UK = [
+ {
+  "id": "uk-oxford",
+  "name": "Oxford",
+  "full": "University of Oxford",
+  "city": "Oxford",
+  "ucasInst": "OXF O33",
+  "oxbridge": true,
+  "deadline": "2026-10-15",
+  "deadlineNote": "UCAS deadline for 2027 entry: 15 Oct 2026 18:00 UK time (course listings; also stated on Imperial/Cambridge pages). Admissions-test booking closed 28 Sep 2026 6pm UK; tests held 12-16 Oct 2026 (UAT-UK).",
+  "apReq": "Course pages for US applicants (e.g. Computer Science): 4 APs at 5 in relevant subjects, or 3 APs at 5 plus SAT 1470+ (Math 770+ for CS) or ACT 32+, optional essay not needed; some courses 1480/33. Typical A-level offer A*AA.",
+  "satMin": 1470,
+  "apNote": "SAT sections must come from one sitting, no superscoring (per Oxford statement in search extract). AP Capstone not a condition of any offer. Calculus AB and BC count as one subject. Course thresholds vary (Maths 1480/33, Medicine 1470/32).",
+  "english": "IELTS Academic 7.0 overall (6.5 each) standard, 7.5 overall (7.0 each) higher; TOEFL iBT 100 (min 22 L / 24 R / 25 S / 24 W) standard. TOEFL taken from 21 Jan 2026 not accepted for the English condition until Oxford finishes reviewing the revised test. Exemptions considered case by case (e.g. IB taught in English); no automatic waiver for a US/AP track found.",
+  "fees": {
+   "year": "2027-28",
+   "tuition": "GBP 39,620 to 66,580 per year depending on course (overseas, official range)",
+   "living": "GBP 1,475 to 2,175 per month (Oxford estimate, 2027-28)",
+   "note": "Not verified whether the college fee is already included in the course fee range; confirm on the course-fees page."
+  },
+  "scholarship": "None confirmed open to a South Korean undergraduate. Reach Oxford targets low-income-country applicants (Korea eligibility not verified); Clarendon etc. are graduate. College-level awards exist but not verified.",
+  "intlNote": "All Oxford applicants for these courses sit UAT-UK tests (TARA for psychology, TMUA for CS) in October before the deadline; tests replaced TSA/MAT/BMSAT from the 2026 cycle (2027 entry). Applicants are interviewed at two colleges in December (Experimental Psychology/PPL). Open applications allowed.",
+  "courses": {
+   "cogsci": {
+    "name": "Psychology, Philosophy and Linguistics",
+    "ucas": null,
+    "degree": "BA/MSci",
+    "years": 3,
+    "test": "TARA (Critical Thinking, Problem Solving, Writing Task)",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 12.6,
+    "offerNote": "2025/26 cycle (2026 entry): 135 applications, 41 shortlisted, 17 offers (EP/PPL department summary). Tripartite UCAS code not verified.",
+    "apReq": null,
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/psychology-philosophy-and-linguistics"
+   },
+   "psych": {
+    "name": "Experimental Psychology",
+    "ucas": "C830",
+    "degree": "BA/MSci",
+    "years": 3,
+    "test": "TARA (Critical Thinking, Problem Solving, Writing Task)",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 15.2,
+    "offerNote": "2025/26 cycle (2026 entry): 428 applications, 162 shortlisted, 65 offers (department admissions summary; test then was TSA). Applicants interviewed at two colleges.",
+    "apReq": null,
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/psychology-experimental"
+   },
+   "neuro": {
+    "name": "Biomedical Sciences",
+    "ucas": "BC98",
+    "degree": "BA",
+    "years": 3,
+    "test": "ESAT (Oxford list for 2027 entry; previously BMSAT)",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": null,
+    "offerNote": "2025 round: about 530 applications and 48 quota plus 3 open offers reported, but entry-year labelling unclear, so not computed. No Oxford neuroscience-only undergraduate degree; shortlisting rewards commitment to biomedical sciences/neuroscience.",
+    "apReq": null,
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/biomedical-sciences"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BA or MCompSci",
+    "years": 3,
+    "test": "TMUA",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 10.9,
+    "offerNote": "2025/26 cycle (2026 entry): 531 applications, 144 shortlisted, 58 offers (CS department feedback summary); test then was MAT, from 2026 round TMUA.",
+    "apReq": "4 APs at 5 incl. Calculus BC plus two other maths/science APs; or 3 APs at 5 (incl. Calculus BC + two maths/science) plus SAT 1470+ (Math 770+) or ACT 32+. Maths & CS: 1480/33.",
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/computer-science"
+   },
+   "bio": {
+    "name": "Biology",
+    "ucas": "C100",
+    "degree": "MBiol",
+    "years": 4,
+    "test": "none",
+    "testDate": null,
+    "interview": "yes",
+    "offerRate": 18.3,
+    "offerNote": "2025/26 cycle (2026 entry): 846 applications, 345 interviewed, 155 offers (department figures as reproduced in a college report).",
+    "apReq": null,
+    "url": "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/biology"
+   }
+  },
+  "rank": {
+   "qs": "4",
+   "the": "1"
+  },
+  "url": "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/for-international-students/international-qualifications",
+  "sources": [
+   "https://cs.ox.ac.uk/admissions/undergraduate/why_oxford/standard_conditional_offers.html",
+   "https://www.st-hildas.ox.ac.uk/asset/ep-ppl-feedback-report-2025-6.pdf (read via saved PDF at the department-hosted copy on st-annes)",
+   "https://www.st-annes.ox.ac.uk/wp-content/uploads/2026/01/EP-PPL-2026.pdf",
+   "https://www.some.ox.ac.uk/wp-content/uploads/2026/02/Computer-Science-Report-2025-2026.pdf",
+   "https://www.ox.ac.uk/admissions/undergraduate/applying-to-oxford/guide/admissions-tests (via search extract; site blocked fetching)",
+   "https://www.qs.com/en-us/insights/qs-world-university-rankings",
+   "https://thetab.com/2026/10/01/eleven-uk-universities-rank-among-the-top-100-in-the-world-but-not-durham"
+  ],
+  "uncertain": [
+   "ox.ac.uk pages returned 403 to fetching; apReq, English, fees, test rules and deadline come from official-site search extracts and the Oxford CS department page, not full page reads",
+   "apReq: Oxford has no single university-wide US table found; thresholds are course-specific (A*AA courses use 3 APs + SAT 1470/ACT 32)",
+   "testDate: window is 12-16 Oct 2026 (Oxford page) and a January 4-8 2027 sitting is also listed by UAT-UK; exact Oxford sitting not confirmed",
+   "neuro/Biomedical Sciences: test (ESAT) and UCAS code BC98 taken from search extracts; stats not computed",
+   "Biology offerRate comes from a college-hosted copy of department figures",
+   "course URLs for CS, Biology and Biomedical Sciences follow the course-listing URL pattern and were not opened",
+   "PPL UCAS code not verified",
+   "scholarship: Reach Oxford eligibility for Korea not verified on an official page",
+   "fees: unclear whether college fee is included; living range is for Oxford generally"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: ox.ac.uk blocked (403). Deadline 15 Oct 2026 and test booking/window confirmed via Cambridge/UCAS pages and search; TARA (PPL, Exp Psych) and ESAT (Biomedical) confirmed only on Oxford's 2026-labelled list; offer-rate arithmetic (17/135, 65/428, 58/531, 155/846) is correct but source figures unverified; SAT 1470, fees, UCAS codes unverified"
+ },
+ {
+  "id": "uk-cambridge",
+  "name": "Cambridge",
+  "full": "University of Cambridge",
+  "city": "Cambridge",
+  "ucasInst": "CAM C05",
+  "oxbridge": true,
+  "deadline": "2026-10-15",
+  "deadlineNote": "UCAS deadline for 2027 entry: 15 Oct 2026 6pm UK time; My Cambridge Application and transcript due 22 Oct 2026 6pm UK. ESAT/TMUA registration closed 28 Sep 2026; tests 12-16 Oct 2026.",
+  "apReq": "At least 5 APs at 5 in subjects related to the course (Calculus BC preferred) plus SAT/ACT; strong GPA. High school diploma alone is not enough.",
+  "satMin": 1460,
+  "apNote": "SAT 1460+ (EBRW 730+) for non-science courses; 1500+ (Math 750+) for science courses and Economics. ACT 32 / 33 (ACT Science 33 for sciences). Disclose all tests and retakes; AP/SAT/ACT within 2 years of matriculation; AP Capstone welcomed but not counted among five 5s.",
+  "english": "Admission: IELTS Academic 7.5 overall (usually 7.0 each); interview stage recommended 6.5 overall, 6.0 each. Also C2 Proficiency 200 / C1 Advanced 193. TOEFL not listed. No formal waiver; applicants from majority English-speaking countries exempt. College may set an English condition in the offer.",
+  "fees": {
+   "year": "2027-28",
+   "tuition": "GBP 46,872 per year (2027 entry fee group 4: Computer Science, Engineering, Natural Sciences); PBS group not stated on the page",
+   "living": "GBP 11,970 for 9 months (GBP 1,330 per month; 2027-28 estimate)",
+   "note": "College fee is extra and varies by college (e.g. Trinity Hall GBP 13,245 for 2026-27); 2027-28 college fees published by 1 Oct 2026."
+  },
+  "scholarship": "Cambridge Trust awards are open to overseas students but means-tested and applied for only after an offer; few full undergraduate scholarships; some colleges give partial support. Nothing Korea-specific.",
+  "intlNote": "Transcript deadline 22 Oct for international applicants. Decisions 27 Jan 2027 for December-interview round. Each college decides; offer levels for US applicants set by the college (some colleges, e.g. Christ's, ask five 5s).",
+  "courses": {
+   "cogsci": {
+    "name": "Psychological and Behavioural Sciences",
+    "ucas": "C800",
+    "degree": "BA",
+    "years": 3,
+    "test": "College assessment at some Colleges (no advance registration)",
+    "testDate": null,
+    "interview": "yes",
+    "offerRate": 18.2,
+    "offerNote": "2025 cycle (2026 entry): 611 applications, 111 offers, 79 acceptances (official Cambridge admissions statistics).",
+    "apReq": null,
+    "url": "https://www.undergraduate.study.cam.ac.uk/courses/psychological-and-behavioural-sciences"
+   },
+   "neuro": {
+    "name": "Natural Sciences",
+    "ucas": "BCF0",
+    "degree": "BA or MSci",
+    "years": 3,
+    "test": "ESAT",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 25.4,
+    "offerNote": "2025 cycle (2026 entry): 2,644 applications, 672 offers, 576 acceptances (official statistics, whole Natural Sciences). Neuroscience is a Part II specialisation, not a separate degree.",
+    "apReq": "Science course: SAT 1500+ (Math 750+) or ACT 33 with ACT Science 33; requires Maths plus two other science/maths subjects",
+    "url": "https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences-ba-hons-msci"
+   },
+   "psych": {
+    "name": "Psychological and Behavioural Sciences",
+    "ucas": "C800",
+    "degree": "BA",
+    "years": 3,
+    "test": "College assessment at some Colleges (no advance registration)",
+    "testDate": null,
+    "interview": "yes",
+    "offerRate": 18.2,
+    "offerNote": "2025 cycle (2026 entry): 611 applications, 111 offers, 79 acceptances (official Cambridge admissions statistics). Needs one of Maths, Biology, Chemistry, Computer Science or Physics at A level/IB HL equivalent.",
+    "apReq": null,
+    "url": "https://www.undergraduate.study.cam.ac.uk/courses/psychological-and-behavioural-sciences"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BA or MEng",
+    "years": 3,
+    "test": "TMUA (Peterhouse and Trinity also CSAT)",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 9.4,
+    "offerNote": "2025 cycle (2026 entry): 1,739 applications, 163 offers, 128 acceptances (official Cambridge admissions statistics).",
+    "apReq": null,
+    "url": "https://www.undergraduate.study.cam.ac.uk/courses/computer-science"
+   },
+   "bio": {
+    "name": "Natural Sciences",
+    "ucas": "BCF0",
+    "degree": "BA or MSci",
+    "years": 3,
+    "test": "ESAT",
+    "testDate": "2026-10-12",
+    "interview": "yes",
+    "offerRate": 25.4,
+    "offerNote": "2025 cycle (2026 entry): 2,644 applications, 672 offers, 576 acceptances (official statistics, whole Natural Sciences incl. biological route).",
+    "apReq": "Science course: SAT 1500+ (Math 750+) or ACT 33 with ACT Science 33",
+    "url": "https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences-ba-hons-msci"
+   }
+  },
+  "rank": {
+   "qs": "6",
+   "the": "5"
+  },
+  "url": "https://www.undergraduate.study.cam.ac.uk/usa",
+  "sources": [
+   "https://www.undergraduate.study.cam.ac.uk/usa",
+   "https://www.undergraduate.study.cam.ac.uk/apply/application-dates-deadlines",
+   "https://www.undergraduate.study.cam.ac.uk/apply/how/admission-tests",
+   "https://www.undergraduate.study.cam.ac.uk/courses/psychological-and-behavioural-sciences",
+   "https://www.undergraduate.study.cam.ac.uk/courses/computer-science",
+   "https://www.undergraduate.study.cam.ac.uk/courses/natural-sciences-ba-hons-msci",
+   "https://www.undergraduate.study.cam.ac.uk/sites/default/files/2026-05/ug_admissions_statistics_2025_cycle.pdf",
+   "https://www.undergraduate.study.cam.ac.uk/international-students/international-fees-and-costs",
+   "https://www.undergraduate.study.cam.ac.uk/fees-funding/living-costs",
+   "https://www.undergraduate.study.cam.ac.uk/international-students/financial-support",
+   "https://www.undergraduate.study.cam.ac.uk/apply/before/entry-requirements",
+   "https://www.undergraduate.study.cam.ac.uk/sites/default/files/publications/undergraduate_tuition_fees_2026-27.pdf",
+   "https://www.qs.com/en-us/insights/qs-world-university-rankings",
+   "https://thetab.com/2026/10/01/eleven-uk-universities-rank-among-the-top-100-in-the-world-but-not-durham"
+  ],
+  "uncertain": [
+   "interview: Cambridge page says most College interviews are in December; all shortlisted applicants interviewed is standard but not stated for PBS on the course page",
+   "PBS tuition group not stated for 2027 (2026-27 table puts it with Computer Science), so 46,872 assumed",
+   "CS apReq: US page does not say whether CS counts as a 'science course' for the SAT 1500 / ACT 33 threshold",
+   "Natural Sciences stats are for the whole course and used for both neuro and bio",
+   "Cambridge has no neuroscience undergraduate degree; Natural Sciences Part II offers it",
+   "testDate: window 12-16 Oct 2026; exact sitting is assigned by test centre",
+   "THE rank 5 for Cambridge taken from a news report of THE 2027 (not the table)"
+  ],
+  "checked": "2026-11-26",
+  "verified": "ok: official 2025-cycle statistics PDF read (CS 163/1739=9.4, PBS 111/611=18.2, Natural Sciences 672/2644=25.4); fee group 4 GBP 46,872 confirmed; SAT/ACT/AP thresholds confirmed (1460 non-science, 1500/Math 750 science incl. CS and PBS); ESAT/TMUA 12-16 Oct 2026 and UCAS 15 Oct 2026 6pm confirmed; QS 6 confirmed; THE 5 via The Tab"
+ },
+ {
+  "id": "uk-imperial",
+  "name": "Imperial",
+  "full": "Imperial College London",
+  "city": "London",
+  "ucasInst": "IC I50",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "UCAS deadline for 2027 entry: 13 Jan 2027 18:00 UK time for all Imperial courses except Medicine (15 Oct 2026). Imperial Inspires scholarship application closes 5 Feb 2027.",
+  "apReq": "General US route (Imperial pages): five APs with 5,5,5,4,4, or three APs 5,5,4 plus US High School Diploma plus SAT 1460 / ACT 31. Computing BEng: APs 5,5,5,5,5 incl. Calculus BC, or 5,5,5 incl. Calculus BC plus SAT 1480 / ACT 33.",
+  "satMin": 1460,
+  "apNote": "SAT/ACT thresholds are course-specific (1480/33 for Computing and Maths & CS; 1460/31 for Medical Biosciences). One search extract said Imperial does not accept SAT/ACT; Imperial's course and North America pages list them, so treat as accepted but verify.",
+  "english": "IELTS Academic standard 6.5 overall (6.0 each) or higher 7.0 overall (6.5 each); AP English Language and Composition grade 4 accepted for US applicants (standard and higher). TOEFL iBT accepted, numeric scores not verified.",
+  "fees": {
+   "year": "2026-27 (2026 cohort)",
+   "tuition": "GBP 45,500 per year for Computing and Natural Sciences (2026 cohort, overseas); 2027 entry rate is higher (GBP 47,800 shown for Design Engineering), exact Computing/Life Sciences 2027 figure not retrieved",
+   "living": null,
+   "note": "Overseas fees are set by year of entry and rise with CPI each year for continuing students."
+  },
+  "scholarship": "Imperial Inspires Scholarship: GBP 15,000 per year, 150 awards for 2027/28, for overseas-fee undergraduates in Engineering, Natural Sciences, Medicine or Business; invited to apply after UCAS (by 13 Jan 2027), deadline 5 Feb 2027. One Imperial page says 2027 Inspires applications are not currently open, so confirm.",
+  "intlNote": "TMUA required for Computing and interview with a lecturer is part of the process. No undergraduate psychology or cognitive science degree. Test/interview details for Life Sciences not confirmed.",
+  "courses": {
+   "cs": {
+    "name": "Computing",
+    "ucas": "G400",
+    "degree": "BEng",
+    "years": 3,
+    "test": "TMUA",
+    "testDate": null,
+    "interview": "yes",
+    "offerRate": null,
+    "offerNote": "Official course-level offers not retrieved. Statistics Guide 2024-25: Computing 4,159 applications, 212 new admissions (19.6:1), which is an admission ratio, not offers.",
+    "apReq": "APs 5,5,5,5,5 incl. Calculus BC; or 5,5,5 incl. Calculus BC plus SAT 1480 / ACT 33 (with US High School Diploma)",
+    "url": "https://www.imperial.ac.uk/study/courses/undergraduate/computing-beng/"
+   },
+   "bio": {
+    "name": "Biological Sciences",
+    "ucas": null,
+    "degree": "BSc",
+    "years": 3,
+    "test": null,
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "Statistics Guide 2024-25: Life Sciences (department) 2,945 applications, 311 new admissions (9.5:1); not course-level offers.",
+    "apReq": null,
+    "url": "https://www.imperial.ac.uk/study/courses/undergraduate/biological-sciences/"
+   }
+  },
+  "rank": {
+   "qs": "=2",
+   "the": "8"
+  },
+  "url": "https://www.imperial.ac.uk/study/international-students/information-by-region/north-america/",
+  "sources": [
+   "https://www.imperial.ac.uk/study/help-centre/undergraduate-admissions/how-do-i-apply-for-undergraduate-study.php (via search extract)",
+   "https://www.imperial.ac.uk/study/international-students/information-by-region/north-america/ (via search extract)",
+   "https://www.imperial.ac.uk/study/courses/undergraduate/computing-beng/ (via search extract)",
+   "https://www.imperial.ac.uk/study/apply/english-language/ (via search extract)",
+   "https://www.imperial.ac.uk/students/fees-and-funding/tuition-fees/undergraduate-tuition-fees/2026-27/faculty-of-engineering/ (via search extract)",
+   "https://www.imperial.ac.uk/study/fees-and-funding/scholarships-search/imperial-inspires-scholarships-undergraduate-20272028.php (via search extract)",
+   "https://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/planning/public/statistics-guides/24-25-Statistics-Guide_FINAL-v2.pdf (via search extract)",
+   "https://www.qs.com/en-us/insights/qs-world-university-rankings",
+   "https://thetab.com/2026/10/01/eleven-uk-universities-rank-among-the-top-100-in-the-world-but-not-durham"
+  ],
+  "uncertain": [
+   "imperial.ac.uk blocks fetching (403); all Imperial facts are from official-site search extracts, not full page reads",
+   "No neuro, psych or cogsci keys: Imperial has no matching undergraduate degree found (Medical Biosciences not verified for neuroscience)",
+   "Biological Sciences: UCAS code, test and interview not confirmed (2025-26 spec said no test for the languages variant, ESAT for Year in Industry variant)",
+   "Computing offerRate left null: official course-level offers not retrieved",
+   "Computing testDate not confirmed (TMUA Oct 2026 or Jan 2027 sitting)",
+   "Fees: 2027-entry rate for Computing/Life Sciences not retrieved; living cost not retrieved",
+   "SAT/ACT acceptance: conflicting extracts, Imperial course pages list 1480/33 and 1460/31",
+   "Inspires scholarship status conflict between two Imperial pages"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: imperial.ac.uk blocked (403). Deadline 13 Jan 2027 18:00 and TMUA for Computing confirmed via search extract; QS 2 (joint) and THE 8 consistent with sources; 2027 overseas fee, SAT thresholds and Biological Sciences details not verified"
+ },
+ {
+  "id": "uk-ucl",
+  "name": "UCL",
+  "full": "UCL",
+  "city": "London",
+  "ucasInst": "UCL U80",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "UCAS deadline for 2027 entry: 13 Jan 2027 for all courses except Medicine (15 Oct 2026), per UCL undergraduate page.",
+  "apReq": "AP route: 3 to 5 APs taken in the last three years (matching AP for any required A-level subject; Calculus for Maths). Alternative: two APs plus SAT/ACT plus High School Diploma. UCL's minimum benchmark equals ABB (e.g. AP 5,4 with SAT 1400 / ACT 31); higher offers (Psychology A*AA, Neuroscience AAA) need higher AP results not retrieved.",
+  "satMin": null,
+  "apNote": "Scores must be sent directly from College Board/ACT; school-verified sheets not accepted. Calculus AB and BC not counted as two APs.",
+  "english": null,
+  "fees": {
+   "year": "2027-28",
+   "tuition": null,
+   "living": null,
+   "note": "Overseas fee per programme is on UCL's 2027-28 undergraduate fee schedule (not retrieved); most overseas undergraduates are on a cohort guarantee so the fee is fixed for the course."
+  },
+  "scholarship": "UCL Global Undergraduate Scholarship: need-based, open to any non-UK country (Korea not excluded) for overseas-fee students; 2026/27 round had up to 33 awards (tuition plus maintenance for 10), deadline was 27 Apr 2026 after submitting an application. 2027 round details not confirmed.",
+  "intlNote": "UCL does not standardly interview; interviews are a departmental choice. UCL uses UAT-UK tests for some 2027 courses (TARA for Computer Science, Oct 2026 or Jan 2027 sitting; January window 4-8 Jan 2027, booking closes 21 Dec 2026).",
+  "courses": {
+   "cogsci": {
+    "name": "Psychology and Language Sciences",
+    "ucas": null,
+    "degree": "BSc",
+    "years": 3,
+    "test": null,
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "No official programme statistics retrieved.",
+    "apReq": null,
+    "url": null
+   },
+   "neuro": {
+    "name": "Neuroscience",
+    "ucas": "B140",
+    "degree": "BSc (MSci option)",
+    "years": 3,
+    "test": null,
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "No official programme statistics retrieved. Entry AAA incl. Chemistry plus one of Biology/Maths/Physics; can transfer to 4-year MSci after Year 2.",
+    "apReq": null,
+    "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc"
+   },
+   "psych": {
+    "name": "Psychology",
+    "ucas": "C800",
+    "degree": "BSc",
+    "years": 3,
+    "test": null,
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "No official programme statistics retrieved. A-level A*AA incl. A*A from two of Biology, Chemistry, Maths, Physics, Psychology.",
+    "apReq": null,
+    "url": "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/psychology-bsc"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BSc",
+    "years": 3,
+    "test": "TARA",
+    "testDate": "2026-10-12",
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "No official programme statistics retrieved. TARA requirement confirmed in UCL tests page extract; a UCAS listing for the 2026 cycle also said all applicants must sit TARA.",
+    "apReq": null,
+    "url": null
+   },
+   "bio": {
+    "name": "Biomedical Sciences",
+    "ucas": null,
+    "degree": "BSc",
+    "years": 3,
+    "test": null,
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "Course exists at UCL but no 2027 data retrieved.",
+    "apReq": null,
+    "url": null
+   }
+  },
+  "rank": {
+   "qs": "=8",
+   "the": "=17"
+  },
+  "url": "https://www.ucl.ac.uk/prospective-students/international/united-states-america",
+  "sources": [
+   "https://www.ucl.ac.uk/prospective-students/international/united-states-america (via search extract)",
+   "https://www.ucl.ac.uk/study/prospective-students/school-teachers-and-counsellors/tests-tasks-and-interviews (via search extract)",
+   "https://www.ucl.ac.uk/scholarships/ucl-global-undergraduate-scholarship (via search extract)",
+   "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/psychology-bsc (via search extract)",
+   "https://www.ucl.ac.uk/prospective-students/undergraduate/degrees/neuroscience-bsc (via search extract)",
+   "https://www.qs.com/en-us/insights/qs-world-university-rankings",
+   "https://thetab.com/2026/10/01/eleven-uk-universities-rank-among-the-top-100-in-the-world-but-not-durham"
+  ],
+  "uncertain": [
+   "ucl.ac.uk blocks fetching (403); all UCL facts are from search extracts, not full page reads",
+   "AP/SAT thresholds for the A*AA and AAA tiers not found; only the ABB benchmark (5,4 + 1400/31)",
+   "English requirement, fees, living costs not retrieved",
+   "Psychology, Neuroscience, CS and Biomedical Sciences test/interview details not confirmed except TARA for CS; UCL does not interview as standard",
+   "Psychology and Language Sciences and Biomedical Sciences: UCAS codes and URLs not verified",
+   "CS course URL not opened; CS testDate window 12-16 Oct 2026 assumed from UAT-UK, January sitting also allowed",
+   "UCL scholarship 2027 round not confirmed",
+   "THE rank 17 (joint) taken from a news report of THE 2027"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: ucl.ac.uk not read. Deadline 13 Jan 2027 matches UCAS; QS 8 and THE =17 consistent with sources; SAT/AP, fees, tests not verified"
+ },
+ {
+  "id": "uk-kcl",
+  "name": "King's College London",
+  "full": "King's College London",
+  "city": "London",
+  "ucasInst": "KCL K60",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "UCAS equal-consideration deadline 13 Jan 2027, 18:00 UK time (UCAS 2027 entry key date; Medicine/Dentistry/Vet 15 Oct 2026). KCL treats later applications as late.",
+  "apReq": "US route 1: combination of APs + Honors/Dual Enrolment + SAT/ACT. Route 2: five APs only. For AAA equivalent: AP 55544 (five APs) or SAT 1380 (min 600 Math, 640 R&W) / ACT 28 combined with APs; A*AA: AP 55554 or SAT 1380 (620/650) / ACT 29; A*A*A: SAT 1410 / ACT 30. Subject A/A* needs AP 5, B needs AP 4. AP Research and Seminar not accepted. No superscoring. Applicants not meeting any combination are pointed to the International Foundation Programme.",
+  "satMin": 1380,
+  "apNote": "Course-level US requirement is read from the A-level offer: Neuroscience AAA (A in Biology and Chemistry), Psychology A*AA, Computer Science A*A*A, Biomedical Science AAA per course pages (UK A-level grades). SAT 1380 shown is the AAA/A*AA equivalent minimum; A*A*A needs 1410.",
+  "english": "Band D for natural/mathematical/engineering science courses: IELTS Academic 6.5 overall, 6.0 each skill; TOEFL iBT 92 (23 writing, 20 others) for tests before 21 Jan 2026, or 4.5 overall / 4 each skill on the new scale. Exemption only for US nationals who completed high school level 3 qualification in a majority English-speaking country; a Korean national at a Korean school would NOT qualify, so a test is needed. Band for Psychology and the other courses not individually checked.",
+  "fees": {
+   "year": null,
+   "tuition": null,
+   "living": null,
+   "note": "Overseas undergraduate fee not shown on course pages or fees pages fetched (published in online prospectus per course). International deposit £2,000 against first-year fee. Home fee £9,790 (2026). Typical degree is 3 years (4 with year abroad/placement)."
+  },
+  "scholarship": "None found that is open to Korean undergraduates; King's funding database lists awards but nothing Korea-specific for undergraduates was found (Korea-linked SNU bursary is postgraduate only).",
+  "intlNote": "US applicant codes for score reports: 6789 (ACT/SAT/AP), 7884 (College Board). All applications through UCAS. Degrees are 3 years (England).",
+  "courses": {
+   "neuro": {
+    "name": "Neuroscience",
+    "ucas": "B140",
+    "degree": "BSc",
+    "years": 3,
+    "test": "none listed on course page",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level AAA with A in Biology and Chemistry per course page (AP 5 needed in Biology and Chemistry for A-grade subjects)",
+    "url": "https://www.kcl.ac.uk/study/undergraduate/courses/neuroscience-bsc"
+   },
+   "psych": {
+    "name": "Psychology",
+    "ucas": "C800",
+    "degree": "BSc",
+    "years": 3,
+    "test": "none listed on course page",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level A*AA per course page; US equivalent AP 55554 or SAT 1380 (620 Math, 650 R&W) / ACT 29 with APs",
+    "url": "https://www.kcl.ac.uk/study/undergraduate/courses/psychology-bsc"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BSc",
+    "years": 3,
+    "test": "none listed on course page",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level A*A*A per course page; Maths requirement is met by AP Calculus BC at 5",
+    "url": "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-bsc"
+   },
+   "bio": {
+    "name": "Biomedical Science",
+    "ucas": "BC99",
+    "degree": "BSc",
+    "years": 3,
+    "test": "none listed on course page",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level AAA per course page",
+    "url": "https://www.kcl.ac.uk/study/undergraduate/courses/biomedical-science-bsc"
+   }
+  },
+  "rank": {
+   "qs": "37",
+   "the": "40"
+  },
+  "url": "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
+  "sources": [
+   "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/entry-requirements",
+   "https://www.kcl.ac.uk/study/international/region/usa",
+   "https://www.kcl.ac.uk/study/undergraduate/how-to-apply/english-language-requirements",
+   "https://www.kcl.ac.uk/study/undergraduate/courses/neuroscience-bsc",
+   "https://www.kcl.ac.uk/study/undergraduate/courses/psychology-bsc",
+   "https://www.kcl.ac.uk/study/undergraduate/courses/computer-science-bsc",
+   "https://www.kcl.ac.uk/study/undergraduate/courses/biomedical-science-bsc",
+   "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/tuition-fees",
+   "https://www.timeshighereducation.com/world-university-rankings/kings-college-london",
+   "https://www.uniadmissions.co.uk/application-guides/qs-top-universities-rankings/"
+  ],
+  "uncertain": [
+   "fees: international undergraduate tuition and living cost not retrievable from official pages",
+   "scholarship: no official undergraduate Korea-eligible award confirmed",
+   "courses.cogsci: no cognitive science BSc identified, omitted",
+   "courses.bio: BC99 'Biomedical Science' taken from course page (code listed as BC99); check against UCAS",
+   "test/interview: not stated on course pages, left null/none listed rather than assumed",
+   "rank.qs: from third-party table (uniadmissions) quoting QS 2027, article text conflicted for LSE but KCL 37 consistent across two sources",
+   "english: Band D applies to the natural-science courses listed; band for Psychology/CS not individually confirmed",
+   "satMin: 1380 is the AAA equivalent; course-specific offers vary"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: deadline 13 Jan 2027 matches UCAS; THE =40 consistent with The Tab; QS 37 not verified (third-party); course pages not re-read"
+ },
+ {
+  "id": "uk-edinburgh",
+  "name": "Edinburgh",
+  "full": "University of Edinburgh",
+  "city": "Edinburgh",
+  "ucasInst": "EDINB E56",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "UCAS equal-consideration deadline 13 Jan 2027, 18:00 UK time (UCAS 2027 entry key date; Medicine/Vet 15 Oct 2026). Edinburgh US page tells applicants to send transcripts before the UCAS deadline.",
+  "apReq": "Page published 11 Nov 2026. Worldwide minimum: three APs in different subjects at 4+, or two APs at 4+ plus ACT 27+ (single sitting, no superscore) or SAT 1290+ (650 R&W, 620 Math; SAT superscore considered). Students outside the US on a US-style curriculum can only be considered under Profile 1 (three APs 4+) or Profile 2 (two APs 4+ plus ACT 27/SAT 1290). Some programmes ask for more than the minimum; AP Research not accepted.",
+  "satMin": 1290,
+  "apNote": "Psychology and Cognitive Science: AP Calculus 4+, or Precalculus/ACT Math/SAT Math at the required level plus one listed AP science or social science at 4+. Competitive programmes may need grades above the minimum.",
+  "english": "Varies by degree (see degree finder). UCAS listing for 2027 entry shows typical IELTS Academic 6.5 overall with 5.5 each; Edinburgh revised component minimums downward on 28 Apr 2026. TOEFL iBT accepted (new scale from 21 Jan 2026). Test must be one sitting and under 2 years old. No waiver for a Korean national at a Korean school found.",
+  "fees": {
+   "year": "2026-27 indicative (2027-28 not confirmed)",
+   "tuition": "2027 international fee not yet confirmed. Undergraduate Guide 2027 reports indicative 2026 rates: from £28,000 (classroom-based) to £36,800 (laboratory-based); fixed for the whole degree from start date",
+   "living": "£18,552 (2026-27 full-year estimate for a single undergraduate; £13,914 for 39 weeks)",
+   "note": "Scottish honours degrees are 4 years. International fee is fixed at the start-date rate."
+  },
+  "scholarship": "No undergraduate scholarship found that names South Korea. International awards listed: Global UG Mathematics Scholarship (£5,000/yr, School of Mathematics only, deadline 31 Mar 2027), Global Talent Fund BIG (international Olympiad medallists), Rosedale OSSD, Defne-Muhtar Kent (Turkey only). Only Mathematics and Olympiad awards are potentially open to Korea.",
+  "intlNote": "Four-year honours degrees with broad first two years. Must submit all SAT/ACT/AP scores; no AP credit awarded.",
+  "courses": {
+   "cogsci": {
+    "name": "Cognitive Science (Humanities)",
+    "ucas": "C851",
+    "degree": "MA (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "AP Calculus 4+, or Precalculus/ACT/SAT Math at the required level plus one listed AP science or social science at 4+",
+    "url": "https://study.ed.ac.uk/programmes/undergraduate/2027/479-cognitive-science-humanities"
+   },
+   "neuro": {
+    "name": "Neuroscience",
+    "ucas": "B140",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": null,
+    "url": "https://study.ed.ac.uk/programmes/undergraduate/2027/2-neuroscience"
+   },
+   "psych": {
+    "name": "Psychology",
+    "ucas": "C802",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "AP Calculus 4+, or Precalculus/ACT/SAT Math at the required level plus one listed AP science or social science at 4+",
+    "url": "https://study.ed.ac.uk/ug/C802"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": null,
+    "url": "https://study.ed.ac.uk/ug/G400"
+   },
+   "bio": {
+    "name": "Biological Sciences",
+    "ucas": "C100",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "Biology and Chemistry via AP at 4 or 5 for biomedical/biological science degrees (from older Science and Engineering US page; confirm on degree finder)",
+    "url": "https://study.ed.ac.uk/ug/C100"
+   }
+  },
+  "rank": {
+   "qs": "35",
+   "the": "=29"
+  },
+  "url": "https://www.ed.ac.uk/studying/international/country/americas/united-states-of-america",
+  "sources": [
+   "https://cahss.ed.ac.uk/international-eu/entry-requirements/usa",
+   "https://www.ed.ac.uk/studying/international/country/americas/united-states-of-america",
+   "https://study.ed.ac.uk/programmes/undergraduate/2027/479-cognitive-science-humanities",
+   "https://study.ed.ac.uk/programmes/undergraduate/2027/2-neuroscience",
+   "https://study.ed.ac.uk/ug/C802",
+   "https://study.ed.ac.uk/ug/G400",
+   "https://study.ed.ac.uk/ug/C100",
+   "https://study.ed.ac.uk/undergraduate/entry-requirements/english-language",
+   "https://registryservices.ed.ac.uk/student-funding/undergraduate/international/",
+   "https://registryservices.ed.ac.uk/student-funding/undergraduate/international/global",
+   "https://www.timeshighereducation.com/world-university-rankings/university-edinburgh",
+   "https://www.scholar-gateway.com/university-rankings/world"
+  ],
+  "uncertain": [
+   "fees.tuition: 2027-28 international fee not published; 2026 indicative figures only (from search summary of the Undergraduate Guide, PDF unreadable)",
+   "english: exact 2027 degree-specific scores not read; 6.5/5.5 from a UCAS listing summary",
+   "cogsci: MA (Hons) C851 (Humanities); a BSc Cognitive Science (C859, Informatics) exists in older listings but could not be confirmed for 2027",
+   "bio apReq: from older page, unverified for 2027",
+   "test/interview: not stated on course pages",
+   "living cost figure is a 2026-27 estimate from a search summary of the neuroscience page",
+   "deadline: 13 Jan 2027 is the UCAS date; Edinburgh page itself gave no date"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: deadline matches UCAS; THE =29 consistent with The Tab; QS 35 not verified; apReq/fees not re-read"
+ },
+ {
+  "id": "uk-standrews",
+  "name": "St Andrews",
+  "full": "University of St Andrews",
+  "city": "St Andrews",
+  "ucasInst": "STA S36",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "6pm GMT Wednesday 13 Jan 2027 for all non-Medicine courses (St Andrews UCAS page). Later applications assessed subject to availability.",
+  "apReq": "SAT/ACT optional for 2026-27 and 2027-28 cycles (Sept 2027 and Sept 2028 entry). Looks for A/B in honours-level courses or three APs at 4+, within the rigour of the school. If scores submitted, looks for ACT 28+ or SAT 1320+ (superscored). Some courses need AP Calculus BC (Maths, Physics, Computer Science). The South Korea page says US curriculum applicants need a standardised test plus transcript, with AP 4+ in three subjects and 5s in required subjects (older wording, conflicts with the test-optional US page).",
+  "satMin": 1320,
+  "apNote": "Test optional; 1320 / ACT 28 is the bar if submitting. Computer Science expects AP Calculus BC (or equivalent).",
+  "english": "Profile-based by background. One profile: IELTS Academic 6.5 overall, 6.0 each (TOEFL iBT 81 for tests before 2026; 4.5 overall / 4 each on new scale); a stricter profile 7.0/6.5. UKVI student visa needs an approved SELT. A 4- or 10-week pre-sessional can be an offer condition. Which profile a Korean international-school student gets was not confirmed.",
+  "fees": {
+   "year": "2027-28 (2027 entry)",
+   "tuition": "£34,910 per year (EU and overseas, BSc science degrees)",
+   "living": null,
+   "note": "Scottish honours degrees are 4 years. Fee shown on Neuroscience, Psychology, Computer Science, Biology BSc pages."
+  },
+  "scholarship": "Open to overseas fee status (no Korea-specific award): International Undergraduate Scholarship (need-based tuition reduction, apply 17 Aug 2026 to 27 Jan 2027, value confirmed Dec 2026), International Excellence Scholarship (full tuition, one award), Accommodation Award - International (£1,900 a year, need-based).",
+  "intlNote": "Test-optional for US-style applicants. Psychology offered as BSc or MA with same content. No standalone cognitive science degree.",
+  "courses": {
+   "neuro": {
+    "name": "Neuroscience",
+    "ucas": "B140",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level AAB (min ABB) with B in two of Biology/Chemistry/Maths/Physics; AP Biology/Chemistry expected as subject evidence",
+    "url": "https://www.st-andrews.ac.uk/subjects/neuroscience/neuroscience-bsc"
+   },
+   "psych": {
+    "name": "Psychology",
+    "ucas": "C800",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": null,
+    "url": "https://www.st-andrews.ac.uk/subjects/psychology/psychology-bsc"
+   },
+   "cs": {
+    "name": "Computer Science",
+    "ucas": "G400",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "AP Calculus BC (or equivalent) expected; A-level AAA with A in Maths",
+    "url": "https://www.st-andrews.ac.uk/subjects/computer-science/computer-science-bsc"
+   },
+   "bio": {
+    "name": "Biology",
+    "ucas": "C100",
+    "degree": "BSc (Hons)",
+    "years": 4,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "no official per-programme offer statistic found",
+    "apReq": "A-level AAB (min ABB) including Biology and one other science",
+    "url": "https://www.st-andrews.ac.uk/subjects/biology/biology-bsc"
+   }
+  },
+  "rank": {
+   "qs": "115",
+   "the": "185"
+  },
+  "url": "https://www.st-andrews.ac.uk/subjects/entry/usa/",
+  "sources": [
+   "https://www.st-andrews.ac.uk/subjects/entry/usa/",
+   "https://www.st-andrews.ac.uk/subjects/entry/south-korea/",
+   "https://www.st-andrews.ac.uk/study/undergraduate/apply/ucas/",
+   "https://www.st-andrews.ac.uk/subjects/neuroscience/neuroscience-bsc",
+   "https://www.st-andrews.ac.uk/subjects/psychology/psychology-bsc",
+   "https://www.st-andrews.ac.uk/subjects/computer-science/computer-science-bsc",
+   "https://www.st-andrews.ac.uk/subjects/biology/biology-bsc",
+   "https://www.st-andrews.ac.uk/study/scholarships/scholarships-catalogue/undergraduate-scholarships/international-undergraduate-scholarship/",
+   "https://www.timeshighereducation.com/world-university-rankings/university-st-andrews",
+   "https://www.uniadmissions.co.uk/application-guides/qs-top-universities-rankings/"
+  ],
+  "uncertain": [
+   "living: no official estimate retrieved",
+   "english: profile for Korean applicant not confirmed; scores are from profile pages seen in search summary",
+   "apReq: US page says test optional while South Korea page still lists tests; used the US page",
+   "cogsci: no standalone degree, omitted",
+   "psych apReq and bio/neuro AP subject details inferred from A-level subject rules, not an official AP statement",
+   "rank.qs: from a third-party table of QS 2027; verify on topuniversities.com"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: Psychology BSc page confirms GBP 34,910 and C800; deadline matches UCAS; THE 185 consistent with The Tab; QS 115 and SAT 1320 not re-verified"
+ },
+ {
+  "id": "uk-lse",
+  "name": "LSE",
+  "full": "London School of Economics and Political Science",
+  "city": "London",
+  "ucasInst": "LSE L72",
+  "oxbridge": false,
+  "deadline": "2027-01-13",
+  "deadlineNote": "13 Jan 2027, 18:00 UK time for all applicants including those outside the EU, via UCAS (LSE degree page and US requirements search summary).",
+  "apReq": "For A*AA equivalent: five APs at grade 5 taken over no more than three years plus high school GPA 3.7+, OR GPA 3.7+ with ACT 32+ or SAT 1450+. Programmes with a maths requirement also need AP Calculus BC at 5. AP Seminar/Capstone/Research not counted; only one of Calculus AB/BC counts. The US High School Diploma alone is not enough.",
+  "satMin": 1450,
+  "apNote": "Psychological and Behavioural Science asks A*AA (UK), so the A*AA US route applies.",
+  "english": "Page lists IELTS Academic 7.0 overall and 7.0 in each component, or TOEFL iBT 100 (27 writing, 25 reading, 24 listening, 24 speaking); new scale from Jan 2026: 5.5 overall, 5 each. One sitting, valid two years. Proof is needed after offer, not at application. Waiver for a Korean national not found.",
+  "fees": {
+   "year": "2027-28",
+   "tuition": "£33,800 per year (BSc Psychological and Behavioural Science, overseas); LSE table shows provisional figures",
+   "living": null,
+   "note": "Three-year degree. Overseas fee is fixed for the duration of the programme."
+  },
+  "scholarship": "Undergraduate Support Scheme for overseas fee status students (financial need first, then merit; a funding guide says about 3 awards a year for overseas students). Not Korea-specific; 2027 entry deadline not confirmed.",
+  "intlNote": "LSE offers few of the target fields; only psychology-related BSc fits. LSE has no stand-alone computer science, neuroscience or biology degree.",
+  "courses": {
+   "psych": {
+    "name": "Psychological and Behavioural Science",
+    "ucas": "C800",
+    "degree": "BSc",
+    "years": 3,
+    "test": "none listed",
+    "testDate": null,
+    "interview": null,
+    "offerRate": null,
+    "offerNote": "degree page shows 1,125 applications, intake 66, 17:1 ratio (year not stated); not an offer rate",
+    "apReq": "A*AA with at least one of Biology/Chemistry/Physics/Maths/Psychology; US: five APs at 5 plus GPA 3.7, or GPA 3.7 with ACT 32/SAT 1450",
+    "url": "https://www.lse.ac.uk/study-at-lse/undergraduate/bsc-psychological-and-behavioural-science"
+   }
+  },
+  "rank": {
+   "qs": "62",
+   "the": "47"
+  },
+  "url": "https://www.lse.ac.uk/study-at-lse/international-students/united-states-of-america",
+  "sources": [
+   "https://www.lse.ac.uk/study-at-lse/undergraduate/bsc-psychological-and-behavioural-science",
+   "https://www.lse.ac.uk/study-at-lse/international-students/united-states-of-america",
+   "https://www.lse.ac.uk/study-at-lse/undergraduate/prospective-students/how-to-apply/english-language-requirements",
+   "https://www.timeshighereducation.com/world-university-rankings/london-school-economics-and-political-science",
+   "https://www.uniadmissions.co.uk/application-guides/qs-top-universities-rankings/"
+  ],
+  "uncertain": [
+   "ucasInst L72: standard LSE UCAS code from general knowledge, not read on a page this session",
+   "english: 7.0 page may be the higher level; which level applies to this degree not confirmed",
+   "living cost not retrieved",
+   "scholarship: Undergraduate Support Scheme details from a funding guide summary",
+   "rank.qs: article text said 56 while its table said 62; used table, verify on topuniversities.com",
+   "test/interview not mentioned on degree page",
+   "offerRate: not an official offers figure"
+  ],
+  "checked": "2026-11-26",
+  "verified": "partial: degree page confirms C800, GBP 33,800 for 2027/28, deadline 13 Jan 2027, no test, 1,125 applications/66 intake (not an offer rate); THE =47 consistent with The Tab; QS 62 and SAT 1450 not re-verified"
+ }
+];
