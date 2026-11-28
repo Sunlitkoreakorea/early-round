@@ -25,7 +25,7 @@
   function fieldKo(k) {
     if (FIELD[k]) return FIELD[k];
     const rules = [
-      [/notif/i, '발표일'], [/netprice/i, '순비용 계산기'], [/fee/i, '원서비'], [/interview/i, '인터뷰'],
+      [/notif/i, '발표일'], [/netprice/i, '순비용 계산기'], [/\bcoa\b|tuition|housing|\bcost\b/i, '1년 비용'], [/^(majors\.)?(cs|neuro|psych|bio)(\.|$)|major/i, '전공'], [/fee/i, '원서비'], [/interview/i, '인터뷰'],
       [/supplement|short take|essay|prompt|member question/i, '보충 에세이'], [/english|toefl|ielts|duolingo/i, '영어 시험'],
       [/cogsci|cognitive/i, '인지과학'], [/aid|css|need|finaid|meets/i, '재정지원'], [/rec/i, '추천서'],
       [/sat|act|test/i, '시험 통계'], [/plans|deadline|ed2|date/i, '일정'],
@@ -250,6 +250,19 @@
       tile(`${et ? et.type : 'EA'} 합격률`, `${t.ea.rate}%`, `${E.num(t.ea.admitted)} / ${E.num(t.ea.applied)}`);
     }
     if (t.intl && t.intl.rate != null) tile('국제학생 합격률', `${t.intl.rate}%`, `${E.num(t.intl.admitted)} / ${E.num(t.intl.applied)}`);
+    const rk = s.rank;
+    const ref = window.RANK_REF || {};
+    if (rk && rk.qs == null && rk.the == null) tile('세계 순위', '자료 없음', '리버럴 아츠 칼리지는 보통 세계 순위에 안 나와요');
+    if (rk) {
+      const vs = { above: '서울대보다 위', below: '서울대보다 아래', same: '서울대와 같음' };
+      for (const [k, label] of [['qs', 'QS 2027'], ['the', 'THE 2027']]) {
+        const v = rk[k];
+        if (v == null) continue;
+        const cmp = C.vsRef(v, ref[k]);
+        if (v === 'unranked') tile(`${label} 세계 순위`, '순위 없음', '연구 규모 기준이라 리버럴 아츠 칼리지는 대부분 빠져요');
+        else tile(`${label} 세계 순위`, `${esc(String(v).replace(/^=/, '공동 '))}위`, `${cmp ? vs[cmp] : ''}${ref[k] ? ` (서울대 ${esc(ref[k])}위)` : ''}`);
+      }
+    }
     if (t.coa && (t.coa.direct || t.coa.total)) tile('1년 비용', `$${E.num(t.coa.direct || t.coa.total)}`, `${esc(t.coa.year || '')} 학비, 수수료, 기숙사/식비`);
     if (t.intlFirstYear != null && t.firstYearTotal) tile('신입생 중 국제학생', `${((t.intlFirstYear / t.firstYearTotal) * 100).toFixed(1)}%`, `${E.num(t.intlFirstYear)}명`);
     if (t.intlAidCount != null) tile('재정지원 받는 국제학생', `${E.num(t.intlAidCount)}명`, t.intlAidAvg ? `평균 $${E.num(t.intlAidAvg)}` : '');
@@ -336,7 +349,7 @@
   }
 
   function srcHtml(s) {
-    const urls = [...new Set([...(s.sources || []), ...((s.req && s.req.sources) || []), ...(s.stats && s.stats.source ? [s.stats.source] : []), ...(s.stats && s.stats.intlSource ? [s.stats.intlSource] : [])])];
+    const urls = [...new Set([...(s.sources || []), ...((s.req && s.req.sources) || []), ...(s.stats && s.stats.source ? [s.stats.source] : []), ...(s.stats && s.stats.intlSource ? [s.stats.intlSource] : []), ...(s.rank ? [s.rank.qsSource, s.rank.theSource].filter(Boolean) : [])])];
     const links = urls.map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">출처 ${i + 1}</a>`).join('');
     const uns = [...new Set([...(s.uncertain || []), ...((s.req && s.req.uncertain) || []), ...((s.stats && s.stats.uncertain) || [])]
       .map(u => fieldKo(String(u).split(':')[0].trim())))];

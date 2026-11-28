@@ -359,6 +359,25 @@
     return { rows, cssNow, cssAfter, cssCost, satNow, satCost, feeKnown, feeUnknown, total: feeKnown + cssCost + satCost };
   }
 
+  /* ───── 세계 순위 ───── */
+  // "=16" → 16, "201-250" → 201, "unranked"/null → null
+  function rankNum(r) {
+    if (r == null) return null;
+    const m = String(r).match(/\d+/);
+    return m ? Number(m[0]) : null;
+  }
+  // 서울대와 비교: above | below | same | null (구간 순위는 아래 끝으로 비교)
+  function vsRef(r, ref) {
+    const a = rankNum(r);
+    const b = rankNum(ref);
+    if (a == null || b == null) return null;
+    const hi = String(r).includes('-') ? Number(String(r).split('-').pop()) : a;
+    if (hi < b) return 'above';
+    if (a > b) return 'below';
+    if (a === b && hi === b) return 'same';
+    return null;
+  }
+
   /* ───── 글자 수 ───── */
   function chars(str) { return [...String(str || '')].length; }
   function words(str) { const t = String(str || '').trim(); return t ? t.split(/\s+/).length : 0; }
@@ -366,7 +385,7 @@
   const api = {
     EARLY, RESTRICT, BINDING, ORDER, SLOTS, TIERS, parse, shifted, dday, md, notifyKo, plan, sortPlans, check, slotOf,
     wouldConflict, satOf, submitAdvice, sectionPos, chance, balance, scenarios, chars, words,
-    monthOf, satCountsForEarly, FEES, usesCSS, appCost, MAJORS, MAJOR_KO, majorHas, majorRate,
+    monthOf, satCountsForEarly, FEES, usesCSS, appCost, MAJORS, MAJOR_KO, majorHas, majorRate, rankNum, vsRef,
   };
   root.Core = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;

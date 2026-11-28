@@ -1,0 +1,370 @@
+[
+ {
+  "id": "yale",
+  "qs": "=16",
+  "the": "=9",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "stanford",
+  "qs": "=2",
+  "the": "=3",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "amherst",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "harvard",
+  "qs": "5",
+  "the": "6",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "princeton",
+  "qs": "27",
+  "the": "=3",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "mit",
+  "qs": "1",
+  "the": "2",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "brown",
+  "qs": "66",
+  "the": "=73",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "columbia",
+  "qs": "=43",
+  "the": "19",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "penn",
+  "qs": "15",
+  "the": "14",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "uchicago",
+  "qs": "24",
+  "the": "16",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "jhu",
+  "qs": "=20",
+  "the": "=17",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "williams",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "swarthmore",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "pomona",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "berkeley",
+  "qs": "=20",
+  "the": "=9",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "wesleyan",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "carleton",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "bowdoin",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "middlebury",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "grinnell",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "colby",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "conncoll",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "rochester",
+  "qs": "251",
+  "the": "=136",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=3",
+  "note": null
+ },
+ {
+  "id": "macalester",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "oberlin",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "lafayette",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "kenyon",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "richmond",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "case-western",
+  "qs": "=326",
+  "the": "=147",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=7",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=3",
+  "note": null
+ },
+ {
+  "id": "trinity-ct",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "whitman",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "dickinson",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "earlham",
+  "qs": null,
+  "the": null,
+  "qsSource": null,
+  "theSource": null,
+  "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
+ },
+ {
+  "id": "ucla",
+  "qs": "49",
+  "the": "20",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "ucsd",
+  "qs": "81",
+  "the": "37",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "ucdavis",
+  "qs": "137",
+  "the": "65",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=3",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "uci",
+  "qs": "=252",
+  "the": "=97",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "umich",
+  "qs": "51",
+  "the": "23",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "uva",
+  "qs": "268",
+  "the": "179",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+  "theSource": "https://www.timeshighereducation.com/world-university-rankings/university-virginia",
+  "note": null
+ },
+ {
+  "id": "unc",
+  "qs": "=158",
+  "the": "85",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=4",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "uiuc",
+  "qs": "74",
+  "the": "48",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "uw",
+  "qs": "=92",
+  "the": "26",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+  "note": null
+ },
+ {
+  "id": "utaustin",
+  "qs": "72",
+  "the": "=53",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "wisc",
+  "qs": "=131",
+  "the": "=53",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=3",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "umn",
+  "qs": "=255",
+  "the": "88",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ },
+ {
+  "id": "snu",
+  "qs": "38",
+  "the": "56",
+  "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+  "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+  "note": null
+ }
+]

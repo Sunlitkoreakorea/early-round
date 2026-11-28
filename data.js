@@ -247,6 +247,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Many fields allow choosing major in sophomore year; STEM majors want a first-year course sequence. Pre-med is advising only."
    }
+  },
+  "rank": {
+   "qs": "=16",
+   "the": "=9",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -514,6 +521,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified on a page)."
    }
+  },
+  "rank": {
+   "qs": "=2",
+   "the": "=3",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -738,6 +752,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -1001,6 +1022,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "5",
+   "the": "6",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -1268,6 +1296,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "27",
+   "the": "=3",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -1536,6 +1571,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "1",
+   "the": "2",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -1796,6 +1838,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "66",
+   "the": "=73",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -2078,6 +2127,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "3-2 Combined Plan with Engineering exists. Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "=43",
+   "the": "19",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -2327,6 +2383,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "15",
+   "the": "14",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -2580,6 +2643,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "24",
+   "the": "16",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -2806,6 +2876,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "=20",
+   "the": "=17",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -3016,6 +3093,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -3254,6 +3338,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -3484,6 +3575,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -3688,6 +3786,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": "=20",
+   "the": "=9",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -3918,6 +4023,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Tied to health studies pathway; pre-med is advising only."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -4146,6 +4258,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is advising only (not verified)."
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -4388,6 +4507,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -4610,6 +4736,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -4839,6 +4972,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -5045,6 +5185,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -5278,6 +5425,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -5520,6 +5674,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": "251",
+   "the": "=136",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=3",
+   "note": null
   }
  },
  {
@@ -5704,6 +5865,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -5890,6 +6058,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -6069,6 +6244,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -6245,6 +6427,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -6432,6 +6621,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -6620,6 +6816,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": "=326",
+   "the": "=147",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=7",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=3",
+   "note": null
   }
  },
  {
@@ -6801,6 +7004,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -6985,6 +7195,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -7170,6 +7387,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -7345,6 +7569,13 @@ window.SCHOOLS = [
     "admitNote": null,
     "note": "Pre-med is health-professions advising, not a major"
    }
+  },
+  "rank": {
+   "qs": null,
+   "the": null,
+   "qsSource": null,
+   "theSource": null,
+   "note": "Liberal arts college; full tables not checked, so null (likely unranked)"
   }
  },
  {
@@ -7538,6 +7769,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read from PDF (applied 65,079+73,508+6,499=145,086; admitted 13,659); residency table blank in CDS so intl null is right; B2 nonresident first-year 549 ok; CS 7.3% (6,806 applicants, fall 2025) ok on UCLA first-year profile; COA 2026-27 page matches (16,430+39,270+12,299+7,568+1,588=84,770). Not verified: cogsci/psych/neuro apply-later GPA thresholds"
+  },
+  "rank": {
+   "qs": "49",
+   "the": "20",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=1",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -7726,6 +7964,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read (136,750 / 39,054; intl 24,254 / 7,496; enrolled 7,801 / intl 1,409). Registrar page confirms nonresident 2026-27 tuition 14,202+1,386+39,270=54,858 (quarterly rates x3). partial: on-campus housing/food and total still not found (fas.ucsd.edu cost page has no figures)"
+  },
+  "rank": {
+   "qs": "81",
+   "the": "37",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -7911,6 +8156,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read (102,988 / 45,674; intl 21,246 / 11,886; enrolled 6,824 / intl 926). partial: COA one-pager not re-opened; intlAid 'none' is plausible (UC pages) but CDS H6 shows institutional aid to nonresidents"
+  },
+  "rank": {
+   "qs": "137",
+   "the": "65",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=3",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -8098,6 +8350,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read (124,231 / 35,964; intl 21,620 / 9,258; enrolled 6,421 / intl 1,079). Registrar fee page confirms tuition 14,202+1,386+39,270=54,858 and listed fees; total incl. insurance $59,375. partial: housing 20,926 from search snippet only"
+  },
+  "rank": {
+   "qs": "=252",
+   "the": "=97",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -8309,6 +8568,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: CDS C1 read (53,044+56,068=109,112 applied; 7,593+10,322=17,915 admitted), residency table blank so intl null ok. Deadlines (ED Nov 1 -> by Dec 24; EA Nov 1 -> by Jan 29; RD Feb 1 -> by Apr 2) match official U-M search-result text (admissions.umich.edu pages 403 to WebFetch); ED is new and binding. COA: official OBP 2025-26 lower-division OOS total 84,164 confirmed (matches collector note); 2026-27 66,602 tuition is from CDS G1, not re-read"
+  },
+  "rank": {
+   "qs": "51",
+   "the": "23",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -8493,6 +8759,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: ED 11/1 -> 12/15 and EA 11/1 -> 2/15 confirmed by UVA CDS section C page; RD Jan 5 -> by Apr 1 confirmed by UVA admission site search result. C1 applied 64,457 / admitted 10,086 only seen via third-party transcriptions (UVA CDS C1 table loads dynamically, admission.virginia.edu 403) so not officially confirmed. COA: UVA CDS G1 page (2026-27) shows first-year out-of-state tuition 59,035, required fees 3,945, food+housing 16,070, which differs from collector's A&S 57,432 / 4,552 / ~21-23k (likely different basis: CDS G1 vs SFS A&S page); not changed, recheck sfs.virginia.edu"
+  },
+  "rank": {
+   "qs": "268",
+   "the": "179",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+   "theSource": "https://www.timeshighereducation.com/world-university-rankings/university-virginia",
+   "note": null
   }
  },
  {
@@ -8683,6 +8956,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read (76,247 / 12,751; intl 9,756 / 1,461; enrolled 5,091 / intl 300). Official admissions page: EA Oct 15 (materials Nov 7), decision Feb 15 for international (Dec 20 NC only); RD Jan 15 (materials Feb 15), decision Mar 31. UNC page says international students are not eligible for need-based aid (intlAid none ok). COA not re-verified"
+  },
+  "rank": {
+   "qs": "=158",
+   "the": "85",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=4",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -8883,6 +9163,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: dates page confirms EA Nov 1 (materials Nov 7, decision Jan 29), RD Jan 5 (materials Jan 11, decision Feb 26); year not printed on page. applied 83,045 and 36.6% total admit rate confirmed via search (archived official admit-rate page, fall 2025); admitted count (~30,384) not confirmed from an official source; CDS xlsx on Box not readable; intl applied/admitted not found. Major rates on the current page are for the 2026 entering class (LAS 40.6, Grainger 23.3, university 38.1), not fall 2025, so they are not the same year as stats.admitRate. International COA range 62,146-72,976 and components (tuition 42,248-53,078, food+housing 15,858, books 1,200, other 2,840) confirmed on admissions tuition page"
+  },
+  "rank": {
+   "qs": "74",
+   "the": "48",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -9083,6 +9370,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "ok: CDS C1 read (72,933 / 30,446; intl 13,054 / 4,653; enrolled 7,129 / intl 691). Dec 1 deadline confirmed on admit.washington.edu dates page and CS page (extended from Nov 15; decisions Mar 1-15). Allen School DTM 2026: international 37 of 1,049 (page says 4%, 3.5% computed), WA 41%, domestic nonresident 8% confirmed. COA PDF confirmed (nonresident tuition 44,580, fees 1,676, room and board 18,858, books/personal/transport 4,482, total 69,596)"
+  },
+  "rank": {
+   "qs": "=92",
+   "the": "26",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=1",
+   "note": null
   }
  },
  {
@@ -9279,6 +9573,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: deadlines confirmed on admissions.utexas.edu (EA Oct 15, supplemental Oct 22, decision by Jan 15 2027; RD Dec 1, supplemental Dec 10, decision Feb 15 2027; Honors Mar 1). CDS is on Box and could not be opened. COA page confirmed: nonresident total 64,204-72,916, tuition 42,554-51,106, housing/food 15,420-15,580. UT's own news reports 90,690 fall 2025 applications; admitted 20,154 and international 8,543 / 673 appear only in third-party transcriptions of the CDS (esslo, collegewise)"
+  },
+  "rank": {
+   "qs": "72",
+   "the": "=53",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=2",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -9489,6 +9790,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: EA Nov 1 (materials Nov 9, decision by Jan 31) and RD Jan 15 (materials Jan 22, decision by Mar 31) confirmed on admissions.wisc.edu/deadlines (cycle year inferred). COA page confirmed: tuition and fees 45,518, housing/meals 14,994, personal 2,618, transportation 1,222, computer-adjusted books 1,800 (collector total 66,152 excludes $68 loan fee and $330 new student fee; official page total without computer is 65,120). Admissions stats are IPEDS not CDS; not re-read"
+  },
+  "rank": {
+   "qs": "=131",
+   "the": "=53",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=3",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  },
  {
@@ -9671,6 +9979,13 @@ window.SCHOOLS = [
   },
   "verified": {
    "pub": "partial: EA I Nov 1 -> by Jan 31, EA II Dec 1 -> by Feb 28 (another page says Feb 15), RD Jan 1 -> by Mar 31 per umn.edu search results (umn.edu pages 403 to WebFetch). CDS PDF 403, so C1 still unfilled; third-party (esslo) transcription: applied about 43,929, admitted about 34,648, enrolled 7,180 (matches OEM report), intl 7,903 / 6,040; CollegeData lists different numbers (21,161 applicants) so definition unresolved. COA not re-verified (onestop 403)"
+  },
+  "rank": {
+   "qs": "=255",
+   "the": "88",
+   "qsSource": "https://xuanxiao.org/en/rankings/qs/world-university-rankings/2027?page=6",
+   "theSource": "https://xuanxiao.org/en/rankings/the/world-university-rankings/2027?page=2",
+   "note": null
   }
  }
 ];
@@ -10355,3 +10670,4 @@ window.SUMMER = [
   "verified": "partial: general deadlines now published; aid/eligibility pages not re-read"
  }
 ];
+window.RANK_REF = {"qs": "38", "the": "56"};

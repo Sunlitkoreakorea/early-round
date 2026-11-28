@@ -455,6 +455,15 @@ def main():
         if unc:
             s_["uncertain"] = (s_.get("uncertain") or []) + unc
 
+    # 세계 순위 (QS 2027, THE 2027)
+    ranks = {r["id"]: r for r in load_json("rank-2027.json")}
+    for s_ in out:
+        r = ranks.get(s_["id"])
+        if r:
+            s_["rank"] = {k: r.get(k) for k in ("qs", "the", "qsSource", "theSource", "note")}
+    snu = ranks.get("snu") or {}
+    rank_ref = {"qs": snu.get("qs"), "the": snu.get("the")}
+
     intl = load_json("cand-intl.json")
     # 대조 정정이 원래 문장을 덮어쓴 것을 합쳐서 다시 씀
     SUMMER_PATCH = {
@@ -474,6 +483,7 @@ def main():
         "window.SCHOOLS = " + json.dumps(out, ensure_ascii=False, indent=1) + ";\n"
         "window.INTL_OPTS = " + json.dumps(intl, ensure_ascii=False, indent=1) + ";\n"
         "window.SUMMER = " + json.dumps(summer_out, ensure_ascii=False, indent=1) + ";\n"
+        "window.RANK_REF = " + json.dumps(rank_ref, ensure_ascii=False) + ";\n"
     )
     (ROOT / "data.js").write_text(js, encoding="utf-8")
     for line in applied:

@@ -220,4 +220,16 @@ assert.strictEqual(C.usesCSS({ req: {}, aidForms: ['UChicago Student Financial A
   assert.strictEqual(C.appCost(list, picks, { sat: { rw: 650, math: 750 }, needAid: false }).cssCost, 0);
 }
 
+/* ───── 세계 순위 ───── */
+assert.strictEqual(C.rankNum('=16'), 16);
+assert.strictEqual(C.rankNum('201-250'), 201);
+assert.strictEqual(C.rankNum('unranked'), null);
+assert.strictEqual(C.rankNum(null), null);
+assert.strictEqual(C.vsRef('=16', '38'), 'above');
+assert.strictEqual(C.vsRef('43', '38'), 'below');
+assert.strictEqual(C.vsRef('38', '38'), 'same');
+assert.strictEqual(C.vsRef('101-150', '56'), 'below');
+assert.strictEqual(C.vsRef('51-60', '56'), null); // 구간이 서울대를 걸치면 판단 안 함
+assert.strictEqual(C.vsRef('unranked', '56'), null);
+
 console.log('core tests passed');
